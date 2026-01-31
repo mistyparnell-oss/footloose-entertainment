@@ -50,6 +50,24 @@
 - **Max file size:** 150KB
 - **Notes:** Romantic, joyful atmosphere
 
+**File:** `school-event.jpg`
+- School event or prom photo
+- **Ideal content:** Students at prom/dance, DJ performing for teens, school event
+- **Size:** 1200 x 800 pixels (3:2 ratio)
+- **Format:** JPG
+- **Usage:** School events & proms card
+- **Max file size:** 150KB
+- **Notes:** Energetic, age-appropriate, fun
+
+**File:** `private-party.jpg`
+- Private party or celebration photo
+- **Ideal content:** Birthday party, pool party, backyard event, neighborhood gathering
+- **Size:** 1200 x 800 pixels (3:2 ratio)
+- **Format:** JPG
+- **Usage:** Private parties card
+- **Max file size:** 150KB
+- **Notes:** Fun, casual, celebratory atmosphere
+
 ---
 
 ### 4. Service Detail Photos
@@ -175,6 +193,8 @@ If you don't have perfect photos yet:
 2. ✓ Hero image (homepage top)
 3. ✓ Corporate event photo
 4. ✓ Wedding event photo
+5. ✓ School event photo (prom/dance)
+6. ✓ Private party photo (birthday/pool party)
 
 **Should have:**
 5. DJ setup photo
