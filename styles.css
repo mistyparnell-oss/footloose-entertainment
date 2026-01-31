@@ -2,18 +2,18 @@
    CSS Variables / Design Tokens
    =================================== */
 :root {
-    /* Colors - Bold, professional entertainment brand */
-    --color-primary: #E63946;        /* Vibrant red - energy, excitement */
-    --color-primary-dark: #C92A35;
-    --color-secondary: #1D3557;      /* Deep navy - trust, professionalism */
-    --color-accent: #F1FAEE;         /* Soft cream - elegance */
-    --color-gold: #FFB703;           /* Gold accent - celebration */
+    /* Colors - Footloose Entertainment Brand */
+    --color-primary: #800020;        /* Burgundy - sophistication, energy */
+    --color-primary-dark: #5C0017;   /* Dark burgundy */
+    --color-secondary: #1A1A1A;      /* Black - bold, professional */
+    --color-accent: #C0C0C0;         /* Silver - elegance, modern */
+    --color-gold: #A8A8A8;           /* Light silver accent */
     
-    --color-text-dark: #1A1A1A;
-    --color-text-light: #4A4A4A;
-    --color-text-white: #FFFFFF;
-    --color-bg-light: #FAFAFA;
-    --color-bg-white: #FFFFFF;
+    --color-text-dark: #1A1A1A;      /* Black text */
+    --color-text-light: #4A4A4A;     /* Medium gray text */
+    --color-text-white: #FFFFFF;     /* White text */
+    --color-bg-light: #F5F5F5;       /* Light gray background */
+    --color-bg-white: #FFFFFF;       /* White background */
     
     /* Typography */
     --font-display: 'Bebas Neue', sans-serif;     /* Bold headlines */
