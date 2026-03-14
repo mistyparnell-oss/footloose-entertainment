@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photobooth Overlays & Custom Designs | Footloose Entertainment Jacksonville</title>
+    <meta name="description" content="Browse our photobooth overlay designs for weddings, corporate events, school events, and private parties. Open Air, Digital, and 4x6 print overlays. Custom designs available. Jacksonville & St. Augustine.">
+    <meta name="keywords" content="photobooth overlay Jacksonville, custom photo booth design, photobooth footer Jacksonville, wedding photobooth overlay, corporate photobooth design, 360 booth overlay Jacksonville">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://footlooseentertainment.com/overlays.html">
+    <meta property="og:title" content="Photobooth Overlays & Custom Designs | Footloose Entertainment">
+    <meta property="og:description" content="Browse our photobooth overlay gallery. Custom designs for weddings, corporate, school events. Open Air, Digital, 360 Booth, and 4x6 print options.">
+    
+    <link rel="canonical" href="https://footlooseentertainment.com/overlays.html">
+    <meta name="geo.region" content="US-FL">
+    <meta name="geo.placename" content="Jacksonville">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ── Overlays Page Styles ── */
+
+        /* Hero */
+        .overlays-hero {
+            padding: 7rem 0 5rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .overlays-hero-bg {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            z-index: 0;
+        }
+        .overlays-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.55);
+            z-index: 1;
+            pointer-events: none;
+        }
+        .overlays-hero .container {
+            position: relative;
+            z-index: 2;
+        }
+        .overlays-hero .hero-badge {
+            display: inline-block;
+            background: rgba(128,0,32,0.3);
+            border: 1px solid rgba(128,0,32,0.6);
+            color: #e8b4c0;
+            font-family: var(--font-body);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            padding: 0.4rem 1.2rem;
+            border-radius: 50px;
+            margin-bottom: 1.5rem;
+        }
+        .overlays-hero h1 {
+            color: #fff;
+            font-size: clamp(3rem, 7vw, 6rem);
+            margin-bottom: 1rem;
+            line-height: 1;
+            position: relative;
+        }
+        .overlays-hero p {
+            color: rgba(255,255,255,0.75);
+            font-size: 1.15rem;
+            max-width: 600px;
+            margin: 0 auto 2.5rem;
+        }
+        .overlays-hero .btn-hero-primary {
+            background: var(--color-primary);
+            color: #fff;
+            padding: 0.9rem 2.5rem;
+            border-radius: var(--radius-md);
+            font-family: var(--font-body);
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: background var(--transition-fast), transform var(--transition-fast);
+        }
+        .overlays-hero .btn-hero-primary:hover {
+            background: var(--color-primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Intro bar */
+        .overlays-intro {
+            background: var(--color-bg-light);
+            border-bottom: 3px solid var(--color-primary);
+            padding: 2.5rem 0;
+            text-align: center;
+        }
+        .overlays-intro p {
+            font-size: 1.1rem;
+            color: var(--color-text-light);
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        .overlays-intro strong {
+            color: var(--color-primary);
+        }
+
+        /* Category Navigation Pills */
+        .overlay-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: var(--color-secondary);
+            padding: 0.75rem 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        .overlay-nav .container {
+            display: flex;
+            gap: 0.75rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .overlay-nav a {
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.7);
+            padding: 0.55rem 1.4rem;
+            border-radius: 50px;
+            border: 1px solid rgba(255,255,255,0.15);
+            transition: all var(--transition-fast);
+        }
+        .overlay-nav a:hover,
+        .overlay-nav a.active {
+            background: var(--color-primary);
+            color: #fff;
+            border-color: var(--color-primary);
+        }
+
+        /* Section headings */
+        .overlay-section {
+            padding: var(--spacing-lg) 0;
+        }
+        .overlay-section:nth-child(even) {
+            background: var(--color-bg-light);
+        }
+        .overlay-section-header {
+            text-align: center;
+            margin-bottom: var(--spacing-md);
+        }
+        .overlay-section-header .section-tag {
+            display: inline-block;
+            font-family: var(--font-body);
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+        }
+        .overlay-section-header h2 {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            color: var(--color-secondary);
+            margin-bottom: 0.75rem;
+        }
+        .overlay-section-header p {
+            color: var(--color-text-light);
+            font-size: 1rem;
+            max-width: 560px;
+            margin: 0 auto;
+        }
+
+        /* Category link cards */
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: var(--spacing-md);
+        }
+        .category-card {
+            display: block;
+            background: #fff;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            text-decoration: none;
+            transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+            position: relative;
+        }
+        .category-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+        }
+        .category-card-visual {
+            height: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .category-card-visual svg.bg-icon {
+            opacity: 0.08;
+            position: absolute;
+            width: 180px;
+            height: 180px;
+        }
+        .category-card-visual .format-label {
+            font-family: var(--font-display);
+            font-size: 5rem;
+            line-height: 1;
+            color: rgba(255,255,255,0.25);
+            position: absolute;
+            bottom: 0.5rem;
+            right: 1rem;
+            letter-spacing: -0.02em;
+        }
+        .category-card-body {
+            padding: 1.5rem;
+            border-top: 3px solid transparent;
+            transition: border-color var(--transition-fast);
+        }
+        .category-card:hover .category-card-body {
+            border-color: var(--color-primary);
+        }
+        .category-card-body h3 {
+            font-size: 1.6rem;
+            color: var(--color-secondary);
+            margin-bottom: 0.4rem;
+        }
+        .category-card-body p {
+            color: var(--color-text-light);
+            font-size: 0.95rem;
+            margin-bottom: 1.1rem;
+            line-height: 1.5;
+        }
+        .category-card-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--color-primary);
+            transition: gap var(--transition-fast);
+        }
+        .category-card:hover .category-card-cta { gap: 0.7rem; }
+
+        /* Custom design CTA banner */
+        .custom-cta {
+            background: var(--color-secondary);
+            padding: var(--spacing-lg) 0;
+            text-align: center;
+        }
+        .custom-cta h2 {
+            color: #fff;
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            margin-bottom: 1rem;
+        }
+        .custom-cta p {
+            color: rgba(255,255,255,0.7);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            font-size: 1.05rem;
+        }
+        .custom-cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* How it works */
+        .how-it-works {
+            padding: var(--spacing-lg) 0;
+            background: var(--color-bg-light);
+        }
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: var(--spacing-md);
+        }
+        .step-card {
+            text-align: center;
+        }
+        .step-number {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            background: var(--color-primary);
+            color: #fff;
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+        }
+        .step-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+        .step-card p {
+            color: var(--color-text-light);
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            .overlay-grid {
+                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+                gap: 1rem;
+            }
+            .overlay-card-info h3 { font-size: 1rem; }
+        }
+
+        /* ── Event Theme Overrides (applied via JS from URL param) ── */
+        body.theme-wedding .btn-hero-primary,
+        body.theme-wedding .overlay-nav a.active,
+        body.theme-wedding .overlay-nav a:hover,
+        body.theme-wedding .back-link,
+        body.theme-wedding .category-card-cta,
+        body.theme-wedding .sibling-links a.active,
+        body.theme-wedding .sibling-links a:hover,
+        body.theme-wedding .step-number,
+        body.theme-wedding .overlay-info-bar,
+        body.theme-wedding .overlays-intro { border-color: #e3b7b3; }
+        body.theme-wedding .btn-hero-primary { background: #e3b7b3; }
+        body.theme-wedding .btn-hero-primary:hover { background: #d4a7a3; }
+        body.theme-wedding .overlay-nav a.active,
+        body.theme-wedding .overlay-nav a:hover,
+        body.theme-wedding .sibling-links a.active,
+        body.theme-wedding .sibling-links a:hover { background: #e3b7b3; border-color: #e3b7b3; }
+        body.theme-wedding .back-link,
+        body.theme-wedding .category-card-cta { color: #d4a7a3; }
+        body.theme-wedding .step-number { background: #e3b7b3; }
+        body.theme-wedding .overlay-info-bar { border-bottom-color: #e3b7b3; }
+        body.theme-wedding .info-item svg { color: #e3b7b3; }
+        body.theme-wedding .gallery-intro .section-tag,
+        body.theme-wedding .overlay-section-header .section-tag { color: #d4a7a3; }
+        body.theme-wedding .category-card-body { border-color: #e3b7b3; }
+        body.theme-wedding .overlay-cta,
+        body.theme-wedding .custom-cta { background: linear-gradient(135deg, #e3b7b3 0%, #d4a7a3 100%); }
+        body.theme-wedding .hero-badge { background: rgba(227,183,179,0.3); border-color: rgba(227,183,179,0.6); color: #fff; }
+
+        body.theme-school .btn-hero-primary { background: #7B2CBF; }
+        body.theme-school .btn-hero-primary:hover { background: #6A23A8; }
+        body.theme-school .overlay-nav a.active,
+        body.theme-school .overlay-nav a:hover,
+        body.theme-school .sibling-links a.active,
+        body.theme-school .sibling-links a:hover { background: #7B2CBF; border-color: #7B2CBF; }
+        body.theme-school .back-link,
+        body.theme-school .category-card-cta { color: #7B2CBF; }
+        body.theme-school .step-number { background: #7B2CBF; }
+        body.theme-school .overlay-info-bar { border-bottom-color: #7B2CBF; }
+        body.theme-school .info-item svg { color: #7B2CBF; }
+        body.theme-school .gallery-intro .section-tag,
+        body.theme-school .overlay-section-header .section-tag { color: #7B2CBF; }
+        body.theme-school .category-card:hover .category-card-body { border-color: #7B2CBF; }
+        body.theme-school .overlay-cta,
+        body.theme-school .custom-cta { background: linear-gradient(135deg, #7B2CBF 0%, #6A23A8 100%); }
+        body.theme-school .hero-badge { background: rgba(123,44,191,0.3); border-color: rgba(123,44,191,0.6); }
+
+        body.theme-party .btn-hero-primary { background: #FF1493; }
+        body.theme-party .btn-hero-primary:hover { background: #E6127F; }
+        body.theme-party .overlay-nav a.active,
+        body.theme-party .overlay-nav a:hover,
+        body.theme-party .sibling-links a.active,
+        body.theme-party .sibling-links a:hover { background: #FF1493; border-color: #FF1493; }
+        body.theme-party .back-link,
+        body.theme-party .category-card-cta { color: #FF1493; }
+        body.theme-party .step-number { background: #FF1493; }
+        body.theme-party .overlay-info-bar { border-bottom-color: #FF1493; }
+        body.theme-party .info-item svg { color: #FF1493; }
+        body.theme-party .gallery-intro .section-tag,
+        body.theme-party .overlay-section-header .section-tag { color: #FF1493; }
+        body.theme-party .category-card:hover .category-card-body { border-color: #FF1493; }
+        body.theme-party .overlay-cta,
+        body.theme-party .custom-cta { background: linear-gradient(135deg, #FF1493 0%, #E6127F 100%); }
+        body.theme-party .hero-badge { background: rgba(255,20,147,0.3); border-color: rgba(255,20,147,0.6); }
+
+
+/* ── Overlay nav dropdown ── */
+.nav-has-dropdown { position: relative; }
+.nav-has-dropdown > a { cursor: pointer; }
+.nav-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--color-secondary);
+    min-width: 180px;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-md);
+    z-index: 100;
+    padding: 0.5rem 0;
+    list-style: none;
+}
+.nav-has-dropdown:hover .nav-dropdown { display: block; }
+.nav-dropdown li a {
+    display: block;
+    padding: 0.55rem 1.2rem;
+    color: rgba(255,255,255,0.8);
+    font-size: 0.9rem;
+    white-space: nowrap;
+    transition: background var(--transition-fast), color var(--transition-fast);
+}
+.nav-dropdown li a:hover {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+    </style>
+</head>
+<body>
+
+    <script>
+    // Apply event theme from URL parameter
+    // e.g. overlays.html?event=wedding
+    (function() {
+        const params = new URLSearchParams(window.location.search);
+        const event = params.get('event');
+        const validThemes = ['wedding', 'corporate', 'school', 'party'];
+        if (event && validThemes.includes(event)) {
+            document.body.classList.add('theme-' + event);
+            // Persist theme across overlay sub-pages via sessionStorage
+            sessionStorage.setItem('overlayTheme', event);
+        } else {
+            // Check if a theme was set from a previous overlay page visit
+            const stored = sessionStorage.getItem('overlayTheme');
+            if (stored && validThemes.includes(stored)) {
+                document.body.classList.add('theme-' + stored);
+            }
+        }
+    })();
+    </script>
+
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="/">
+                        <img src="images/footloose-logo.png" alt="Footloose Entertainment Logo" width="200" height="80">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="wedding-photobooth.html">Photobooth</a></li>
+                        <li><a href="overlays.html" class="active">Overlays</a></li>
+                    </ul>
+                </nav>
+                <div class="header-cta">
+                    <a href="tel:+19048548014" class="phone-link">(904) 854-8014</a>
+                    <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="overlays-hero">
+        <img src="images/overlays-hero.jpg" alt="Photobooth overlay designs for events in Jacksonville and St. Augustine" class="overlays-hero-bg" loading="eager">
+        <div class="container">
+            <div class="hero-badge">Photobooth Overlays & Designs</div>
+            <h1>Choose Your Overlay</h1>
+            <p>Browse our overlay gallery and find the perfect design for your event. Custom designs are always available — we'll create something uniquely yours.</p>
+            <a href="contact.html" class="btn-hero-primary">Request a Custom Design</a>
+        </div>
+    </section>
+
+    <!-- Intro bar -->
+    <div class="overlays-intro">
+        <div class="container">
+            <p>Every overlay can be <strong>fully customized</strong> with your names, date, logo, or colors. See something you love? Tell us at booking and we'll make it perfect. Not sure which booth you have? <a href="contact.html" style="color:var(--color-primary);font-weight:600;">Ask us!</a></p>
+        </div>
+    </div>
+
+    <!-- Category Nav -->
+    <nav class="overlay-nav" aria-label="Overlay categories">
+        <div class="container">
+            <a href="overlay-printed-strips.html">Printed Strips</a>
+            <a href="overlay-digital.html">Digital / 360</a>
+            <a href="overlay-4x6.html">4×6 Prints</a>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════
+         THREE CATEGORY CARDS
+    ══════════════════════════════════════════ -->
+    <section class="overlay-section">
+        <div class="container">
+            <div class="overlay-section-header">
+                <span class="section-tag">Browse by Booth Type</span>
+                <h2>Choose Your Overlay Gallery</h2>
+                <p>Select the booth type you have booked (or are interested in) to browse the full design gallery for that format.</p>
+            </div>
+
+            <div class="category-grid">
+
+                <!-- Printed Strips -->
+                <a href="overlay-printed-strips.html" class="category-card">
+                    <div class="category-card-visual">
+                        <img src="images/overlay-strips-preview.jpg" alt="Printed photo strip overlays" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;">
+                    </div>
+                    <div class="category-card-body">
+                        <h3>Printed Strips</h3>
+                        <p>Classic 2×6 photo strip footers for our open air photobooths. Guests walk away with a printed keepsake featuring your custom design.</p>
+                        <span class="category-card-cta">
+                            Browse Designs
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Digital / 360 -->
+                <a href="overlay-digital.html" class="category-card">
+                    <div class="category-card-visual">
+                        <img src="images/overlay-digital-preview.jpg" alt="Digital and 360 booth overlays" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;">
+                    </div>
+                    <div class="category-card-body">
+                        <h3>Digital &amp; 360</h3>
+                        <p>Full-frame overlays for our Digital Photobooths, 360 Video Booths, and Social Ring — delivered instantly to guests by text or email.</p>
+                        <span class="category-card-cta">
+                            Browse Designs
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- 4×6 -->
+                <a href="overlay-4x6.html" class="category-card">
+                    <div class="category-card-visual">
+                        <img src="images/overlay-4x6-preview.jpg" alt="4x6 print overlays" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;">
+                    </div>
+                    <div class="category-card-body">
+                        <h3>4×6 Prints</h3>
+                        <p>Larger format print overlays for our 4×6 photo print booths — available in portrait and landscape, with more room for your custom design to shine.</p>
+                        <span class="category-card-cta">
+                            Browse Designs
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+                        </span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="overlay-section-header">
+                <span class="section-tag">Simple Process</span>
+                <h2>How Overlays Work</h2>
+                <p>Getting your perfect custom overlay is easy.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Browse & Pick</h3>
+                    <p>Choose a design from this gallery that matches your event vibe.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Tell Us at Booking</h3>
+                    <p>Let your event coordinator know your choice when you book with us.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>We Customize It</h3>
+                    <p>We add your names, date, logo, or any details — at no extra charge.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Approve & Party</h3>
+                    <p>You approve a proof before your event. Then we handle everything on the night!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Design CTA -->
+    <section class="custom-cta">
+        <div class="container">
+            <h2>Don't See What You're Looking For?</h2>
+            <p>We create fully custom overlays from scratch. Share your colors, theme, or inspiration and our designers will build something one-of-a-kind for your event.</p>
+            <div class="custom-cta-buttons">
+                <a href="contact.html" class="btn btn-large btn-primary">Request a Custom Design</a>
+                <a href="tel:+19048548014" class="btn btn-large btn-outline-light">Call (904) 854-8014</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <img src="images/footloose-logo-white.png" alt="Footloose Entertainment" width="180" height="72">
+                    <p>Jacksonville and St. Augustine's premier event entertainment company since 1997.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/footlooseentertainment" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="https://instagram.com/footloosedjs" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Event Types</h4>
+                    <ul>
+                        <li><a href="corporate-events.html">Corporate Events</a></li>
+                        <li><a href="weddings.html">Weddings</a></li>
+                        <li><a href="school-events.html">School Events & Proms</a></li>
+                        <li><a href="private-parties.html">Private Parties</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="wedding-dj.html">DJ Services</a></li>
+                        <li><a href="wedding-photobooth.html">Photobooths</a></li>
+                        <li><a href="overlays.html">Overlay Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Footloose Entertainment. All rights reserved.</p>
+                <p>Serving Jacksonville, St. Augustine &amp; Northeast Florida since 1997</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox-overlay" id="lightbox" role="dialog" aria-modal="true" aria-label="Overlay preview">
+        <div class="lightbox-inner" id="lightbox-inner">
+            <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+            <div class="lightbox-preview" id="lightbox-preview"></div>
+            <div class="lightbox-body">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-desc"></p>
+                <a href="contact.html" class="btn btn-primary">I Love This — Get a Quote</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

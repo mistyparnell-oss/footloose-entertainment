@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Free Quote | Footloose Entertainment Jacksonville</title>
+    <meta name="description" content="Ready to book? Request a quote for DJ services, photobooths, and event entertainment in Jacksonville and St. Augustine. Footloose Entertainment has served Northeast Florida for 29 years.">
+    <meta name="keywords" content="contact Footloose Entertainment, book DJ Jacksonville, event entertainment quote, photobooth rental Jacksonville, DJ St Augustine quote">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Contact Footloose Entertainment | Get Your Free Quote">
+    <meta property="og:description" content="Ready to make your event unforgettable? Contact Footloose Entertainment for DJ services, photobooths, and more in Jacksonville and St. Augustine.">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ── Theme-aware accents on contact form ── */
+
+        /* Wedding */
+        body:has(.wedding-hero) .req { color: #e3b7b3; }
+        body:has(.wedding-hero) .field-group input:focus,
+        body:has(.wedding-hero) .field-group select:focus,
+        body:has(.wedding-hero) .field-group textarea:focus {
+            border-color: #e3b7b3;
+            box-shadow: 0 0 0 3px rgba(227,183,179,0.18);
+        }
+        body:has(.wedding-hero) .check-item input[type="checkbox"] { accent-color: #e3b7b3; }
+        body:has(.wedding-hero) .btn-submit { background: #e3b7b3; border-color: #e3b7b3; color: #1a1a1a; }
+        body:has(.wedding-hero) .btn-submit:hover { background: #d4a7a3; border-color: #d4a7a3; }
+        body:has(.wedding-hero) .tick { color: #e3b7b3; }
+        body:has(.wedding-hero) .direct-link:hover { color: #e3b7b3; }
+        body:has(.wedding-hero) .link-icon { color: #e3b7b3; }
+        body:has(.wedding-hero) .response-block strong { color: #e3b7b3; }
+        body:has(.wedding-hero) .trust-bar .trust-item strong { color: #e3b7b3; }
+
+        /* School */
+        body:has(.school-hero) .req { color: #7B2CBF; }
+        body:has(.school-hero) .field-group input:focus,
+        body:has(.school-hero) .field-group select:focus,
+        body:has(.school-hero) .field-group textarea:focus {
+            border-color: #7B2CBF;
+            box-shadow: 0 0 0 3px rgba(123,44,191,0.15);
+        }
+        body:has(.school-hero) .check-item input[type="checkbox"] { accent-color: #7B2CBF; }
+        body:has(.school-hero) .btn-submit { background: #7B2CBF; border-color: #7B2CBF; }
+        body:has(.school-hero) .btn-submit:hover { background: #6A23A8; border-color: #6A23A8; }
+        body:has(.school-hero) .tick { color: #7B2CBF; }
+        body:has(.school-hero) .direct-link:hover { color: #7B2CBF; }
+        body:has(.school-hero) .link-icon { color: #7B2CBF; }
+        body:has(.school-hero) .response-block strong { color: #c89fef; }
+        body:has(.school-hero) .trust-bar .trust-item strong { color: #7B2CBF; }
+
+        /* Private Party */
+        body:has(.private-hero) .req { color: #FF1493; }
+        body:has(.private-hero) .field-group input:focus,
+        body:has(.private-hero) .field-group select:focus,
+        body:has(.private-hero) .field-group textarea:focus {
+            border-color: #FF1493;
+            box-shadow: 0 0 0 3px rgba(255,20,147,0.15);
+        }
+        body:has(.private-hero) .check-item input[type="checkbox"] { accent-color: #FF1493; }
+        body:has(.private-hero) .btn-submit { background: #FF1493; border-color: #FF1493; }
+        body:has(.private-hero) .btn-submit:hover { background: #E6127F; border-color: #E6127F; }
+        body:has(.private-hero) .tick { color: #FF1493; }
+        body:has(.private-hero) .direct-link:hover { color: #FF1493; }
+        body:has(.private-hero) .link-icon { color: #FF1493; }
+        body:has(.private-hero) .response-block strong { color: #FF1493; }
+        body:has(.private-hero) .trust-bar .trust-item strong { color: #FF1493; }
+
+        /* ── Contact page styles — all using existing CSS variables ── */
+
+        .contact-form-section {
+            padding: var(--spacing-xl) 0;
+            background: var(--color-bg-light);
+        }
+
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1fr 360px;
+            gap: var(--spacing-lg);
+            align-items: start;
+        }
+
+        @media (max-width: 960px) {
+            .contact-layout { grid-template-columns: 1fr; }
+        }
+
+        /* Form Card */
+        .form-card {
+            background: var(--color-bg-white);
+            border-radius: var(--radius-md);
+            padding: var(--spacing-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .form-card h2 {
+            font-size: 2.5rem;
+            color: var(--color-secondary);
+            margin-bottom: 0.25rem;
+        }
+
+        .form-card .form-intro {
+            font-size: 1rem;
+            color: var(--color-text-light);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .req { color: var(--color-primary); }
+
+        /* Fields */
+        .field-group { margin-bottom: var(--spacing-sm); }
+
+        .field-group label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.875rem;
+            color: var(--color-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 6px;
+        }
+
+        .field-group input[type="text"],
+        .field-group input[type="tel"],
+        .field-group select,
+        .field-group textarea {
+            width: 100%;
+            padding: 10px 14px;
+            border: 2px solid #E8E8E8;
+            border-radius: var(--radius-sm);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            color: var(--color-text-dark);
+            background: var(--color-bg-white);
+            transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+            box-sizing: border-box;
+        }
+
+        .field-group input:focus,
+        .field-group select:focus,
+        .field-group textarea:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(128, 0, 32, 0.1);
+        }
+
+        .field-group textarea { resize: vertical; min-height: 110px; }
+
+        .date-fields {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 10px;
+        }
+
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-sm);
+        }
+
+        @media (max-width: 600px) {
+            .date-fields,
+            .two-col { grid-template-columns: 1fr; }
+        }
+
+        .form-rule {
+            border: none;
+            border-top: 1px solid #E8E8E8;
+            margin: var(--spacing-md) 0;
+        }
+
+        /* Unlisted venue */
+        .venue-unlisted {
+            background: var(--color-bg-light);
+            border: 2px dashed #D0D0D0;
+            border-radius: var(--radius-sm);
+            padding: var(--spacing-sm);
+            margin-top: 10px;
+        }
+
+        .venue-unlisted > p {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--color-text-light);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 12px;
+        }
+
+        /* Checkboxes */
+        .checkbox-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px 20px;
+            margin-top: 8px;
+        }
+
+        @media (max-width: 480px) { .checkbox-grid { grid-template-columns: 1fr; } }
+
+        .check-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            color: var(--color-text-light);
+        }
+
+        .check-item input[type="checkbox"] {
+            width: 17px;
+            height: 17px;
+            accent-color: var(--color-primary);
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        /* Submit button — uses existing .btn styles + display:block */
+        .btn-submit {
+            display: block;
+            width: 100%;
+            padding: 1.25rem;
+            background: var(--color-primary);
+            color: var(--color-text-white);
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            border: 2px solid var(--color-primary);
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            margin-top: var(--spacing-md);
+            transition: all var(--transition-normal);
+            text-align: center;
+        }
+
+        .btn-submit:hover {
+            background: var(--color-primary-dark);
+            border-color: var(--color-primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Sidebar */
+        .contact-sidebar { display: flex; flex-direction: column; gap: var(--spacing-md); }
+
+        .sidebar-block {
+            background: var(--color-bg-white);
+            border-radius: var(--radius-md);
+            padding: var(--spacing-md);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .sidebar-block h3 {
+            font-size: 1.75rem;
+            color: var(--color-secondary);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .sidebar-block p {
+            font-size: 0.95rem;
+            color: var(--color-text-light);
+            line-height: 1.6;
+            margin-bottom: 0.5rem;
+        }
+
+        .direct-link {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 0;
+            border-bottom: 1px solid #F0F0F0;
+            color: var(--color-secondary);
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: color var(--transition-fast);
+        }
+
+        .direct-link:last-child { border-bottom: none; }
+        .direct-link:hover { color: var(--color-primary); }
+
+        .link-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--color-bg-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-primary);
+            flex-shrink: 0;
+        }
+
+        .check-list { list-style: none; padding: 0; margin: 0; }
+
+        .check-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 8px 0;
+            font-size: 0.95rem;
+            color: var(--color-text-light);
+            line-height: 1.4;
+            border-bottom: 1px solid #F5F5F5;
+        }
+
+        .check-list li:last-child { border-bottom: none; }
+
+        .tick { color: var(--color-primary); flex-shrink: 0; margin-top: 1px; }
+
+        /* Dark response block matches why-choose section */
+        .response-block {
+            background: linear-gradient(135deg, var(--color-secondary) 0%, #0F2137 100%);
+            color: var(--color-text-white);
+            border-radius: var(--radius-md);
+            padding: var(--spacing-md);
+            text-align: center;
+        }
+
+        .response-block strong {
+            display: block;
+            font-family: var(--font-display);
+            font-size: 2rem;
+            letter-spacing: 1px;
+            color: var(--color-gold);
+            margin-bottom: 8px;
+        }
+
+        .response-block p {
+            color: rgba(255,255,255,0.85);
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="/">
+                        <img src="images/footloose-logo.png" alt="Footloose Entertainment Logo" width="200" height="80">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/corporate-events">Corporate</a></li>
+                        <li><a href="/weddings">Weddings</a></li>
+                        <li><a href="/school-events">School Events</a></li>
+                        <li><a href="/private-parties">Private Parties</a></li>
+                    </ul>
+                </nav>
+                <div class="header-cta">
+                    <a href="tel:+19048548014" class="phone-link">(904) 854-8014</a>
+                    <a href="/contact" class="btn btn-primary">Get Quote</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero — content injected by JS based on ?type= param -->
+    <section class="page-hero" id="page-hero">
+        <div class="page-hero-background">
+            <img id="hero-img" src="images/contact-hero.jpg" alt="Footloose Entertainment event entertainment" loading="eager">
+            <div class="page-hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="page-hero-content">
+                <div class="hero-badge" id="hero-badge">Get In Touch</div>
+                <h1 id="hero-headline">Check Your Date &amp; Get a Free Quote</h1>
+                <p class="page-hero-subtitle" id="hero-subtitle">We are thrilled you are ready to talk! Fill out the form below or call us at (904) 854-8014 &mdash; we respond fast.</p>
+                <div class="page-hero-buttons">
+                    <a href="#quote-form" class="btn btn-hero-primary">Fill Out the Form</a>
+                    <a href="tel:+19048548014" class="btn btn-hero-secondary">Call Us Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-items">
+                <div class="trust-item">
+                    <strong>29 Years</strong>
+                    <span>Serving Northeast Florida</span>
+                </div>
+                <div class="trust-item">
+                    <strong>Fast Response</strong>
+                    <span>Usually Same Business Day</span>
+                </div>
+                <div class="trust-item">
+                    <strong>Fully Insured</strong>
+                    <span>Licensed &amp; Professional</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section" id="quote-form">
+        <div class="container">
+            <div class="contact-layout">
+
+                <!-- FORM -->
+                <div class="form-card">
+                    <h2>Tell Us About Your Event</h2>
+                    <p class="form-intro">Fill in the details below and we'll check availability and send you a custom quote. Fields marked <span class="req">*</span> are required.</p>
+
+                    <script src='https://footloosedjs.us/check_req_info_form.js' language='javascript' type='text/javascript'></script>
+
+                    <form method="post" action="https://footloosedjs.us/request_information.asp" onSubmit="return submitIt(this);" name="reqinfoform">
+                        <input type="hidden" name="checkdate" value="">
+                        <input type="hidden" name="djidnumber" value="22278">
+                        <input type="hidden" name="action" value="add_information_request">
+
+                        <!-- Date of Event -->
+                        <div class="field-group">
+                            <label>Date of Event <span class="req">*</span></label>
+                            <div class="date-fields">
+                                <select name="month">
+                                    <option value="43">Month</option>
+                                    <option value="1">January</option><option value="2">February</option>
+                                    <option value="3">March</option><option value="4">April</option>
+                                    <option value="5">May</option><option value="6">June</option>
+                                    <option value="7">July</option><option value="8">August</option>
+                                    <option value="9">September</option><option value="10">October</option>
+                                    <option value="11">November</option><option value="12">December</option>
+                                </select>
+                                <select name="day">
+                                    <option value="43">Day</option>
+                                    <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>
+                                    <option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+                                    <option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option>
+                                    <option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option>
+                                    <option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option>
+                                    <option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                                <select name="year">
+                                    <option value="43">Year</option>
+                                    <option value="2025">2025</option><option value="2026" selected>2026</option>
+                                    <option value="2027">2027</option><option value="2028">2028</option>
+                                    <option value="2029">2029</option><option value="2030">2030</option>
+                                    <option value="2031">2031</option><option value="2032">2032</option>
+                                    <option value="2033">2033</option><option value="2034">2034</option>
+                                    <option value="2035">2035</option><option value="2036">2036</option>
+                                    <option value="2037">2037</option><option value="2038">2038</option>
+                                    <option value="2039">2039</option><option value="2040">2040</option>
+                                    <option value="2041">2041</option><option value="2042">2042</option>
+                                    <option value="2043">2043</option><option value="2044">2044</option>
+                                    <option value="2045">2045</option><option value="2046">2046</option>
+                                    <option value="2047">2047</option><option value="2048">2048</option>
+                                    <option value="2049">2049</option><option value="2050">2050</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Name -->
+                        <div class="two-col">
+                            <div class="field-group">
+                                <label for="first_name">First Name <span class="req">*</span></label>
+                                <input type="text" id="first_name" name="first_name">
+                            </div>
+                            <div class="field-group">
+                                <label for="last_name">Last Name <span class="req">*</span></label>
+                                <input type="text" id="last_name" name="last_name">
+                            </div>
+                        </div>
+
+                        <!-- Contact -->
+                        <div class="two-col">
+                            <div class="field-group">
+                                <label for="email">Email Address <span class="req">*</span></label>
+                                <input type="text" id="email" name="email">
+                            </div>
+                            <div class="field-group">
+                                <label for="telephone">Cell Phone</label>
+                                <input type="tel" id="telephone" name="telephone">
+                            </div>
+                        </div>
+
+                        <div class="field-group">
+                            <label for="best_time">Best Time to Reach You</label>
+                            <input type="text" id="best_time" name="best_time" placeholder="e.g. Weekday evenings after 6pm">
+                        </div>
+
+                        <!-- Event Times -->
+                        <div class="two-col">
+                            <div class="field-group">
+                                <label>Start Time</label>
+                                <select name="req_start_time">
+                                    <option value="" selected>Select...</option>
+                                    <option value="12:00 pm">Noon</option><option value="12:30 pm">12:30 pm</option>
+                                    <option value="1:00 pm">1:00 pm</option><option value="1:30 pm">1:30 pm</option>
+                                    <option value="2:00 pm">2:00 pm</option><option value="2:30 pm">2:30 pm</option>
+                                    <option value="3:00 pm">3:00 pm</option><option value="3:30 pm">3:30 pm</option>
+                                    <option value="4:00 pm">4:00 pm</option><option value="4:30 pm">4:30 pm</option>
+                                    <option value="5:00 pm">5:00 pm</option><option value="5:30 pm">5:30 pm</option>
+                                    <option value="6:00 pm">6:00 pm</option><option value="6:30 pm">6:30 pm</option>
+                                    <option value="7:00 pm">7:00 pm</option><option value="7:30 pm">7:30 pm</option>
+                                    <option value="8:00 pm">8:00 pm</option><option value="8:30 pm">8:30 pm</option>
+                                    <option value="9:00 pm">9:00 pm</option><option value="9:30 pm">9:30 pm</option>
+                                    <option value="10:00 pm">10:00 pm</option><option value="10:30 pm">10:30 pm</option>
+                                    <option value="11:00 pm">11:00 pm</option><option value="11:30 pm">11:30 pm</option>
+                                    <option value="12:00 am">Midnight</option><option value="12:30 am">12:30 am</option>
+                                    <option value="1:00 am">1:00 am</option><option value="1:30 am">1:30 am</option>
+                                    <option value="2:00 am">2:00 am</option><option value="2:30 am">2:30 am</option>
+                                    <option value="6:00 am">6:00 am</option><option value="6:30 am">6:30 am</option>
+                                    <option value="7:00 am">7:00 am</option><option value="7:30 am">7:30 am</option>
+                                    <option value="8:00 am">8:00 am</option><option value="8:30 am">8:30 am</option>
+                                    <option value="9:00 am">9:00 am</option><option value="9:30 am">9:30 am</option>
+                                    <option value="10:00 am">10:00 am</option><option value="10:30 am">10:30 am</option>
+                                    <option value="11:00 am">11:00 am</option><option value="11:30 am">11:30 am</option>
+                                </select>
+                            </div>
+                            <div class="field-group">
+                                <label>End Time</label>
+                                <select name="req_end_time">
+                                    <option value="" selected>Select...</option>
+                                    <option value="12:00 pm">Noon</option><option value="12:30 pm">12:30 pm</option>
+                                    <option value="1:00 pm">1:00 pm</option><option value="1:30 pm">1:30 pm</option>
+                                    <option value="2:00 pm">2:00 pm</option><option value="2:30 pm">2:30 pm</option>
+                                    <option value="3:00 pm">3:00 pm</option><option value="3:30 pm">3:30 pm</option>
+                                    <option value="4:00 pm">4:00 pm</option><option value="4:30 pm">4:30 pm</option>
+                                    <option value="5:00 pm">5:00 pm</option><option value="5:30 pm">5:30 pm</option>
+                                    <option value="6:00 pm">6:00 pm</option><option value="6:30 pm">6:30 pm</option>
+                                    <option value="7:00 pm">7:00 pm</option><option value="7:30 pm">7:30 pm</option>
+                                    <option value="8:00 pm">8:00 pm</option><option value="8:30 pm">8:30 pm</option>
+                                    <option value="9:00 pm">9:00 pm</option><option value="9:30 pm">9:30 pm</option>
+                                    <option value="10:00 pm">10:00 pm</option><option value="10:30 pm">10:30 pm</option>
+                                    <option value="11:00 pm">11:00 pm</option><option value="11:30 pm">11:30 pm</option>
+                                    <option value="12:00 am">Midnight</option><option value="12:30 am">12:30 am</option>
+                                    <option value="1:00 am">1:00 am</option><option value="1:30 am">1:30 am</option>
+                                    <option value="2:00 am">2:00 am</option><option value="2:30 am">2:30 am</option>
+                                    <option value="6:00 am">6:00 am</option><option value="6:30 am">6:30 am</option>
+                                    <option value="7:00 am">7:00 am</option><option value="7:30 am">7:30 am</option>
+                                    <option value="8:00 am">8:00 am</option><option value="8:30 am">8:30 am</option>
+                                    <option value="9:00 am">9:00 am</option><option value="9:30 am">9:30 am</option>
+                                    <option value="10:00 am">10:00 am</option><option value="10:30 am">10:30 am</option>
+                                    <option value="11:00 am">11:00 am</option><option value="11:30 am">11:30 am</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <hr class="form-rule">
+
+                        <!-- Venue -->
+                        <div class="field-group">
+                            <label>Event Location (Venue)</label>
+                            <select name="event_location_id">
+                                <option value="0">Please Select A Venue...</option>
+                                <option value="327020">A1A Ale Works/Bayview Room</option>
+                                <option value="327630">All For One Farms</option>
+                                <option value="326907">Amelia Island Plantation - Amelia Island, FL</option>
+                                <option value="327719">Assembly Room - Saint Augustine, FL</option>
+                                <option value="327580">Atlantic Beach Country Club</option>
+                                <option value="327809">Azaleana Manor - Orange Park, FL</option>
+                                <option value="327615">Barn at Cottonwood Ranch in Callahan</option>
+                                <option value="327366">Beaches Museum</option>
+                                <option value="326908">Bowing Oaks Plantation - Jacksonville, FL</option>
+                                <option value="326909">Casa Marina Hotel - Jacksonville, FL</option>
+                                <option value="326910">Casa Monica Hotel - St Augustine, FL</option>
+                                <option value="326911">Chandler Oaks Barn - Jacksonville, FL</option>
+                                <option value="327642">Clay Theatre</option>
+                                <option value="326912">Club Continental - Orange Park, FL</option>
+                                <option value="327172">Courtyard by Marriott Oceanfront</option>
+                                <option value="327059">Cummer Museum</option>
+                                <option value="327669">Daily's Place TIAA Bank Field</option>
+                                <option value="326914">Deercreek Country Club - Jacksonville, FL</option>
+                                <option value="326915">Deerwood Country Club - Jacksonville, FL</option>
+                                <option value="327693">Eagle Harbor Waterfront Pool - Fleming Island, FL</option>
+                                <option value="327638">Embassy Suites Hotel St Augustine Beach</option>
+                                <option value="326916">Epping Forest Yacht Club - Jacksonville, FL</option>
+                                <option value="327726">Ever After Farms Vineyard Barn - Pomona Park, FL</option>
+                                <option value="327967">Everbank Stadium Bud Zone</option>
+                                <option value="327963">Everbank Stadium Lower East Club</option>
+                                <option value="327958">Everbank Stadium Upper West Club</option>
+                                <option value="327665">Fleming Island Banquet Hall - Fleming Island, FL</option>
+                                <option value="326917">Florida Yacht Club - Jacksonville, FL</option>
+                                <option value="327509">Glass Factory</option>
+                                <option value="327266">Hammock Beach - FL</option>
+                                <option value="327184">Hammock Dunes</option>
+                                <option value="327321">Hillard Mansion</option>
+                                <option value="326957">Hilltop Club</option>
+                                <option value="327035">Hilton Historic Riverfront</option>
+                                <option value="327830">Hyatt Regency River Deck</option>
+                                <option value="327227">Hyatt Riverfront</option>
+                                <option value="327025">Jacksonville Golf &amp; Country Club</option>
+                                <option value="327631">Jacksonville Main Library</option>
+                                <option value="327628">Jacksonville Zoo and Gardens</option>
+                                <option value="327137">Jekyll Island Convention Center</option>
+                                <option value="327306">Keeler Property</option>
+                                <option value="327764">Kelly Farm Events - Saint Augustine, FL</option>
+                                <option value="327651">La Venture Grove</option>
+                                <option value="327346">Laytn Land-n</option>
+                                <option value="327409">Lexington Hotel &amp; Conference Center</option>
+                                <option value="326929">Manor at 12 Oaks - Green Cove Springs, FL</option>
+                                <option value="327215">Marineland</option>
+                                <option value="327199">Marriott Southpoint</option>
+                                <option value="327000">Marsh Creek Country Club</option>
+                                <option value="327129">Marsh Landing</option>
+                                <option value="327607">Marywood Retreat Center</option>
+                                <option value="327888">MOCA (Museum of Contemporary Art) - Jacksonville, FL</option>
+                                <option value="327559">Nocatee Crosswater Hall</option>
+                                <option value="327814">Ocean Breeze Conference Center - Jacksonville, FL</option>
+                                <option value="327839">Ocean Club Amelia Island - Fernandina Beach, FL</option>
+                                <option value="327308">Omni Amelia Island</option>
+                                <option value="327196">Omni Jacksonville Hotel</option>
+                                <option value="326919">Palencia Club - St Augustine, FL</option>
+                                <option value="327667">Parlor Room Events - St Augustine, FL</option>
+                                <option value="327365">Plantation Oaks Farm</option>
+                                <option value="326920">Ponte Vedra Inn &amp; Club - Ponte Vedra, FL</option>
+                                <option value="326921">Ponte Vedra Lodge and Club - Ponte Vedra, FL</option>
+                                <option value="327150">Private Residence</option>
+                                <option value="327460">Ramallah Club</option>
+                                <option value="327051">Renaissance World Golf Village</option>
+                                <option value="327061">Ribault Club</option>
+                                <option value="327263">Ritz Carlton of Amelia Island</option>
+                                <option value="326925">River Club - Jacksonville, FL</option>
+                                <option value="326924">River House - St Augustine, FL</option>
+                                <option value="327984">Sala Menendez Room - Saint Augustine, FL</option>
+                                <option value="326926">San Jose Country Club - Jacksonville, FL</option>
+                                <option value="327262">Sawgrass Country Club</option>
+                                <option value="326927">Sawgrass Marriott - Ponte Vedra, FL</option>
+                                <option value="327008">Serenata Beach Club</option>
+                                <option value="327164">St. Johns Golf and Country Club</option>
+                                <option value="327964">Terrace Suites Everbank Stadium</option>
+                                <option value="327961">The Amelia Island Ocean Clubhouse - Fernandina Beach, FL</option>
+                                <option value="327634">The Barn at Cottonwood Ranch</option>
+                                <option value="327720">The Carriage House - Saint Augustine, FL</option>
+                                <option value="327989">Thrasher-Horne Center</option>
+                                <option value="327181">To Be Determined</option>
+                                <option value="327962">Top Golf</option>
+                                <option value="327193">TPC Clubhouse</option>
+                                <option value="327378">Treasury On the Plaza</option>
+                                <option value="327574">Tringali Barn</option>
+                                <option value="327368">Tuckers Farm House</option>
+                                <option value="327644">Tuscan Rose Vineyards</option>
+                                <option value="327954">Venue 841 - Jacksonville, FL</option>
+                                <option value="327797">Villa Blanca at The White Room - St. Augustine, FL</option>
+                                <option value="327289">Walkers Landing Amelia Island</option>
+                                <option value="326930">White Room - St Augustine, FL</option>
+                                <option value="327114">Winterborne</option>
+                            </select>
+
+                            <div class="venue-unlisted">
+                                <p>Venue not listed above? Fill in the details here:</p>
+                                <div class="two-col">
+                                    <div class="field-group" style="margin-bottom:0;">
+                                        <label for="event_location_name">Venue Name</label>
+                                        <input type="text" id="event_location_name" name="event_location_name" maxlength="50">
+                                    </div>
+                                    <div class="field-group" style="margin-bottom:0;">
+                                        <label for="event_location_city">City</label>
+                                        <input type="text" id="event_location_city" name="event_location_city" maxlength="50">
+                                    </div>
+                                </div>
+                                <div class="field-group" style="margin-top:var(--spacing-sm);margin-bottom:0;">
+                                    <label>State</label>
+                                    <select name="event_location_state">
+                                        <option value="">Select...</option>
+                                        <option value="AL">Alabama</option><option value="AK">Alaska</option>
+                                        <option value="AZ">Arizona</option><option value="AR">Arkansas</option>
+                                        <option value="CA">California</option><option value="CO">Colorado</option>
+                                        <option value="CT">Connecticut</option><option value="DE">Delaware</option>
+                                        <option value="DC">District of Columbia</option>
+                                        <option value="FL" selected>Florida</option>
+                                        <option value="GA">Georgia</option><option value="HI">Hawaii</option>
+                                        <option value="ID">Idaho</option><option value="IL">Illinois</option>
+                                        <option value="IN">Indiana</option><option value="IA">Iowa</option>
+                                        <option value="KS">Kansas</option><option value="KY">Kentucky</option>
+                                        <option value="LA">Louisiana</option><option value="ME">Maine</option>
+                                        <option value="MD">Maryland</option><option value="MA">Massachusetts</option>
+                                        <option value="MI">Michigan</option><option value="MN">Minnesota</option>
+                                        <option value="MS">Mississippi</option><option value="MO">Missouri</option>
+                                        <option value="MT">Montana</option><option value="NE">Nebraska</option>
+                                        <option value="NV">Nevada</option><option value="NH">New Hampshire</option>
+                                        <option value="NJ">New Jersey</option><option value="NM">New Mexico</option>
+                                        <option value="NY">New York</option><option value="NC">North Carolina</option>
+                                        <option value="ND">North Dakota</option><option value="OH">Ohio</option>
+                                        <option value="OK">Oklahoma</option><option value="OR">Oregon</option>
+                                        <option value="PA">Pennsylvania</option><option value="RI">Rhode Island</option>
+                                        <option value="SC">South Carolina</option><option value="SD">South Dakota</option>
+                                        <option value="TN">Tennessee</option><option value="TX">Texas</option>
+                                        <option value="UT">Utah</option><option value="VT">Vermont</option>
+                                        <option value="VA">Virginia</option><option value="WA">Washington</option>
+                                        <option value="WV">West Virginia</option><option value="WI">Wisconsin</option>
+                                        <option value="WY">Wyoming</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="form-rule">
+
+                        <!-- Event Type -->
+                        <div class="field-group">
+                            <label>Type of Event <span class="req">*</span></label>
+                            <select name="event_type">
+                                <option value="">Please select...</option>
+                                <option>Wedding</option>
+                                <option>Party/Celebration</option>
+                                <option>Corporate Event</option>
+                            </select>
+                        </div>
+
+                        <!-- Services -->
+                        <div class="field-group">
+                            <label>Which Options Are You Interested In? <span class="req">*</span></label>
+                            <input type="hidden" id="q1_required" name="q1_required" value="TRUE">
+                            <input type="hidden" name="q1_mapto" value="comments">
+                            <div class="checkbox-grid">
+                                <label class="check-item"><input type="checkbox" name="question_1" value="DJ"> DJ</label>
+                                <label class="check-item"><input type="checkbox" name="question_1" value="Photobooth"> Photobooth</label>
+                                <label class="check-item"><input type="checkbox" name="question_1" value="Audio guestbook"> Audio Guestbook</label>
+                                <label class="check-item"><input type="checkbox" name="question_1" value="Monogram"> Monogram</label>
+                                <label class="check-item"><input type="checkbox" name="question_1" value="Mystic Bubbles"> Mystic Bubbles</label>
+                                <label class="check-item"><input type="checkbox" name="question_1" value="Cold Sparks"> Cold Sparks</label>
+                                <label class="check-item"><input type="checkbox" name="question_1" value="Dancing on Clouds"> Dancing on Clouds</label>
+                                <label class="check-item"><input type="checkbox" name="question_1" value="Co2 blasts"> CO2 Blasts</label>
+                                <label class="check-item"><input type="checkbox" name="question_1" value="Uplighting"> Uplighting</label>
+                                <label class="check-item"><input type="checkbox" name="question_1" value="Party Enhancements"> Party Enhancements</label>
+                                <label class="check-item"><input type="checkbox" name="question_1" value="Video DJ booth"> Video DJ Booth</label>
+                                <label class="check-item"><input type="checkbox" name="question_1" value="Video Screens"> Video Screens</label>
+                                <label class="check-item"><input type="checkbox" name="question_1" value="Snow Dance"> Snow Dance</label>
+                                <label class="check-item"><input type="checkbox" name="question_1" value="Neon Sign"> Neon Sign</label>
+                                <label class="check-item"><input type="checkbox" name="question_1" value="Flower Walls"> Flower Walls</label>
+                                <label class="check-item"><input type="checkbox" name="question_1" value="Video"> Video</label>
+                            </div>
+                        </div>
+
+                        <!-- Additional Info -->
+                        <div class="field-group">
+                            <label for="additional_information">Additional Questions or Event Details</label>
+                            <textarea id="additional_information" name="additional_information" placeholder="Tell us about your vision, guest count, or anything else we should know..."></textarea>
+                        </div>
+
+                        <!-- Source -->
+                        <div class="field-group">
+                            <label for="req_source">How Did You Hear About Us?</label>
+                            <input type="text" id="req_source" name="req_source" maxlength="50" placeholder="e.g. Google, a friend, Instagram...">
+                        </div>
+
+                        <input type="submit" name="submit" value="Check My Date &amp; Get a Quote" class="btn-submit">
+
+                    </form>
+                </div>
+
+                <!-- SIDEBAR -->
+                <aside class="contact-sidebar">
+
+                    <div class="response-block">
+                        <strong>Fast Response</strong>
+                        <p>We typically reply within a few hours during business hours. For immediate help, give us a call.</p>
+                    </div>
+
+                    <div class="sidebar-block">
+                        <h3>Reach Us Directly</h3>
+                        <a href="tel:+19048548014" class="direct-link">
+                            <span class="link-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 5.97 5.97l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            </span>
+                            (904) 854-8014
+                        </a>
+                        <a href="mailto:info@footlooseentertainment.com" class="direct-link">
+                            <span class="link-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,12 2,6"></polyline></svg>
+                            </span>
+                            info@footlooseentertainment.com
+                        </a>
+                        <a href="https://www.facebook.com/footlooseentertainment" target="_blank" rel="noopener" class="direct-link">
+                            <span class="link-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                            </span>
+                            Facebook
+                        </a>
+                        <a href="https://instagram.com/footloosedjs" target="_blank" rel="noopener" class="direct-link">
+                            <span class="link-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="white"></path></svg>
+                            </span>
+                            @footloosedjs
+                        </a>
+                    </div>
+
+                    <div class="sidebar-block">
+                        <h3>Why Footloose?</h3>
+                        <ul class="check-list">
+                            <li><span class="tick">&#10003;</span> 29 years serving Jacksonville &amp; St. Augustine</li>
+                            <li><span class="tick">&#10003;</span> Full-service DJ, photobooth &amp; entertainment packages</li>
+                            <li><span class="tick">&#10003;</span> Professional, insured, and experienced team</li>
+                            <li><span class="tick">&#10003;</span> 80+ trusted local venues on our preferred list</li>
+                            <li><span class="tick">&#10003;</span> Customized packages for every budget</li>
+                            <li><span class="tick">&#10003;</span> Transparent pricing &mdash; no hidden fees</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-block">
+                        <h3>Service Areas</h3>
+                        <p>Jacksonville &bull; St. Augustine &bull; Orange Park &bull; Ponte Vedra &bull; Fleming Island &bull; Fernandina Beach &bull; Amelia Island &bull; Green Cove Springs &bull; Daytona Beach &bull; And beyond</p>
+                    </div>
+
+                </aside>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Make Your Event Unforgettable?</h2>
+                <p>Fill out the form above or call us directly. We'll get back to you fast with availability and a custom quote.</p>
+                <div class="cta-buttons">
+                    <a href="#quote-form" class="btn btn-large btn-outline-light">Back to the Form</a>
+                    <a href="tel:+19048548014" class="btn btn-large btn-secondary">Call (904) 854-8014</a>
+                </div>
+                <p class="cta-note">Flexible payment terms &bull; Fully insured</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <img src="images/footloose-logo-white.png" alt="Footloose Entertainment" width="180" height="72">
+                    <p>Jacksonville and St. Augustine's premier event entertainment company since 1997.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/footlooseentertainment" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="https://instagram.com/footloosedjs" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Event Types</h4>
+                    <ul>
+                        <li><a href="/corporate-events">Corporate Events</a></li>
+                        <li><a href="/weddings">Weddings &amp; Celebrations</a></li>
+                        <li><a href="/school-events">School Events &amp; Proms</a></li>
+                        <li><a href="/private-parties">Private Parties</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="/corporate-dj">DJ Services</a></li>
+                        <li><a href="/corporate-photobooth">Photobooths</a></li>
+                        <li><a href="/wedding-360-booth">360 Video Booth</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Footloose Entertainment. All rights reserved.</p>
+                <p>Serving Jacksonville, St. Augustine &amp; Northeast Florida since 1997</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+    (function() {
+        // ── Event type configuration ──
+        var themes = {
+            wedding: {
+                heroClass:  'wedding-hero',
+                img:        'images/wedding-hero.jpg',
+                imgAlt:     'Elegant wedding reception with DJ and lighting at a Jacksonville venue',
+                badge:      'Wedding Quote',
+                headline:   'Let\u2019s Make Your Wedding Day Unforgettable',
+                subtitle:   'From your first dance to the last song of the night, we\u2019ll bring your vision to life. Fill out the form below and we\u2019ll check availability and send you a custom quote.',
+                eventType:  'Wedding',
+                formTitle:  'Tell Us About Your Wedding',
+                trustItems: ['1,000+ Weddings Celebrated', 'First Dance to Last Song', 'Ceremony \u2022 Cocktail \u2022 Reception'],
+                whyItems:   [
+                    '29 years creating unforgettable wedding memories',
+                    'Ceremony, cocktail hour & reception expertise',
+                    'Stunning uplighting, photobooths & special effects',
+                    'Your personal DJ who listens to your vision',
+                    'Fully insured \u2014 required by most venues',
+                    'Transparent pricing \u2014 no hidden fees'
+                ]
+            },
+            corporate: {
+                heroClass:  'corporate-hero',
+                img:        'images/corporate-event-hero.jpg',
+                imgAlt:     'Professional corporate event with DJ and lighting in Jacksonville',
+                badge:      'Corporate Quote',
+                headline:   'Professional Entertainment for Your Corporate Event',
+                subtitle:   'From holiday parties to product launches, we deliver polished entertainment that impresses clients and energizes employees. Fill out the form and we\u2019ll get back to you fast.',
+                eventType:  'Corporate Event',
+                formTitle:  'Tell Us About Your Corporate Event',
+                trustItems: ['Fortune 500 Clients Served', 'COI Available on Request', 'Professional MC Services'],
+                whyItems:   [
+                    '29 years serving Northeast Florida businesses',
+                    'Professional DJs who understand corporate environments',
+                    'Branded photobooth options for marketing impact',
+                    'COI provided \u2014 we meet venue requirements',
+                    'Flexible invoicing and payment options',
+                    'Transparent pricing \u2014 no hidden fees'
+                ]
+            },
+            school: {
+                heroClass:  'school-hero',
+                img:        'images/school-event-hero.jpg',
+                imgAlt:     'High school prom with professional DJ and lighting in Jacksonville',
+                badge:      'School Event Quote',
+                headline:   'Create a Night Your Students Will Never Forget',
+                subtitle:   'Proms, homecomings, graduations, and beyond \u2014 we bring the energy, the lights, and the music that makes school events legendary. Fill out the form to check your date.',
+                eventType:  'Party/Celebration',
+                formTitle:  'Tell Us About Your School Event',
+                trustItems: ['500+ School Events', 'Chaperonne-Friendly Setup', 'Safe & School-Appropriate'],
+                whyItems:   [
+                    '29 years creating legendary school events',
+                    'Prom, homecoming, graduation & dance specialists',
+                    '360 photobooths & special effects that wow students',
+                    'School-appropriate playlists \u2014 parent approved',
+                    'Fully insured \u2014 required by all school districts',
+                    'Transparent pricing \u2014 no hidden fees'
+                ]
+            },
+            private: {
+                heroClass:  'private-hero',
+                img:        'images/private-party-hero.jpg',
+                imgAlt:     'Fun private party with DJ and guests celebrating in Jacksonville',
+                badge:      'Party Quote',
+                headline:   'Let\u2019s Throw the Party Everyone Talks About',
+                subtitle:   'Birthdays, anniversaries, holiday parties, and everything in between \u2014 we bring the DJ, the photobooth, and the vibes. Fill out the form and let\u2019s plan something amazing.',
+                eventType:  'Party/Celebration',
+                formTitle:  'Tell Us About Your Party',
+                trustItems: ['Any Size, Any Vibe', 'Backyard to Ballroom', 'Custom Playlists & Packages'],
+                whyItems:   [
+                    '29 years making Jacksonville parties legendary',
+                    'Birthdays, anniversaries, holiday parties & more',
+                    'Fun photobooths & special effects everyone loves',
+                    'Custom playlists built around your music taste',
+                    'Packages for every budget \u2014 big or small',
+                    'Transparent pricing \u2014 no hidden fees'
+                ]
+            }
+        };
+
+        // ── Read URL param ──
+        var params  = new URLSearchParams(window.location.search);
+        var type    = (params.get('type') || '').toLowerCase();
+        var theme   = themes[type] || null;
+
+        // ── Apply theme ──
+        if (theme) {
+            // Hero class
+            var hero = document.getElementById('page-hero');
+            if (hero) hero.className = 'page-hero ' + theme.heroClass;
+
+            // Hero image
+            var img = document.getElementById('hero-img');
+            if (img) { img.src = theme.img; img.alt = theme.imgAlt; }
+
+            // Hero text
+            var badge    = document.getElementById('hero-badge');
+            var headline = document.getElementById('hero-headline');
+            var subtitle = document.getElementById('hero-subtitle');
+            if (badge)    badge.textContent    = theme.badge;
+            if (headline) headline.textContent = theme.headline;
+            if (subtitle) subtitle.textContent = theme.subtitle;
+
+            // Form title
+            var formTitle = document.querySelector('.form-card h2');
+            if (formTitle) formTitle.textContent = theme.formTitle;
+
+            // Pre-select event type in dropdown
+            var evtSelect = document.querySelector('select[name="event_type"]');
+            if (evtSelect) {
+                for (var i = 0; i < evtSelect.options.length; i++) {
+                    if (evtSelect.options[i].value === theme.eventType ||
+                        evtSelect.options[i].text  === theme.eventType) {
+                        evtSelect.selectedIndex = i;
+                        break;
+                    }
+                }
+            }
+
+            // Trust bar items
+            var trustSpans = document.querySelectorAll('.trust-item strong');
+            theme.trustItems.forEach(function(text, i) {
+                if (trustSpans[i]) trustSpans[i].textContent = text;
+            });
+
+            // Why Footloose list items
+            var whyList = document.querySelectorAll('.check-list li');
+            theme.whyItems.forEach(function(text, i) {
+                if (whyList[i]) {
+                    var tick = whyList[i].querySelector('.tick');
+                    whyList[i].innerHTML = '';
+                    if (tick) whyList[i].appendChild(tick);
+                    else {
+                        var t = document.createElement('span');
+                        t.className = 'tick';
+                        t.innerHTML = '&#10003;';
+                        whyList[i].appendChild(t);
+                    }
+                    whyList[i].appendChild(document.createTextNode(' ' + text));
+                }
+            });
+        }
+
+    })();
+    </script>
+</body>
+</html>
