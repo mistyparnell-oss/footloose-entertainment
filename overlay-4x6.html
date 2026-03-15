@@ -326,22 +326,15 @@
 <body>
 
     <script>
-    // Apply event theme from URL parameter
+    // Apply event theme from URL parameter only (no sessionStorage persistence)
     // e.g. overlays.html?event=wedding
     (function() {
+        sessionStorage.removeItem('overlayTheme');
         const params = new URLSearchParams(window.location.search);
         const event = params.get('event');
         const validThemes = ['wedding', 'corporate', 'school', 'party'];
         if (event && validThemes.includes(event)) {
             document.body.classList.add('theme-' + event);
-            // Persist theme across overlay sub-pages via sessionStorage
-            sessionStorage.setItem('overlayTheme', event);
-        } else {
-            // Check if a theme was set from a previous overlay page visit
-            const stored = sessionStorage.getItem('overlayTheme');
-            if (stored && validThemes.includes(stored)) {
-                document.body.classList.add('theme-' + stored);
-            }
         }
     })();
     </script>
