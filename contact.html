@@ -18,6 +18,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <style>
+        :root {
+            --color-primary: #006D77;
+            --color-primary-dark: #004E57;
+            --color-accent: #D4A843;
+            --color-gold: #D4A843;
+        }
+
         /* ── Contact page styles ── */
 
         .contact-form-section {
@@ -55,7 +62,7 @@
             margin-bottom: var(--spacing-md);
         }
 
-        .req { color: #800020; }
+        .req { color: #006D77; }
 
         .field-group { margin-bottom: var(--spacing-sm); }
 
@@ -89,8 +96,8 @@
         .field-group select:focus,
         .field-group textarea:focus {
             outline: none;
-            border-color: #800020;
-            box-shadow: 0 0 0 3px rgba(128,0,32,0.1);
+            border-color: #006D77;
+            box-shadow: 0 0 0 3px rgba(0,109,119,0.1);
         }
 
         .field-group textarea { resize: vertical; min-height: 110px; }
@@ -156,7 +163,7 @@
         .check-item input[type="checkbox"] {
             width: 17px;
             height: 17px;
-            accent-color: #800020;
+            accent-color: #006D77;
             cursor: pointer;
             flex-shrink: 0;
         }
@@ -165,12 +172,12 @@
             display: block;
             width: 100%;
             padding: 1.25rem;
-            background: #800020;
+            background: #006D77;
             color: #FFFFFF;
             font-family: var(--font-display);
             font-size: 1.5rem;
             letter-spacing: 2px;
-            border: 2px solid #800020;
+            border: 2px solid #006D77;
             border-radius: var(--radius-sm);
             cursor: pointer;
             margin-top: var(--spacing-md);
@@ -179,8 +186,8 @@
         }
 
         .btn-submit:hover {
-            background: #800020_DARK;
-            border-color: #800020_DARK;
+            background: #004E57;
+            border-color: #004E57;
             transform: translateY(-2px);
             box-shadow: var(--shadow-md);
         }
@@ -221,7 +228,7 @@
         }
 
         .direct-link:last-child { border-bottom: none; }
-        .direct-link:hover { color: #800020; }
+        .direct-link:hover { color: #006D77; }
 
         .link-icon {
             width: 36px;
@@ -231,7 +238,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #800020;
+            color: #D4A843;
             flex-shrink: 0;
         }
 
@@ -250,7 +257,7 @@
 
         .check-list li:last-child { border-bottom: none; }
 
-        .tick { color: #800020; flex-shrink: 0; margin-top: 1px; }
+        .tick { color: #D4A843; flex-shrink: 0; margin-top: 1px; }
 
         .response-block {
             background: linear-gradient(135deg, var(--color-secondary) 0%, #0F2137 100%);
@@ -265,12 +272,12 @@
             font-family: var(--font-display);
             font-size: 2rem;
             letter-spacing: 1px;
-            color: #A8A8A8;
+            color: #FFFFFF;
             margin-bottom: 8px;
         }
 
         .response-block p {
-            color: rgba(255,255,255,0.85);
+            color: #FFFFFF;
             font-size: 0.95rem;
             line-height: 1.5;
             margin: 0;

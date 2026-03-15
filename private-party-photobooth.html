@@ -112,49 +112,6 @@
     }
     </script>
 <style>
-/* ── Overlay nav dropdown ── */
-.nav-has-dropdown { position: relative; }
-.nav-has-dropdown > a { cursor: pointer; }
-.main-nav ul li.nav-has-dropdown .nav-dropdown {
-    display: none !important;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: var(--color-secondary);
-    min-width: 180px;
-    border-radius: var(--radius-sm);
-    box-shadow: var(--shadow-md);
-    z-index: 200;
-    padding: 0.5rem 0;
-    list-style: none;
-    margin: 0;
-}
-.main-nav ul li.nav-has-dropdown:hover .nav-dropdown { display: block !important; }
-.nav-dropdown li a {
-    display: block;
-    padding: 0.55rem 1.2rem;
-    color: rgba(255,255,255,0.8);
-    font-size: 0.9rem;
-    white-space: nowrap;
-    transition: background var(--transition-fast), color var(--transition-fast);
-}
-.nav-dropdown li a:hover {
-    background: var(--color-primary);
-    color: #fff;
-}
-
-/* Dropdown themed colors */
-body:has(.private-hero) .nav-dropdown {
-    background: var(--color-secondary);
-    border-top: 2px solid #FF1493;
-}
-body:has(.private-hero) .nav-dropdown li a {
-    color: rgba(255,255,255,0.85);
-}
-body:has(.private-hero) .nav-dropdown li a:hover {
-    background: #FF1493;
-    color: #fff;
-}
 body:has(.private-hero) .main-nav a.active {
     color: #FF1493;
     border-bottom-color: #FF1493;
@@ -175,12 +132,7 @@ body:has(.private-hero) .main-nav a.active {
                     <ul>
 
                         <li><a href="/private-party-dj">DJ</a></li>
-                        <li class="nav-has-dropdown">
-                            <a href="#" class="active">Photobooth</a>
-                            <ul class="nav-dropdown">
-                                <li><a href="overlays.html?event=party">Overlays</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="#" class="active">Photobooth</a></li>
                     </ul>
                 </nav>
                 <div class="header-cta">
@@ -210,7 +162,7 @@ body:has(.private-hero) .main-nav a.active {
                 <div class="page-hero-buttons">
                     <a href="/contact-private" class="btn btn-hero-primary">Request Party Photobooth Quote</a>
                     <a href="private-parties.html" class="btn btn-hero-secondary">Back to Private Parties</a>
-                    <a href="overlays.html?event=party" class="btn btn-hero-secondary">Browse Overlay Designs</a>
+
                 </div>
             </div>
         </div>
