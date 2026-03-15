@@ -20,6 +20,14 @@
     <meta name="geo.position" content="30.3322;-81.6557">
 
     <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --color-primary: #006D77;
+            --color-primary-dark: #004E57;
+            --color-accent: #D4A843;
+            --color-gold: #D4A843;
+        }
+    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -47,41 +55,7 @@
     </script>
 
 <style>
-/* ── Nav dropdown ── */
-.nav-has-dropdown { position: relative; }
-.nav-has-dropdown > a { cursor: pointer; }
-.main-nav ul li.nav-has-dropdown .nav-dropdown {
-    display: none !important;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: var(--color-secondary);
-    min-width: 180px;
-    border-radius: var(--radius-sm);
-    box-shadow: var(--shadow-md);
-    z-index: 200;
-    padding: 0.5rem 0;
-    list-style: none;
-    margin: 0;
-}
-.main-nav ul li.nav-has-dropdown:hover .nav-dropdown { display: block !important; }
-.nav-dropdown li a {
-    display: block;
-    padding: 0.55rem 1.2rem;
-    color: rgba(255,255,255,0.8);
-    font-size: 0.9rem;
-    white-space: nowrap;
-    transition: background var(--transition-fast), color var(--transition-fast);
-}
-.nav-dropdown li a:hover {
-    background: var(--event-accent, var(--color-primary));
-    color: #fff;
-}
-
 /* ── Event-theme accent (set by JS via --event-accent on <body>) ── */
-.main-nav ul li.nav-has-dropdown .nav-dropdown {
-    border-top: 2px solid var(--event-accent, var(--color-primary));
-}
 .main-nav a.active {
     color: var(--event-accent, var(--color-primary)) !important;
     border-bottom-color: var(--event-accent, var(--color-primary)) !important;
@@ -179,7 +153,7 @@
     border-radius: 2px;
     margin-bottom: 0.75rem;
 }
-.section-label.free { background: #2d6a3f; }
+.section-label.free { background: var(--color-primary); }
 .section-label.upgrade { background: #555; }
 .section-label.premium { background: var(--color-secondary); }
 
@@ -212,7 +186,7 @@
     font-weight: 700;
     font-family: var(--font-body);
 }
-.price-badge.free { background: #e6f4eb; color: #2a7a3e; }
+.price-badge.free { background: #d4eef0; color: var(--color-primary); }
 .price-badge.paid { background: #f0f0f0; color: #444; }
 .price-badge.premium { background: #f0f0f0; color: #444; }
 
@@ -294,7 +268,7 @@
     font-family: var(--font-body);
     letter-spacing: 0.04em;
 }
-.bg-card__price-tag.free { background: rgba(42,122,62,0.92); color: #fff; }
+.bg-card__price-tag.free { background: rgba(0,109,119,0.92); color: #fff; }
 .bg-card__price-tag.paid { background: rgba(60,60,60,0.92); color: #fff; }
 .bg-card__price-tag.premium { background: rgba(30,30,30,0.92); color: #fff; }
 
@@ -357,7 +331,7 @@
 .selection-tray__count {
     font-family: var(--font-display);
     font-size: 1.4rem;
-    color: var(--color-primary);
+    color: var(--color-gold);
     white-space: nowrap;
 }
 .selection-tray__names {
@@ -406,7 +380,7 @@
 /* ── Delivery note ── */
 .delivery-note {
     background: #f5f5f5;
-    border-left: 4px solid var(--color-secondary);
+    border-left: 4px solid var(--color-primary);
     border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
     padding: 1rem 1.25rem;
     margin-bottom: 2rem;
@@ -417,7 +391,7 @@
 
 /* ── CTA section ── */
 .bg-cta {
-    background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary-dark) 100%);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
     padding: 4rem 0;
     text-align: center;
     color: #fff;
@@ -441,28 +415,27 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="/">
                         <img src="images/footloose-logo.png" alt="Footloose Entertainment Logo" width="200" height="80">
                     </a>
                 </div>
-                <nav class="main-nav" id="main-nav">
+                <nav class="main-nav">
                     <ul>
-
-                        <li><a href="#" id="nav-dj-link">DJ</a></li>
-                        <li class="nav-has-dropdown">
-                            <a href="#" id="nav-photobooth-link">Photobooth</a>
-                            <ul class="nav-dropdown">
-                                <li><a href="#" id="nav-overlays-link">Overlays</a></li>
-                                <li><a href="#" class="active">Backgrounds</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="/corporate-events">Corporate</a></li>
+                        <li><a href="/weddings">Weddings</a></li>
+                        <li><a href="/school-events">School Events</a></li>
+                        <li><a href="/private-parties">Private Parties</a></li>
+                        <li><a href="/current-clients">Client Resources</a></li>
                     </ul>
                 </nav>
                 <div class="header-cta">
-                    <a href="/contact" class="btn btn-primary">Get a Quote</a>
+                    <a href="tel:+19048548014" class="phone-link">(904) 854-8014</a>
+                    <a href="/contact" class="btn btn-primary">Get Quote</a>
                 </div>
                 <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                    <span></span><span></span><span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
             </div>
         </div>
@@ -478,21 +451,9 @@
         </div>
         <div class="container">
             <div class="page-hero-content">
-                <nav class="breadcrumb" aria-label="breadcrumb">
-                    <a href="index.html">Home</a>
-                    <span>›</span>
-                    <a href="#" id="breadcrumb-event-link">Photobooths</a>
-                    <span>›</span>
-                    <span>Backgrounds</span>
-                </nav>
-                <div class="hero-badge" id="hero-badge">Photobooth Backgrounds</div>
                 <h1>Browse Our Backgrounds</h1>
-                <p class="page-hero-subtitle">Select the perfect backdrop for your event. Click any background to add it to your quote request.</p>
-                <div class="page-hero-buttons">
-                    <a href="/contact" class="btn btn-hero-primary" id="cta-quote-btn">Get a Quote</a>
-                    <a href="#" class="btn btn-hero-secondary" id="hero-back-btn">Back to Photobooths</a>
-                    <a href="overlays.html" class="btn btn-hero-secondary" id="hero-overlays-btn">Browse Overlays</a>
-                </div>
+                <p class="page-hero-subtitle" style="color: #fff; text-shadow: 0 1px 4px rgba(0,0,0,0.6);">Select the perfect backdrop for your event. Click any background to add it to your quote request.</p>
+
             </div>
         </div>
     </section>
