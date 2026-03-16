@@ -981,11 +981,46 @@ p {
 }
 
 @media (max-width: 768px) {
-    .main-nav,
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+        z-index: 999;
+        padding: 1rem 0;
+    }
+
+    .main-nav.active {
+        display: block;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+    }
+
+    .main-nav ul li {
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .main-nav ul li:last-child {
+        border-bottom: none;
+    }
+
+    .main-nav a {
+        display: block;
+        padding: 0.875rem 1.5rem;
+        font-size: 1rem;
+    }
+
     .header-cta .phone-link {
         display: none;
     }
-    
+
     .mobile-menu-toggle {
         display: flex;
     }
