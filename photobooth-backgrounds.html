@@ -1200,7 +1200,6 @@
                 <div class="tray-bottom-row">
                     <p class="tray-availability">&#42; Background selection is contingent on availability for your event date.</p>
                     <button type="submit" class="tray-btn-quote" id="traySubmit" disabled>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.39 2 2 0 0 1 3.6 1.2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.84a16 16 0 0 0 6 6l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.52 16z"></path></svg>
                         Send My Selection
                     </button>
                 </div>
@@ -1299,11 +1298,6 @@
             .filter-btn:hover { color: ${theme.accent}; }
             .bg-card.selected { border-color: ${theme.accent}; box-shadow: 0 0 0 3px ${theme.accent}33, var(--shadow-md); }
             .bg-card__check { background: ${theme.accent}; }
-            .selection-tray { border-top-color: ${theme.accent}; }
-            .selection-tray__names { color: ${theme.accent}; }
-            .tray-field input:focus, .tray-notes:focus { border-color: ${theme.accent}; }
-            .tray-btn-quote { background: ${theme.accent}; }
-            .tray-btn-quote:hover:not(:disabled) { filter: brightness(0.88); }
         `;
         document.head.appendChild(style);
 
