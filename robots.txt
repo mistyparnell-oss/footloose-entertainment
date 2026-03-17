@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.footlooseentertainment.com/sitemap.xml
+
+# Disallow indexing of images folder if you don't want individual images indexed
+# Remove the line below if you want images to be indexed
+# Disallow: /images/
+
+# Disallow JavaScript and CSS (optional - usually fine to allow)
+Allow: /styles.css
+Allow: /script.js
