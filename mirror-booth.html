@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirror Photo Booth Rental Jacksonville & St. Augustine | Footloose Entertainment</title>
+    <meta name="description" content="Rent a stunning interactive mirror photo booth for your wedding, corporate event, prom, or party in Jacksonville & St. Augustine. Instant prints or digital delivery, custom overlays, props included. Book Footloose Entertainment today!">
+    <meta name="keywords" content="mirror photo booth rental Jacksonville, mirror booth Jacksonville FL, mirror booth rental St Augustine, interactive mirror booth, mirror photobooth wedding Jacksonville, mirror booth corporate event, mirror booth prom Jacksonville, mirror booth rental Northeast Florida, magic mirror photo booth Jacksonville">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://footlooseentertainment.com/mirror-booth.html">
+    <meta property="og:title" content="Mirror Photo Booth Rental Jacksonville & St. Augustine | Footloose Entertainment">
+    <meta property="og:description" content="Interactive mirror photo booth rentals for any event. Instant prints or digital delivery, custom overlays, props included. Serving Jacksonville, St. Augustine & Northeast Florida.">
+    <meta property="og:image" content="https://footlooseentertainment.com/images/photobooths/mirror-booth-og.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://footlooseentertainment.com/mirror-booth.html">
+    <meta property="twitter:title" content="Mirror Photo Booth Rental Jacksonville & St. Augustine | Footloose Entertainment">
+    <meta property="twitter:description" content="Interactive mirror photo booth rentals for weddings, corporate events, proms & parties. Instant prints or digital delivery. Serving Northeast Florida.">
+    <meta property="twitter:image" content="https://footlooseentertainment.com/images/photobooths/mirror-booth-og.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://footlooseentertainment.com/mirror-booth.html">
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="US-FL">
+    <meta name="geo.placename" content="Jacksonville">
+    <meta name="geo.position" content="30.3322;-81.6557">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ── Color palette override – matches homepage (event-agnostic teal) ── */
+        :root {
+            --color-primary: #006D77;
+            --color-primary-dark: #004E57;
+            --color-accent: #D4A843;
+            --color-gold: #D4A843;
+        }
+
+        /* Silver metallic badge for mirror booth branding */
+        .badge-mirror {
+            background: linear-gradient(135deg, #b0b8c1 0%, #e8ecef 50%, #b0b8c1 100%);
+            color: #1a1a1a;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+        }
+
+        /* How It Works – dark strip */
+        .how-it-works {
+            background: var(--color-secondary);
+            color: #fff;
+            padding: 5rem 0;
+        }
+        .how-it-works .section-intro h2,
+        .how-it-works .step-title {
+            color: #fff;
+        }
+        .how-it-works .section-intro p {
+            color: rgba(255,255,255,0.7);
+        }
+
+        /* 4-step grid */
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media (min-width: 900px) {
+            .steps-grid { grid-template-columns: repeat(4, 1fr); }
+        }
+        .step-card {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            border: 1px solid rgba(0,109,119,0.35);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .step-card:hover {
+            transform: translateY(-6px);
+            background: rgba(0,109,119,0.15);
+        }
+        .step-number {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: var(--color-primary);
+            color: #fff;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+        }
+        .step-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.3rem;
+            letter-spacing: 0.06em;
+            margin-bottom: 0.5rem;
+        }
+        .step-desc {
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.65);
+            line-height: 1.6;
+        }
+
+        /* Delivery options toggle cards */
+        .delivery-section {
+            padding: 5rem 0;
+            background: var(--color-bg-light);
+        }
+        .delivery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+            max-width: 860px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media (max-width: 600px) {
+            .delivery-grid { grid-template-columns: 1fr; }
+        }
+        .delivery-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            border: 2px solid transparent;
+            text-align: center;
+            transition: border-color 0.3s ease, transform 0.3s ease;
+        }
+        .delivery-card:hover {
+            border-color: var(--color-primary);
+            transform: translateY(-4px);
+        }
+        .delivery-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .delivery-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.6rem;
+            letter-spacing: 0.06em;
+            color: var(--color-secondary);
+            margin-bottom: 0.5rem;
+        }
+        .delivery-desc {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.7;
+        }
+        .delivery-features {
+            list-style: none;
+            padding: 0;
+            margin: 1.2rem 0 0;
+            text-align: left;
+        }
+        .delivery-features li {
+            padding: 0.4rem 0;
+            font-size: 0.9rem;
+            color: #555;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+        .delivery-features li::before {
+            content: "✓";
+            color: var(--color-primary);
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        /* FAQ accordion */
+        .faq-section { padding: 5rem 0; }
+        .faq-list { max-width: 800px; margin: 3rem auto 0; }
+        .faq-item { border-bottom: 1px solid #e0e0e0; }
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 1.4rem 0;
+            text-align: left;
+            font-family: 'Barlow', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--color-secondary);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+        .faq-question .faq-arrow {
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+            color: var(--color-primary);
+        }
+        .faq-question[aria-expanded="true"] .faq-arrow { transform: rotate(180deg); }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+        }
+        .faq-answer.open { max-height: 400px; padding-bottom: 1.2rem; }
+        .faq-answer p { color: #555; line-height: 1.7; margin: 0; }
+
+        /* Venue pills */
+        .venues-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .venue-pill {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 0.8rem 1.2rem;
+            font-size: 0.9rem;
+            color: #444;
+            text-align: center;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .venue-pill:hover {
+            background: #f0f8f9;
+            border-color: var(--color-primary);
+        }
+
+        /* Gallery */
+        .booth-gallery { padding: 5rem 0; background: var(--color-bg-light); }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px) { .gallery-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 480px) { .gallery-grid { grid-template-columns: 1fr; } }
+        .gallery-item {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            background: #e0e0e0;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+            display: block;
+        }
+        .gallery-item:hover img { transform: scale(1.05); }
+        .gallery-item.video-embed {
+            aspect-ratio: 16/9;
+            grid-column: span 2;
+        }
+        .gallery-item.video-embed iframe { width: 100%; height: 100%; border: none; }
+        .gallery-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #f0f0f0;
+            color: #999;
+            font-size: 0.85rem;
+            text-align: center;
+            padding: 1rem;
+            gap: 0.5rem;
+        }
+
+        /* Event selector 2x2 */
+        .event-selector-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--spacing-md);
+            max-width: 860px;
+            margin: 3rem auto 0;
+        }
+        @media (max-width: 600px) { .event-selector-grid { grid-template-columns: 1fr; } }
+    </style>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Mirror Photo Booth Rental",
+      "name": "Mirror Photo Booth Rental",
+      "provider": {
+        "@type": "Organization",
+        "name": "Footloose Entertainment",
+        "url": "https://footlooseentertainment.com",
+        "logo": "https://footlooseentertainment.com/images/footloose-logo.png",
+        "telephone": "+1-904-854-8014",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Jacksonville",
+          "addressRegion": "FL",
+          "addressCountry": "US"
+        }
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Jacksonville", "addressRegion": "FL" },
+        { "@type": "City", "name": "St. Augustine", "addressRegion": "FL" },
+        { "@type": "City", "name": "Ponte Vedra", "addressRegion": "FL" },
+        { "@type": "City", "name": "Orange Park", "addressRegion": "FL" }
+      ],
+      "description": "Interactive full-length mirror photo booth rental for weddings, corporate events, school proms, and private parties. Custom overlays, instant prints or digital delivery, props included. Serving Jacksonville, St. Augustine, and Northeast Florida.",
+      "offers": {
+        "@type": "Offer",
+        "name": "Mirror Photo Booth Rental",
+        "description": "Full-length interactive mirror photo booth with custom overlay, choice of instant prints or digital delivery, props, and professional attendant.",
+        "areaServed": "Jacksonville, FL and surrounding areas"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "38"
+      }
+    }
+    </script>
+
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a mirror photo booth?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A mirror photo booth is a full-length interactive touchscreen mirror that takes photos of guests. It features animated on-screen prompts, a custom overlay for your event, and delivers photos instantly via print or digital delivery to guests' phones. It doubles as elegant decor and doubles the fun."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the mirror booth print photos on the spot?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Guests can choose instant prints on the spot or receive their photos digitally via QR code or text message — or both. We customize the delivery option to fit your event."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can we customize the mirror booth overlay for our event?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Every session features a custom overlay designed specifically for your event — your wedding date and names, company logo, school name and prom theme, or any design that fits your celebration. We create a proof for your approval before the event."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much space does the mirror booth need?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The mirror booth requires approximately 4x6 feet of floor space plus room for guests to step back for full-length photos — we recommend a clear area of about 8x8 feet. We coordinate with your venue in advance to confirm the best placement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Footloose Entertainment serve Jacksonville and St. Augustine for mirror booth rentals?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! We serve Jacksonville, St. Augustine, Ponte Vedra Beach, Orange Park, Fleming Island, Jacksonville Beach, Fernandina Beach, and all of Northeast Florida for mirror booth rentals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can we add a mirror booth to our DJ or other photobooth package?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely — combining the mirror booth with our DJ services or other photobooth options creates a complete entertainment package, often at better value. Contact us to discuss options for your event."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="/">
+                        <img src="images/footloose-logo.png" alt="Footloose Entertainment Logo" width="200" height="80">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="mirror-booth.html" class="active">Mirror Booth</a></li>
+                    </ul>
+                </nav>
+                <div class="header-cta">
+                    <a href="tel:+19048548014" class="phone-link">(904)854-8014</a>
+                    <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-background">
+            <img src="images/photobooths/mirror-booth-hero.jpg" alt="Interactive mirror photo booth at a Jacksonville event" loading="eager">
+            <div class="page-hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="page-hero-content">
+                <div class="hero-badge badge-mirror">
+                    &#9670;&nbsp; Mirror Photo Booth &nbsp;&#9670;
+                </div>
+                <h1>The Interactive Mirror Photo Booth Jacksonville &amp; St. Augustine Loves</h1>
+                <p class="page-hero-subtitle">A stunning full-length touchscreen mirror that takes photos, delivers them instantly, and doubles as gorgeous event decor. Custom overlays, props included, instant prints or digital delivery — for weddings, corporate events, proms, and private parties throughout Northeast Florida.</p>
+                <div class="page-hero-buttons">
+                    <a href="contact.html" class="btn btn-hero-primary">Book Your Mirror Booth</a>
+                    <a href="#event-type-selector" class="btn btn-hero-secondary">Find Your Event Type &#8595;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-items">
+                <div class="trust-item">
+                    <strong>29 Years</strong>
+                    <span>Serving Northeast Florida</span>
+                </div>
+                <div class="trust-item">
+                    <strong>&#9733;&#9733;&#9733;&#9733;&#9733;</strong>
+                    <span>Five-Star Rated</span>
+                </div>
+                <div class="trust-item">
+                    <strong>Prints or Digital</strong>
+                    <span>Your Choice</span>
+                </div>
+                <div class="trust-item">
+                    <strong>$1 Million</strong>
+                    <span>Liability Insurance</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Is a Mirror Booth -->
+    <section class="event-types section-padding">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>What Is a Mirror Photo Booth &amp; Why Everyone Is Obsessed</h2>
+                <p>Elegant, interactive, and unlike anything your guests have seen before</p>
+            </div>
+            <div class="featured-booth">
+                <div class="booth-image-container">
+                    <img src="images/photobooths/mirror-booth.jpg" alt="Full-length interactive mirror photo booth at a Jacksonville event" class="booth-image">
+                    <div class="booth-badge">&#9733; Guest Favorite</div>
+                </div>
+                <div class="booth-content">
+                    <h3>Full-Length Interactive Mirror Booth</h3>
+                    <p class="booth-subtitle">Elegant Decor. Instant Photos. Endless Fun.</p>
+                    <p class="booth-description">The mirror photo booth is a sleek, full-length touchscreen mirror that guides guests through a fun, animated photo experience. On-screen prompts, countdowns, and playful animations make it intuitive and exciting for guests of every age. The result is a stunning photo — with your custom event overlay — delivered instantly as a print, digitally to their phone, or both. It&rsquo;s the perfect blend of sophistication and entertainment that fits seamlessly into any event aesthetic, from elegant weddings to high-energy corporate parties to unforgettable proms.</p>
+                    <div class="booth-features-compact">
+                        <span>&#10003; Full-length touchscreen mirror</span>
+                        <span>&#10003; Custom event overlay</span>
+                        <span>&#10003; Instant prints available</span>
+                        <span>&#10003; Digital delivery via QR / text</span>
+                        <span>&#10003; Fun props included</span>
+                        <span>&#10003; Animated on-screen prompts</span>
+                        <span>&#10003; Professional attendant on-site</span>
+                        <span>&#10003; Private online gallery</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>How the Mirror Booth Works at Your Event</h2>
+                <p>Step up, strike a pose, and walk away with a keepsake in seconds</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-title">Step Up</div>
+                    <p class="step-desc">Guests approach the mirror and are greeted by fun animated prompts on the touchscreen guiding them through the experience.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-title">Strike a Pose</div>
+                    <p class="step-desc">A countdown appears, the camera captures their best look — solo, with friends, or with the whole group — in flattering full-length style.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-title">Custom Overlay</div>
+                    <p class="step-desc">Your personalized event overlay — names, logo, theme, or branding — is applied instantly to every photo taken at your event.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-title">Print or Share</div>
+                    <p class="step-desc">Guests choose their keepsake — an instant print to take home, a digital copy via QR code or text, or both. All photos saved to your private gallery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prints or Digital -->
+    <section class="delivery-section">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>Prints, Digital, or Both &mdash; Your Choice</h2>
+                <p>We customize the experience to match your event goals and guest experience</p>
+            </div>
+            <div class="delivery-grid">
+                <div class="delivery-card">
+                    <div class="delivery-icon">🖨️</div>
+                    <div class="delivery-title">Instant Prints</div>
+                    <p class="delivery-desc">Guests walk away with a physical photo keepsake printed on the spot — a tangible memory they&rsquo;ll hold onto long after the event ends.</p>
+                    <ul class="delivery-features">
+                        <li>High-quality photo prints</li>
+                        <li>Custom branded print layout</li>
+                        <li>Ready in seconds</li>
+                        <li>Perfect party favor</li>
+                        <li>Great for guest books</li>
+                    </ul>
+                </div>
+                <div class="delivery-card">
+                    <div class="delivery-icon">📱</div>
+                    <div class="delivery-title">Digital Delivery</div>
+                    <p class="delivery-desc">Photos delivered instantly to guests&rsquo; phones via QR code or text message — ready to share to Instagram, Facebook, or any platform in seconds.</p>
+                    <ul class="delivery-features">
+                        <li>Instant QR code or text delivery</li>
+                        <li>Share-ready for social media</li>
+                        <li>Private online gallery included</li>
+                        <li>Eco-friendly option</li>
+                        <li>Higher resolution files</li>
+                    </ul>
+                </div>
+            </div>
+            <p style="text-align:center;margin-top:2rem;color:#777;font-size:0.95rem;">Not sure which is right for your event? <a href="contact.html" style="color:var(--color-primary);font-weight:600;">Contact us</a> and we&rsquo;ll help you decide.</p>
+        </div>
+    </section>
+
+    <!-- Why Choose -->
+    <section class="why-choose section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Why the Mirror Booth is Perfect for Any Event</h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                    </div>
+                    <h3>Stunning Decor That Also Entertains</h3>
+                    <p>Unlike any other entertainment option, the mirror booth is genuinely beautiful. Its sleek full-length design becomes a natural focal point at your venue — guests are drawn to it visually before they even interact with it. For weddings and upscale corporate events especially, it elevates the aesthetic of the entire room while keeping guests engaged all night.</p>
+                    <p>It photographs beautifully in event photos and social media posts, meaning it markets itself and your event organically every time a guest shares their experience.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3>Fun for Every Guest, Every Age</h3>
+                    <p>The mirror booth&rsquo;s animated prompts and intuitive touchscreen make it accessible and exciting for everyone from kids to grandparents. The props add an element of playfulness that breaks the ice and gets even shy guests involved. Corporate teams love the branded experience. Wedding guests love the keepsake. Students love the photos for social media. It works for everyone.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <h3>29 Years of Event Excellence</h3>
+                    <p>Footloose Entertainment has been creating unforgettable event experiences in Jacksonville and St. Augustine since 1997. Our professional attendants arrive early, handle setup discreetly, keep the energy high throughout your event, and ensure every guest leaves with a photo they love. We bring the professionalism of nearly three decades of event experience to every mirror booth booking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery / In Action -->
+    <section class="booth-gallery">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>The Mirror Booth in Action</h2>
+                <p>Elegant, interactive, and a hit at every event across Northeast Florida</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item video-embed">
+                    <iframe src="https://www.youtube.com/embed/EdstosdsPxo?autoplay=1&mute=1&loop=1&playlist=EdstosdsPxo&controls=0&modestbranding=1&rel=0" title="Mirror Photo Booth in Action | Footloose Entertainment Jacksonville" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photobooths/mirror-booth-action-1.jpg" alt="Guests using mirror photo booth at Jacksonville wedding" loading="lazy"
+                         onerror="this.parentElement.innerHTML='<div class=\'gallery-placeholder\'><svg width=\'40\' height=\'40\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.5\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>mirror-booth-action-1.jpg</span></div>'">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photobooths/mirror-booth-action-2.jpg" alt="Mirror booth at corporate event Jacksonville FL" loading="lazy"
+                         onerror="this.parentElement.innerHTML='<div class=\'gallery-placeholder\'><svg width=\'40\' height=\'40\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.5\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>mirror-booth-action-2.jpg</span></div>'">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photobooths/mirror-booth-action-3.jpg" alt="Mirror photo booth at Jacksonville prom" loading="lazy"
+                         onerror="this.parentElement.innerHTML='<div class=\'gallery-placeholder\'><svg width=\'40\' height=\'40\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.5\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>mirror-booth-action-3.jpg</span></div>'">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photobooths/mirror-booth-action-4.jpg" alt="Mirror booth at private party St Augustine FL" loading="lazy"
+                         onerror="this.parentElement.innerHTML='<div class=\'gallery-placeholder\'><svg width=\'40\' height=\'40\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.5\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>mirror-booth-action-4.jpg</span></div>'">
+                </div>
+            </div>
+            <p style="text-align:center;margin-top:2rem;color:#888;font-size:0.9rem;">Have a mirror booth photo from your event? Tag us on Instagram <a href="https://instagram.com/footloosedjs" style="color:var(--color-primary);">@footloosedjs</a></p>
+        </div>
+    </section>
+
+    <!-- Venues -->
+    <section class="benefits section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Jacksonville &amp; St. Augustine Venues We&rsquo;ve Served</h2>
+                <p>We&rsquo;ve set up the mirror booth at some of Northeast Florida&rsquo;s most sought-after venues</p>
+            </div>
+            <div class="venues-grid">
+                <div class="venue-pill">The White Room &mdash; St. Augustine</div>
+                <div class="venue-pill">Treasury on the Plaza &mdash; St. Augustine</div>
+                <div class="venue-pill">Epping Forest Yacht Club &mdash; Jacksonville</div>
+                <div class="venue-pill">Hyatt Regency Riverfront &mdash; Jacksonville</div>
+                <div class="venue-pill">TPC Sawgrass &mdash; Ponte Vedra</div>
+                <div class="venue-pill">Sawgrass Marriott &mdash; Ponte Vedra</div>
+                <div class="venue-pill">Omni Amelia Island &mdash; Fernandina Beach</div>
+                <div class="venue-pill">Ponte Vedra Inn &amp; Club</div>
+                <div class="venue-pill">Casa Marina Hotel &mdash; Jacksonville Beach</div>
+                <div class="venue-pill">Ribault Club &mdash; Jacksonville</div>
+                <div class="venue-pill">Casa Monica Hotel &mdash; St. Augustine</div>
+                <div class="venue-pill">Club Continental &mdash; Orange Park</div>
+                <div class="venue-pill">Ritz Carlton &mdash; Amelia Island</div>
+                <div class="venue-pill">River House &mdash; St. Augustine</div>
+                <div class="venue-pill">Serenata Beach Club &mdash; Ponte Vedra</div>
+                <div class="venue-pill">Marriott Southpoint &mdash; Jacksonville</div>
+                <div class="venue-pill">Nocatee Crosswater Hall</div>
+                <div class="venue-pill">Jacksonville Zoo &amp; Gardens</div>
+                <div class="venue-pill">Daily&rsquo;s Place / TIAA Bank Field</div>
+                <div class="venue-pill">Your Venue &mdash; We Travel!</div>
+            </div>
+            <p style="text-align:center;margin-top:2rem;color:#777;font-size:0.9rem;">Don&rsquo;t see your venue? We serve all of Northeast Florida including Fernandina Beach, Daytona, Gainesville, and beyond. <a href="contact.html" style="color:var(--color-primary);">Contact us</a> to confirm availability.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>What Guests Say About the Mirror Booth</h2>
+                <p>Real reviews from real Jacksonville and St. Augustine events</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">&ldquo;The mirror booth was hands down the most popular thing at our wedding reception. Guests of all ages were lining up all night. The custom overlay with our names looked incredible on the prints, and everyone went home with a keepsake. Footloose made the whole process effortless.&rdquo;</p>
+                    <div class="testimonial-author">
+                        <strong>Jessica &amp; Ryan</strong>
+                        <span>Married at Treasury on the Plaza, St. Augustine</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">&ldquo;We rented the mirror booth for our company holiday party and it was a massive hit. The branded overlay with our logo was a great touch, and our team absolutely loved it. The attendant kept everything running smoothly and kept the energy fun all night. Already booked for next year!&rdquo;</p>
+                    <div class="testimonial-author">
+                        <strong>Sarah M.</strong>
+                        <span>Corporate Holiday Party, Jacksonville</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">&ldquo;Our students went absolutely crazy for the mirror booth at prom. The props were a huge hit and the digital delivery meant everyone had their photos on their phone before they even left the building. Professional, fun, and completely drama-free. Footloose is the best in the business.&rdquo;</p>
+                    <div class="testimonial-author">
+                        <strong>Mrs. Thompson</strong>
+                        <span>Prom Event Coordinator, Jacksonville</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>Mirror Photo Booth FAQs</h2>
+                <p>Everything you need to know before booking</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What is a mirror photo booth?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>A mirror photo booth is a full-length interactive touchscreen mirror that photographs guests using animated on-screen prompts and countdowns. It applies a custom overlay for your event and delivers photos instantly as prints, digitally to guests&rsquo; phones, or both. It&rsquo;s a beautiful piece of event decor that also doubles as the most entertaining experience in the room.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Does the mirror booth print photos on the spot?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! Guests can receive instant printed photos on the spot, digital copies via QR code or text, or both — it&rsquo;s completely customizable to your event. Prints make great party favors and guest book additions. Digital delivery means guests can share immediately to social media from the event.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Can we customize the mirror booth overlay for our event?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. Every booking includes a fully custom overlay designed for your specific event — your names and wedding date, company logo and brand colors, school name and prom theme, or any design you have in mind. We create a proof and share it for your approval before the event day.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How much space does the mirror booth require?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The mirror itself requires about 4x6 feet of floor space. We recommend a clear area of roughly 8x8 feet so guests can step back comfortably for full-length photos. We coordinate with your venue coordinator in advance to identify the perfect placement.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Are props included with the mirror booth?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes — props are included with every mirror booth rental. Our attendant sets up a fun prop station and helps guests choose items that match the vibe of your event. Props add an extra element of fun and make for more memorable, shareable photos.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Do you serve Jacksonville and St. Augustine for mirror booth rentals?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We serve Jacksonville, St. Augustine, Ponte Vedra Beach, Orange Park, Fleming Island, Jacksonville Beach, Fernandina Beach, and all of Northeast Florida. Contact us to confirm availability for your specific venue and date.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Can we add a mirror booth to our DJ or photobooth package?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely — combining the mirror booth with our DJ services, 360 booth, or other photobooth options creates a complete entertainment experience, often at better combined value. Contact us to discuss options for your event.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Type Selector -->
+    <section id="event-type-selector" class="event-types section-padding bg-light">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>Which Event Are You Planning?</h2>
+                <p>Head back to your event type to explore all our services and find the right package for you</p>
+            </div>
+            <div class="event-selector-grid">
+                <a href="wedding-photobooth.html" class="event-type-card" style="text-decoration:none;transition:transform 0.3s ease;">
+                    <div class="event-type-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </div>
+                    <h3>Wedding</h3>
+                    <p>Elegant decor and instant prints that double as keepsakes. The perfect addition to your reception.</p>
+                    <span style="color:var(--color-primary);font-weight:600;font-size:0.9rem;">View Wedding Photobooths &rarr;</span>
+                </a>
+                <a href="corporate-photobooth.html" class="event-type-card" style="text-decoration:none;transition:transform 0.3s ease;">
+                    <div class="event-type-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+                    </div>
+                    <h3>Corporate Event</h3>
+                    <p>Branded overlays with your logo. Engaging, shareable, and professionally executed.</p>
+                    <span style="color:var(--color-primary);font-weight:600;font-size:0.9rem;">View Corporate Photobooths &rarr;</span>
+                </a>
+                <a href="school-photobooth.html" class="event-type-card" style="text-decoration:none;transition:transform 0.3s ease;">
+                    <div class="event-type-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                    </div>
+                    <h3>School Event</h3>
+                    <p>School colors, prom themes, and props students love. Background-checked staff always on-site.</p>
+                    <span style="color:var(--color-primary);font-weight:600;font-size:0.9rem;">View School Photobooths &rarr;</span>
+                </a>
+                <a href="private-party-photobooth.html" class="event-type-card" style="text-decoration:none;transition:transform 0.3s ease;">
+                    <div class="event-type-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                    </div>
+                    <h3>Private Party</h3>
+                    <p>Birthdays, anniversaries, quincea&ntilde;eras &mdash; custom overlays for any milestone celebration.</p>
+                    <span style="color:var(--color-primary);font-weight:600;font-size:0.9rem;">View Party Photobooths &rarr;</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Book Your Mirror Photo Booth?</h2>
+                <p>Dates fill fast&mdash;especially for wedding season, prom season, and holiday corporate events. Request your quote today and let&rsquo;s create an unforgettable experience for your guests.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-large btn-primary">Book Your Mirror Booth Now</a>
+                    <a href="tel:+19048548014" class="btn btn-large btn-outline-light">Call (904)854-8014</a>
+                </div>
+                <p class="cta-note">Quick response &#8226; Custom overlay included &#8226; Props provided &#8226; 29 years of event excellence</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <img src="images/footloose-logo-white.png" alt="Footloose Entertainment" width="180" height="72">
+                    <p>Jacksonville and St. Augustine's premier entertainment company since 1997.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/footlooseentertainment" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="https://instagram.com/footloosedjs" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Event Types</h4>
+                    <ul>
+                        <li><a href="corporate-events.html">Corporate Events</a></li>
+                        <li><a href="weddings.html">Weddings &amp; Celebrations</a></li>
+                        <li><a href="school-events.html">School Events &amp; Proms</a></li>
+                        <li><a href="private-parties.html">Private Parties</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Photobooth Options</h4>
+                    <ul>
+                        <li><a href="360-booth.html">360 Video Booth</a></li>
+                        <li><a href="mirror-booth.html">Mirror Photo Booth</a></li>
+                        <li><a href="wedding-photobooth.html">Wedding Photobooths</a></li>
+                        <li><a href="corporate-photobooth.html">Corporate Photobooths</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="current-clients.html">Current Clients</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Footloose Entertainment. All rights reserved.</p>
+                <p>Serving Jacksonville, St. Augustine &amp; Northeast Florida since 1997</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const expanded = btn.getAttribute('aria-expanded') === 'true';
+                document.querySelectorAll('.faq-question').forEach(b => {
+                    b.setAttribute('aria-expanded', 'false');
+                    b.nextElementSibling.classList.remove('open');
+                });
+                if (!expanded) {
+                    btn.setAttribute('aria-expanded', 'true');
+                    btn.nextElementSibling.classList.add('open');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
