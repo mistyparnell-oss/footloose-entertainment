@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Effects Jacksonville & St. Augustine | Cold Sparklers, CO2 Jets, Dancing on Clouds | Footloose Entertainment</title>
+    <meta name="description" content="Transform your event with professional special effects in Jacksonville & St. Augustine. Cold sparklers, CO2 jets, dancing on clouds, mystic bubbles, haze & more. Weddings, corporate events, proms & parties. Book Footloose Entertainment today!">
+    <meta name="keywords" content="cold sparklers Jacksonville, CO2 jets Jacksonville FL, dancing on clouds wedding Jacksonville, special effects wedding Jacksonville, cold sparks wedding St Augustine, cryo cannons Jacksonville, low lying fog wedding Jacksonville, special effects rental Northeast Florida, wedding sparklers Jacksonville FL, mystic bubbles Jacksonville">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://footlooseentertainment.com/special-effects.html">
+    <meta property="og:title" content="Special Effects Jacksonville & St. Augustine | Cold Sparklers, CO2 Jets & More | Footloose Entertainment">
+    <meta property="og:description" content="Professional special effects for weddings, corporate events, proms & parties. Cold sparklers, CO2 jets, dancing on clouds, mystic bubbles & more. Serving Northeast Florida.">
+    <meta property="og:image" content="https://footlooseentertainment.com/images/special-effects-og.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://footlooseentertainment.com/special-effects.html">
+    <meta property="twitter:title" content="Special Effects Jacksonville | Cold Sparklers, CO2 Jets, Dancing on Clouds | Footloose Entertainment">
+    <meta property="twitter:description" content="Cold sparklers, CO2 jets, dancing on clouds, mystic bubbles & more. Professional special effects for any event in Northeast Florida.">
+    <meta property="twitter:image" content="https://footlooseentertainment.com/images/special-effects-og.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://footlooseentertainment.com/special-effects.html">
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="US-FL">
+    <meta name="geo.placename" content="Jacksonville">
+    <meta name="geo.position" content="30.3322;-81.6557">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ── Color palette override – matches homepage (event-agnostic teal) ── */
+        :root {
+            --color-primary: #006D77;
+            --color-primary-dark: #004E57;
+            --color-accent: #D4A843;
+            --color-gold: #D4A843;
+        }
+
+        /* Fire/spark badge */
+        .badge-fx {
+            background: linear-gradient(135deg, #1a1a1a 0%, #3a3a3a 50%, #1a1a1a 100%);
+            color: #D4A843;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            border: 1px solid #D4A843;
+        }
+
+        /* Effects grid */
+        .effects-section {
+            padding: 5rem 0;
+            background: var(--color-bg-white);
+        }
+        .effects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .effect-card {
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            border: 2px solid transparent;
+            transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .effect-card:hover {
+            border-color: var(--color-primary);
+            transform: translateY(-6px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.14);
+        }
+        .effect-card-image {
+            width: 100%;
+            aspect-ratio: 16/9;
+            overflow: hidden;
+            background: var(--color-secondary);
+        }
+        .effect-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .effect-card:hover .effect-card-image img {
+            transform: scale(1.05);
+        }
+        .effect-card-image-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255,255,255,0.4);
+            font-size: 0.85rem;
+            gap: 0.5rem;
+        }
+        .effect-card-body {
+            padding: 1.8rem;
+        }
+        .effect-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .effect-name {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: 0.06em;
+            color: var(--color-secondary);
+            margin-bottom: 0.3rem;
+        }
+        .effect-tagline {
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--color-primary);
+            margin-bottom: 0.8rem;
+        }
+        .effect-desc {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+        .effect-uses {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+        }
+        .effect-uses li {
+            background: #f0f8f9;
+            color: var(--color-primary);
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            border: 1px solid rgba(0,109,119,0.2);
+        }
+
+        /* FAQ */
+        .faq-section { padding: 5rem 0; }
+        .faq-list { max-width: 800px; margin: 3rem auto 0; }
+        .faq-item { border-bottom: 1px solid #e0e0e0; }
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 1.4rem 0;
+            text-align: left;
+            font-family: 'Barlow', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--color-secondary);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+        .faq-question .faq-arrow {
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+            color: var(--color-primary);
+        }
+        .faq-question[aria-expanded="true"] .faq-arrow { transform: rotate(180deg); }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+        }
+        .faq-answer.open { max-height: 400px; padding-bottom: 1.2rem; }
+        .faq-answer p { color: #555; line-height: 1.7; margin: 0; }
+
+        /* Gallery */
+        .booth-gallery { padding: 5rem 0; background: var(--color-bg-light); }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px) { .gallery-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 480px) { .gallery-grid { grid-template-columns: 1fr; } }
+        .gallery-item {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            background: #e0e0e0;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+            display: block;
+        }
+        .gallery-item:hover img { transform: scale(1.05); }
+        .gallery-item.video-embed {
+            aspect-ratio: 16/9;
+            grid-column: span 2;
+        }
+        .gallery-item.video-embed iframe { width: 100%; height: 100%; border: none; }
+        .gallery-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #f0f0f0;
+            color: #999;
+            font-size: 0.85rem;
+            text-align: center;
+            padding: 1rem;
+            gap: 0.5rem;
+        }
+        .video-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: var(--color-secondary);
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+            text-align: center;
+            padding: 1.5rem;
+            gap: 0.75rem;
+        }
+        .video-placeholder strong { color: #fff; font-size: 1rem; }
+
+        /* Venue pills */
+        .venues-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .venue-pill {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 0.8rem 1.2rem;
+            font-size: 0.9rem;
+            color: #444;
+            text-align: center;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .venue-pill:hover {
+            background: #f0f8f9;
+            border-color: var(--color-primary);
+        }
+
+        /* Event selector */
+        .event-selector-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--spacing-md);
+            max-width: 860px;
+            margin: 3rem auto 0;
+        }
+        @media (max-width: 600px) { .event-selector-grid { grid-template-columns: 1fr; } }
+    </style>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Special Effects Entertainment",
+      "name": "Special Effects Rental Jacksonville",
+      "provider": {
+        "@type": "Organization",
+        "name": "Footloose Entertainment",
+        "url": "https://footlooseentertainment.com",
+        "logo": "https://footlooseentertainment.com/images/footloose-logo.png",
+        "telephone": "+1-904-854-8014",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Jacksonville",
+          "addressRegion": "FL",
+          "addressCountry": "US"
+        }
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Jacksonville", "addressRegion": "FL" },
+        { "@type": "City", "name": "St. Augustine", "addressRegion": "FL" },
+        { "@type": "City", "name": "Ponte Vedra", "addressRegion": "FL" },
+        { "@type": "City", "name": "Orange Park", "addressRegion": "FL" }
+      ],
+      "description": "Professional special effects for weddings, corporate events, proms, and private parties in Jacksonville and St. Augustine. Cold sparklers, CO2 jets, dancing on clouds, mystic bubbles, bubble machines, and haze effects. Serving Northeast Florida.",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Special Effects Services",
+        "itemListElement": [
+          { "@type": "Offer", "name": "Cold Sparklers", "description": "Indoor-safe cold spark machines creating dramatic fountain-style sparks for first dances, grand entrances, and celebrations." },
+          { "@type": "Offer", "name": "CO2 Jets / Cryo Cannons", "description": "Powerful CO2 jet blasts creating dramatic clouds of cold fog for high-energy moments on the dance floor." },
+          { "@type": "Offer", "name": "Dancing on Clouds", "description": "Low-lying fog effect creating the appearance of dancing on a cloud — perfect for first dances and grand entrances." },
+          { "@type": "Offer", "name": "Mystic Bubbles", "description": "Fog-filled bubbles that float and burst dramatically — a magical effect perfect for any celebration." },
+          { "@type": "Offer", "name": "Bubble Machines", "description": "High-volume bubble machines creating a fun, festive atmosphere for dances, parties, and celebrations." },
+          { "@type": "Offer", "name": "Haze Effects", "description": "Atmosphere haze that makes DJ lighting beams visible and creates a dramatic club-style ambiance." },
+          { "@type": "Offer", "name": "Snow Dance", "description": "Indoor artificial snow effect creating a magical winter wonderland atmosphere on the dance floor." },
+          { "@type": "Offer", "name": "Monograms & Gobos", "description": "Custom gobo lighting projecting initials, names, or logos onto walls or the DJ video booth for elegant personalized decor." },
+          { "@type": "Offer", "name": "Party Enhancements", "description": "Glow sticks, light-up batons, glow necklaces and crowd engagement items distributed by your DJ at peak dance floor moments." }
+        ]
+      }
+    }
+    </script>
+
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Are cold sparklers safe for indoor wedding venues?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — cold sparklers are specifically designed for indoor use. They produce a dramatic spark fountain effect using a cold spark technology that does not generate heat, flame, or fire hazard. They are safe for most indoor venues and we always coordinate with your venue in advance to confirm approval."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the dancing on clouds effect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dancing on clouds is a low-lying fog effect created by a specialized machine that keeps the fog close to the floor. The result is a stunning visual of you and your guests appearing to dance or walk on clouds. It is most popular for wedding first dances and grand entrances and photographs beautifully."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are CO2 jets used for at events?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CO2 jets, also called cryo cannons, shoot powerful blasts of cold CO2 gas creating dramatic cloud bursts on the dance floor. They are used to punctuate high-energy moments — the first song drop, a grand entrance, a key moment in a corporate presentation, or any time you want a dramatic wow effect."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can special effects be combined with DJ services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely — in fact, special effects work best when timed and triggered by your DJ. Our DJ and special effects packages are designed to work together seamlessly, with effects timed to key musical moments for maximum impact. Bundling saves money and ensures perfect coordination."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you serve Jacksonville and St. Augustine for special effects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! We serve Jacksonville, St. Augustine, Ponte Vedra Beach, Orange Park, Fleming Island, Jacksonville Beach, Fernandina Beach, Daytona Beach, and all of Northeast Florida for special effects at any event type."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What events are special effects good for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Special effects elevate any event — wedding receptions, corporate galas, school proms, sweet 16s, quinceaneras, private parties, and more. Cold sparklers and dancing on clouds are especially popular for weddings. CO2 jets and haze are huge at proms and corporate events. Bubble machines and mystic bubbles work beautifully at any celebration."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="/">
+                        <img src="images/footloose-logo.png" alt="Footloose Entertainment Logo" width="200" height="80">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="special-effects.html" class="active">Special Effects</a></li>
+                    </ul>
+                </nav>
+                <div class="header-cta">
+                    <a href="tel:+19048548014" class="phone-link">(904)854-8014</a>
+                    <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-background">
+            <img src="images/special-effects-hero.jpg" alt="Cold sparklers and special effects at a Jacksonville wedding reception" loading="eager">
+            <div class="page-hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="page-hero-content">
+                <div class="hero-badge badge-fx">
+                    ✦&nbsp; Special Effects &nbsp;✦
+                </div>
+                <h1>Professional Special Effects for Jacksonville &amp; St. Augustine Events</h1>
+                <p class="page-hero-subtitle">Cold sparklers, CO2 jets, dancing on clouds, mystic bubbles, haze &amp; more. The dramatic, jaw-dropping moments your guests will be talking about for years. Professionally operated, venue-approved, and perfectly timed to your event.</p>
+                <div class="page-hero-buttons">
+                    <a href="contact.html" class="btn btn-hero-primary">Get a Special Effects Quote</a>
+                    <a href="#effects" class="btn btn-hero-secondary">See All Effects &#8595;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-items">
+                <div class="trust-item">
+                    <strong>29 Years</strong>
+                    <span>Serving Northeast Florida</span>
+                </div>
+                <div class="trust-item">
+                    <strong>&#9733;&#9733;&#9733;&#9733;&#9733;</strong>
+                    <span>Five-Star Rated</span>
+                </div>
+                <div class="trust-item">
+                    <strong>$1 Million</strong>
+                    <span>Liability Insurance</span>
+                </div>
+                <div class="trust-item">
+                    <strong>DJ-Synced</strong>
+                    <span>Perfect Timing Every Time</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Effects Grid -->
+    <section id="effects" class="effects-section">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>Special Effects That Transform Any Event</h2>
+                <p>From intimate wedding moments to high-energy dance floors &mdash; we have the effect that makes your event unforgettable</p>
+            </div>
+            <div class="effects-grid">
+
+                <!-- Cold Sparklers -->
+                <div class="effect-card">
+                    <div class="effect-card-image">
+                        <img src="images/cold-sparklers.jpg" alt="Cold sparklers at Jacksonville wedding reception first dance" loading="lazy"
+                             onerror="this.parentElement.innerHTML='<div class=\'effect-card-image-placeholder\'><svg width=\'40\' height=\'40\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.5\'><circle cx=\'12\' cy=\'12\' r=\'10\'/><line x1=\'12\' y1=\'8\' x2=\'12\' y2=\'12\'/><line x1=\'12\' y1=\'16\' x2=\'12.01\' y2=\'16\'/></svg><span>cold-sparklers.jpg</span></div>'">
+                    </div>
+                    <div class="effect-card-body">
+                        <div class="effect-icon">✨</div>
+                        <div class="effect-name">Cold Sparklers</div>
+                        <div class="effect-tagline">Indoor-Safe Spark Fountains</div>
+                        <p class="effect-desc">Dramatic fountain-style sparks shooting 4&ndash;6 feet into the air — without heat, flame, or fire hazard. The most popular effect for wedding first dances, grand entrances, and cake cutting moments. Creates stunning photos and videos that look like traditional sparklers but are completely safe for indoor venues.</p>
+                        <ul class="effect-uses">
+                            <li>First Dance</li>
+                            <li>Grand Entrance</li>
+                            <li>Cake Cutting</li>
+                            <li>Corporate Gala</li>
+                            <li>Prom</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- CO2 Jets -->
+                <div class="effect-card">
+                    <div class="effect-card-image">
+                        <img src="images/co2-jets.jpg" alt="CO2 jets cryo cannons at Jacksonville event dance floor" loading="lazy"
+                             onerror="this.parentElement.innerHTML='<div class=\'effect-card-image-placeholder\'><svg width=\'40\' height=\'40\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.5\'><circle cx=\'12\' cy=\'12\' r=\'10\'/><line x1=\'12\' y1=\'8\' x2=\'12\' y2=\'12\'/><line x1=\'12\' y1=\'16\' x2=\'12.01\' y2=\'16\'/></svg><span>co2-jets.jpg</span></div>'">
+                    </div>
+                    <div class="effect-card-body">
+                        <div class="effect-icon">💨</div>
+                        <div class="effect-name">CO2 Jets / Cryo Cannons</div>
+                        <div class="effect-tagline">High-Energy Crowd Moments</div>
+                        <p class="effect-desc">Powerful blasts of cold CO2 gas shooting dramatic clouds across the dance floor. The ultimate high-energy effect for the moment the dance floor ignites. Your DJ triggers the jets at peak moments — the first song drop, the intro of the wedding party, the climax of a corporate presentation. Pure adrenaline.</p>
+                        <ul class="effect-uses">
+                            <li>Dance Floor Peak</li>
+                            <li>Grand Entrance</li>
+                            <li>Prom</li>
+                            <li>Corporate Event</li>
+                            <li>Sweet 16</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Dancing on Clouds -->
+                <div class="effect-card">
+                    <div class="effect-card-image">
+                        <img src="images/dancing-on-clouds.jpg" alt="Dancing on clouds low fog effect at Jacksonville wedding first dance" loading="lazy"
+                             onerror="this.parentElement.innerHTML='<div class=\'effect-card-image-placeholder\'><svg width=\'40\' height=\'40\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.5\'><circle cx=\'12\' cy=\'12\' r=\'10\'/><line x1=\'12\' y1=\'8\' x2=\'12\' y2=\'12\'/><line x1=\'12\' y1=\'16\' x2=\'12.01\' y2=\'16\'/></svg><span>dancing-on-clouds.jpg</span></div>'">
+                    </div>
+                    <div class="effect-card-body">
+                        <div class="effect-icon">☁️</div>
+                        <div class="effect-name">Dancing on Clouds</div>
+                        <div class="effect-tagline">Low-Lying Fog Effect</div>
+                        <p class="effect-desc">A dreamy, ethereal low-lying fog that hugs the floor and makes it appear as though you&rsquo;re dancing on clouds. Created by a specialized machine that keeps the fog close to the ground — no ceiling fog, no obscured faces. Photographs and videos breathtakingly. The most romantic effect available for wedding first dances.</p>
+                        <ul class="effect-uses">
+                            <li>First Dance</li>
+                            <li>Ceremony Entrance</li>
+                            <li>Anniversary Party</li>
+                            <li>Quincea&ntilde;era</li>
+                            <li>Prom</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Mystic Bubbles -->
+                <div class="effect-card">
+                    <div class="effect-card-image">
+                        <img src="images/mystic-bubbles.jpg" alt="Mystic fog bubbles at Jacksonville wedding reception" loading="lazy"
+                             onerror="this.parentElement.innerHTML='<div class=\'effect-card-image-placeholder\'><svg width=\'40\' height=\'40\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.5\'><circle cx=\'12\' cy=\'12\' r=\'10\'/><line x1=\'12\' y1=\'8\' x2=\'12\' y2=\'12\'/><line x1=\'12\' y1=\'16\' x2=\'12.01\' y2=\'16\'/></svg><span>mystic-bubbles.jpg</span></div>'">
+                    </div>
+                    <div class="effect-card-body">
+                        <div class="effect-icon">🫧</div>
+                        <div class="effect-name">Mystic Bubbles</div>
+                        <div class="effect-tagline">Fog-Filled Floating Bubbles</div>
+                        <p class="effect-desc">Bubbles filled with a wisp of fog that float gently through the air and burst in a magical puff of mist. Completely unique and endlessly fascinating for guests of all ages. Mystic bubbles create a whimsical, enchanted atmosphere that photographs beautifully and gets guests of all ages reaching out to pop them.</p>
+                        <ul class="effect-uses">
+                            <li>Wedding Reception</li>
+                            <li>Birthday Party</li>
+                            <li>Quincea&ntilde;era</li>
+                            <li>Sweet 16</li>
+                            <li>Any Celebration</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Bubble Machines -->
+                <div class="effect-card">
+                    <div class="effect-card-image">
+                        <img src="images/bubble-machine.jpg" alt="Bubble machine at Jacksonville event dance floor" loading="lazy"
+                             onerror="this.parentElement.innerHTML='<div class=\'effect-card-image-placeholder\'><svg width=\'40\' height=\'40\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.5\'><circle cx=\'12\' cy=\'12\' r=\'10\'/><line x1=\'12\' y1=\'8\' x2=\'12\' y2=\'12\'/><line x1=\'12\' y1=\'16\' x2=\'12.01\' y2=\'16\'/></svg><span>bubble-machine.jpg</span></div>'">
+                    </div>
+                    <div class="effect-card-body">
+                        <div class="effect-icon">⭕</div>
+                        <div class="effect-name">Bubble Machines</div>
+                        <div class="effect-tagline">Fun for Every Age</div>
+                        <p class="effect-desc">High-volume bubble machines that fill the dance floor with thousands of floating bubbles, creating a joyful, festive atmosphere that gets every guest on their feet. Kids go wild for them. Adults love the carefree, playful energy they bring. Perfect for outdoor ceremonies, receptions, and any event where pure fun is the goal.</p>
+                        <ul class="effect-uses">
+                            <li>Outdoor Ceremony</li>
+                            <li>Kids Party</li>
+                            <li>School Dance</li>
+                            <li>Birthday Party</li>
+                            <li>Wedding Reception</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Haze -->
+                <div class="effect-card">
+                    <div class="effect-card-image">
+                        <img src="images/haze-effect.jpg" alt="Haze atmosphere effect making DJ lighting beams visible at Jacksonville event" loading="lazy"
+                             onerror="this.parentElement.innerHTML='<div class=\'effect-card-image-placeholder\'><svg width=\'40\' height=\'40\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.5\'><circle cx=\'12\' cy=\'12\' r=\'10\'/><line x1=\'12\' y1=\'8\' x2=\'12\' y2=\'12\'/><line x1=\'12\' y1=\'16\' x2=\'12.01\' y2=\'16\'/></svg><span>haze-effect.jpg</span></div>'">
+                    </div>
+                    <div class="effect-card-body">
+                        <div class="effect-icon">🌫️</div>
+                        <div class="effect-name">Haze / Atmosphere Effects</div>
+                        <div class="effect-tagline">Make Your Lighting Come Alive</div>
+                        <p class="effect-desc">A fine, barely-visible atmospheric haze that makes DJ lighting beams, uplighting, and moving lights fully visible in the air — transforming your venue from a lit room into a dramatic light show. Used by every major concert and club production, haze is the secret behind why professional event lighting looks so spectacular. Your guests feel the difference immediately.</p>
+                        <ul class="effect-uses">
+                            <li>Dance Floor</li>
+                            <li>Corporate Gala</li>
+                            <li>Prom</li>
+                            <li>Wedding Reception</li>
+                            <li>Any DJ Event</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Snow Dance -->
+                <div class="effect-card">
+                    <div class="effect-card-image">
+                        <img src="images/snow-dance.jpg" alt="Snow dance effect at Jacksonville wedding reception" loading="lazy"
+                             onerror="this.parentElement.innerHTML='<div class=\'effect-card-image-placeholder\'><svg width=\'40\' height=\'40\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.5\'><circle cx=\'12\' cy=\'12\' r=\'10\'/><line x1=\'12\' y1=\'8\' x2=\'12\' y2=\'12\'/><line x1=\'12\' y1=\'16\' x2=\'12.01\' y2=\'16\'/></svg><span>snow-dance.jpg</span></div>'">
+                    </div>
+                    <div class="effect-card-body">
+                        <div class="effect-icon">❄️</div>
+                        <div class="effect-name">Snow Dance</div>
+                        <div class="effect-tagline">Indoor Snow Effect</div>
+                        <p class="effect-desc">A magical indoor snow effect that fills the dance floor with a flurry of soft, lightweight artificial snowflakes. Creates a breathtaking winter wonderland atmosphere that photographs and videos beautifully. Perfect for holiday parties, winter weddings, and any event where you want a truly unforgettable and unexpected visual moment.</p>
+                        <ul class="effect-uses">
+                            <li>Holiday Party</li>
+                            <li>Winter Wedding</li>
+                            <li>First Dance</li>
+                            <li>Corporate Gala</li>
+                            <li>Birthday Party</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Monograms / Gobos -->
+                <div class="effect-card">
+                    <div class="effect-card-image">
+                        <img src="images/monogram-gobo.jpg" alt="Custom monogram gobo lighting projection at Jacksonville wedding" loading="lazy"
+                             onerror="this.parentElement.innerHTML='<div class=\'effect-card-image-placeholder\'><svg width=\'40\' height=\'40\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.5\'><circle cx=\'12\' cy=\'12\' r=\'10\'/><line x1=\'12\' y1=\'8\' x2=\'12\' y2=\'12\'/><line x1=\'12\' y1=\'16\' x2=\'12.01\' y2=\'16\'/></svg><span>monogram-gobo.jpg</span></div>'">
+                    </div>
+                    <div class="effect-card-body">
+                        <div class="effect-icon">💡</div>
+                        <div class="effect-name">Monograms &amp; Gobos</div>
+                        <div class="effect-tagline">Custom Lighting Projections</div>
+                        <p class="effect-desc">A custom gobo projects your initials, name, logo, or any design as a stunning light pattern onto a wall or your DJ video booth. Monogram lighting is one of the most elegant and personal touches you can add to any event &mdash; a constant visual reminder of what&rsquo;s being celebrated. Guests notice it immediately and it photographs beautifully all night long.</p>
+                        <ul class="effect-uses">
+                            <li>Wedding Reception</li>
+                            <li>Corporate Branding</li>
+                            <li>Sweet 16</li>
+                            <li>Quincea&ntilde;era</li>
+                            <li>Any Milestone Event</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Party Enhancements -->
+                <div class="effect-card">
+                    <div class="effect-card-image">
+                        <img src="images/party-enhancements.jpg" alt="Glow sticks and party enhancements at Jacksonville event dance floor" loading="lazy"
+                             onerror="this.parentElement.innerHTML='<div class=\'effect-card-image-placeholder\'><svg width=\'40\' height=\'40\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.5\'><circle cx=\'12\' cy=\'12\' r=\'10\'/><line x1=\'12\' y1=\'8\' x2=\'12\' y2=\'12\'/><line x1=\'12\' y1=\'16\' x2=\'12.01\' y2=\'16\'/></svg><span>party-enhancements.jpg</span></div>'">
+                    </div>
+                    <div class="effect-card-body">
+                        <div class="effect-icon">🎉</div>
+                        <div class="effect-name">Party Enhancements</div>
+                        <div class="effect-tagline">Glow &amp; Crowd Effects</div>
+                        <p class="effect-desc">Take your dance floor to the next level with glow sticks, light-up batons, glow necklaces, and other crowd engagement items distributed to your guests. When the lights go down and the glow comes out, the energy in the room transforms instantly. Your DJ distributes and cues these at peak moments for maximum crowd impact — and the photos look incredible.</p>
+                        <ul class="effect-uses">
+                            <li>Wedding Last Dance</li>
+                            <li>Prom</li>
+                            <li>Sweet 16</li>
+                            <li>Corporate Party</li>
+                            <li>Any Dance Floor</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery / In Action -->
+    <section class="booth-gallery">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>Special Effects in Action</h2>
+                <p>Dramatic moments from real Jacksonville and St. Augustine events</p>
+            </div>
+            <div style="max-width:900px;margin:2rem auto 0;border-radius:10px;overflow:hidden;aspect-ratio:16/9;">
+                <iframe src="https://www.youtube.com/embed/m7-6P5DQ3X4?autoplay=1&mute=1&loop=1&playlist=m7-6P5DQ3X4&controls=0&modestbranding=1&rel=0" title="Special Effects in Action | Footloose Entertainment Jacksonville" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:100%;height:100%;border:none;"></iframe>
+            </div>
+            <p style="text-align:center;margin-top:2rem;color:#888;font-size:0.9rem;">Have photos or video from your event? Tag us on Instagram <a href="https://instagram.com/footloosedjs" style="color:var(--color-primary);">@footloosedjs</a></p>
+        </div>
+    </section>
+
+    <!-- Why Choose -->
+    <section class="why-choose section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Why Choose Footloose for Special Effects</h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <h3>DJ-Synchronized for Maximum Impact</h3>
+                    <p>Special effects are only as powerful as the moment they happen. Our DJ and effects team work together to trigger every effect at exactly the right musical moment — the beat drop, the chorus, the grand entrance cue. The result is a seamless, cinematic experience that feels produced rather than accidental.</p>
+                    <p>When you book special effects with Footloose, you get one coordinated team rather than two separate vendors trying to communicate on the fly.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>Venue-Approved &amp; Fully Insured</h3>
+                    <p>We carry $1 million in liability insurance and have experience working with Northeast Florida&rsquo;s most particular venues. We coordinate directly with your venue coordinator in advance to confirm which effects are approved, handle all required documentation, and ensure everything is set up safely and correctly.</p>
+                    <p>You get the dramatic visuals without the stress of navigating venue requirements yourself.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <h3>29 Years of Professional Experience</h3>
+                    <p>Footloose Entertainment has been executing flawless events in Jacksonville and St. Augustine since 1997. We&rsquo;ve seen everything, planned for everything, and know how to deliver spectacular results in any venue, for any event size, under any conditions. Your guests deserve professional-grade production — and that&rsquo;s exactly what we deliver.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venues -->
+    <section class="benefits section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Venues Where We&rsquo;ve Created Special Effects Magic</h2>
+                <p>From waterfront ballrooms to hotel grand ballrooms across Northeast Florida</p>
+            </div>
+            <div class="venues-grid">
+                <div class="venue-pill">The White Room &mdash; St. Augustine</div>
+                <div class="venue-pill">Treasury on the Plaza &mdash; St. Augustine</div>
+                <div class="venue-pill">Epping Forest Yacht Club &mdash; Jacksonville</div>
+                <div class="venue-pill">Hyatt Regency Riverfront &mdash; Jacksonville</div>
+                <div class="venue-pill">TPC Sawgrass &mdash; Ponte Vedra</div>
+                <div class="venue-pill">Sawgrass Marriott &mdash; Ponte Vedra</div>
+                <div class="venue-pill">Omni Amelia Island &mdash; Fernandina Beach</div>
+                <div class="venue-pill">Ponte Vedra Inn &amp; Club</div>
+                <div class="venue-pill">Casa Marina Hotel &mdash; Jacksonville Beach</div>
+                <div class="venue-pill">Ribault Club &mdash; Jacksonville</div>
+                <div class="venue-pill">Casa Monica Hotel &mdash; St. Augustine</div>
+                <div class="venue-pill">Ritz Carlton &mdash; Amelia Island</div>
+                <div class="venue-pill">River House &mdash; St. Augustine</div>
+                <div class="venue-pill">Marriott Southpoint &mdash; Jacksonville</div>
+                <div class="venue-pill">Daily&rsquo;s Place / TIAA Bank Field</div>
+                <div class="venue-pill">Club Continental &mdash; Orange Park</div>
+                <div class="venue-pill">Nocatee Crosswater Hall</div>
+                <div class="venue-pill">Jacksonville Zoo &amp; Gardens</div>
+                <div class="venue-pill">Serenata Beach Club &mdash; Ponte Vedra</div>
+                <div class="venue-pill">Your Venue &mdash; We Travel!</div>
+            </div>
+            <p style="text-align:center;margin-top:2rem;color:#777;font-size:0.9rem;">Don&rsquo;t see your venue? We serve all of Northeast Florida. <a href="contact.html" style="color:var(--color-primary);">Contact us</a> to confirm availability and venue approval for your specific effects.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>What Clients Say About Our Special Effects</h2>
+                <p>Real moments from real Jacksonville and St. Augustine events</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">&ldquo;The cold sparklers during our first dance were absolutely breathtaking. Every single guest had their phone out and the photos came out incredible. It was the most dramatic, beautiful moment of the entire reception and Footloose executed it perfectly without us having to worry about a thing.&rdquo;</p>
+                    <div class="testimonial-author">
+                        <strong>Stephanie &amp; James</strong>
+                        <span>Wedding at Epping Forest Yacht Club, Jacksonville</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">&ldquo;We did the dancing on clouds effect for our first dance and I genuinely cried when I saw how beautiful it looked. Our photographer got the most stunning photos. Three months later and our friends are still talking about it. If you&rsquo;re on the fence, just do it. You will not regret it.&rdquo;</p>
+                    <div class="testimonial-author">
+                        <strong>Nicole &amp; Brandon</strong>
+                        <span>Wedding at The White Room, St. Augustine</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">&ldquo;The CO2 jets at our company gala were a massive hit. The moment our DJ hit the jets on the dance floor the entire crowd went crazy. Our CEO was out there dancing for the first time in years. Footloose made our corporate event feel like a real production. Absolutely incredible.&rdquo;</p>
+                    <div class="testimonial-author">
+                        <strong>David R.</strong>
+                        <span>Corporate Gala, Jacksonville Riverfront</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>Special Effects FAQs</h2>
+                <p>Everything you need to know before booking</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Are cold sparklers safe for indoor venues?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes &mdash; cold sparklers are specifically designed for indoor use. They use cold spark technology that produces a dramatic visual effect without heat, flame, or fire hazard. They don&rsquo;t trigger smoke detectors and leave no residue. We always coordinate with your venue in advance to confirm approval and handle any required documentation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What is the dancing on clouds effect?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Dancing on clouds uses a specialized low-fog machine to create a thick, ground-hugging layer of fog that stays close to the floor without rising. The result is a stunning visual of guests appearing to dance on clouds. It&rsquo;s most popular for wedding first dances and grand entrances and photographs and videos beautifully.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What are CO2 jets best used for?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>CO2 jets are best for high-energy, dramatic moments &mdash; the opening song of the dance floor, a grand entrance, the climax of a prom, or a key moment in a corporate event. Your DJ triggers the blast at precisely the right moment for maximum impact. They work especially well combined with DJ lighting for a full production feel.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Can special effects be combined with DJ services?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely &mdash; and it&rsquo;s the best way to book them. When your DJ controls the effects, everything is timed perfectly to the music for maximum impact. Our DJ and effects packages are designed to work together seamlessly. Bundling also saves money compared to booking separately.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What events are special effects good for?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Special effects work for virtually any event &mdash; weddings, corporate galas, school proms, sweet 16s, quincea&ntilde;eras, birthday parties, and more. Cold sparklers and dancing on clouds are especially popular for weddings. CO2 jets and haze are huge at proms and corporate events. Bubble machines and mystic bubbles are perfect for any celebration where fun is the priority.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Do you serve Jacksonville and St. Augustine for special effects?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We serve Jacksonville, St. Augustine, Ponte Vedra Beach, Orange Park, Fleming Island, Jacksonville Beach, Fernandina Beach, Daytona Beach, and all of Northeast Florida for special effects at any event type.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Type Selector -->
+    <section id="event-type-selector" class="event-types section-padding bg-light">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>Which Event Are You Planning?</h2>
+                <p>Explore all of our services for your specific event type</p>
+            </div>
+            <div class="event-selector-grid">
+                <a href="weddings.html" class="event-type-card" style="text-decoration:none;transition:transform 0.3s ease;">
+                    <div class="event-type-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </div>
+                    <h3>Wedding</h3>
+                    <p>Cold sparklers, dancing on clouds &amp; mystic bubbles for the most dramatic wedding moments in Northeast Florida.</p>
+                    <span style="color:var(--color-primary);font-weight:600;font-size:0.9rem;">View All Wedding Services &rarr;</span>
+                </a>
+                <a href="corporate-events.html" class="event-type-card" style="text-decoration:none;transition:transform 0.3s ease;">
+                    <div class="event-type-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+                    </div>
+                    <h3>Corporate Event</h3>
+                    <p>CO2 jets, haze &amp; cold sparklers that turn your company gala into a high-production event experience.</p>
+                    <span style="color:var(--color-primary);font-weight:600;font-size:0.9rem;">View All Corporate Services &rarr;</span>
+                </a>
+                <a href="school-events.html" class="event-type-card" style="text-decoration:none;transition:transform 0.3s ease;">
+                    <div class="event-type-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                    </div>
+                    <h3>School Event</h3>
+                    <p>CO2 jets, bubble machines &amp; haze that make proms and school dances truly legendary.</p>
+                    <span style="color:var(--color-primary);font-weight:600;font-size:0.9rem;">View All School Services &rarr;</span>
+                </a>
+                <a href="private-parties.html" class="event-type-card" style="text-decoration:none;transition:transform 0.3s ease;">
+                    <div class="event-type-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                    </div>
+                    <h3>Private Party</h3>
+                    <p>Mystic bubbles, bubble machines &amp; sparklers for birthdays, quincea&ntilde;eras &amp; milestone celebrations.</p>
+                    <span style="color:var(--color-primary);font-weight:600;font-size:0.9rem;">View All Party Services &rarr;</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Add Special Effects to Your Event?</h2>
+                <p>Dates fill fast &mdash; especially for wedding season and prom season. Request your quote today and let&rsquo;s create the most dramatic moments of your event.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-large btn-primary">Get a Special Effects Quote</a>
+                    <a href="tel:+19048548014" class="btn btn-large btn-outline-light">Call (904)854-8014</a>
+                </div>
+                <p class="cta-note">Quick response &#8226; Venue coordination included &#8226; $1M insured &#8226; 29 years of event excellence</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <img src="images/footloose-logo-white.png" alt="Footloose Entertainment" width="180" height="72">
+                    <p>Jacksonville and St. Augustine's premier entertainment company since 1997.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/footlooseentertainment" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="https://instagram.com/footloosedjs" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Event Types</h4>
+                    <ul>
+                        <li><a href="corporate-events.html">Corporate Events</a></li>
+                        <li><a href="weddings.html">Weddings &amp; Celebrations</a></li>
+                        <li><a href="school-events.html">School Events &amp; Proms</a></li>
+                        <li><a href="private-parties.html">Private Parties</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Specialty Services</h4>
+                    <ul>
+                        <li><a href="special-effects.html">Special Effects</a></li>
+                        <li><a href="360-booth.html">360 Video Booth</a></li>
+                        <li><a href="mirror-booth.html">Mirror Photo Booth</a></li>
+                        <li><a href="audio-guestbook.html">Audio Guestbook</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="current-clients.html">Current Clients</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Footloose Entertainment. All rights reserved.</p>
+                <p>Serving Jacksonville, St. Augustine &amp; Northeast Florida since 1997</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const expanded = btn.getAttribute('aria-expanded') === 'true';
+                document.querySelectorAll('.faq-question').forEach(b => {
+                    b.setAttribute('aria-expanded', 'false');
+                    b.nextElementSibling.classList.remove('open');
+                });
+                if (!expanded) {
+                    btn.setAttribute('aria-expanded', 'true');
+                    btn.nextElementSibling.classList.add('open');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
