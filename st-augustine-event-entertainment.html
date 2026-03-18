@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ & Event Entertainment St. Augustine FL | Footloose Entertainment</title>
+    <meta name="description" content="St. Augustine's premier DJ, photobooth & event entertainment company. Weddings, corporate events, proms & private parties throughout St. Augustine, Ponte Vedra, Nocatee, Palm Coast & St. Johns County. 29 years of excellence. Book today!">
+    <meta name="keywords" content="DJ St Augustine FL, wedding DJ St Augustine, event entertainment St Augustine, photobooth rental St Augustine, 360 booth St Augustine, DJ Ponte Vedra Beach, DJ Nocatee, DJ Palm Coast FL, special effects St Augustine, wedding DJ St Johns County, corporate event DJ St Augustine, prom DJ St Augustine">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://footlooseentertainment.com/st-augustine-event-entertainment.html">
+    <meta property="og:title" content="DJ & Event Entertainment St. Augustine FL | Footloose Entertainment">
+    <meta property="og:description" content="St. Augustine's premier DJ, photobooth & event entertainment. Weddings, corporate events, proms & parties throughout St. Augustine and St. Johns County. 29 years of excellence.">
+    <meta property="og:image" content="https://footlooseentertainment.com/images/st-augustine-entertainment-og.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://footlooseentertainment.com/st-augustine-event-entertainment.html">
+    <meta property="twitter:title" content="DJ & Event Entertainment St. Augustine FL | Footloose Entertainment">
+    <meta property="twitter:description" content="St. Augustine's premier DJ, photobooth & special effects entertainment. 29 years serving St. Augustine and Northeast Florida.">
+    <meta property="twitter:image" content="https://footlooseentertainment.com/images/st-augustine-entertainment-og.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://footlooseentertainment.com/st-augustine-event-entertainment.html">
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="US-FL">
+    <meta name="geo.placename" content="St. Augustine">
+    <meta name="geo.position" content="29.8947;-81.3145">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ── Color palette override – matches homepage teal ── */
+        :root {
+            --color-primary: #006D77;
+            --color-primary-dark: #004E57;
+            --color-accent: #D4A843;
+            --color-gold: #D4A843;
+        }
+
+        /* Service cards grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .service-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+            border-top: 4px solid var(--color-primary);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.13);
+        }
+        .service-card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .service-card h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: 0.06em;
+            color: var(--color-secondary);
+            margin-bottom: 0.4rem;
+        }
+        .service-card p {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .service-card-link {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--color-primary);
+        }
+
+        /* Areas grid */
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .area-pill {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 1rem 1.2rem;
+            text-align: center;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .area-pill:hover {
+            background: #f0f8f9;
+            border-color: var(--color-primary);
+        }
+        .area-pill strong {
+            display: block;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.1rem;
+            letter-spacing: 0.05em;
+            color: var(--color-primary);
+            margin-bottom: 0.2rem;
+        }
+        .area-pill span {
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        /* FAQ */
+        .faq-section { padding: 5rem 0; }
+        .faq-list { max-width: 800px; margin: 3rem auto 0; }
+        .faq-item { border-bottom: 1px solid #e0e0e0; }
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 1.4rem 0;
+            text-align: left;
+            font-family: 'Barlow', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--color-secondary);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+        .faq-question .faq-arrow {
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+            color: var(--color-primary);
+        }
+        .faq-question[aria-expanded="true"] .faq-arrow { transform: rotate(180deg); }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+        }
+        .faq-answer.open { max-height: 400px; padding-bottom: 1.2rem; }
+        .faq-answer p { color: #555; line-height: 1.7; margin: 0; }
+
+        /* Venue pills */
+        .venues-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .venue-pill {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 0.8rem 1.2rem;
+            font-size: 0.9rem;
+            color: #444;
+            text-align: center;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .venue-pill:hover {
+            background: #f0f8f9;
+            border-color: var(--color-primary);
+        }
+
+        /* Event type selector */
+        .event-selector-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--spacing-md);
+            max-width: 860px;
+            margin: 3rem auto 0;
+        }
+        @media (max-width: 600px) { .event-selector-grid { grid-template-columns: 1fr; } }
+    </style>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Footloose Entertainment",
+      "description": "St. Augustine Florida's premier DJ, photobooth, and event entertainment company. Professional DJ services, 360 video booths, mirror photo booths, special effects, audio guestbooks, and complete event entertainment packages for weddings, corporate events, school events, and private parties throughout St. Augustine and St. Johns County.",
+      "url": "https://footlooseentertainment.com",
+      "telephone": "+1-904-854-8014",
+      "email": "info@footlooseentertainment.com",
+      "logo": "https://footlooseentertainment.com/images/footloose-logo.png",
+      "image": "https://footlooseentertainment.com/images/st-augustine-entertainment-og.jpg",
+      "priceRange": "$$",
+      "foundingDate": "1997",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Jacksonville",
+        "addressRegion": "FL",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "St. Augustine", "addressRegion": "FL" },
+        { "@type": "City", "name": "Ponte Vedra Beach", "addressRegion": "FL" },
+        { "@type": "City", "name": "Nocatee", "addressRegion": "FL" },
+        { "@type": "City", "name": "Palm Coast", "addressRegion": "FL" },
+        { "@type": "City", "name": "Flagler Beach", "addressRegion": "FL" },
+        { "@type": "AdministrativeArea", "name": "St. Johns County", "addressRegion": "FL" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "St. Augustine Event Entertainment Services",
+        "itemListElement": [
+          { "@type": "Offer", "name": "Wedding DJ St. Augustine", "description": "Professional wedding DJ and MC services for St. Augustine weddings at The White Room, Treasury on the Plaza, and venues throughout St. Johns County." },
+          { "@type": "Offer", "name": "Corporate Event DJ St. Augustine", "description": "Professional DJ and entertainment for St. Augustine corporate events, galas, and company parties." },
+          { "@type": "Offer", "name": "Photobooth Rental St. Augustine", "description": "360 video booths, mirror booths, open air booths, and digital photobooths for St. Augustine events." },
+          { "@type": "Offer", "name": "Special Effects St. Augustine", "description": "Cold sparklers, CO2 jets, dancing on clouds, and more for St. Augustine events." },
+          { "@type": "Offer", "name": "Audio Guestbook St. Augustine", "description": "Vintage telephone audio guestbook rental for St. Augustine weddings and celebrations." }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "127"
+      }
+    }
+    </script>
+
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you provide DJ services in St. Augustine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — Footloose Entertainment has been providing professional DJ services in St. Augustine since 1997. We regularly perform at St. Augustine's most sought-after venues including The White Room, Treasury on the Plaza, Casa Monica Hotel, and many others throughout St. Johns County."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What areas near St. Augustine do you serve?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We serve St. Augustine and all of St. Johns County including Ponte Vedra Beach, Nocatee, Palm Coast, and Flagler Beach. We also regularly serve Jacksonville and all of Northeast Florida."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you do weddings at The White Room in St. Augustine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — The White Room is one of our most frequently booked St. Augustine venues. We are experienced with both the Villa Blanca and Loft venues and work seamlessly with The White Room's coordination team to ensure flawless execution on your wedding day."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you provide both DJ and photobooth services for St. Augustine weddings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely — combining DJ and photobooth services is one of our most popular options for St. Augustine weddings. One company means seamless coordination, one point of contact, and better combined value. We offer 360 video booths, mirror booths, open air booths, digital booths, and more alongside our DJ services."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How far in advance should I book for a St. Augustine wedding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "St. Augustine is an extremely popular wedding destination and dates fill quickly — especially spring, fall, and holiday weekends. We recommend booking as early as possible, ideally 12-18 months in advance for peak season dates. Contact us to check availability for your date."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="/">
+                        <img src="images/footloose-logo.png" alt="Footloose Entertainment Logo" width="200" height="80">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Get a Quote</a></li>
+                    </ul>
+                </nav>
+                <div class="header-cta">
+                    <a href="tel:+19048548014" class="phone-link">(904)854-8014</a>
+                    <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-background">
+            <img src="images/st-augustine-hero.jpg" alt="Professional DJ and event entertainment in St. Augustine FL" loading="eager">
+            <div class="page-hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="page-hero-content">
+                <div class="hero-badge">
+                    St. Augustine, FL
+                </div>
+                <h1>St. Augustine&rsquo;s Premier DJ &amp; Event Entertainment Company</h1>
+                <p class="page-hero-subtitle">Professional DJ services, photobooths, special effects &amp; more for weddings, corporate events, proms, and private parties throughout St. Augustine, St. Johns County, Ponte Vedra, Nocatee, Palm Coast &amp; beyond. Locally trusted since 1997 &mdash; nearly 30 years serving Florida&rsquo;s Historic Coast.</p>
+                <div class="page-hero-buttons">
+                    <a href="contact.html" class="btn btn-hero-primary">Get a Free Quote</a>
+                    <a href="tel:+19048548014" class="btn btn-hero-secondary">(904) 854-8014</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-items">
+                <div class="trust-item">
+                    <strong>29 Years</strong>
+                    <span>Serving St. Augustine</span>
+                </div>
+                <div class="trust-item">
+                    <strong>1,000+</strong>
+                    <span>St. Augustine Events</span>
+                </div>
+                <div class="trust-item">
+                    <strong>&#9733;&#9733;&#9733;&#9733;&#9733;</strong>
+                    <span>Five-Star Rated</span>
+                </div>
+                <div class="trust-item">
+                    <strong>$1 Million</strong>
+                    <span>Liability Insurance</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro -->
+    <section class="event-types section-padding">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>St. Augustine&rsquo;s Most Trusted Event Entertainment Since 1997</h2>
+                <p>From the Historic District to Ponte Vedra Beach, from Nocatee to Palm Coast &mdash; we&rsquo;ve been making St. Augustine area events unforgettable for nearly three decades</p>
+            </div>
+            <div class="featured-booth">
+                <div class="booth-image-container">
+                    <img src="images/st-augustine-events.jpg" alt="Footloose Entertainment at St. Augustine wedding venue" class="booth-image">
+                    <div class="booth-badge">&#9733; St. Augustine&rsquo;s Choice</div>
+                </div>
+                <div class="booth-content">
+                    <h3>Your St. Augustine Event Entertainment Experts</h3>
+                    <p class="booth-subtitle">Historic City. Modern Entertainment. Timeless Memories.</p>
+                    <p class="booth-description">St. Augustine is one of the most sought-after wedding and event destinations in Florida — and Footloose Entertainment has been part of that story since 1997. We know St. Augustine&rsquo;s venues, we know the Historic District&rsquo;s logistical quirks, and we know how to create spectacular entertainment in spaces ranging from The White Room&rsquo;s rooftop Loft to the grand Treasury on the Plaza ballroom to intimate private estates throughout St. Johns County. Whether you&rsquo;re planning a destination wedding in the nation&rsquo;s oldest city, a corporate retreat along the Intracoastal, a prom at a St. Johns County school, or a milestone birthday party in Nocatee, Footloose Entertainment brings the professionalism, experience, and energy your St. Augustine event deserves.</p>
+                    <div class="booth-features-compact">
+                        <span>&#10003; Professional DJ &amp; MC services</span>
+                        <span>&#10003; 360 video booths</span>
+                        <span>&#10003; Mirror photo booths</span>
+                        <span>&#10003; Cold sparklers &amp; special effects</span>
+                        <span>&#10003; Audio guestbooks</span>
+                        <span>&#10003; Custom overlays &amp; backdrops</span>
+                        <span>&#10003; All event types covered</span>
+                        <span>&#10003; $1M liability insured</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="why-choose section-padding bg-light">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>Complete Event Entertainment for Every St. Augustine Occasion</h2>
+                <p>Everything you need for an unforgettable St. Augustine event &mdash; from one trusted company</p>
+            </div>
+            <div class="services-grid">
+                <a href="wedding-dj.html" class="service-card">
+                    <div class="service-card-icon">🎵</div>
+                    <h3>Wedding DJ St. Augustine</h3>
+                    <p>Expert wedding DJs who know St. Augustine&rsquo;s most iconic venues. From intimate Historic District ceremonies to grand waterfront receptions, we craft the perfect soundtrack for your St. Augustine wedding.</p>
+                    <span class="service-card-link">Learn More &rarr;</span>
+                </a>
+                <a href="corporate-dj.html" class="service-card">
+                    <div class="service-card-icon">🏢</div>
+                    <h3>Corporate Event DJ St. Augustine</h3>
+                    <p>Professional DJ and entertainment for St. Augustine corporate retreats, galas, product launches, and company parties throughout St. Johns County and the Historic Coast.</p>
+                    <span class="service-card-link">Learn More &rarr;</span>
+                </a>
+                <a href="school-dj.html" class="service-card">
+                    <div class="service-card-icon">🎓</div>
+                    <h3>Prom &amp; School Event DJ St. Augustine</h3>
+                    <p>Trusted by St. Johns County schools for proms, homecoming dances, and school events. Background-checked staff, age-appropriate entertainment, and experiences students never forget.</p>
+                    <span class="service-card-link">Learn More &rarr;</span>
+                </a>
+                <a href="private-party-dj.html" class="service-card">
+                    <div class="service-card-icon">🎉</div>
+                    <h3>Party DJ St. Augustine</h3>
+                    <p>Birthdays, anniversaries, quincea&ntilde;eras, and milestone celebrations throughout St. Augustine, Nocatee, Ponte Vedra, and St. Johns County.</p>
+                    <span class="service-card-link">Learn More &rarr;</span>
+                </a>
+                <a href="360-booth.html" class="service-card">
+                    <div class="service-card-icon">🎬</div>
+                    <h3>360 Video Booth St. Augustine</h3>
+                    <p>The most-shared entertainment at St. Augustine weddings and events. Slow-motion 360-degree videos with custom overlays delivered instantly to your guests&rsquo; phones.</p>
+                    <span class="service-card-link">Learn More &rarr;</span>
+                </a>
+                <a href="mirror-booth.html" class="service-card">
+                    <div class="service-card-icon">🪞</div>
+                    <h3>Mirror Photo Booth St. Augustine</h3>
+                    <p>An elegant full-length interactive mirror that complements St. Augustine&rsquo;s most beautiful venues. Instant prints or digital delivery for weddings, galas &amp; celebrations.</p>
+                    <span class="service-card-link">Learn More &rarr;</span>
+                </a>
+                <a href="special-effects.html" class="service-card">
+                    <div class="service-card-icon">✨</div>
+                    <h3>Special Effects St. Augustine</h3>
+                    <p>Cold sparklers for your first dance at The White Room. Dancing on clouds at Treasury on the Plaza. CO2 jets and more &mdash; professionally executed at St. Augustine&rsquo;s finest venues.</p>
+                    <span class="service-card-link">Learn More &rarr;</span>
+                </a>
+                <a href="audio-guestbook.html" class="service-card">
+                    <div class="service-card-icon">📞</div>
+                    <h3>Audio Guestbook St. Augustine</h3>
+                    <p>Capture every voice from your St. Augustine celebration. A vintage telephone your guests pick up and leave a heartfelt message you&rsquo;ll treasure for a lifetime.</p>
+                    <span class="service-card-link">Learn More &rarr;</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Areas Served -->
+    <section class="event-types section-padding">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>St. Augustine &amp; Surrounding Areas We Serve</h2>
+                <p>Serving all of St. Johns County and Florida&rsquo;s Historic Coast</p>
+            </div>
+            <div class="areas-grid">
+                <div class="area-pill">
+                    <strong>St. Augustine</strong>
+                    <span>Historic District &amp; beyond</span>
+                </div>
+                <div class="area-pill">
+                    <strong>St. Augustine Beach</strong>
+                    <span>Coastal St. Johns</span>
+                </div>
+                <div class="area-pill">
+                    <strong>Ponte Vedra Beach</strong>
+                    <span>TPC Sawgrass area</span>
+                </div>
+                <div class="area-pill">
+                    <strong>Nocatee</strong>
+                    <span>St. Johns County</span>
+                </div>
+                <div class="area-pill">
+                    <strong>Palm Coast</strong>
+                    <span>Flagler County</span>
+                </div>
+                <div class="area-pill">
+                    <strong>Flagler Beach</strong>
+                    <span>Flagler County coast</span>
+                </div>
+                <div class="area-pill">
+                    <strong>St. Johns County</strong>
+                    <span>All communities</span>
+                </div>
+                <div class="area-pill">
+                    <strong>Jacksonville</strong>
+                    <span>Duval County</span>
+                </div>
+            </div>
+            <p style="text-align:center;margin-top:2rem;color:#777;font-size:0.95rem;">Don&rsquo;t see your area? We travel throughout Northeast Florida. <a href="contact.html" style="color:var(--color-primary);">Contact us</a> to confirm availability for your location.</p>
+        </div>
+    </section>
+
+    <!-- St. Augustine Venues -->
+    <section class="benefits section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>St. Augustine Venues We Know &amp; Love</h2>
+                <p>Nearly 30 years of performing at St. Augustine&rsquo;s most iconic and sought-after event venues</p>
+            </div>
+            <div class="venues-grid">
+                <div class="venue-pill">The White Room</div>
+                <div class="venue-pill">Villa Blanca at The White Room</div>
+                <div class="venue-pill">Treasury on the Plaza</div>
+                <div class="venue-pill">Casa Monica Hotel</div>
+                <div class="venue-pill">Ponte Vedra Inn &amp; Club</div>
+                <div class="venue-pill">TPC Sawgrass &mdash; Ponte Vedra</div>
+                <div class="venue-pill">Sawgrass Marriott</div>
+                <div class="venue-pill">Hammock Beach Resort</div>
+                <div class="venue-pill">Hammock Dunes</div>
+                <div class="venue-pill">Embassy Suites St. Augustine Beach</div>
+                <div class="venue-pill">River House &mdash; St. Augustine</div>
+                <div class="venue-pill">Palencia Club</div>
+                <div class="venue-pill">Marsh Creek Country Club</div>
+                <div class="venue-pill">Marsh Landing</div>
+                <div class="venue-pill">Assembly Room &mdash; St. Augustine</div>
+                <div class="venue-pill">The Carriage House &mdash; St. Augustine</div>
+                <div class="venue-pill">Parlor Room Events &mdash; St. Augustine</div>
+                <div class="venue-pill">Kelly Farm Events &mdash; St. Augustine</div>
+                <div class="venue-pill">Nocatee Crosswater Hall</div>
+                <div class="venue-pill">Your Venue &mdash; We Travel!</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose -->
+    <section class="why-choose section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Why St. Augustine Chooses Footloose Entertainment</h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    </div>
+                    <h3>We Know St. Augustine&rsquo;s Venues Inside &amp; Out</h3>
+                    <p>St. Augustine is unlike any other market in Florida. The Historic District&rsquo;s narrow streets, the strict noise ordinances, the load-in logistics at waterfront venues — we&rsquo;ve navigated all of it hundreds of times. When you book Footloose for your St. Augustine event, you&rsquo;re getting a team that has already solved every challenge your venue presents, so your day runs flawlessly.</p>
+                    <p>From the rooftop Loft at The White Room to the grand ballroom at Treasury on the Plaza to private estate parties in Nocatee, we bring the same level of preparation and professionalism to every St. Augustine event we serve.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </div>
+                    <h3>St. Augustine&rsquo;s Premier Wedding Entertainment</h3>
+                    <p>St. Augustine is one of Florida&rsquo;s most sought-after wedding destinations, and for nearly 30 years Footloose Entertainment has been the trusted choice for couples who want their wedding entertainment to match the beauty of the city. We understand the romance of a St. Augustine wedding and the unique expectations that come with it — and we exceed them every time.</p>
+                    <p>Our wedding DJs are experienced MCs who coordinate with your photographer, planner, and venue staff to ensure every moment flows perfectly from ceremony to last dance.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <h3>One Company for Your Entire St. Augustine Event</h3>
+                    <p>DJ, 360 booth, mirror booth, special effects, audio guestbook — we offer everything under one roof. St. Augustine couples and event planners who book multiple services with Footloose get seamless coordination between every element, one point of contact for everything, and the peace of mind that comes from working with a company that has been delivering excellence in this market for nearly 30 years.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>What St. Augustine Clients Say About Footloose</h2>
+                <p>Real reviews from real St. Augustine events</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">&ldquo;We had our dream wedding at The White Room and Footloose made the entertainment absolutely perfect. Our DJ was professional, read the room beautifully all night, and the 360 booth was the most-talked-about thing at our reception. Our guests are still sharing their videos months later. Footloose is the best in St. Augustine.&rdquo;</p>
+                    <div class="testimonial-author">
+                        <strong>Emily &amp; Jason</strong>
+                        <span>Wedding at The White Room, St. Augustine</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">&ldquo;We used Footloose for our wedding at Treasury on the Plaza and the dancing on clouds effect during our first dance was absolutely breathtaking. Every single guest was in awe. The DJ kept the dance floor packed all night and the cold sparklers during our send-off were the perfect ending to a perfect night.&rdquo;</p>
+                    <div class="testimonial-author">
+                        <strong>Rachel &amp; David</strong>
+                        <span>Wedding at Treasury on the Plaza, St. Augustine</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">&ldquo;Footloose has handled entertainment for our St. Johns County school events for years and they are absolutely the gold standard. Reliable, professional, great with students, and they always bring the energy. Our students look forward to the events Footloose DJs every single year.&rdquo;</p>
+                    <div class="testimonial-author">
+                        <strong>Principal Maria L.</strong>
+                        <span>St. Johns County School Event</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>St. Augustine Event Entertainment FAQs</h2>
+                <p>Common questions from St. Augustine clients</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Do you provide DJ services in St. Augustine?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes &mdash; Footloose Entertainment has been providing professional DJ services in St. Augustine since 1997. We regularly perform at St. Augustine&rsquo;s most sought-after venues including The White Room, Treasury on the Plaza, Casa Monica Hotel, and many others throughout St. Johns County and the surrounding area.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Do you do weddings at The White Room in St. Augustine?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes &mdash; The White Room is one of our most frequently booked St. Augustine venues. We are experienced with both the Villa Blanca and Loft venues and work seamlessly with The White Room&rsquo;s coordination team to ensure flawless execution on your wedding day.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What areas near St. Augustine do you serve?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We serve all of St. Augustine and St. Johns County including Ponte Vedra Beach, Nocatee, Palm Coast, and Flagler Beach. We also regularly serve Jacksonville and all of Northeast Florida. Contact us to confirm travel availability for your specific venue.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Can you provide both DJ and photobooth for a St. Augustine wedding?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely &mdash; combining DJ and photobooth services is one of our most popular options for St. Augustine weddings. One company means seamless coordination, one point of contact, and better combined value. We offer 360 video booths, mirror booths, open air booths, digital booths, and more alongside our DJ services.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How far in advance should I book for a St. Augustine wedding?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>St. Augustine is an extremely popular wedding destination and dates fill quickly &mdash; especially spring, fall, and holiday weekends. We recommend booking as early as possible, ideally 12&ndash;18 months in advance for peak season dates. Contact us to check availability for your date.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Type Selector -->
+    <section class="event-types section-padding bg-light">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>What Type of St. Augustine Event Are You Planning?</h2>
+                <p>Explore our services tailored to your specific event type</p>
+            </div>
+            <div class="event-selector-grid">
+                <a href="weddings.html" class="event-type-card" style="text-decoration:none;transition:transform 0.3s ease;">
+                    <div class="event-type-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </div>
+                    <h3>St. Augustine Wedding</h3>
+                    <p>DJ, photobooth, 360 booth, special effects &amp; more for your St. Augustine wedding day.</p>
+                    <span style="color:var(--color-primary);font-weight:600;font-size:0.9rem;">View Wedding Services &rarr;</span>
+                </a>
+                <a href="corporate-events.html" class="event-type-card" style="text-decoration:none;transition:transform 0.3s ease;">
+                    <div class="event-type-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+                    </div>
+                    <h3>St. Augustine Corporate Event</h3>
+                    <p>Professional DJ and entertainment for St. Augustine corporate retreats, galas &amp; company events.</p>
+                    <span style="color:var(--color-primary);font-weight:600;font-size:0.9rem;">View Corporate Services &rarr;</span>
+                </a>
+                <a href="school-events.html" class="event-type-card" style="text-decoration:none;transition:transform 0.3s ease;">
+                    <div class="event-type-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                    </div>
+                    <h3>St. Augustine School Event</h3>
+                    <p>Trusted by St. Johns County schools for proms, homecoming &amp; school dances.</p>
+                    <span style="color:var(--color-primary);font-weight:600;font-size:0.9rem;">View School Services &rarr;</span>
+                </a>
+                <a href="private-parties.html" class="event-type-card" style="text-decoration:none;transition:transform 0.3s ease;">
+                    <div class="event-type-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                    </div>
+                    <h3>St. Augustine Private Party</h3>
+                    <p>Birthdays, anniversaries &amp; milestone celebrations throughout St. Augustine &amp; St. Johns County.</p>
+                    <span style="color:var(--color-primary);font-weight:600;font-size:0.9rem;">View Party Services &rarr;</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Book St. Augustine&rsquo;s Best Event Entertainment?</h2>
+                <p>St. Augustine dates fill fast &mdash; especially wedding season and holiday weekends. Request your free quote today and let&rsquo;s make your St. Augustine event unforgettable.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-large btn-primary">Get Your Free Quote</a>
+                    <a href="tel:+19048548014" class="btn btn-large btn-outline-light">Call (904) 854-8014</a>
+                </div>
+                <p class="cta-note">Serving St. Augustine since 1997 &#8226; $1M insured &#8226; Five-star rated &#8226; Quick response guaranteed</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <img src="images/footloose-logo-white.png" alt="Footloose Entertainment" width="180" height="72">
+                    <p>Jacksonville and St. Augustine's premier entertainment company since 1997.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/footlooseentertainment" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="https://instagram.com/footloosedjs" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Event Types</h4>
+                    <ul>
+                        <li><a href="corporate-events.html">Corporate Events</a></li>
+                        <li><a href="weddings.html">Weddings &amp; Celebrations</a></li>
+                        <li><a href="school-events.html">School Events &amp; Proms</a></li>
+                        <li><a href="private-parties.html">Private Parties</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Specialty Services</h4>
+                    <ul>
+                        <li><a href="360-booth.html">360 Video Booth</a></li>
+                        <li><a href="mirror-booth.html">Mirror Photo Booth</a></li>
+                        <li><a href="special-effects.html">Special Effects</a></li>
+                        <li><a href="audio-guestbook.html">Audio Guestbook</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="current-clients.html">Current Clients</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Footloose Entertainment. All rights reserved.</p>
+                <p>Serving Jacksonville, St. Augustine &amp; Northeast Florida since 1997</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const expanded = btn.getAttribute('aria-expanded') === 'true';
+                document.querySelectorAll('.faq-question').forEach(b => {
+                    b.setAttribute('aria-expanded', 'false');
+                    b.nextElementSibling.classList.remove('open');
+                });
+                if (!expanded) {
+                    btn.setAttribute('aria-expanded', 'true');
+                    btn.nextElementSibling.classList.add('open');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
