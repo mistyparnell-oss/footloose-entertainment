@@ -304,21 +304,16 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Service",
-      "serviceType": "360 Video Booth Rental",
-      "name": "360 Video Booth Rental",
-      "provider": {
-        "@type": "Organization",
-        "name": "Footloose Entertainment",
-        "url": "https://footlooseentertainment.com",
-        "logo": "https://footlooseentertainment.com/images/footloose-logo.png",
-        "telephone": "+1-904-854-8014",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Jacksonville",
-          "addressRegion": "FL",
-          "addressCountry": "US"
-        }
+      "@type": "LocalBusiness",
+      "name": "Footloose Entertainment",
+      "url": "https://footlooseentertainment.com",
+      "logo": "https://footlooseentertainment.com/images/footloose-logo.png",
+      "telephone": "+1-904-854-8014",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Jacksonville",
+        "addressRegion": "FL",
+        "addressCountry": "US"
       },
       "areaServed": [
         {
@@ -343,11 +338,17 @@
         }
       ],
       "description": "Glamorous 360-degree slow-motion video booth rental for weddings, corporate events, school events, and private parties. Custom overlays, LED lighting ring, instant social sharing, and professional attendant. Serving Jacksonville, St. Augustine, and Northeast Florida.",
-      "offers": {
-        "@type": "Offer",
-        "name": "360 Video Booth Package",
-        "description": "360-degree slow-motion video booth with custom overlay, LED lighting ring, unlimited spins, digital delivery, and on-site attendant.",
-        "areaServed": "Jacksonville, FL and surrounding areas"
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "360 Video Booth Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "360 Video Booth Package",
+            "description": "360-degree slow-motion video booth with custom overlay, LED lighting ring, unlimited spins, digital delivery, and on-site attendant.",
+            "areaServed": "Jacksonville, FL and surrounding areas"
+          }
+        ]
       },
       "aggregateRating": {
         "@type": "AggregateRating",
