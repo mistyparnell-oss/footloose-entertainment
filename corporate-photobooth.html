@@ -37,42 +37,38 @@
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Footloose Entertainment",
-      "url": "https://footlooseentertainment.com",
-      "logo": "https://footlooseentertainment.com/images/footloose-logo.png",
-      "telephone": "+1-904-854-8014",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Jacksonville",
-        "addressRegion": "FL",
-        "addressCountry": "US"
-      },
-      "areaServed": [
-        { "@type": "City", "name": "Jacksonville", "addressRegion": "FL" },
-        { "@type": "City", "name": "St. Augustine", "addressRegion": "FL" },
-        { "@type": "City", "name": "Ponte Vedra", "addressRegion": "FL" },
-        { "@type": "City", "name": "Orange Park", "addressRegion": "FL" }
-      ],
-      "description": "Professional photobooth services for corporate events including 360 video booths, mirror booths, digital photobooths, video photobooths, social photobooths, enclosed booths, open air booths, and wooden booths with custom branding and instant social sharing.",
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Corporate Photobooth Rental Services",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "@type": "AggregateOffer",
-        "priceCurrency": "USD",
-        "offers": [
-          {
-            "@type": "Offer",
-            "name": "Open Air Photobooth",
-            "description": "Classic photobooth with instant prints and digital copies, perfect for large groups"
-          }
-        ]
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Footloose Entertainment",
+  "url": "https://footlooseentertainment.com",
+  "logo": "https://footlooseentertainment.com/images/footloose-logo.png",
+  "telephone": "+1-904-854-8014",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Jacksonville",
+    "addressRegion": "FL",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Jacksonville", "addressRegion": "FL" },
+    { "@type": "City", "name": "St. Augustine", "addressRegion": "FL" },
+    { "@type": "City", "name": "Ponte Vedra", "addressRegion": "FL" },
+    { "@type": "City", "name": "Orange Park", "addressRegion": "FL" }
+  ],
+  "description": "Professional photobooth services for corporate events including 360 video booths, mirror booths, digital photobooths, and open air booths with custom branding and instant social sharing.",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Corporate Photobooth Rental Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "Corporate Photobooth Rental",
+        "description": "Professional photobooth with custom corporate branding, instant prints or digital delivery, and on-site attendant.",
+        "areaServed": "Jacksonville, FL and surrounding areas"
       }
-    }
+    ]
+  }
+}
     </script>
 <style>
 body:has(.corporate-hero) .main-nav a.active {

@@ -37,42 +37,38 @@
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Footloose Entertainment",
-      "url": "https://footlooseentertainment.com",
-      "logo": "https://footlooseentertainment.com/images/footloose-logo.png",
-      "telephone": "+1-904-854-8014",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Jacksonville",
-        "addressRegion": "FL",
-        "addressCountry": "US"
-      },
-      "areaServed": [
-        { "@type": "City", "name": "Jacksonville", "addressRegion": "FL" },
-        { "@type": "City", "name": "St. Augustine", "addressRegion": "FL" },
-        { "@type": "City", "name": "Ponte Vedra", "addressRegion": "FL" },
-        { "@type": "City", "name": "Orange Park", "addressRegion": "FL" }
-      ],
-      "description": "Elegant photobooth rentals for weddings including 360 video booths, mirror booths, digital photobooths, video photobooths, social photobooths, enclosed booths, open air booths, and wooden booths with custom overlays, instant guest books, and unlimited prints.",
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Wedding Photobooth Rental Services",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "@type": "AggregateOffer",
-        "priceCurrency": "USD",
-        "offers": [
-          {
-            "@type": "Offer",
-            "name": "Open Air Photobooth",
-            "description": "Classic wedding photobooth with instant prints, custom overlays, and unlimited photos for your guests"
-          }
-        ]
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Footloose Entertainment",
+  "url": "https://footlooseentertainment.com",
+  "logo": "https://footlooseentertainment.com/images/footloose-logo.png",
+  "telephone": "+1-904-854-8014",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Jacksonville",
+    "addressRegion": "FL",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Jacksonville", "addressRegion": "FL" },
+    { "@type": "City", "name": "St. Augustine", "addressRegion": "FL" },
+    { "@type": "City", "name": "Ponte Vedra", "addressRegion": "FL" },
+    { "@type": "City", "name": "Orange Park", "addressRegion": "FL" }
+  ],
+  "description": "Elegant wedding photobooth rentals creating unforgettable memories for you and your guests. Open air, mirror, 360, and digital booths with custom overlays, instant prints, and guest book options. Serving Jacksonville and St. Augustine.",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Wedding Photobooth Rental Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "Wedding Photobooth Rental",
+        "description": "Wedding photobooth with custom overlay, instant prints or digital delivery, guest book option, and professional attendant.",
+        "areaServed": "Jacksonville, FL and surrounding areas"
       }
-    }
+    ]
+  }
+}
     </script>
 <style>
 body:has(.wedding-hero) .main-nav a.active {
