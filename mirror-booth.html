@@ -298,21 +298,16 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Service",
-      "serviceType": "Mirror Photo Booth Rental",
-      "name": "Mirror Photo Booth Rental",
-      "provider": {
-        "@type": "Organization",
-        "name": "Footloose Entertainment",
-        "url": "https://footlooseentertainment.com",
-        "logo": "https://footlooseentertainment.com/images/footloose-logo.png",
-        "telephone": "+1-904-854-8014",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Jacksonville",
-          "addressRegion": "FL",
-          "addressCountry": "US"
-        }
+      "@type": "LocalBusiness",
+      "name": "Footloose Entertainment",
+      "url": "https://footlooseentertainment.com",
+      "logo": "https://footlooseentertainment.com/images/footloose-logo.png",
+      "telephone": "+1-904-854-8014",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Jacksonville",
+        "addressRegion": "FL",
+        "addressCountry": "US"
       },
       "areaServed": [
         { "@type": "City", "name": "Jacksonville", "addressRegion": "FL" },
@@ -321,11 +316,17 @@
         { "@type": "City", "name": "Orange Park", "addressRegion": "FL" }
       ],
       "description": "Interactive full-length mirror photo booth rental for weddings, corporate events, school proms, and private parties. Custom overlays, instant prints or digital delivery, props included. Serving Jacksonville, St. Augustine, and Northeast Florida.",
-      "offers": {
-        "@type": "Offer",
-        "name": "Mirror Photo Booth Rental",
-        "description": "Full-length interactive mirror photo booth with custom overlay, choice of instant prints or digital delivery, props, and professional attendant.",
-        "areaServed": "Jacksonville, FL and surrounding areas"
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Mirror Photo Booth Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Mirror Photo Booth Rental",
+            "description": "Full-length interactive mirror photo booth with custom overlay, choice of instant prints or digital delivery, props, and professional attendant.",
+            "areaServed": "Jacksonville, FL and surrounding areas"
+          }
+        ]
       },
       "aggregateRating": {
         "@type": "AggregateRating",

@@ -252,21 +252,16 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Service",
-      "serviceType": "Audio Guestbook Rental",
-      "name": "Audio Guestbook Rental",
-      "provider": {
-        "@type": "Organization",
-        "name": "Footloose Entertainment",
-        "url": "https://footlooseentertainment.com",
-        "logo": "https://footlooseentertainment.com/images/footloose-logo.png",
-        "telephone": "+1-904-854-8014",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Jacksonville",
-          "addressRegion": "FL",
-          "addressCountry": "US"
-        }
+      "@type": "LocalBusiness",
+      "name": "Footloose Entertainment",
+      "url": "https://footlooseentertainment.com",
+      "logo": "https://footlooseentertainment.com/images/footloose-logo.png",
+      "telephone": "+1-904-854-8014",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Jacksonville",
+        "addressRegion": "FL",
+        "addressCountry": "US"
       },
       "areaServed": [
         { "@type": "City", "name": "Jacksonville", "addressRegion": "FL" },
@@ -275,11 +270,18 @@
         { "@type": "City", "name": "Orange Park", "addressRegion": "FL" }
       ],
       "description": "Vintage telephone audio guestbook rental for weddings, private parties, and events. Guests pick up the handset and leave a heartfelt voice message. Custom greeting from the couple or host, online access to all recordings after the event. Serving Jacksonville, St. Augustine, and Northeast Florida.",
-      "offers": {
-        "@type": "Offer",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Audio Guestbook Rental Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "@type": "Offer",
         "name": "Audio Guestbook Rental",
         "description": "Vintage-style telephone audio guestbook with custom greeting message and online access to all recordings after your event.",
         "areaServed": "Jacksonville, FL and surrounding areas"
+          }
+        ]
       },
       "aggregateRating": {
         "@type": "AggregateRating",
