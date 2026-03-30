@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360 Video Booth Rental Jacksonville & St. Augustine | Footloose Entertainment</title>
+    <meta name="description" content="Wow your guests with a glamorous 360-degree video booth! Slow-motion videos with custom overlays for weddings, corporate events, school events & private parties. The most-talked-about entertainment in Jacksonville & St. Augustine. Book now!">
+    <meta name="keywords" content="360 booth rental Jacksonville, 360 video booth rental Jacksonville FL, 360 photo booth St Augustine, 360 degree video booth rental, slow motion video booth, 360 booth rental Northeast Florida, 360 photo booth corporate event, 360 booth prom Jacksonville, 360 video booth party">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://footlooseentertainment.com/360-booth.html">
+    <meta property="og:title" content="360 Video Booth Rental Jacksonville & St. Augustine | Footloose Entertainment">
+    <meta property="og:description" content="Stunning 360-degree slow-motion videos with custom overlays for any event. The show-stopping entertainment your guests will share all over social media. Serving Jacksonville & Northeast FL.">
+    <meta property="og:image" content="https://footlooseentertainment.com/images/photobooths/360-booth-wedding-og.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://footlooseentertainment.com/360-booth.html">
+    <meta property="twitter:title" content="360 Video Booth Rental Jacksonville & St. Augustine | Footloose Entertainment">
+    <meta property="twitter:description" content="Glamorous 360-degree slow-motion videos with custom overlays. Instant social sharing, unforgettable moments for weddings, corporate, school & private events.">
+    <meta property="twitter:image" content="https://footlooseentertainment.com/images/photobooths/360-booth-wedding-og.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://footlooseentertainment.com/360-booth.html">
+    
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="US-FL">
+    <meta name="geo.placename" content="Jacksonville">
+    <meta name="geo.position" content="30.3322;-81.6557">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ── Color palette override – matches homepage (event-agnostic teal) ── */
+        :root {
+            --color-primary: #006D77;
+            --color-primary-dark: #004E57;
+            --color-accent: #D4A843;
+            --color-gold: #D4A843;
+        }
+
+        /* Gold metallic badge for 360 branding */
+        .badge-360 {
+            background: linear-gradient(135deg, #c9a97a 0%, #e8d5a3 50%, #c9a97a 100%);
+            color: #1a1a1a;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+        }
+
+        /* ── 360 Booth page-specific styles ── */
+
+        /* Spin animation for the rotating platform icon */
+        @keyframes spin360 {
+            from { transform: rotate(0deg); }
+            to   { transform: rotate(360deg); }
+        }
+        .spin-icon {
+            display: inline-block;
+            animation: spin360 6s linear infinite;
+        }
+
+        /* How It Works – dark strip using site secondary color */
+        .how-it-works {
+            background: var(--color-secondary);
+            color: #fff;
+            padding: 5rem 0;
+        }
+        .how-it-works .section-intro h2,
+        .how-it-works .step-title {
+            color: #fff;
+        }
+        .how-it-works .section-intro p {
+            color: rgba(255,255,255,0.7);
+        }
+
+        /* 4-step grid – always 2x2 on mid, 4-across on wide */
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media (min-width: 900px) {
+            .steps-grid { grid-template-columns: repeat(4, 1fr); }
+        }
+        .step-card {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            border: 1px solid rgba(0,109,119,0.35);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .step-card:hover {
+            transform: translateY(-6px);
+            background: rgba(0,109,119,0.15);
+        }
+        .step-number {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: var(--color-primary);
+            color: #fff;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+        }
+        .step-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.3rem;
+            letter-spacing: 0.06em;
+            margin-bottom: 0.5rem;
+        }
+        .step-desc {
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.65);
+            line-height: 1.6;
+        }
+
+        /* FAQ accordion */
+        .faq-section {
+            padding: 5rem 0;
+        }
+        .faq-list {
+            max-width: 800px;
+            margin: 3rem auto 0;
+        }
+        .faq-item {
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 1.4rem 0;
+            text-align: left;
+            font-family: 'Barlow', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--color-secondary);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+        .faq-question .faq-arrow {
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+            color: var(--color-primary);
+        }
+        .faq-question[aria-expanded="true"] .faq-arrow {
+            transform: rotate(180deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+        }
+        .faq-answer.open {
+            max-height: 400px;
+            padding-bottom: 1.2rem;
+        }
+        .faq-answer p {
+            color: #555;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* Venue section */
+        .venues-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .venue-pill {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 0.8rem 1.2rem;
+            font-size: 0.9rem;
+            color: #444;
+            text-align: center;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .venue-pill:hover {
+            background: #fdf0f3;
+            border-color: var(--color-primary);
+        }
+
+        /* Event type selector – force 2x2 grid */
+        .event-selector-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--spacing-md);
+            max-width: 860px;
+            margin: 3rem auto 0;
+        }
+        @media (max-width: 600px) {
+            .event-selector-grid { grid-template-columns: 1fr; }
+        }
+
+        /* Gallery / In-Action section */
+        .booth-gallery {
+            padding: 5rem 0;
+            background: var(--color-bg-light);
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px) {
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 480px) {
+            .gallery-grid { grid-template-columns: 1fr; }
+        }
+        .gallery-item {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            background: #e0e0e0;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+            display: block;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        .gallery-item.video-embed {
+            aspect-ratio: 16/9;
+            grid-column: span 2;
+        }
+        @media (max-width: 768px) {
+            .gallery-item.video-embed { grid-column: span 2; }
+        }
+        @media (max-width: 480px) {
+            .gallery-item.video-embed { grid-column: span 1; }
+        }
+        .gallery-item.video-embed iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .gallery-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #f0f0f0;
+            color: #999;
+            font-size: 0.85rem;
+            text-align: center;
+            padding: 1rem;
+            gap: 0.5rem;
+        }
+        .gallery-placeholder svg {
+            opacity: 0.4;
+        }
+        .video-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: var(--color-secondary);
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+            text-align: center;
+            padding: 1.5rem;
+            gap: 0.75rem;
+        }
+        .video-placeholder svg {
+            opacity: 0.6;
+        }
+        .video-placeholder strong {
+            color: #fff;
+            font-size: 1rem;
+        }
+    </style>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Footloose Entertainment",
+      "url": "https://footlooseentertainment.com",
+      "logo": "https://footlooseentertainment.com/images/footloose-logo.png",
+      "telephone": "+1-904-854-8014",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Jacksonville",
+        "addressRegion": "FL",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Jacksonville",
+          "addressRegion": "FL"
+        },
+        {
+          "@type": "City",
+          "name": "St. Augustine",
+          "addressRegion": "FL"
+        },
+        {
+          "@type": "City",
+          "name": "Ponte Vedra",
+          "addressRegion": "FL"
+        },
+        {
+          "@type": "City",
+          "name": "Orange Park",
+          "addressRegion": "FL"
+        }
+      ],
+      "description": "Glamorous 360-degree slow-motion video booth rental for weddings, corporate events, school events, and private parties. Custom overlays, LED lighting ring, instant social sharing, and professional attendant. Serving Jacksonville, St. Augustine, and Northeast Florida.",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "360 Video Booth Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "360 Video Booth Package",
+            "description": "360-degree slow-motion video booth with custom overlay, LED lighting ring, unlimited spins, digital delivery, and on-site attendant.",
+            "areaServed": "Jacksonville, FL and surrounding areas"
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "47"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+          "author": { "@type": "Person", "name": "Brittany & Derek" },
+          "reviewBody": "The 360 booth was absolutely the highlight of our reception! Our guests could not stop talking about it and we are still getting tagged in videos three months later."
+        }
+      ]
+    }
+    </script>
+
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a 360 video booth?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A 360 video booth is a rotating arm camera that circles guests on a platform, capturing stunning slow-motion video from every angle. The result is a glamorous, cinematic video clip with a custom overlay that guests can instantly share to social media. Perfect for weddings, corporate events, school events, and private parties."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much space does the 360 booth need?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our 360 booth platform is approximately 4 feet in diameter and the arm extends outward, so we recommend a footprint of about 10x10 feet to allow guests to comfortably step on and off. We coordinate directly with your venue to ensure a perfect fit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many people can use the 360 booth at once?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our platform comfortably holds 2&ndash;6 guests per session, making it ideal for couples, groups, and families. Our attendant manages the flow to keep the line moving while every guest gets a turn."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can we customize the 360 booth videos with our event details?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely! Every video features a custom digital overlay designed specifically for your event — whether that's your names and wedding date, your company logo and branding, your school name and prom theme, or a custom design for your party. The overlay is created before your event and shared for your approval."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do guests receive their 360 booth videos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Guests receive their personalized slow-motion video instantly via text or QR code, ready to share directly to Instagram, TikTok, Facebook, or any other platform. All videos are also collected in your private online gallery."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Footloose Entertainment serve Jacksonville and St. Augustine for 360 booth rentals?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! We serve Jacksonville, St. Augustine, Ponte Vedra Beach, Orange Park, Fleming Island, Fernandina Beach, Daytona Beach, and all of Northeast Florida for 360 booth rentals at any type of event."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="/">
+                        <img src="images/footloose-logo.png" alt="Footloose Entertainment Logo" width="200" height="80">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="360-booth.html" class="active">360 Booth</a></li>
+                    </ul>
+                </nav>
+                <div class="header-cta">
+                    <a href="tel:+19048548014" class="phone-link">(904)854-8014</a>
+                    <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-background">
+            <img src="images/photobooths/360-booth-hero.jpg" alt="360 video booth in action at a Jacksonville event" loading="eager">
+            <div class="page-hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="page-hero-content">
+                <div class="hero-badge badge-360">
+                    <span class="spin-icon">&#10227;</span>&nbsp; 360&deg; Video Booth &nbsp;<span class="spin-icon">&#10227;</span>
+                </div>
+                <h1>The Most Talked-About Entertainment in Jacksonville &amp; St. Augustine</h1>
+                <p class="page-hero-subtitle">Glamorous slow-motion 360-degree videos with a fully custom overlay for your event. The show-stopping experience your guests will share on social media for weeks. Available for weddings, corporate events, school events &amp; private parties throughout Northeast Florida.</p>
+                <div class="page-hero-buttons">
+                    <a href="contact.html" class="btn btn-hero-primary">Book Your 360 Booth</a>
+                    <a href="#event-type-selector" class="btn btn-hero-secondary">Find Your Event Type &#8595;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-items">
+                <div class="trust-item">
+                    <strong>29 Years</strong>
+                    <span>Serving Northeast Florida</span>
+                </div>
+                <div class="trust-item">
+                    <strong>5 Years</strong>
+                    <span>360 Booth Experience</span>
+                </div>
+                <div class="trust-item">
+                    <strong>&#9733;&#9733;&#9733;&#9733;&#9733;</strong>
+                    <span>Five-Star Rated</span>
+                </div>
+                <div class="trust-item">
+                    <strong>$1 Million</strong>
+                    <span>Liability Insurance</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is a 360 Booth -->
+    <section class="event-types section-padding">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>What Is a 360 Video Booth &amp; Why Everyone Is Obsessed</h2>
+                <p>The hottest event entertainment trend&mdash;and it&rsquo;s everything your social media dreams are made of</p>
+            </div>
+
+            <!-- Featured explanation card -->
+            <div class="featured-booth">
+                <div class="booth-image-container">
+                    <img src="images/photobooths/360-booth.jpg" alt="360 degree video booth platform with rotating arm camera at an event" class="booth-image">
+                    <div class="booth-badge">&#9733; Most Shared</div>
+                </div>
+                <div class="booth-content">
+                    <h3>360&deg; Slow-Motion Video Booth</h3>
+                    <p class="booth-subtitle">Cinematic. Glamorous. Unforgettable.</p>
+                    <p class="booth-description">Guests step onto our elegantly lit circular platform, strike their best pose, and a rotating arm camera swoops 360 degrees around them capturing breathtaking slow-motion footage. Within seconds they receive a personalized video clip&mdash;complete with a custom overlay designed for your event&mdash;ready to share instantly to Instagram, TikTok, and Facebook. It&rsquo;s the moment everyone will be lining up to experience, talking about all night, and sharing for weeks afterward. Whether it&rsquo;s a wedding, a company gala, a school prom, or a milestone birthday&mdash;the 360 booth steals the show every time.</p>
+                    <div class="booth-features-compact">
+                        <span>&#10003; Cinematic slow-motion video</span>
+                        <span>&#10003; Custom event overlay</span>
+                        <span>&#10003; Instant social sharing</span>
+                        <span>&#10003; LED lighting ring included</span>
+                        <span>&#10003; Up to 6 guests per spin</span>
+                        <span>&#10003; Unlimited spins all night</span>
+                        <span>&#10003; Professional attendant on-site</span>
+                        <span>&#10003; Private online gallery</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>How the 360 Booth Works at Your Event</h2>
+                <p>Simple, seamless, and spectacular from start to share</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-title">Step On</div>
+                    <p class="step-desc">Guests step onto the platform and our attendant helps them find their perfect pose with fun direction and energy.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-title">Strike a Pose</div>
+                    <p class="step-desc">The LED ring illuminates and the arm sweeps 360&deg; around them, capturing every angle in stunning slow-motion.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-title">Custom Overlay</div>
+                    <p class="step-desc">Your personalized event overlay&mdash;branding, names, logo, or theme&mdash;is automatically applied to every video.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-title">Share Instantly</div>
+                    <p class="step-desc">Videos arrive via QR code or text in seconds, ready to post to Instagram, TikTok, or Facebook&mdash;and saved to your private gallery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose / Benefits -->
+    <section class="why-choose section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Why the 360 Booth is a Must-Have at Your Event</h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                    </div>
+                    <h3>The Experience Guests Can&rsquo;t Stop Sharing</h3>
+                    <p>No other entertainment creates the same level of excitement and social sharing. Guests are naturally drawn to the platform and spend the event energized, laughing, and sharing their videos in real time. Your event hashtag fills with content organically&mdash;meaning even people who couldn&rsquo;t attend get to feel part of the magic.</p>
+                    <p>Research consistently shows that interactive entertainment keeps guests engaged longer and creates stronger, longer-lasting memories than passive entertainment options.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3>Brings Every Crowd Together</h3>
+                    <p>The 360 booth is universally irresistible. Young adults love it for the social media content. Corporate guests love the branded video keepsake. Students love the energy and the viral potential. Families love the novelty and the fun. The platform is wide enough for groups and the experience is intuitive for everyone from kids to grandparents.</p>
+                    <p>Our attendants are expert at energizing guests, directing poses, and making sure everyone leaves with a video they love.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <h3>29 Years of Event Excellence</h3>
+                    <p>Footloose Entertainment has been creating unforgettable event experiences in Jacksonville and St. Augustine since 1997. When you add the 360 booth to your event, you&rsquo;re backed by nearly three decades of event expertise, professional equipment, and a team that understands how to execute flawlessly under any conditions.</p>
+                    <p>We arrive early, coordinate with your venue, troubleshoot proactively, and ensure the 360 booth experience runs perfectly from the first spin to the last.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery / In Action -->
+    <section class="booth-gallery">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>The 360 Booth in Action</h2>
+                <p>See why guests can&rsquo;t get enough&mdash;at weddings, corporate events, proms, and private parties across Northeast Florida</p>
+            </div>
+            <div class="gallery-grid">
+                <!-- Video embed – replace src with your YouTube/Vimeo embed URL -->
+                <div class="gallery-item video-embed">
+                    <iframe src="https://www.youtube.com/embed/Ca5VcQyTIkw?autoplay=1&mute=1&loop=1&playlist=Ca5VcQyTIkw&controls=0&modestbranding=1&rel=0" title="360 Video Booth in Action | Footloose Entertainment Jacksonville" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                </div>
+                <!-- Photo placeholders – replace src with your actual 360 booth photos -->
+                <div class="gallery-item">
+                    <img src="images/photobooths/360-booth-action-1.jpg" alt="Guests on 360 video booth at Jacksonville wedding" loading="lazy"
+                         onerror="this.parentElement.innerHTML='<div class=\'gallery-placeholder\'><svg width=\'40\' height=\'40\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.5\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>360-booth-action-1.jpg</span></div>'">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photobooths/360-booth-action-2.jpg" alt="360 booth at corporate event Jacksonville" loading="lazy"
+                         onerror="this.parentElement.innerHTML='<div class=\'gallery-placeholder\'><svg width=\'40\' height=\'40\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.5\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>360-booth-action-2.jpg</span></div>'">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photobooths/360-booth-action-3.jpg" alt="Students using 360 video booth at Jacksonville prom" loading="lazy"
+                         onerror="this.parentElement.innerHTML='<div class=\'gallery-placeholder\'><svg width=\'40\' height=\'40\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.5\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>360-booth-action-3.jpg</span></div>'">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/photobooths/360-booth-action-4.jpg" alt="360 booth at private party St. Augustine" loading="lazy"
+                         onerror="this.parentElement.innerHTML='<div class=\'gallery-placeholder\'><svg width=\'40\' height=\'40\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.5\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>360-booth-action-4.jpg</span></div>'">
+                </div>
+
+            </div>
+            <p style="text-align:center;margin-top:2rem;color:#888;font-size:0.9rem;">Have a 360 booth video from your event? Tag us on Instagram <a href="https://instagram.com/footloosedjs" style="color:var(--color-primary);">@footloosedjs</a></p>
+        </div>
+    </section>
+
+    <!-- Venues We Serve -->
+    <section class="benefits section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Jacksonville &amp; St. Augustine Venues We&rsquo;ve Served</h2>
+                <p>We&rsquo;ve brought the 360 booth to some of Northeast Florida&rsquo;s most-searched venues&mdash;from waterfront ballrooms to hotel conference centers to school event spaces</p>
+            </div>
+            <div class="venues-grid">
+                <div class="venue-pill">The White Room &mdash; St. Augustine</div>
+                <div class="venue-pill">Treasury on the Plaza &mdash; St. Augustine</div>
+                <div class="venue-pill">Epping Forest Yacht Club &mdash; Jacksonville</div>
+                <div class="venue-pill">Hyatt Regency Riverfront &mdash; Jacksonville</div>
+                <div class="venue-pill">TPC Sawgrass &mdash; Ponte Vedra</div>
+                <div class="venue-pill">Sawgrass Marriott &mdash; Ponte Vedra</div>
+                <div class="venue-pill">Omni Amelia Island &mdash; Fernandina Beach</div>
+                <div class="venue-pill">Ponte Vedra Inn &amp; Club</div>
+                <div class="venue-pill">Casa Marina Hotel &mdash; Jacksonville Beach</div>
+                <div class="venue-pill">Ribault Club &mdash; Jacksonville</div>
+                <div class="venue-pill">Casa Monica Hotel &mdash; St. Augustine</div>
+                <div class="venue-pill">Club Continental &mdash; Orange Park</div>
+                <div class="venue-pill">Ritz Carlton &mdash; Amelia Island</div>
+                <div class="venue-pill">River House &mdash; St. Augustine</div>
+                <div class="venue-pill">Serenata Beach Club &mdash; Ponte Vedra</div>
+                <div class="venue-pill">Daily&rsquo;s Place / TIAA Bank Field</div>
+                <div class="venue-pill">Marriott Southpoint &mdash; Jacksonville</div>
+                <div class="venue-pill">Jacksonville Zoo &amp; Gardens</div>
+                <div class="venue-pill">Nocatee Crosswater Hall</div>
+                <div class="venue-pill">Your Venue &mdash; We Travel!</div>
+            </div>
+            <p style="text-align:center;margin-top:2rem;color:#777;font-size:0.9rem;">Don&rsquo;t see your venue? We serve all of Northeast Florida including Fernandina Beach, Daytona, Gainesville, and beyond. <a href="contact.html" style="color:var(--color-primary);">Contact us</a> to confirm availability for your location.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>Guests Can&rsquo;t Stop Raving About the 360 Booth</h2>
+                <p>Real reviews from real Jacksonville and St. Augustine events</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">&ldquo;The 360 booth was THE highlight of our entire reception. Guests who had never heard of it were blown away and everyone kept going back for another spin. The slow-motion videos with our names on them looked absolutely stunning. We are still being tagged in posts two months later!&rdquo;</p>
+                    <div class="testimonial-author">
+                        <strong>Brittany &amp; Derek</strong>
+                        <span>Married at The White Room, St. Augustine</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">&ldquo;We were on the fence about the 360 booth vs. a traditional photobooth and I am so glad we went with the 360. The energy it created was incredible. My 70-year-old grandmother got on it and her video went viral in our family group chat. Worth every single penny.&rdquo;</p>
+                    <div class="testimonial-author">
+                        <strong>Kayla &amp; Marcus</strong>
+                        <span>Married at TPC Sawgrass, Ponte Vedra</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">&ldquo;Footloose was professional from the moment we contacted them. The custom overlay matched our wedding perfectly, the attendant kept the line moving and the energy high, and every video came out gorgeous. Our wedding gallery is filled with incredible memories we&rsquo;ll treasure forever.&rdquo;</p>
+                    <div class="testimonial-author">
+                        <strong>Ashley &amp; Jonathan</strong>
+                        <span>Married at Casa Marina, Jacksonville Beach</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>360 Booth FAQs</h2>
+                <p>Everything you need to know before booking</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What is a 360 video booth?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>A 360 video booth features a circular platform guests stand on while a rotating arm camera sweeps 360 degrees around them, capturing glamorous slow-motion video from every angle. The result is a cinematic, shareable video clip with a custom overlay that guests receive instantly on their phones. It works beautifully for weddings, corporate events, school events, and private parties.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How much space does the 360 booth need at my venue?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The platform is approximately 4 feet in diameter and the rotating arm extends outward, so we recommend a clear footprint of roughly 10&times;10 feet. We coordinate directly with your venue coordinator before your event to confirm placement and ensure a smooth setup.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How many people can use the 360 booth at once?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our platform comfortably holds 2&ndash;6 guests per session, making it perfect for couples, groups, teams, and families. Our attendant manages the flow to keep energy high and ensure everyone gets their moment&mdash;often multiple times!</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Can we customize the overlay for our event?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! Every video features a fully custom digital overlay designed specifically for your event. For weddings that&rsquo;s your names and date. For corporate events it&rsquo;s your logo and branding. For school events it&rsquo;s your school name and theme. We create a proof before your event for approval.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How do guests receive their 360 booth videos?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Guests receive their personalized video instantly via QR code or text message. Videos are ready to share directly to Instagram, TikTok, Facebook, or any other platform within seconds of their spin. Every video is also saved to your private online gallery.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Do you serve Jacksonville and St. Augustine for 360 booth rentals?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We serve Jacksonville, St. Augustine, Ponte Vedra Beach, Jacksonville Beach, Neptune Beach, Atlantic Beach, Orange Park, Fleming Island, Fernandina Beach, and all of Northeast Florida. Contact us to confirm travel availability for your specific venue location.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Can we add a 360 booth to our existing DJ or photobooth package?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely&mdash;and many clients do exactly that! Combining our 360 booth with DJ services or other photobooth options creates a full entertainment package at often a better combined value. Contact us to discuss bundling options for your event.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Type Selector -->
+    <section id="event-type-selector" class="event-types section-padding bg-light">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>Which Event Are You Planning?</h2>
+                <p>Head back to your event type to explore all our services and find the right package for you</p>
+            </div>
+            <div class="event-selector-grid">
+                <a href="wedding-photobooth.html" class="event-type-card" style="text-decoration:none;transition:transform 0.3s ease;">
+                    <div class="event-type-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </div>
+                    <h3>Wedding</h3>
+                    <p>Custom overlays with your names &amp; date. The most-shared moment of your reception.</p>
+                    <span style="color:var(--color-primary);font-weight:600;font-size:0.9rem;">View Wedding Photobooths &rarr;</span>
+                </a>
+                <a href="corporate-photobooth.html" class="event-type-card" style="text-decoration:none;transition:transform 0.3s ease;">
+                    <div class="event-type-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+                    </div>
+                    <h3>Corporate Event</h3>
+                    <p>Branded overlays with your company logo. Amplify your brand and engage your team.</p>
+                    <span style="color:var(--color-primary);font-weight:600;font-size:0.9rem;">View Corporate Photobooths &rarr;</span>
+                </a>
+                <a href="school-photobooth.html" class="event-type-card" style="text-decoration:none;transition:transform 0.3s ease;">
+                    <div class="event-type-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                    </div>
+                    <h3>School Event</h3>
+                    <p>School name, colors, and prom theme overlays. The viral hit of any school dance or event.</p>
+                    <span style="color:var(--color-primary);font-weight:600;font-size:0.9rem;">View School Photobooths &rarr;</span>
+                </a>
+                <a href="private-party-photobooth.html" class="event-type-card" style="text-decoration:none;transition:transform 0.3s ease;">
+                    <div class="event-type-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                    </div>
+                    <h3>Private Party</h3>
+                    <p>Birthdays, anniversaries, quincea&ntilde;eras, reunions&mdash;custom overlays for any celebration.</p>
+                    <span style="color:var(--color-primary);font-weight:600;font-size:0.9rem;">View Party Photobooths &rarr;</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Book Your 360 Booth?</h2>
+                <p>Dates fill fast&mdash;especially for wedding season, prom season, and holiday corporate events. Request your quote today and let&rsquo;s create the most talked-about moment of your event.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-large btn-primary">Book Your 360 Booth Now</a>
+                    <a href="tel:+19048548014" class="btn btn-large btn-outline-light">Call (904)854-8014</a>
+                </div>
+                <p class="cta-note">Quick response &#8226; Custom overlay included &#8226; 29 years of event excellence</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <img src="images/footloose-logo-white.png" alt="Footloose Entertainment" width="180" height="72">
+                    <p>Jacksonville and St. Augustine's premier entertainment company since 1997.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/footlooseentertainment" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="https://instagram.com/footloosedjs" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Event Types</h4>
+                    <ul>
+                        <li><a href="corporate-events.html">Corporate Events</a></li>
+                        <li><a href="weddings.html">Weddings &amp; Celebrations</a></li>
+                        <li><a href="school-events.html">School Events &amp; Proms</a></li>
+                        <li><a href="private-parties.html">Private Parties</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>360 Booth by Event</h4>
+                    <ul>
+                        <li><a href="wedding-photobooth.html">Wedding 360 Booth</a></li>
+                        <li><a href="corporate-photobooth.html">Corporate 360 Booth</a></li>
+                        <li><a href="school-photobooth.html">School Event 360 Booth</a></li>
+                        <li><a href="private-party-photobooth.html">Private Party 360 Booth</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="current-clients.html">Current Clients</a></li>
+                        <li><a href="jacksonville-event-entertainment.html">Jacksonville</a></li>
+                        <li><a href="st-augustine-event-entertainment.html">St. Augustine</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Footloose Entertainment. All rights reserved.</p>
+                <p>Serving Jacksonville, St. Augustine &amp; Northeast Florida since 1997</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // FAQ accordion
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const expanded = btn.getAttribute('aria-expanded') === 'true';
+                // Close all
+                document.querySelectorAll('.faq-question').forEach(b => {
+                    b.setAttribute('aria-expanded', 'false');
+                    b.nextElementSibling.classList.remove('open');
+                });
+                // Open clicked if it was closed
+                if (!expanded) {
+                    btn.setAttribute('aria-expanded', 'true');
+                    btn.nextElementSibling.classList.add('open');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

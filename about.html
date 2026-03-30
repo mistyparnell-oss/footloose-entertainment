@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Footloose Entertainment | Jacksonville & St. Augustine DJ Since 1997</title>
+    <meta name="description" content="Meet the family behind Footloose Entertainment. Founded in Jacksonville in 1997 after Kris fell in love with the DJ at his own wedding, we've spent nearly 30 years making Northeast Florida events unforgettable. Family owned, locally operated, community focused.">
+    <meta name="keywords" content="about Footloose Entertainment, Jacksonville DJ company, St Augustine DJ company, family owned DJ Jacksonville, Footloose Entertainment history, Jacksonville event entertainment company">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://footlooseentertainment.com/about.html">
+    <meta property="og:title" content="About Footloose Entertainment | Jacksonville & St. Augustine DJ Since 1997">
+    <meta property="og:description" content="Meet the family behind Footloose Entertainment. Founded in 1997, family owned and locally operated in Jacksonville and St. Augustine for nearly 30 years.">
+    <meta property="og:image" content="https://footlooseentertainment.com/images/about-og.jpg">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://footlooseentertainment.com/about.html">
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="US-FL">
+    <meta name="geo.placename" content="Jacksonville">
+    <meta name="geo.position" content="30.3322;-81.6557">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-primary: #006D77;
+            --color-primary-dark: #004E57;
+            --color-accent: #D4A843;
+            --color-gold: #D4A843;
+        }
+
+        /* Story section */
+        .story-section {
+            padding: 5rem 0;
+            background: var(--color-bg-white);
+        }
+        .story-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            .story-grid { grid-template-columns: 1fr; gap: 2rem; }
+        }
+        .story-image {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+            aspect-ratio: 4/3;
+            background: #e0e0e0;
+        }
+        .story-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .story-content h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            letter-spacing: 0.04em;
+            color: var(--color-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+        .story-content h2 span {
+            color: var(--color-primary);
+        }
+        .story-content p {
+            font-size: 1.05rem;
+            color: #444;
+            line-height: 1.8;
+            margin-bottom: 1.2rem;
+        }
+        .story-quote {
+            border-left: 4px solid var(--color-primary);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-size: 1.15rem;
+            font-style: italic;
+            color: var(--color-primary);
+            line-height: 1.7;
+        }
+
+        /* Values cards */
+        .values-section {
+            padding: 5rem 0;
+            background: var(--color-bg-light);
+        }
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .value-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+            border-top: 4px solid var(--color-primary);
+            text-align: center;
+        }
+        .value-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .value-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.4rem;
+            letter-spacing: 0.06em;
+            color: var(--color-secondary);
+            margin-bottom: 0.8rem;
+        }
+        .value-desc {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        /* Stats strip */
+        .stats-strip {
+            background: var(--color-secondary);
+            color: #fff;
+            padding: 4rem 0;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        .stat-item strong {
+            display: block;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3rem;
+            letter-spacing: 0.04em;
+            color: var(--color-accent);
+            line-height: 1;
+            margin-bottom: 0.4rem;
+        }
+        .stat-item span {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.75);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        /* Gallery strip */
+        .event-gallery {
+            padding: 5rem 0;
+            background: var(--color-bg-white);
+        }
+        .gallery-strip {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px) { .gallery-strip { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 480px) { .gallery-strip { grid-template-columns: 1fr; } }
+        .gallery-strip-item {
+            border-radius: 10px;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+        }
+        .gallery-strip-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+            display: block;
+        }
+        .gallery-strip-item:hover img { transform: scale(1.05); }
+        .gallery-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f0f0f0;
+            color: #bbb;
+            font-size: 0.85rem;
+        }
+
+        /* Credentials */
+        .credentials-section {
+            padding: 5rem 0;
+            background: var(--color-bg-light);
+        }
+        .credentials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+        .credential-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            background: #fff;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        .credential-icon {
+            color: var(--color-primary);
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        .credential-text strong {
+            display: block;
+            font-weight: 700;
+            color: var(--color-secondary);
+            margin-bottom: 0.2rem;
+        }
+        .credential-text span {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        /* Event selector */
+        .event-selector-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--spacing-md);
+            max-width: 860px;
+            margin: 3rem auto 0;
+        }
+        @media (max-width: 600px) { .event-selector-grid { grid-template-columns: 1fr; } }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Footloose Entertainment",
+      "description": "Family-owned DJ, photobooth, and event entertainment company serving Jacksonville and St. Augustine since 1997. Founded by Kris after being inspired by the DJ at his own wedding, Footloose Entertainment has spent nearly 30 years making Northeast Florida events unforgettable.",
+      "url": "https://footlooseentertainment.com",
+      "telephone": "+1-904-854-8014",
+      "email": "info@footlooseentertainment.com",
+      "logo": "https://footlooseentertainment.com/images/footloose-logo.png",
+      "foundingDate": "1997",
+      "foundingLocation": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Jacksonville",
+          "addressRegion": "FL",
+          "addressCountry": "US"
+        }
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Jacksonville",
+        "addressRegion": "FL",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Jacksonville", "addressRegion": "FL" },
+        { "@type": "City", "name": "St. Augustine", "addressRegion": "FL" }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "127"
+      },
+      "sameAs": [
+        "https://www.facebook.com/footlooseentertainment",
+        "https://instagram.com/footloosedjs"
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="/">
+                        <img src="images/footloose-logo.png" alt="Footloose Entertainment Logo" width="200" height="80">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html" class="active">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-cta">
+                    <a href="tel:+19048548014" class="phone-link">(904)854-8014</a>
+                    <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-background">
+            <img src="images/about-hero.jpg" alt="Footloose Entertainment at a Jacksonville event" loading="eager">
+            <div class="page-hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="page-hero-content">
+                <div class="hero-badge">Our Story</div>
+                <h1>Nearly 30 Years of Making Northeast Florida Events Unforgettable</h1>
+                <p class="page-hero-subtitle">Family owned. Locally operated. Built on a love of music, a passion for people, and a commitment to making your vision a reality &mdash; one event at a time.</p>
+                <div class="page-hero-buttons">
+                    <a href="contact.html" class="btn btn-hero-primary">Work With Us</a>
+                    <a href="#our-story" class="btn btn-hero-secondary">Our Story &#8595;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-items">
+                <div class="trust-item">
+                    <strong>Since 1997</strong>
+                    <span>Family Owned &amp; Operated</span>
+                </div>
+                <div class="trust-item">
+                    <strong>5,000+</strong>
+                    <span>Events Celebrated</span>
+                </div>
+                <div class="trust-item">
+                    <strong>&#9733;&#9733;&#9733;&#9733;&#9733;</strong>
+                    <span>Five-Star Rated</span>
+                </div>
+                <div class="trust-item">
+                    <strong>Not a Franchise</strong>
+                    <span>Your Local Team</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Origin Story -->
+    <section id="our-story" class="story-section">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-image">
+                    <img src="images/about-story.jpg" alt="Footloose Entertainment founder Kris at a Jacksonville event" loading="lazy"
+                         onerror="this.parentElement.innerHTML='<div class=\'gallery-placeholder\'>about-story.jpg</div>'">
+                </div>
+                <div class="story-content">
+                    <h2>It Started With a <span>Wedding</span> &mdash; Our Own</h2>
+                    <p>In 1997, Kris and Misty got married in Jacksonville. Like most couples, they hired a DJ for their reception &mdash; and something clicked. Watching the DJ work the room, read the crowd, and turn a gathering of family and friends into a genuine celebration, Kris thought: <em>I could do that. I want to do that.</em></p>
+                    <p>So he asked. The DJ from their wedding agreed to train him, and Footloose Entertainment was born. What started as one man with a passion for music and a dream of sharing that joy with others has grown over nearly three decades into Jacksonville and St. Augustine&rsquo;s most trusted event entertainment company.</p>
+                    <div class="story-quote">
+                        &ldquo;We treat our DJs like family and our clients the same way &mdash; trying to make their vision a reality.&rdquo;
+                    </div>
+                    <p>Today Footloose offers professional DJ services, 360 video booths, mirror photo booths, special effects, audio guestbooks, and more &mdash; but the heart of the company has never changed. Every event we serve gets the same care, energy, and commitment that Kris brought to that very first gig nearly 30 years ago.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Strip -->
+    <section class="stats-strip">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <strong>1997</strong>
+                    <span>Year Founded</span>
+                </div>
+                <div class="stat-item">
+                    <strong>29</strong>
+                    <span>Years in Business</span>
+                </div>
+                <div class="stat-item">
+                    <strong>5,000+</strong>
+                    <span>Events Served</span>
+                </div>
+                <div class="stat-item">
+                    <strong>2</strong>
+                    <span>Markets: Jax &amp; St. Augustine</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Believe -->
+    <section class="values-section">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>What We Believe</h2>
+                <p>The values that have guided Footloose Entertainment since day one</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">🎵</div>
+                    <div class="value-title">Music Changes Everything</div>
+                    <p class="value-desc">The right song at the right moment can bring a room to tears, fill a dance floor, or make a memory that lasts a lifetime. We take that responsibility seriously at every single event we serve.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">👨‍👩‍👧‍👦</div>
+                    <div class="value-title">Family First</div>
+                    <p class="value-desc">Our DJs and staff aren&rsquo;t contractors &mdash; they&rsquo;re family. We extend that same feeling to every client we work with. When you book Footloose, you&rsquo;re not a transaction. You&rsquo;re a relationship.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🏠</div>
+                    <div class="value-title">Local Roots Matter</div>
+                    <p class="value-desc">We&rsquo;re not a national franchise sending a stranger to your event. We&rsquo;re your neighbors &mdash; born and built in Jacksonville, deeply invested in this community, and proud to have served thousands of Northeast Florida families over nearly three decades.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🎯</div>
+                    <div class="value-title">Your Vision, Our Mission</div>
+                    <p class="value-desc">No two events are alike and no two clients want the same thing. We listen first, plan carefully, and execute flawlessly &mdash; because our job is to bring your vision to life, not ours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Gallery -->
+    <section class="event-gallery">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>Nearly 30 Years of Memories</h2>
+                <p>A few moments from the thousands of events we&rsquo;ve had the honor of being part of</p>
+            </div>
+            <div class="gallery-strip">
+                <div class="gallery-strip-item">
+                    <img src="images/about-event-1.jpg" alt="Footloose Entertainment DJ at Jacksonville wedding reception" loading="lazy"
+                         onerror="this.parentElement.innerHTML='<div class=\'gallery-placeholder\'>about-event-1.jpg</div>'">
+                </div>
+                <div class="gallery-strip-item">
+                    <img src="images/about-event-2.jpg" alt="360 video booth at St. Augustine wedding" loading="lazy"
+                         onerror="this.parentElement.innerHTML='<div class=\'gallery-placeholder\'>about-event-2.jpg</div>'">
+                </div>
+                <div class="gallery-strip-item">
+                    <img src="images/about-event-3.jpg" alt="Cold sparklers at Jacksonville event" loading="lazy"
+                         onerror="this.parentElement.innerHTML='<div class=\'gallery-placeholder\'>about-event-3.jpg</div>'">
+                </div>
+                <div class="gallery-strip-item">
+                    <img src="images/about-event-4.jpg" alt="Mirror booth at Northeast Florida corporate event" loading="lazy"
+                         onerror="this.parentElement.innerHTML='<div class=\'gallery-placeholder\'>about-event-4.jpg</div>'">
+                </div>
+                <div class="gallery-strip-item">
+                    <img src="images/about-event-5.jpg" alt="Dance floor at Jacksonville private party" loading="lazy"
+                         onerror="this.parentElement.innerHTML='<div class=\'gallery-placeholder\'>about-event-5.jpg</div>'">
+                </div>
+                <div class="gallery-strip-item">
+                    <img src="images/about-event-6.jpg" alt="Footloose Entertainment at St. Augustine prom" loading="lazy"
+                         onerror="this.parentElement.innerHTML='<div class=\'gallery-placeholder\'>about-event-6.jpg</div>'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credentials -->
+    <section class="credentials-section">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>Why Jacksonville &amp; St. Augustine Trust Us</h2>
+                <p>The things that matter when you&rsquo;re choosing who to trust with your most important events</p>
+            </div>
+            <div class="credentials-grid">
+                <div class="credential-item">
+                    <div class="credential-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <div class="credential-text">
+                        <strong>$1 Million Liability Insurance</strong>
+                        <span>Fully insured for every event. Certificates of insurance provided to venues on request.</span>
+                    </div>
+                </div>
+                <div class="credential-item">
+                    <div class="credential-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+                    </div>
+                    <div class="credential-text">
+                        <strong>Family Owned &amp; Operated</strong>
+                        <span>Not a franchise. Not a booking agency. A real Jacksonville family business that answers when you call.</span>
+                    </div>
+                </div>
+                <div class="credential-item">
+                    <div class="credential-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                    </div>
+                    <div class="credential-text">
+                        <strong>Backup Equipment at Every Event</strong>
+                        <span>We&rsquo;ve never had a technical failure ruin an event in 29 years. Redundant equipment is why.</span>
+                    </div>
+                </div>
+                <div class="credential-item">
+                    <div class="credential-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <div class="credential-text">
+                        <strong>Five-Star Rated</strong>
+                        <span>Consistently five-star rated on WeddingWire and Google by Jacksonville and St. Augustine clients.</span>
+                    </div>
+                </div>
+                <div class="credential-item">
+                    <div class="credential-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <div class="credential-text">
+                        <strong>29 Years of Local Experience</strong>
+                        <span>Founded in Jacksonville in 1997. We know every venue, every coordinator, and every challenge in this market.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>What Our Clients Say</h2>
+                <p>Nearly 30 years of five-star reviews from Jacksonville and St. Augustine families</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">&ldquo;Footloose has been doing our school events for years and they are hands down the most professional, reliable, and talented entertainment company we&rsquo;ve worked with. They truly care about making every event special — you can feel it in everything they do.&rdquo;</p>
+                    <div class="testimonial-author">
+                        <strong>Mrs. Johnson</strong>
+                        <span>School Event Coordinator, Jacksonville</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">&ldquo;From our first call to the last song of our reception, working with Footloose felt like working with family. They listened to everything we wanted, brought ideas we hadn&rsquo;t even thought of, and executed our wedding day perfectly. We couldn&rsquo;t have asked for more.&rdquo;</p>
+                    <div class="testimonial-author">
+                        <strong>Ashley &amp; Jonathan</strong>
+                        <span>Wedding at The White Room, St. Augustine</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">&ldquo;We&rsquo;ve used Footloose for our company&rsquo;s holiday party for six years running. They know our team, they know our vibe, and they deliver every single time. The fact that they&rsquo;re a local family business makes it even better &mdash; we love supporting them and they always take care of us.&rdquo;</p>
+                    <div class="testimonial-author">
+                        <strong>Sarah M.</strong>
+                        <span>Corporate Client, Jacksonville</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Type Selector -->
+    <section class="event-types section-padding bg-light">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>Ready to Work Together?</h2>
+                <p>Tell us about your event and let&rsquo;s start planning something unforgettable</p>
+            </div>
+            <div class="event-selector-grid">
+                <a href="weddings.html" class="event-type-card" style="text-decoration:none;transition:transform 0.3s ease;">
+                    <div class="event-type-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </div>
+                    <h3>Wedding</h3>
+                    <p>Let&rsquo;s make your wedding day as unforgettable as the day we made ours.</p>
+                    <span style="color:var(--color-primary);font-weight:600;font-size:0.9rem;">View Wedding Services &rarr;</span>
+                </a>
+                <a href="corporate-events.html" class="event-type-card" style="text-decoration:none;transition:transform 0.3s ease;">
+                    <div class="event-type-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+                    </div>
+                    <h3>Corporate Event</h3>
+                    <p>Professional entertainment your employees and clients will be talking about for years.</p>
+                    <span style="color:var(--color-primary);font-weight:600;font-size:0.9rem;">View Corporate Services &rarr;</span>
+                </a>
+                <a href="school-events.html" class="event-type-card" style="text-decoration:none;transition:transform 0.3s ease;">
+                    <div class="event-type-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                    </div>
+                    <h3>School Event</h3>
+                    <p>Background-checked, student-approved, and trusted by Northeast Florida schools for decades.</p>
+                    <span style="color:var(--color-primary);font-weight:600;font-size:0.9rem;">View School Services &rarr;</span>
+                </a>
+                <a href="private-parties.html" class="event-type-card" style="text-decoration:none;transition:transform 0.3s ease;">
+                    <div class="event-type-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                    </div>
+                    <h3>Private Party</h3>
+                    <p>Birthdays, anniversaries, quincea&ntilde;eras &mdash; every milestone deserves to be celebrated right.</p>
+                    <span style="color:var(--color-primary);font-weight:600;font-size:0.9rem;">View Party Services &rarr;</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Let&rsquo;s Make Your Event Unforgettable</h2>
+                <p>Nearly 30 years of experience. A family that treats your event like it&rsquo;s our own. We&rsquo;d love to be part of your story.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-large btn-primary">Get Your Free Quote</a>
+                    <a href="tel:+19048548014" class="btn btn-large btn-outline-light">Call (904) 854-8014</a>
+                </div>
+                <p class="cta-note">Family owned since 1997 &#8226; Jacksonville &amp; St. Augustine &#8226; $1M insured &#8226; Five-star rated</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <img src="images/footloose-logo-white.png" alt="Footloose Entertainment" width="180" height="72">
+                    <p>Jacksonville and St. Augustine's premier entertainment company since 1997.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/footlooseentertainment" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="https://instagram.com/footloosedjs" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Event Types</h4>
+                    <ul>
+                        <li><a href="corporate-events.html">Corporate Events</a></li>
+                        <li><a href="weddings.html">Weddings &amp; Celebrations</a></li>
+                        <li><a href="school-events.html">School Events &amp; Proms</a></li>
+                        <li><a href="private-parties.html">Private Parties</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Specialty Services</h4>
+                    <ul>
+                        <li><a href="360-booth.html">360 Video Booth</a></li>
+                        <li><a href="mirror-booth.html">Mirror Photo Booth</a></li>
+                        <li><a href="special-effects.html">Special Effects</a></li>
+                        <li><a href="audio-guestbook.html">Audio Guestbook</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="current-clients.html">Current Clients</a></li>
+                        <li><a href="jacksonville-event-entertainment.html">Jacksonville</a></li>
+                        <li><a href="st-augustine-event-entertainment.html">St. Augustine</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Footloose Entertainment. All rights reserved.</p>
+                <p>Serving Jacksonville, St. Augustine &amp; Northeast Florida since 1997</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

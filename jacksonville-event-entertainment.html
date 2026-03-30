@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ & Event Entertainment Jacksonville FL | Footloose Entertainment</title>
+    <meta name="description" content="Jacksonville's premier DJ, photobooth & event entertainment company. Weddings, corporate events, proms & private parties throughout Jacksonville, Jacksonville Beach, Ponte Vedra, Orange Park & Northeast Florida. 29 years of excellence.">
+    <meta name="keywords" content="DJ Jacksonville FL, event entertainment Jacksonville, wedding DJ Jacksonville, corporate event DJ Jacksonville, photobooth rental Jacksonville, 360 booth Jacksonville, DJ Jacksonville Beach, DJ Ponte Vedra, DJ Orange Park, party DJ Jacksonville FL, prom DJ Jacksonville, special effects Jacksonville">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://footlooseentertainment.com/jacksonville-event-entertainment.html">
+    <meta property="og:title" content="DJ & Event Entertainment Jacksonville FL | Footloose Entertainment">
+    <meta property="og:description" content="Jacksonville's premier DJ, photobooth & event entertainment. Weddings, corporate events, proms & parties throughout Jacksonville and Northeast Florida. 29 years of excellence.">
+    <meta property="og:image" content="https://footlooseentertainment.com/images/jacksonville-entertainment-og.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://footlooseentertainment.com/jacksonville-event-entertainment.html">
+    <meta property="twitter:title" content="DJ & Event Entertainment Jacksonville FL | Footloose Entertainment">
+    <meta property="twitter:description" content="Jacksonville's premier DJ, photobooth & special effects entertainment. 29 years serving Jacksonville and Northeast Florida.">
+    <meta property="twitter:image" content="https://footlooseentertainment.com/images/jacksonville-entertainment-og.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://footlooseentertainment.com/jacksonville-event-entertainment.html">
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="US-FL">
+    <meta name="geo.placename" content="Jacksonville">
+    <meta name="geo.position" content="30.3322;-81.6557">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ── Color palette override – matches homepage teal ── */
+        :root {
+            --color-primary: #006D77;
+            --color-primary-dark: #004E57;
+            --color-accent: #D4A843;
+            --color-gold: #D4A843;
+        }
+
+        /* Service cards grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .service-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+            border-top: 4px solid var(--color-primary);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.13);
+        }
+        .service-card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .service-card h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: 0.06em;
+            color: var(--color-secondary);
+            margin-bottom: 0.4rem;
+        }
+        .service-card p {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .service-card-link {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--color-primary);
+        }
+
+        /* Areas grid */
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .area-pill {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 1rem 1.2rem;
+            text-align: center;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .area-pill:hover {
+            background: #f0f8f9;
+            border-color: var(--color-primary);
+        }
+        .area-pill strong {
+            display: block;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.1rem;
+            letter-spacing: 0.05em;
+            color: var(--color-primary);
+            margin-bottom: 0.2rem;
+        }
+        .area-pill span {
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        /* FAQ */
+        .faq-section { padding: 5rem 0; }
+        .faq-list { max-width: 800px; margin: 3rem auto 0; }
+        .faq-item { border-bottom: 1px solid #e0e0e0; }
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 1.4rem 0;
+            text-align: left;
+            font-family: 'Barlow', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--color-secondary);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+        .faq-question .faq-arrow {
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+            color: var(--color-primary);
+        }
+        .faq-question[aria-expanded="true"] .faq-arrow { transform: rotate(180deg); }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+        }
+        .faq-answer.open { max-height: 400px; padding-bottom: 1.2rem; }
+        .faq-answer p { color: #555; line-height: 1.7; margin: 0; }
+
+        /* Venue pills */
+        .venues-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .venue-pill {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 0.8rem 1.2rem;
+            font-size: 0.9rem;
+            color: #444;
+            text-align: center;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .venue-pill:hover {
+            background: #f0f8f9;
+            border-color: var(--color-primary);
+        }
+
+        /* Event type selector */
+        .event-selector-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--spacing-md);
+            max-width: 860px;
+            margin: 3rem auto 0;
+        }
+        @media (max-width: 600px) { .event-selector-grid { grid-template-columns: 1fr; } }
+    </style>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Footloose Entertainment",
+      "description": "Jacksonville Florida's premier DJ, photobooth, and event entertainment company. Professional DJ services, 360 video booths, mirror photo booths, special effects, audio guestbooks, and complete event entertainment packages for weddings, corporate events, school events, and private parties throughout Jacksonville and Northeast Florida.",
+      "url": "https://footlooseentertainment.com",
+      "telephone": "+1-904-854-8014",
+      "email": "info@footlooseentertainment.com",
+      "logo": "https://footlooseentertainment.com/images/footloose-logo.png",
+      "image": "https://footlooseentertainment.com/images/jacksonville-entertainment-og.jpg",
+      "priceRange": "$$",
+      "foundingDate": "1997",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Jacksonville",
+        "addressRegion": "FL",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "30.3322",
+        "longitude": "-81.6557"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Jacksonville", "addressRegion": "FL" },
+        { "@type": "City", "name": "Jacksonville Beach", "addressRegion": "FL" },
+        { "@type": "City", "name": "Neptune Beach", "addressRegion": "FL" },
+        { "@type": "City", "name": "Atlantic Beach", "addressRegion": "FL" },
+        { "@type": "City", "name": "Ponte Vedra Beach", "addressRegion": "FL" },
+        { "@type": "City", "name": "Orange Park", "addressRegion": "FL" },
+        { "@type": "City", "name": "Fleming Island", "addressRegion": "FL" },
+        { "@type": "City", "name": "Fernandina Beach", "addressRegion": "FL" },
+        { "@type": "City", "name": "Nocatee", "addressRegion": "FL" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Jacksonville Event Entertainment Services",
+        "itemListElement": [
+          { "@type": "Offer", "name": "Wedding DJ Jacksonville", "description": "Professional wedding DJ and MC services for Jacksonville weddings." },
+          { "@type": "Offer", "name": "Corporate Event DJ Jacksonville", "description": "Professional DJ and entertainment for Jacksonville corporate events, galas, and company parties." },
+          { "@type": "Offer", "name": "Prom DJ Jacksonville", "description": "Professional DJ services for Jacksonville high school proms and school dances." },
+          { "@type": "Offer", "name": "Photobooth Rental Jacksonville", "description": "360 video booths, mirror booths, open air booths, and digital photobooths for Jacksonville events." },
+          { "@type": "Offer", "name": "Special Effects Jacksonville", "description": "Cold sparklers, CO2 jets, dancing on clouds, and more for Jacksonville events." }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "127"
+      }
+    }
+    </script>
+
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long has Footloose Entertainment been serving Jacksonville?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Footloose Entertainment has been serving Jacksonville and Northeast Florida since 1997 — nearly 30 years. We have performed at thousands of events throughout Jacksonville, Jacksonville Beach, Ponte Vedra, Orange Park, and the surrounding area."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What areas of Jacksonville do you serve?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We serve all of Jacksonville including Jacksonville Beach, Neptune Beach, Atlantic Beach, Ponte Vedra Beach, Orange Park, Fleming Island, Nocatee, and Fernandina Beach. We also serve St. Augustine and all of Northeast Florida."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What event entertainment services do you offer in Jacksonville?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We offer professional DJ services, photobooths (360 video booth, mirror booth, open air, digital, and more), special effects (cold sparklers, CO2 jets, dancing on clouds), audio guestbooks, custom overlays, and photobooth backgrounds for weddings, corporate events, school proms, and private parties throughout Jacksonville."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you DJ weddings in Jacksonville?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — wedding DJ services are one of our specialties in Jacksonville. We have performed at hundreds of Jacksonville weddings at venues including Epping Forest Yacht Club, Casa Marina Hotel, Ribault Club, TPC Sawgrass, and many others throughout the area."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer DJ and photobooth packages in Jacksonville?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — combining DJ and photobooth services is one of the most popular options for Jacksonville events. Booking both with one company means better coordination, one point of contact, and often better combined value than hiring separately."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="/">
+                        <img src="images/footloose-logo.png" alt="Footloose Entertainment Logo" width="200" height="80">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Get a Quote</a></li>
+                    </ul>
+                </nav>
+                <div class="header-cta">
+                    <a href="tel:+19048548014" class="phone-link">(904)854-8014</a>
+                    <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-background">
+            <img src="images/jacksonville-hero.jpg" alt="Professional DJ and event entertainment in Jacksonville FL" loading="eager">
+            <div class="page-hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="page-hero-content">
+                <div class="hero-badge">
+                    Jacksonville, FL
+                </div>
+                <h1>Jacksonville&rsquo;s Premier DJ &amp; Event Entertainment Company</h1>
+                <p class="page-hero-subtitle">Professional DJ services, photobooths, special effects &amp; more for weddings, corporate events, proms, and private parties throughout Jacksonville and Northeast Florida. Locally owned and operated since 1997 &mdash; nearly 30 years serving the Jacksonville community.</p>
+                <div class="page-hero-buttons">
+                    <a href="contact.html" class="btn btn-hero-primary">Get a Free Quote</a>
+                    <a href="tel:+19048548014" class="btn btn-hero-secondary">(904) 854-8014</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-items">
+                <div class="trust-item">
+                    <strong>29 Years</strong>
+                    <span>Serving Jacksonville</span>
+                </div>
+                <div class="trust-item">
+                    <strong>5,000+</strong>
+                    <span>Jacksonville Events</span>
+                </div>
+                <div class="trust-item">
+                    <strong>&#9733;&#9733;&#9733;&#9733;&#9733;</strong>
+                    <span>Five-Star Rated</span>
+                </div>
+                <div class="trust-item">
+                    <strong>$1 Million</strong>
+                    <span>Liability Insurance</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro / About Jacksonville -->
+    <section class="event-types section-padding">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>Jacksonville&rsquo;s Most Trusted Event Entertainment Since 1997</h2>
+                <p>From Riverside to the Beaches, from Orange Park to Ponte Vedra &mdash; we&rsquo;ve been making Jacksonville events unforgettable for nearly three decades</p>
+            </div>
+            <div class="featured-booth">
+                <div class="booth-image-container">
+                    <img src="images/jacksonville-events.jpg" alt="Footloose Entertainment DJ at Jacksonville event" class="booth-image">
+                    <div class="booth-badge">&#9733; Jacksonville&rsquo;s Choice</div>
+                </div>
+                <div class="booth-content">
+                    <h3>Your Local Jacksonville Entertainment Experts</h3>
+                    <p class="booth-subtitle">Locally Owned. Community Focused. Event Obsessed.</p>
+                    <p class="booth-description">Footloose Entertainment was founded in Jacksonville in 1997 and has spent nearly 30 years building relationships with the venues, planners, and families that make this city great. We&rsquo;re not a national franchise or an out-of-town company sending whoever&rsquo;s available. We&rsquo;re your neighbors &mdash; and we treat every Jacksonville event like it matters, because it does. From intimate backyard parties in Fleming Island to grand corporate galas at the Hyatt Riverfront, from prom nights at Duval County schools to waterfront weddings at Epping Forest Yacht Club, we&rsquo;ve built the kind of experience that only comes from showing up, event after event, for nearly three decades in the same community.</p>
+                    <div class="booth-features-compact">
+                        <span>&#10003; Professional DJ &amp; MC services</span>
+                        <span>&#10003; 360 video booths</span>
+                        <span>&#10003; Mirror photo booths</span>
+                        <span>&#10003; Cold sparklers &amp; special effects</span>
+                        <span>&#10003; Audio guestbooks</span>
+                        <span>&#10003; Custom overlays &amp; backdrops</span>
+                        <span>&#10003; All event types covered</span>
+                        <span>&#10003; $1M liability insured</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="why-choose section-padding bg-light">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>Complete Event Entertainment for Every Jacksonville Occasion</h2>
+                <p>Everything you need for an unforgettable event &mdash; from one trusted Jacksonville company</p>
+            </div>
+            <div class="services-grid">
+                <a href="wedding-dj.html" class="service-card">
+                    <div class="service-card-icon">🎵</div>
+                    <h3>Wedding DJ Jacksonville</h3>
+                    <p>Expert wedding DJs and MCs who know Jacksonville venues inside and out. From ceremony music to last dance, we craft the perfect soundtrack for your wedding day.</p>
+                    <span class="service-card-link">Learn More &rarr;</span>
+                </a>
+                <a href="corporate-dj.html" class="service-card">
+                    <div class="service-card-icon">🏢</div>
+                    <h3>Corporate Event DJ Jacksonville</h3>
+                    <p>Professional DJ and entertainment for company holiday parties, galas, product launches, and team events throughout Jacksonville and the surrounding business community.</p>
+                    <span class="service-card-link">Learn More &rarr;</span>
+                </a>
+                <a href="school-dj.html" class="service-card">
+                    <div class="service-card-icon">🎓</div>
+                    <h3>Prom &amp; School Event DJ Jacksonville</h3>
+                    <p>Trusted by Jacksonville and Duval County schools for proms, homecoming dances, and school events. Background-checked, professionally trained, student-approved.</p>
+                    <span class="service-card-link">Learn More &rarr;</span>
+                </a>
+                <a href="private-party-dj.html" class="service-card">
+                    <div class="service-card-icon">🎉</div>
+                    <h3>Party DJ Jacksonville</h3>
+                    <p>Birthdays, anniversaries, Sweet 16s, quincea&ntilde;eras and more. We bring the energy and professionalism that makes Jacksonville private parties legendary.</p>
+                    <span class="service-card-link">Learn More &rarr;</span>
+                </a>
+                <a href="360-booth.html" class="service-card">
+                    <div class="service-card-icon">🎬</div>
+                    <h3>360 Video Booth Jacksonville</h3>
+                    <p>The most-shared entertainment at Jacksonville events. Slow-motion 360-degree videos with custom overlays delivered instantly to guests&rsquo; phones.</p>
+                    <span class="service-card-link">Learn More &rarr;</span>
+                </a>
+                <a href="mirror-booth.html" class="service-card">
+                    <div class="service-card-icon">🪞</div>
+                    <h3>Mirror Photo Booth Jacksonville</h3>
+                    <p>An elegant full-length interactive mirror that doubles as stunning event decor. Instant prints or digital delivery. A hit at every Jacksonville event.</p>
+                    <span class="service-card-link">Learn More &rarr;</span>
+                </a>
+                <a href="special-effects.html" class="service-card">
+                    <div class="service-card-icon">✨</div>
+                    <h3>Special Effects Jacksonville</h3>
+                    <p>Cold sparklers, CO2 jets, dancing on clouds, snow dance &amp; more. Dramatic, jaw-dropping moments professionally executed at Jacksonville venues.</p>
+                    <span class="service-card-link">Learn More &rarr;</span>
+                </a>
+                <a href="audio-guestbook.html" class="service-card">
+                    <div class="service-card-icon">📞</div>
+                    <h3>Audio Guestbook Jacksonville</h3>
+                    <p>A vintage telephone your Jacksonville guests pick up and leave a heartfelt voice message. The most personal keepsake from any wedding or celebration.</p>
+                    <span class="service-card-link">Learn More &rarr;</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Areas Served -->
+    <section class="event-types section-padding">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>Jacksonville &amp; Surrounding Areas We Serve</h2>
+                <p>Based in Jacksonville, we travel throughout the entire Northeast Florida region</p>
+            </div>
+            <div class="areas-grid">
+                <div class="area-pill">
+                    <strong>Jacksonville</strong>
+                    <span>All neighborhoods</span>
+                </div>
+                <div class="area-pill">
+                    <strong>Jacksonville Beach</strong>
+                    <span>Beaches area</span>
+                </div>
+                <div class="area-pill">
+                    <strong>Neptune Beach</strong>
+                    <span>Beaches area</span>
+                </div>
+                <div class="area-pill">
+                    <strong>Atlantic Beach</strong>
+                    <span>Beaches area</span>
+                </div>
+                <div class="area-pill">
+                    <strong>Ponte Vedra Beach</strong>
+                    <span>TPC Sawgrass area</span>
+                </div>
+                <div class="area-pill">
+                    <strong>Orange Park</strong>
+                    <span>Clay County</span>
+                </div>
+                <div class="area-pill">
+                    <strong>Fleming Island</strong>
+                    <span>Clay County</span>
+                </div>
+                <div class="area-pill">
+                    <strong>Fernandina Beach</strong>
+                    <span>Amelia Island</span>
+                </div>
+                <div class="area-pill">
+                    <strong>Nocatee</strong>
+                    <span>St. Johns County</span>
+                </div>
+                <div class="area-pill">
+                    <strong>St. Augustine</strong>
+                    <span>Historic coast</span>
+                </div>
+            </div>
+            <p style="text-align:center;margin-top:2rem;color:#777;font-size:0.95rem;">Don&rsquo;t see your area? We travel throughout Northeast Florida. <a href="contact.html" style="color:var(--color-primary);">Contact us</a> to confirm availability for your location.</p>
+        </div>
+    </section>
+
+    <!-- Jacksonville Venues -->
+    <section class="benefits section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Jacksonville Venues We Know &amp; Love</h2>
+                <p>Nearly 30 years of performing at Jacksonville&rsquo;s most iconic event venues</p>
+            </div>
+            <div class="venues-grid">
+                <div class="venue-pill">Epping Forest Yacht Club</div>
+                <div class="venue-pill">Hyatt Regency Riverfront</div>
+                <div class="venue-pill">Hyatt Place Jacksonville</div>
+                <div class="venue-pill">Marriott Jacksonville Downtown</div>
+                <div class="venue-pill">Marriott Southpoint</div>
+                <div class="venue-pill">TPC Sawgrass &mdash; Ponte Vedra</div>
+                <div class="venue-pill">Sawgrass Marriott</div>
+                <div class="venue-pill">Ponte Vedra Inn &amp; Club</div>
+                <div class="venue-pill">Deerwood Castle &mdash; Jacksonville</div>
+                <div class="venue-pill">Bowing Oaks Plantation</div>
+                <div class="venue-pill">Old Spanish Quarter &mdash; Jacksonville</div>
+                <div class="venue-pill">Manor at 12 Oaks &mdash; Green Cove Springs</div>
+                <div class="venue-pill">Clay Theatre</div>
+                <div class="venue-pill">Club Continental &mdash; Orange Park</div>
+                <div class="venue-pill">Fleming Island Banquet Hall</div>
+                <div class="venue-pill">Nocatee Crosswater Hall</div>
+                <div class="venue-pill">Walkers Landing &mdash; Amelia Island</div>
+                <div class="venue-pill">Cummer Museum</div>
+                <div class="venue-pill">Daily&rsquo;s Place / TIAA Bank Field</div>
+                <div class="venue-pill">Your Venue &mdash; We Travel!</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose -->
+    <section class="why-choose section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Why Jacksonville Chooses Footloose Entertainment</h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>Jacksonville&rsquo;s Most Experienced Entertainment Company</h3>
+                    <p>Since 1997, Footloose Entertainment has been Jacksonville&rsquo;s go-to entertainment company for events of every size and style. We&rsquo;ve performed at thousands of Jacksonville events — from intimate backyard birthday parties to grand ballroom galas with 500+ guests. That depth of experience means we&rsquo;ve seen everything, planned for everything, and know how to deliver flawless results at every Jacksonville venue.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+                    </div>
+                    <h3>One Company for Everything</h3>
+                    <p>DJ, photobooth, 360 booth, mirror booth, special effects, audio guestbook — we do it all. Jacksonville clients who book multiple services with us get seamless coordination between every element, one point of contact, and the confidence that every vendor knows exactly what the others are doing. No mismatched setups, no communication breakdowns between separate vendors.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <h3>Five-Star Reputation Built in Jacksonville</h3>
+                    <p>Our five-star reputation wasn&rsquo;t built overnight — it was earned event by event, couple by couple, company by company over nearly 30 years in the Jacksonville market. Jacksonville clients trust us because their friends, coworkers, and family members have already trusted us. Word of mouth is our strongest marketing tool because our Jacksonville clients become our biggest advocates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>What Jacksonville Clients Say About Footloose</h2>
+                <p>Real reviews from real Jacksonville events</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">&ldquo;Footloose has been our go-to DJ company for our company&rsquo;s annual holiday party for the past six years. They know our crowd, they know our venue, and they always deliver an incredible night. Our employees genuinely look forward to this event all year and Footloose is a huge reason why.&rdquo;</p>
+                    <div class="testimonial-author">
+                        <strong>Mark T.</strong>
+                        <span>Corporate Holiday Party, Downtown Jacksonville</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">&ldquo;We hired Footloose for our wedding at Epping Forest Yacht Club and they were absolutely phenomenal. Our DJ read the room perfectly all night, the 360 booth was a massive hit, and the cold sparklers during our first dance were breathtaking. Every detail was executed flawlessly.&rdquo;</p>
+                    <div class="testimonial-author">
+                        <strong>Samantha &amp; Tyler</strong>
+                        <span>Wedding at Epping Forest Yacht Club, Jacksonville</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">&ldquo;Footloose has done our school&rsquo;s prom for three years in a row and they never disappoint. Professional, background-checked, great with students, and they always know exactly what music gets the dance floor going. They&rsquo;re the only company we&rsquo;ll ever use for our school events.&rdquo;</p>
+                    <div class="testimonial-author">
+                        <strong>Jennifer M.</strong>
+                        <span>Prom Coordinator, Jacksonville High School</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>Jacksonville Event Entertainment FAQs</h2>
+                <p>Common questions from Jacksonville clients</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How long has Footloose Entertainment been serving Jacksonville?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Footloose Entertainment has been serving Jacksonville and Northeast Florida since 1997 — nearly 30 years. We have performed at thousands of events throughout Jacksonville, Jacksonville Beach, Ponte Vedra, Orange Park, and the surrounding area, building relationships with the venues, planners, and families that make this community great.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What areas of Jacksonville do you serve?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We serve all of Jacksonville including Jacksonville Beach, Neptune Beach, Atlantic Beach, Ponte Vedra Beach, Orange Park, Fleming Island, Nocatee, and Fernandina Beach. We also regularly serve St. Augustine and all of Northeast Florida. Contact us to confirm travel availability for your specific venue.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Do you offer DJ and photobooth packages in Jacksonville?
+                        <svg class="faq-arrow" width="20" height="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes — combining DJ and photobooth services is one of our most popular options for Jacksonville events. Booking both with Footloose means seamless coordination, one point of contact, and often better combined value than hiring separately. Contact us to discuss options for your specific event.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Are you insured for Jacksonville events?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes — Footloose Entertainment carries $1 million in liability insurance and can provide certificates of insurance to Jacksonville venues upon request. Most Jacksonville venues require proof of insurance from entertainment vendors and we handle this routinely.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How do I book Footloose Entertainment for my Jacksonville event?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The easiest way is to fill out our contact form with your event details — date, venue, event type, and what services you&rsquo;re interested in. We respond quickly and can usually provide a quote within 24 hours. You can also call us directly at (904) 854-8014. Jacksonville dates fill fast, especially for wedding and prom season, so we recommend reaching out as early as possible.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Type Selector -->
+    <section class="event-types section-padding bg-light">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>What Type of Jacksonville Event Are You Planning?</h2>
+                <p>Explore our services tailored to your specific event type</p>
+            </div>
+            <div class="event-selector-grid">
+                <a href="weddings.html" class="event-type-card" style="text-decoration:none;transition:transform 0.3s ease;">
+                    <div class="event-type-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </div>
+                    <h3>Jacksonville Wedding</h3>
+                    <p>DJ, photobooth, 360 booth, special effects &amp; more for your Jacksonville wedding day.</p>
+                    <span style="color:var(--color-primary);font-weight:600;font-size:0.9rem;">View Wedding Services &rarr;</span>
+                </a>
+                <a href="corporate-events.html" class="event-type-card" style="text-decoration:none;transition:transform 0.3s ease;">
+                    <div class="event-type-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+                    </div>
+                    <h3>Jacksonville Corporate Event</h3>
+                    <p>Professional DJ and entertainment for Jacksonville company events, galas &amp; parties.</p>
+                    <span style="color:var(--color-primary);font-weight:600;font-size:0.9rem;">View Corporate Services &rarr;</span>
+                </a>
+                <a href="school-events.html" class="event-type-card" style="text-decoration:none;transition:transform 0.3s ease;">
+                    <div class="event-type-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                    </div>
+                    <h3>Jacksonville School Event</h3>
+                    <p>Trusted by Jacksonville and Duval County schools for proms and school dances.</p>
+                    <span style="color:var(--color-primary);font-weight:600;font-size:0.9rem;">View School Services &rarr;</span>
+                </a>
+                <a href="private-parties.html" class="event-type-card" style="text-decoration:none;transition:transform 0.3s ease;">
+                    <div class="event-type-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                    </div>
+                    <h3>Jacksonville Private Party</h3>
+                    <p>Birthdays, anniversaries, quincea&ntilde;eras &amp; milestone celebrations throughout Jacksonville.</p>
+                    <span style="color:var(--color-primary);font-weight:600;font-size:0.9rem;">View Party Services &rarr;</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Book Jacksonville&rsquo;s Best Event Entertainment?</h2>
+                <p>Jacksonville dates fill fast &mdash; especially for wedding season, prom season, and holiday corporate events. Request your free quote today and let&rsquo;s make your Jacksonville event unforgettable.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-large btn-primary">Get Your Free Quote</a>
+                    <a href="tel:+19048548014" class="btn btn-large btn-outline-light">Call (904) 854-8014</a>
+                </div>
+                <p class="cta-note">Serving Jacksonville since 1997 &#8226; $1M insured &#8226; Five-star rated &#8226; Quick response guaranteed</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <img src="images/footloose-logo-white.png" alt="Footloose Entertainment" width="180" height="72">
+                    <p>Jacksonville and St. Augustine's premier entertainment company since 1997.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/footlooseentertainment" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="https://instagram.com/footloosedjs" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Event Types</h4>
+                    <ul>
+                        <li><a href="corporate-events.html">Corporate Events</a></li>
+                        <li><a href="weddings.html">Weddings &amp; Celebrations</a></li>
+                        <li><a href="school-events.html">School Events &amp; Proms</a></li>
+                        <li><a href="private-parties.html">Private Parties</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Specialty Services</h4>
+                    <ul>
+                        <li><a href="360-booth.html">360 Video Booth</a></li>
+                        <li><a href="mirror-booth.html">Mirror Photo Booth</a></li>
+                        <li><a href="special-effects.html">Special Effects</a></li>
+                        <li><a href="audio-guestbook.html">Audio Guestbook</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="current-clients.html">Current Clients</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Footloose Entertainment. All rights reserved.</p>
+                <p>Serving Jacksonville, St. Augustine &amp; Northeast Florida since 1997</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const expanded = btn.getAttribute('aria-expanded') === 'true';
+                document.querySelectorAll('.faq-question').forEach(b => {
+                    b.setAttribute('aria-expanded', 'false');
+                    b.nextElementSibling.classList.remove('open');
+                });
+                if (!expanded) {
+                    btn.setAttribute('aria-expanded', 'true');
+                    btn.nextElementSibling.classList.add('open');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
