@@ -666,52 +666,127 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="faq-section" style="padding: 60px 0;">
+    <style>
+        .faq-section { padding: 5rem 0; }
+        .faq-list { max-width: 800px; margin: 3rem auto 0; }
+        .faq-item { border-bottom: 1px solid #e0e0e0; }
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 1.4rem 0;
+            text-align: left;
+            font-family: 'Barlow', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--color-secondary);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+        .faq-question .faq-arrow {
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+            color: var(--color-primary);
+        }
+        .faq-question[aria-expanded="true"] .faq-arrow { transform: rotate(180deg); }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+        }
+        .faq-answer.open { max-height: 400px; padding-bottom: 1.2rem; }
+        .faq-answer p { color: #555; line-height: 1.7; margin: 0; }
+    </style>
+
+    <section class="faq-section">
         <div class="container">
             <div class="section-intro centered">
                 <h2>Corporate Event Entertainment FAQs</h2>
                 <p>Common questions about booking DJ services, karaoke, lighting, and entertainment for corporate events in Jacksonville and Northeast Florida</p>
             </div>
-            <div class="faq-list" style="max-width: 800px; margin: 0 auto;">
+            <div class="faq-list">
 
-                <div class="faq-item" style="border-bottom: 1px solid #ddd; padding: 20px 0;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">How far in advance should I book corporate event entertainment in Jacksonville?</h3>
-                    <p>We recommend booking at least 6–8 weeks in advance, especially during peak season (October through May in Northeast Florida). Popular dates fill quickly, so early booking ensures availability and allows more time for planning and coordination.</p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How far in advance should I book corporate event entertainment in Jacksonville?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We recommend booking at least 6–8 weeks in advance, especially during peak season (October through May in Northeast Florida). Popular dates fill quickly, so early booking ensures availability and allows more time for planning and coordination.</p>
+                    </div>
                 </div>
 
-                <div class="faq-item" style="border-bottom: 1px solid #ddd; padding: 20px 0;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Do you provide karaoke services for corporate events?</h3>
-                    <p>Yes! Karaoke is a fantastic addition to company parties, team building events, and holiday parties. We can incorporate karaoke into your DJ package or provide it as a standalone service, complete with professional equipment and an extensive song library.</p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Do you provide karaoke services for corporate events?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! Karaoke is a fantastic addition to company parties, team building events, and holiday parties. We can incorporate karaoke into your DJ package or provide it as a standalone service, complete with professional equipment and an extensive song library.</p>
+                    </div>
                 </div>
 
-                <div class="faq-item" style="border-bottom: 1px solid #ddd; padding: 20px 0;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">What lighting services do you offer for corporate events?</h3>
-                    <p>Our lighting services include uplighting to transform your venue's atmosphere with your brand colors, monogram/gobo projection of your company logo, dance floor lighting effects, and special effects such as CO2 cannons and cold sparks for impact moments. We create the right ambiance for any corporate function.</p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What lighting services do you offer for corporate events?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our lighting services include uplighting to transform your venue's atmosphere with your brand colors, monogram/gobo projection of your company logo, dance floor lighting effects, and special effects such as CO2 cannons and cold sparks for impact moments. We create the right ambiance for any corporate function.</p>
+                    </div>
                 </div>
 
-                <div class="faq-item" style="border-bottom: 1px solid #ddd; padding: 20px 0;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">What equipment do you provide for corporate events?</h3>
-                    <p>Our corporate entertainment packages include professional sound systems, wireless microphones for speeches and presentations, LED lighting, and full backup equipment. We bring redundant systems to every event so your program runs without interruption.</p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What equipment do you provide for corporate events?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our corporate entertainment packages include professional sound systems, wireless microphones for speeches and presentations, LED lighting, and full backup equipment. We bring redundant systems to every event so your program runs without interruption.</p>
+                    </div>
                 </div>
 
-                <div class="faq-item" style="border-bottom: 1px solid #ddd; padding: 20px 0;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Can you accommodate special announcements or presentations?</h3>
-                    <p>Definitely. We coordinate seamlessly with your event schedule, providing crystal-clear wireless microphone audio for speeches, executive presentations, award recognitions, and any other spoken program elements.</p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Can you accommodate special announcements or presentations?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Definitely. We coordinate seamlessly with your event schedule, providing crystal-clear wireless microphone audio for speeches, executive presentations, award recognitions, and any other spoken program elements.</p>
+                    </div>
                 </div>
 
-                <div class="faq-item" style="border-bottom: 1px solid #ddd; padding: 20px 0;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Do you provide a certificate of insurance for venues?</h3>
-                    <p>Yes. We carry $1 million in general liability insurance and provide a certificate of insurance (COI) for your venue upon request, at no additional charge. This is standard with every Footloose Entertainment booking.</p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Do you provide a certificate of insurance for venues?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. We carry $1 million in general liability insurance and provide a certificate of insurance (COI) for your venue upon request, at no additional charge. This is standard with every Footloose Entertainment booking.</p>
+                    </div>
                 </div>
 
-                <div class="faq-item" style="border-bottom: 1px solid #ddd; padding: 20px 0;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">What corporate event areas of Northeast Florida do you serve?</h3>
-                    <p>We serve the entire Northeast Florida region including Jacksonville, St. Augustine, Ponte Vedra, Orange Park, Fernandina Beach, Green Cove Springs, Fleming Island, Nocatee, and surrounding communities across Duval, Clay, Nassau, and St. Johns counties.</p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What areas of Northeast Florida do you serve for corporate events?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We serve the entire Northeast Florida region including Jacksonville, St. Augustine, Ponte Vedra, Orange Park, Fernandina Beach, Green Cove Springs, Fleming Island, Nocatee, and surrounding communities across Duval, Clay, Nassau, and St. Johns counties.</p>
+                    </div>
                 </div>
 
-                <div class="faq-item" style="padding: 20px 0;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Do you take music requests during corporate events?</h3>
-                    <p>Yes. We welcome requests while maintaining an atmosphere appropriate for your event. Our DJs expertly read the room and balance guest preferences with the right energy level for your specific corporate function goals.</p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Do you take music requests during corporate events?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. We welcome requests while maintaining an atmosphere appropriate for your event. Our DJs expertly read the room and balance guest preferences with the right energy level for your specific corporate function goals.</p>
+                    </div>
                 </div>
 
             </div>
@@ -790,5 +865,20 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const expanded = btn.getAttribute('aria-expanded') === 'true';
+                document.querySelectorAll('.faq-question').forEach(b => {
+                    b.setAttribute('aria-expanded', 'false');
+                    b.nextElementSibling.classList.remove('open');
+                });
+                if (!expanded) {
+                    btn.setAttribute('aria-expanded', 'true');
+                    btn.nextElementSibling.classList.add('open');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
