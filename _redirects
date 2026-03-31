@@ -3,6 +3,8 @@
 # Old WordPress URLs → New Site Pages
 # ============================================================
 
+https://footlooseentertainment.com/* https://www.footlooseentertainment.com/:splat 301!
+›
 # --- Old WordPress page paths → new pages ---
 /photobooths/overlays/                              /overlays.html                      301
 /photobooths/overlays                               /overlays.html                      301
