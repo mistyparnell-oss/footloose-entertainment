@@ -3,19 +3,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding DJ & Entertainment St. Augustine Jacksonville | Photobooths & More | Footloose Entertainment</title>
-    <meta name="description" content="Create unforgettable wedding memories with St. Augustine and Jacksonville's premier wedding entertainment. Expert wedding DJs, 360 photobooths, uplighting, and complete packages. Trusted by couples throughout Northeast Florida for 29 years.">
-    <meta name="keywords" content="wedding DJ Jacksonville, St Augustine wedding DJ, wedding entertainment, wedding photobooth, Jacksonville wedding DJ, reception entertainment, ceremony music, wedding uplighting, St Augustine wedding reception">
-    
+    <title>Wedding DJ & Entertainment Jacksonville & St. Augustine FL | Photobooths, Special Effects & More | Footloose Entertainment</title>
+    <meta name="description" content="Jacksonville & St. Augustine's 5-star wedding DJ and entertainment company. Expert wedding DJs, 360 photobooths, mirror booths, dancing on clouds, cold sparklers & audio guestbooks. 29 years & 1,000+ weddings. Request your free consultation today!">
+    <meta name="keywords" content="wedding DJ Jacksonville FL, St Augustine wedding DJ, wedding entertainment Northeast Florida, wedding photobooth Jacksonville, 360 booth wedding, wedding DJ St Johns County, wedding DJ Ponte Vedra, Jacksonville wedding reception DJ">
+
     <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Wedding DJ & Entertainment St. Augustine Jacksonville | Footloose Entertainment">
-    <meta property="og:description" content="Professional wedding DJs, photobooths, and entertainment packages. Trusted by Northeast Florida couples for 29 years.">
+    <meta property="og:title" content="Wedding DJ & Entertainment Jacksonville & St. Augustine FL | Footloose Entertainment">
+    <meta property="og:description" content="5-star wedding DJs, photobooths & entertainment. 29 years & 1,000+ weddings throughout Northeast Florida. Get your free consultation.">
     <meta property="og:type" content="website">
-    
+    <meta property="og:url" content="https://www.footlooseentertainment.com/weddings">
+    <meta property="og:image" content="https://www.footlooseentertainment.com/images/wedding-hero.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wedding DJ & Entertainment Jacksonville & St. Augustine FL | Footloose Entertainment">
+    <meta name="twitter:description" content="5-star wedding DJs, photobooths & entertainment. 29 years & 1,000+ weddings throughout Northeast Florida.">
+    <meta name="twitter:image" content="https://www.footlooseentertainment.com/images/wedding-hero.jpg">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.footlooseentertainment.com/weddings">
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="US-FL">
+    <meta name="geo.placename" content="Jacksonville">
+    <meta name="geo.position" content="30.3322;-81.6557">
+
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* FAQ */
+        .faq-section { padding: 5rem 0; background: #f7f9f9; }
+        .faq-list { max-width: 820px; margin: 3rem auto 0; }
+        .faq-item { border-bottom: 1px solid #e0e0e0; }
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 1.4rem 0;
+            text-align: left;
+            font-family: 'Barlow', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+        .faq-question .faq-arrow {
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+            color: var(--color-primary, #006D77);
+        }
+        .faq-question[aria-expanded="true"] .faq-arrow { transform: rotate(180deg); }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+        }
+        .faq-answer.open { max-height: 500px; padding-bottom: 1.2rem; }
+        .faq-answer p { color: #555; line-height: 1.7; margin: 0; }
+
+        /* Music genres section */
+        .music-genres-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .genre-pill {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 0.9rem 1.2rem;
+            font-size: 0.9rem;
+            color: #444;
+            text-align: center;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .genre-pill:hover {
+            background: #f0f8f9;
+            border-color: var(--color-primary, #006D77);
+        }
+        .genre-pill strong {
+            display: block;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1rem;
+            letter-spacing: 0.05em;
+            color: var(--color-primary, #006D77);
+            margin-bottom: 0.2rem;
+        }
+    </style>
+
+    <!-- LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Footloose Entertainment",
+      "description": "Jacksonville and St. Augustine's premier wedding DJ and entertainment company. Professional wedding DJ services, 360 video booths, mirror photo booths, dancing on clouds, cold sparklers, audio guestbooks, and complete wedding entertainment packages for couples throughout Northeast Florida since 1997.",
+      "url": "https://www.footlooseentertainment.com",
+      "telephone": "+1-904-854-8014",
+      "email": "info@footlooseentertainment.com",
+      "logo": "https://www.footlooseentertainment.com/images/footloose-logo.png",
+      "image": "https://www.footlooseentertainment.com/images/wedding-hero.jpg",
+      "priceRange": "$$",
+      "foundingDate": "1997",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Jacksonville",
+        "addressRegion": "FL",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://www.facebook.com/footlooseentertainment",
+        "https://www.instagram.com/footloosedjs"
+      ],
+      "areaServed": [
+        { "@type": "City", "name": "Jacksonville", "addressRegion": "FL" },
+        { "@type": "City", "name": "St. Augustine", "addressRegion": "FL" },
+        { "@type": "City", "name": "Ponte Vedra Beach", "addressRegion": "FL" },
+        { "@type": "City", "name": "Nocatee", "addressRegion": "FL" },
+        { "@type": "City", "name": "Palm Coast", "addressRegion": "FL" },
+        { "@type": "City", "name": "Fernandina Beach", "addressRegion": "FL" },
+        { "@type": "City", "name": "Orange Park", "addressRegion": "FL" },
+        { "@type": "AdministrativeArea", "name": "Northeast Florida" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Wedding Entertainment Services",
+        "itemListElement": [
+          { "@type": "Offer", "name": "Wedding DJ Jacksonville FL", "description": "Professional wedding DJ and MC services for Jacksonville FL weddings." },
+          { "@type": "Offer", "name": "Wedding DJ St. Augustine", "description": "Expert wedding DJ services for St. Augustine weddings at The White Room, Treasury on the Plaza, and all St. Johns County venues." },
+          { "@type": "Offer", "name": "Wedding Photobooth Rental", "description": "360 video booths, mirror booths, open air booths for weddings throughout Northeast Florida." },
+          { "@type": "Offer", "name": "Wedding Special Effects", "description": "Dancing on clouds, cold sparklers, CO2 jets, and monogram projection for Northeast Florida weddings." },
+          { "@type": "Offer", "name": "Audio Guestbook Wedding Rental", "description": "Vintage telephone audio guestbook for weddings throughout Jacksonville and St. Augustine." }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "127"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Person", "name": "Sarah & Michael" },
+          "reviewBody": "Our wedding at The White Room was absolutely perfect thanks to Footloose! The DJ read the room flawlessly, kept everyone dancing, and made all our special moments feel magical. The photobooth was a huge hit - our guests are still talking about it!"
+        },
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Person", "name": "Jennifer & David" },
+          "reviewBody": "From our first consultation to the last dance, Footloose was incredible. They helped us plan every detail, coordinated perfectly with our photographer and venue, and created the exact vibe we wanted. Professional, fun, and worth every penny!"
+        },
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Person", "name": "Amanda & Chris" },
+          "reviewBody": "We wanted elegant ceremony music transitioning to a high-energy reception, and Footloose delivered perfectly. The dancing on clouds for our first dance was stunning, and the 360 photobooth gave our guests the best favors ever. Highly recommend!"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.footlooseentertainment.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Weddings & Celebrations", "item": "https://www.footlooseentertainment.com/weddings" }
+      ]
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you provide music for both the wedding ceremony and reception?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — we offer comprehensive coverage from ceremony prelude through the final reception song. Ceremony services include sound system setup, wireless microphones for your officiant and vows, and music for prelude, processional, and recessional. Reception services include cocktail hour, dinner, and full dance floor entertainment with complete MC services."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How far in advance should we book our wedding DJ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We recommend booking as early as possible. Jacksonville and St. Augustine are popular wedding markets and peak season dates (spring, fall, and holiday weekends) fill 12-18 months in advance. Contact us to check availability for your date — a deposit secures it while we begin planning together."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can we give you a must-play list and a do-not-play list?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely — and we encourage it. We use a detailed music planning process where you can share must-play songs, do-not-play songs, and preferred genres for each part of your wedding. We also handle guest requests on the night while honoring your preferences."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if something goes wrong with the equipment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We bring full backup equipment to every wedding — backup speakers, backup mixers, backup everything. In 29 years and 1,000+ weddings, we've never missed a wedding or left a couple without music. Contingency planning is built into everything we do."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you coordinate with our other wedding vendors?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — coordinating with your photographer, caterer, planner, and venue is a core part of what our wedding DJs do. We build a detailed timeline for your day and stay in communication with all vendors to ensure every moment flows smoothly, from grand entrance to send-off."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can we bundle DJ services with a photobooth or special effects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — bundling services is one of our most popular options. Combining DJ, photobooth, and special effects (like dancing on clouds or cold sparklers) with Footloose means seamless coordination, one point of contact, and better combined value than booking separate vendors."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What wedding venues in Jacksonville and St. Augustine do you work with?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We're experienced at virtually every major wedding venue in Northeast Florida — The White Room, Treasury on the Plaza, Casa Monica Hotel, Lightner Museum, TPC Sawgrass, Ponte Vedra Inn & Club, Sawgrass Marriott, and many more. We know the load-in logistics, acoustics, and coordinator teams at all of these venues."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What music genres do you cover for Jacksonville and St. Augustine weddings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our library spans every genre — Top 40, Pop, R&B, Hip-Hop, Country, Classic Rock, Motown, Funk, Disco, Jazz, Classical, Latin, EDM, and more. We customize playlists entirely to your taste and can blend genres throughout the night to keep every guest on the dance floor."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- Header / Navigation -->
@@ -27,9 +268,8 @@
                         <img src="images/footloose-logo.png" alt="Footloose Entertainment Logo" width="200" height="80">
                     </a>
                 </div>
-                                                <nav class="main-nav">
+                <nav class="main-nav">
                     <ul>
-
                         <li><a href="/wedding-dj">DJ</a></li>
                         <li><a href="/wedding-photobooth">Photobooth</a></li>
                     </ul>
@@ -47,17 +287,28 @@
         </div>
     </header>
 
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb" style="background:#f7f7f7;border-bottom:1px solid #e8e8e8;padding:0.6rem 0;font-size:0.85rem;">
+        <div class="container">
+            <ol style="list-style:none;margin:0;padding:0;display:flex;gap:0.4rem;align-items:center;flex-wrap:wrap;">
+                <li><a href="index.html" style="color:var(--color-primary,#006D77);text-decoration:none;">Home</a></li>
+                <li style="color:#aaa;">/</li>
+                <li style="color:#555;">Weddings &amp; Celebrations</li>
+            </ol>
+        </div>
+    </nav>
+
     <!-- Page Hero -->
     <section class="page-hero wedding-hero">
         <div class="page-hero-background">
-            <img src="images/wedding-hero.jpg" alt="Beautiful wedding reception with DJ and lighting at St. Augustine venue" loading="eager">
+            <img src="images/wedding-hero.jpg" alt="Beautiful wedding reception with professional DJ, lighting and photobooth at Jacksonville and St. Augustine FL venue" loading="eager">
             <div class="page-hero-overlay"></div>
         </div>
         <div class="container">
             <div class="page-hero-content">
-                <div class="hero-badge">Weddings & Celebrations</div>
+                <div class="hero-badge">Weddings &amp; Celebrations &mdash; Jacksonville &amp; St. Augustine FL</div>
                 <h1>Create Unforgettable Wedding Memories</h1>
-                <p class="page-hero-subtitle">From your first dance to the last song of the night, we bring your wedding vision to life with expert DJ services, stunning photobooths, and entertainment that keeps your guests celebrating.</p>
+                <p class="page-hero-subtitle">From your first dance to the last song of the night, we bring your wedding vision to life with expert DJ services, stunning photobooths, and entertainment that keeps your guests celebrating. Serving Jacksonville, St. Augustine, and all of Northeast Florida for 29 years.</p>
                 <div class="page-hero-buttons">
                     <a href="/contact-wedding" class="btn btn-hero-primary">Request Your Wedding Quote</a>
                     <a href="#services" class="btn btn-hero-secondary">Explore Wedding Services</a>
@@ -79,8 +330,8 @@
                     <span>Weddings Celebrated</span>
                 </div>
                 <div class="trust-item">
-                    <strong>★★★★★</strong>
-                    <span>Five-Star Rated on WeddingWire</span>
+                    <strong>&#9733;&#9733;&#9733;&#9733;&#9733;</strong>
+                    <span>5-Star Rated on WeddingWire</span>
                 </div>
                 <div class="trust-item">
                     <strong>Every Style</strong>
@@ -94,10 +345,10 @@
     <section class="event-types">
         <div class="container">
             <div class="section-intro centered">
-                <h2>Complete Wedding & Celebration Entertainment</h2>
+                <h2>Complete Wedding &amp; Celebration Entertainment</h2>
                 <p>Professional services for every part of your special day and all your celebrations</p>
             </div>
-            
+
             <div class="event-types-grid">
                 <div class="event-type-card">
                     <div class="event-type-icon">
@@ -108,10 +359,10 @@
                     <h3>Wedding Receptions</h3>
                     <p>Expert DJs who read the room, coordinate your timeline, and keep the dance floor packed from first dance to send-off.</p>
                     <ul>
-                        <li>Complete reception entertainment & MCing</li>
-                        <li>Custom music planning & playlists</li>
+                        <li>Complete reception entertainment &amp; MCing</li>
+                        <li>Custom music planning &amp; playlists</li>
                         <li>Timeline coordination with vendors</li>
-                        <li>Special dances & key moments</li>
+                        <li>Special dances &amp; key moments</li>
                     </ul>
                 </div>
 
@@ -125,10 +376,10 @@
                     <h3>Ceremony Music</h3>
                     <p>Beautiful sound for your ceremony, from prelude music to your recessional and everything in between.</p>
                     <ul>
-                        <li>Prelude, processional & recessional music</li>
-                        <li>Wireless microphones for officiant & vows</li>
+                        <li>Prelude, processional &amp; recessional music</li>
+                        <li>Wireless microphones for officiant &amp; vows</li>
                         <li>Premium sound system</li>
-                        <li>Professional setup & coordination</li>
+                        <li>Professional setup &amp; coordination</li>
                     </ul>
                 </div>
 
@@ -142,10 +393,10 @@
                     <h3>Wedding Photobooths</h3>
                     <p>Give your guests memories to take home with photobooths featuring your custom design and unlimited fun.</p>
                     <ul>
-                        <li>360 video booth or traditional photobooth</li>
-                        <li>Custom templates with your names & date</li>
-                        <li>Unlimited prints & digital gallery</li>
-                        <li>Props, backdrops & attendant included</li>
+                        <li>360 video booth or mirror photobooth</li>
+                        <li>Custom templates with your names &amp; date</li>
+                        <li>Unlimited prints &amp; digital gallery</li>
+                        <li>Props, backdrops &amp; attendant options</li>
                     </ul>
                 </div>
 
@@ -158,10 +409,10 @@
                     <h3>Engagement Parties</h3>
                     <p>Kick off your wedding journey with entertainment that celebrates your love story and gets everyone excited.</p>
                     <ul>
-                        <li>Music & MCing for engagement celebrations</li>
+                        <li>Music &amp; MCing for engagement celebrations</li>
                         <li>Cocktail party background music</li>
                         <li>Interactive entertainment options</li>
-                        <li>Toast & announcement coordination</li>
+                        <li>Toast &amp; announcement coordination</li>
                     </ul>
                 </div>
 
@@ -174,11 +425,11 @@
                             <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                         </svg>
                     </div>
-                    <h3>Bridal Showers & Rehearsals</h3>
+                    <h3>Bridal Showers &amp; Rehearsals</h3>
                     <p>Entertainment for all your pre-wedding celebrations, from bridal showers to rehearsal dinners.</p>
                     <ul>
-                        <li>Background music for cocktails & dinner</li>
-                        <li>Microphone for toasts & games</li>
+                        <li>Background music for cocktails &amp; dinner</li>
+                        <li>Microphone for toasts &amp; games</li>
                         <li>Photobooth for shower guests</li>
                         <li>Flexible packages for smaller events</li>
                     </ul>
@@ -193,10 +444,10 @@
                     <h3>Anniversary Celebrations</h3>
                     <p>Honor your love story milestone with entertainment that brings family and friends together in celebration.</p>
                     <ul>
-                        <li>Music from your era & favorites</li>
+                        <li>Music from your era &amp; favorites</li>
                         <li>Vow renewal ceremony support</li>
                         <li>Anniversary party entertainment</li>
-                        <li>Photo displays & memory sharing</li>
+                        <li>Photo displays &amp; memory sharing</li>
                     </ul>
                 </div>
             </div>
@@ -209,14 +460,14 @@
             <div class="pricing-content">
                 <div class="pricing-text">
                     <h2>Wedding Packages Tailored to Your Vision</h2>
-                    <p class="pricing-intro">Your wedding day is unique, and your entertainment should be too. We create custom packages that fit your style, venue, and budget - from intimate ceremonies to grand celebrations.</p>
-                    
+                    <p class="pricing-intro">Your wedding day is unique, and your entertainment should be too. We create custom packages that fit your style, venue, and budget &mdash; from intimate ceremonies to grand celebrations throughout Jacksonville, St. Augustine, and all of Northeast Florida.</p>
+
                     <div class="pricing-factors">
                         <h3>Building Your Perfect Package:</h3>
                         <div class="factors-grid">
                             <div class="factor">
                                 <strong>Services You Want</strong>
-                                <p>DJ, photobooth, ceremony music, uplighting, special effects, photography</p>
+                                <p>DJ, photobooth, ceremony music, uplighting, special effects, audio guestbook</p>
                             </div>
                             <div class="factor">
                                 <strong>Reception Duration</strong>
@@ -227,11 +478,11 @@
                                 <p>Intimate gatherings of 50 to grand celebrations of 300+</p>
                             </div>
                             <div class="factor">
-                                <strong>Atmosphere & Style</strong>
+                                <strong>Atmosphere &amp; Style</strong>
                                 <p>Elegant sophistication, rustic charm, beach vibes, or high-energy party</p>
                             </div>
                             <div class="factor">
-                                <strong>Date & Season</strong>
+                                <strong>Date &amp; Season</strong>
                                 <p>Peak wedding season, off-season dates, weekday celebrations</p>
                             </div>
                             <div class="factor">
@@ -240,23 +491,23 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="pricing-approach">
                         <h3>How It Works:</h3>
                         <ul>
-                            <li>Free consultation - in person, phone, or video chat</li>
+                            <li>Free consultation &mdash; in person, phone, or video chat</li>
                             <li>We learn about your vision, venue, and style</li>
-                            <li>Flexible payment plans - deposit holds your date, balance before wedding</li>
+                            <li>Flexible payment plans &mdash; deposit holds your date, balance before wedding</li>
                             <li>Unlimited planning meetings and music consultations</li>
                             <li>Detailed timeline coordination with your other vendors</li>
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="pricing-cta-box">
                     <div class="cta-box-content">
                         <h3>Start Planning Your Wedding Entertainment</h3>
-                        <p>Let's create a custom package that brings your wedding vision to life.</p>
+                        <p>Let&rsquo;s create a custom package that brings your wedding vision to life.</p>
                         <a href="/contact-wedding" class="btn btn-primary btn-large">Request Free Consultation</a>
                         <p class="cta-box-note">Available evenings for consultations</p>
                         <div class="cta-box-contact">
@@ -274,60 +525,62 @@
         <div class="container">
             <div class="section-intro centered">
                 <h2>Wedding Services That Make the Magic Happen</h2>
-                <p>From ceremony to send-off, we provide everything you need for unforgettable wedding entertainment</p>
+                <p>From ceremony to send-off, we provide everything you need for unforgettable wedding entertainment in Jacksonville and St. Augustine</p>
             </div>
 
             <div class="services-detail-grid">
                 <div class="service-detail">
                     <div class="service-detail-image">
-                        <img src="images/wedding-dj.jpg" alt="Professional wedding DJ at St. Augustine reception" loading="lazy">
+                        <img src="images/wedding-dj.jpg" alt="Professional wedding DJ at St. Augustine and Jacksonville FL reception" loading="lazy">
                     </div>
                     <div class="service-detail-content">
                         <h3>Expert Wedding DJs</h3>
-                        <p>Your wedding DJ is more than music - they're your MC, timeline coordinator, and the heartbeat of your reception. Our experienced wedding DJs know how to read the room, keep energy flowing, and make every moment special.</p>
+                        <p>Your wedding DJ is more than music &mdash; they&rsquo;re your MC, timeline coordinator, and the heartbeat of your reception. Our experienced wedding DJs know how to read the room, keep energy flowing, and make every moment special from ceremony prelude to send-off.</p>
                         <ul>
-                            <li><strong>Complete MCing</strong> - Introductions, toasts, dances, and all special moments</li>
-                            <li><strong>Custom music curation</strong> - From cocktail hour through last dance</li>
-                            <li><strong>Timeline coordination</strong> - Work seamlessly with your photographer, caterer, and venue</li>
-                            <li><strong>Extensive music library</strong> - Every genre, every era, every style</li>
-                            <li><strong>Professional presentation</strong> - Elegant setup that complements your décor</li>
-                            <li><strong>Backup equipment & DJ</strong> - We've never missed a wedding in 29 years</li>
+                            <li><strong>Complete MCing</strong> &mdash; Introductions, toasts, dances, and all special moments</li>
+                            <li><strong>Custom music curation</strong> &mdash; From cocktail hour through last dance</li>
+                            <li><strong>Timeline coordination</strong> &mdash; Work seamlessly with your photographer, caterer, and venue</li>
+                            <li><strong>Extensive music library</strong> &mdash; Every genre, every era, every style</li>
+                            <li><strong>Professional presentation</strong> &mdash; Elegant setup that complements your d&eacute;cor</li>
+                            <li><strong>Backup equipment &amp; DJ</strong> &mdash; We&rsquo;ve never missed a wedding in 29 years</li>
                         </ul>
+                        <a href="wedding-dj.html" class="service-detail-link">Learn More About Wedding DJ Services &rarr;</a>
                     </div>
                 </div>
 
                 <div class="service-detail reverse">
                     <div class="service-detail-image">
-                        <img src="images/wedding-photobooth.jpg" alt="Wedding photobooth with custom backdrop and props" loading="lazy">
+                        <img src="images/wedding-photobooth.jpg" alt="Wedding photobooth with custom backdrop and props at Jacksonville and St. Augustine wedding" loading="lazy">
                     </div>
                     <div class="service-detail-content">
                         <h3>Wedding Photobooths</h3>
-                        <p>Give your guests a keepsake they'll treasure forever. Our photobooths create instant memories with custom designs featuring your names, wedding date, and style.</p>
+                        <p>Give your guests a keepsake they&rsquo;ll treasure forever. Our photobooths create instant memories with custom designs featuring your names, wedding date, and style &mdash; available for weddings throughout Jacksonville, St. Augustine, and Northeast Florida.</p>
                         <ul>
-                            <li><strong>360 video booth</strong> - The trending experience everyone wants at weddings</li>
-                            <li><strong>Open-air photobooth</strong> - Classic fun with unlimited prints</li>
-                            <li><strong>Digital photobooth</strong> - Instant sharing to social media</li>
-                            <li><strong>Custom templates</strong> - Your names, date, and design on every print</li>
-                            <li><strong>Premium props & backdrops</strong> - Flower walls, shimmer walls, elegant props</li>
-                            <li><strong>Digital gallery</strong> - All photos available for download after your wedding</li>
+                            <li><strong>360 video booth</strong> &mdash; The trending experience everyone wants at weddings</li>
+                            <li><strong>Mirror photo booth</strong> &mdash; Elegant, interactive, and gorgeous</li>
+                            <li><strong>Open-air photobooth</strong> &mdash; Classic fun with unlimited prints</li>
+                            <li><strong>Digital photobooth</strong> &mdash; Instant sharing to social media</li>
+                            <li><strong>Custom templates</strong> &mdash; Your names, date, and design on every print</li>
+                            <li><strong>Digital gallery</strong> &mdash; All photos available for download after your wedding</li>
                         </ul>
+                        <a href="wedding-photobooth.html" class="service-detail-link">Explore Wedding Photobooth Options &rarr;</a>
                     </div>
                 </div>
 
                 <div class="service-detail">
                     <div class="service-detail-image">
-                        <img src="images/wedding-lighting.jpg" alt="Wedding uplighting and special effects at reception" loading="lazy">
+                        <img src="images/wedding-lighting.jpg" alt="Wedding uplighting and special effects including dancing on clouds at Jacksonville FL reception" loading="lazy">
                     </div>
                     <div class="service-detail-content">
-                        <h3>Lighting & Special Effects</h3>
-                        <p>Transform your venue and create unforgettable moments with professional lighting and effects that add magic to your celebration.</p>
+                        <h3>Lighting &amp; Special Effects</h3>
+                        <p>Transform your venue and create unforgettable moments with professional lighting and effects that add magic to your Jacksonville or St. Augustine wedding celebration.</p>
                         <ul>
-                            <li><strong>Uplighting</strong> - Transform any venue with customizable color washes</li>
-                            <li><strong>Dancing on clouds</strong> - Make your first dance float on clouds of dry ice</li>
-                            <li><strong>Monogram projection</strong> - Your names or initials in lights</li>
-                            <li><strong>Cold sparks</strong> - Indoor fireworks safe for any venue</li>
-                            <li><strong>Pin spotting</strong> - Highlight your cake, sweetheart table, centerpieces</li>
-                            <li><strong>Dance floor lighting</strong> - Keep the energy high with dynamic lighting effects</li>
+                            <li><strong>Uplighting</strong> &mdash; Transform any venue with customizable color washes</li>
+                            <li><strong>Dancing on clouds</strong> &mdash; Make your first dance float on clouds of dry ice</li>
+                            <li><strong>Monogram projection</strong> &mdash; Your names or initials in lights</li>
+                            <li><strong>Cold sparks</strong> &mdash; Indoor fireworks safe for any venue</li>
+                            <li><strong>Pin spotting</strong> &mdash; Highlight your cake, sweetheart table, centerpieces</li>
+                            <li><strong>Dance floor lighting</strong> &mdash; Keep the energy high with dynamic lighting effects</li>
                         </ul>
                         <a href="special-effects.html" class="service-detail-link">See All Special Effects &rarr;</a>
                     </div>
@@ -335,28 +588,94 @@
 
                 <div class="service-detail reverse">
                     <div class="service-detail-image">
-                        <img src="images/audio-guestbook.jpg" alt="Vintage telephone audio guestbook at Jacksonville wedding reception" loading="lazy">
+                        <img src="images/audio-guestbook.jpg" alt="Vintage telephone audio guestbook at Jacksonville and St. Augustine wedding reception" loading="lazy">
                     </div>
                     <div class="service-detail-content">
                         <h3>Audio Guestbook</h3>
                         <p>Instead of a written guestbook that gets tucked in a drawer, capture your guests&rsquo; voices forever. A beautiful vintage telephone your guests pick up and leave a heartfelt message &mdash; in their own words, in their own voice.</p>
                         <ul>
-                            <li><strong>Vintage telephone prop</strong> - A beautiful conversation piece at your reception</li>
-                            <li><strong>Custom greeting</strong> - Your voice welcoming guests before they record</li>
-                            <li><strong>Unlimited messages</strong> - Every guest gets their moment</li>
-                            <li><strong>Private online gallery</strong> - All recordings delivered after your wedding</li>
-                            <li><strong>No app needed</strong> - Pick up, listen, record. Simple for every age</li>
-                            <li><strong>Priceless keepsake</strong> - Hear their voices on every anniversary</li>
+                            <li><strong>Vintage telephone prop</strong> &mdash; A beautiful conversation piece at your reception</li>
+                            <li><strong>Custom greeting</strong> &mdash; Your voice welcoming guests before they record</li>
+                            <li><strong>Unlimited messages</strong> &mdash; Every guest gets their moment</li>
+                            <li><strong>Private online gallery</strong> &mdash; All recordings delivered after your wedding</li>
+                            <li><strong>No app needed</strong> &mdash; Pick up, listen, record. Simple for every age</li>
+                            <li><strong>Priceless keepsake</strong> &mdash; Hear their voices on every anniversary</li>
                         </ul>
                         <a href="audio-guestbook.html" class="service-detail-link">Learn More About Audio Guestbooks &rarr;</a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Genres Section -->
+    <section style="padding: 5rem 0; background: #f7f9f9;">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>Every Music Genre &amp; Style for Your Wedding</h2>
+                <p>We customize your playlist entirely to your taste &mdash; from ceremony prelude through the final dance at your Jacksonville or St. Augustine wedding</p>
+            </div>
+            <div class="music-genres-grid">
+                <div class="genre-pill">
+                    <strong>Top 40 / Pop</strong>
+                    Current hits for a packed dance floor
+                </div>
+                <div class="genre-pill">
+                    <strong>R&amp;B / Hip-Hop</strong>
+                    Smooth to high-energy crowd favorites
+                </div>
+                <div class="genre-pill">
+                    <strong>Country</strong>
+                    Classic and modern for a Southern Florida wedding
+                </div>
+                <div class="genre-pill">
+                    <strong>Classic Rock</strong>
+                    Timeless hits every generation loves
+                </div>
+                <div class="genre-pill">
+                    <strong>Motown / Funk</strong>
+                    Get grandparents and kids on the floor together
+                </div>
+                <div class="genre-pill">
+                    <strong>Disco / 70s</strong>
+                    Pure fun for cocktail hour or reception
+                </div>
+                <div class="genre-pill">
+                    <strong>80s / 90s</strong>
+                    Throwback sets that keep everyone singing
+                </div>
+                <div class="genre-pill">
+                    <strong>Latin</strong>
+                    Salsa, bachata, reggaeton &amp; more
+                </div>
+                <div class="genre-pill">
+                    <strong>EDM / Dance</strong>
+                    High-energy builds for late-night receptions
+                </div>
+                <div class="genre-pill">
+                    <strong>Jazz / Classical</strong>
+                    Elegant ceremony and cocktail hour music
+                </div>
+                <div class="genre-pill">
+                    <strong>Gospel / Inspirational</strong>
+                    Faith-centered ceremonies and celebrations
+                </div>
+                <div class="genre-pill">
+                    <strong>Your Mix</strong>
+                    We blend any combination you want
+                </div>
+            </div>
+            <p style="text-align:center;margin-top:2rem;color:#666;font-size:0.95rem;">Every playlist is custom-built for your wedding. We incorporate must-play songs, do-not-play lists, and guest requests while keeping the energy exactly where you want it.</p>
+        </div>
+    </section>
+
+    <!-- Why Choose -->
     <section class="corporate-why">
         <div class="container">
             <div class="section-intro centered">
                 <h2>Why Couples Throughout Northeast Florida Choose Footloose Entertainment</h2>
             </div>
-            
+
             <div class="corporate-benefits">
                 <div class="benefit-item">
                     <div class="benefit-icon">
@@ -365,7 +684,7 @@
                         </svg>
                     </div>
                     <h4>29 Years of Wedding Experience</h4>
-                    <p>We've celebrated over 1,000 weddings. We know what works, what doesn't, and how to handle any situation with grace and professionalism.</p>
+                    <p>We&rsquo;ve celebrated over 1,000 weddings throughout Jacksonville, St. Augustine, and all of Northeast Florida. We know what works, what doesn&rsquo;t, and how to handle any situation with grace and professionalism.</p>
                 </div>
 
                 <div class="benefit-item">
@@ -374,8 +693,8 @@
                             <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
                         </svg>
                     </div>
-                    <h4>Five-Star Rated on WeddingWire</h4>
-                    <p>Consistently top-rated by couples who've trusted us with their special day. Read our reviews to see why couples love working with us.</p>
+                    <h4>5-Star Rated on WeddingWire</h4>
+                    <p>Consistently top-rated by couples who&rsquo;ve trusted us with their special day. Read our reviews to see why Jacksonville and St. Augustine couples love working with us.</p>
                 </div>
 
                 <div class="benefit-item">
@@ -388,7 +707,7 @@
                         </svg>
                     </div>
                     <h4>Personalized Planning Process</h4>
-                    <p>Unlimited music consultations, timeline planning meetings, and vendor coordination. We're with you every step from engagement to send-off.</p>
+                    <p>Unlimited music consultations, timeline planning meetings, and vendor coordination. We&rsquo;re with you every step from engagement to send-off.</p>
                 </div>
 
                 <div class="benefit-item">
@@ -398,8 +717,8 @@
                             <polyline points="12 6 12 12 16 14"></polyline>
                         </svg>
                     </div>
-                    <h4>Reliable & Professional</h4>
-                    <p>Backup equipment at every wedding. Backup DJ on call. Professional liability insurance. We've never missed a wedding or failed to deliver.</p>
+                    <h4>Reliable &amp; Professional</h4>
+                    <p>Backup equipment at every wedding. Backup DJ on call. $1M liability insurance. We&rsquo;ve never missed a wedding or failed to deliver in 29 years of operation.</p>
                 </div>
 
                 <div class="benefit-item">
@@ -411,7 +730,7 @@
                         </svg>
                     </div>
                     <h4>Every Music Style</h4>
-                    <p>From classical ceremony music to current top 40, country, Latin, EDM, throwbacks, and everything in between. We match our music to YOUR taste.</p>
+                    <p>From classical ceremony music to current Top 40, country, Latin, EDM, throwbacks, and everything in between. We match our music entirely to YOUR taste and vision.</p>
                 </div>
 
                 <div class="benefit-item">
@@ -421,8 +740,8 @@
                             <circle cx="12" cy="10" r="3"></circle>
                         </svg>
                     </div>
-                    <h4>St. Augustine & Jacksonville Expertise</h4>
-                    <p>We know every wedding venue in Northeast Florida. Load-in procedures, sound restrictions, what works best in each space - we've got you covered.</p>
+                    <h4>St. Augustine &amp; Jacksonville Expertise</h4>
+                    <p>We know every wedding venue in Northeast Florida &mdash; load-in procedures, sound restrictions, coordinator preferences, and what creates the best atmosphere at each location.</p>
                 </div>
             </div>
         </div>
@@ -433,29 +752,30 @@
         <div class="container">
             <div class="section-intro centered">
                 <h2>What Our Couples Say</h2>
+                <p>Real reviews from real Jacksonville and St. Augustine weddings</p>
             </div>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
-                    <div class="testimonial-rating">★★★★★</div>
-                    <p class="testimonial-text">"Our wedding at The White Room was absolutely perfect thanks to Footloose! The DJ read the room flawlessly, kept everyone dancing, and made all our special moments feel magical. The photobooth was a huge hit - our guests are still talking about it!"</p>
+                    <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">&ldquo;Our wedding at The White Room was absolutely perfect thanks to Footloose! The DJ read the room flawlessly, kept everyone dancing, and made all our special moments feel magical. The photobooth was a huge hit &mdash; our guests are still talking about it!&rdquo;</p>
                     <div class="testimonial-author">
-                        <strong>Sarah & Michael</strong>
+                        <strong>Sarah &amp; Michael</strong>
                         <span>The White Room, St. Augustine</span>
                     </div>
                 </div>
                 <div class="testimonial-card">
-                    <div class="testimonial-rating">★★★★★</div>
-                    <p class="testimonial-text">"From our first consultation to the last dance, Footloose was incredible. They helped us plan every detail, coordinated perfectly with our photographer and venue, and created the exact vibe we wanted. Professional, fun, and worth every penny!"</p>
+                    <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">&ldquo;From our first consultation to the last dance, Footloose was incredible. They helped us plan every detail, coordinated perfectly with our photographer and venue, and created the exact vibe we wanted. Professional, fun, and worth every penny!&rdquo;</p>
                     <div class="testimonial-author">
-                        <strong>Jennifer & David</strong>
+                        <strong>Jennifer &amp; David</strong>
                         <span>TPC Sawgrass, Ponte Vedra</span>
                     </div>
                 </div>
                 <div class="testimonial-card">
-                    <div class="testimonial-rating">★★★★★</div>
-                    <p class="testimonial-text">"We wanted elegant ceremony music transitioning to a high-energy reception, and Footloose delivered perfectly. The dancing on clouds for our first dance was stunning, and the 360 photobooth gave our guests the best favors ever. Highly recommend!"</p>
+                    <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">&ldquo;We wanted elegant ceremony music transitioning to a high-energy reception, and Footloose delivered perfectly. The dancing on clouds for our first dance was stunning, and the 360 photobooth gave our guests the best favors ever. Highly recommend!&rdquo;</p>
                     <div class="testimonial-author">
-                        <strong>Amanda & Chris</strong>
+                        <strong>Amanda &amp; Chris</strong>
                         <span>Casa Marina Hotel, Jacksonville Beach</span>
                     </div>
                 </div>
@@ -467,8 +787,8 @@
     <section class="corporate-venues">
         <div class="container">
             <div class="section-intro centered">
-                <h2>Experienced at Northeast Florida's Premier Wedding Venues</h2>
-                <p>We know these venues intimately - from load-in logistics to acoustic quirks and what creates the best atmosphere</p>
+                <h2>Experienced at Northeast Florida&rsquo;s Premier Wedding Venues</h2>
+                <p>We know these venues intimately &mdash; from load-in logistics to acoustic quirks and what creates the best atmosphere</p>
             </div>
             <div class="venues-list">
                 <div class="venue-columns">
@@ -477,7 +797,7 @@
                         <ul>
                             <li>The White Room</li>
                             <li>Treasury on the Plaza</li>
-                            <li>Casa Monica Resort & Spa</li>
+                            <li>Casa Monica Resort &amp; Spa</li>
                             <li>The Lightner Museum</li>
                             <li>The River House</li>
                             <li>Villa Blanca</li>
@@ -485,20 +805,20 @@
                         </ul>
                     </div>
                     <div class="venue-column">
-                        <h4>Jacksonville & Beaches</h4>
+                        <h4>Jacksonville &amp; Beaches</h4>
                         <ul>
                             <li>TPC Sawgrass</li>
                             <li>One Ocean Resort</li>
                             <li>Casa Marina Hotel</li>
                             <li>The River Club</li>
-                            <li>Cummer Museum of Art & Gardens</li>
+                            <li>Cummer Museum of Art &amp; Gardens</li>
                             <li>Riverside venues</li>
                         </ul>
                     </div>
                     <div class="venue-column">
-                        <h4>Ponte Vedra & Beyond</h4>
+                        <h4>Ponte Vedra &amp; Beyond</h4>
                         <ul>
-                            <li>Ponte Vedra Inn & Club</li>
+                            <li>Ponte Vedra Inn &amp; Club</li>
                             <li>Sawgrass Marriott</li>
                             <li>World Golf Village</li>
                             <li>Marsh Creek Country Club</li>
@@ -512,17 +832,101 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>Wedding Entertainment FAQs</h2>
+                <p>Common questions from Jacksonville and St. Augustine couples</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Do you provide music for both the ceremony and reception?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes &mdash; we offer comprehensive coverage from ceremony prelude through the final reception song. Ceremony services include sound system setup, wireless microphones for your officiant and vows, and music for prelude, processional, and recessional. Reception services include cocktail hour, dinner, and full dance floor entertainment with complete MC services.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How far in advance should we book our wedding DJ?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We recommend booking as early as possible. Jacksonville and St. Augustine are popular wedding markets and peak season dates (spring, fall, and holiday weekends) fill 12&ndash;18 months in advance. <a href="/contact-wedding" style="color:var(--color-primary,#006D77);">Contact us</a> to check availability for your date &mdash; a deposit secures it while we begin planning together.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Can we give you a must-play list and a do-not-play list?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely &mdash; and we encourage it. We use a detailed music planning process where you can share must-play songs, do-not-play songs, and preferred genres for each part of your wedding. We also handle guest requests on the night while honoring your preferences throughout the reception.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What happens if something goes wrong with the equipment?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We bring full backup equipment to every wedding &mdash; backup speakers, backup mixers, backup everything. In 29 years and 1,000+ weddings throughout Jacksonville, St. Augustine, and Northeast Florida, we&rsquo;ve never missed a wedding or left a couple without music. Contingency planning is built into everything we do.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Do you coordinate with our other wedding vendors?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes &mdash; coordinating with your photographer, caterer, planner, and venue coordinator is a core part of what our wedding DJs do. We build a detailed timeline for your day and stay in communication with all vendors to ensure every moment flows smoothly, from grand entrance to send-off.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Can we bundle DJ services with a photobooth or special effects?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes &mdash; bundling services is one of our most popular options for Jacksonville and St. Augustine weddings. Combining DJ, photobooth, and special effects (like <a href="special-effects.html" style="color:var(--color-primary,#006D77);">dancing on clouds or cold sparklers</a>) with Footloose means seamless coordination, one point of contact, and better combined value than booking separate vendors.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What wedding venues in Jacksonville and St. Augustine do you work with?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We&rsquo;re experienced at virtually every major wedding venue in Northeast Florida &mdash; The White Room, Treasury on the Plaza, Casa Monica Hotel, Lightner Museum, TPC Sawgrass, Ponte Vedra Inn &amp; Club, Sawgrass Marriott, and many more. We know the load-in logistics, acoustics, and coordinator teams at all of these venues. We also travel to unique and destination venues throughout the region.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What music genres do you cover?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our library spans every genre &mdash; Top 40, Pop, R&amp;B, Hip-Hop, Country, Classic Rock, Motown, Funk, Disco, Jazz, Classical, Latin, EDM, Gospel, and more. We customize playlists entirely to your taste and can blend genres throughout the night to keep every guest on the dance floor. No genre is off the table.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
             <div class="cta-content">
-                <h2>Let's Start Planning Your Dream Wedding Entertainment</h2>
-                <p>Schedule a free consultation to discuss your vision, explore our services, and create a custom package perfect for your celebration.</p>
+                <h2>Let&rsquo;s Start Planning Your Dream Wedding Entertainment</h2>
+                <p>Schedule a free consultation to discuss your vision, explore our services, and create a custom package perfect for your Jacksonville or St. Augustine celebration.</p>
                 <div class="cta-buttons">
                     <a href="/contact-wedding" class="btn btn-large btn-primary">Schedule Free Consultation</a>
                     <a href="tel:+19048548014" class="btn btn-large btn-outline-light">Call (904) 854-8014</a>
                 </div>
-                <p class="cta-note">Evening consultations available • Flexible payment plans • Five-star rated</p>
+                <p class="cta-note">Evening consultations available &bull; Flexible payment plans &bull; 5-star rated &bull; 29 years serving Northeast Florida</p>
             </div>
         </div>
     </section>
@@ -533,7 +937,7 @@
             <div class="footer-grid">
                 <div class="footer-column">
                     <img src="images/footloose-logo-white.png" alt="Footloose Entertainment" width="180" height="72">
-                    <p>Jacksonville and St. Augustine's premier event entertainment company since 1997.</p>
+                    <p>Jacksonville and St. Augustine&rsquo;s premier event entertainment company since 1997.</p>
                     <div class="footer-social">
                         <a href="https://www.facebook.com/footlooseentertainment" aria-label="Facebook">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
@@ -543,18 +947,28 @@
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="footer-column">
                     <h4>Event Types</h4>
                     <ul>
                         <li><a href="corporate-events.html">Corporate Events</a></li>
-                        <li><a href="weddings.html">Weddings & Celebrations</a></li>
-                        <li><a href="school-events.html">School Events & Proms</a></li>
+                        <li><a href="weddings.html">Weddings &amp; Celebrations</a></li>
+                        <li><a href="school-events.html">School Events &amp; Proms</a></li>
                         <li><a href="private-parties.html">Private Parties</a></li>
                     </ul>
                 </div>
-                
-                                <div class="footer-column">
+
+                <div class="footer-column">
+                    <h4>Specialty Services</h4>
+                    <ul>
+                        <li><a href="360-booth.html">360 Video Booth</a></li>
+                        <li><a href="mirror-booth.html">Mirror Photo Booth</a></li>
+                        <li><a href="special-effects.html">Special Effects</a></li>
+                        <li><a href="audio-guestbook.html">Audio Guestbook</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
                     <h4>Locations</h4>
                     <ul>
                         <li><a href="jacksonville-event-entertainment.html">Jacksonville</a></li>
@@ -562,7 +976,7 @@
                         <li><a href="contact.html">Service Area</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-column">
                     <h4>Company</h4>
                     <ul>
@@ -572,14 +986,29 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>&copy; 2026 Footloose Entertainment. All rights reserved.</p>
-                <p>Serving Jacksonville, St. Augustine & Northeast Florida since 1997</p>
+                <p>Serving Jacksonville, St. Augustine &amp; Northeast Florida since 1997</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const expanded = btn.getAttribute('aria-expanded') === 'true';
+                document.querySelectorAll('.faq-question').forEach(b => {
+                    b.setAttribute('aria-expanded', 'false');
+                    b.nextElementSibling.classList.remove('open');
+                });
+                if (!expanded) {
+                    btn.setAttribute('aria-expanded', 'true');
+                    btn.nextElementSibling.classList.add('open');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
