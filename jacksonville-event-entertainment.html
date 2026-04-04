@@ -43,6 +43,27 @@
             --color-gold: #D4A843;
         }
 
+        /* Breadcrumb */
+        .breadcrumb-nav {
+            background: #f5f5f5;
+            border-bottom: 1px solid #e8e8e8;
+            padding: 0.6rem 0;
+            font-size: 0.85rem;
+        }
+        .breadcrumb-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.4rem;
+            color: #888;
+        }
+        .breadcrumb-list li a { color: var(--color-primary); text-decoration: none; }
+        .breadcrumb-list li a:hover { text-decoration: underline; }
+        .breadcrumb-list [aria-current="page"] { color: #555; }
+
         /* Service cards grid */
         .services-grid {
             display: grid;
@@ -91,10 +112,12 @@
         /* Areas grid */
         .areas-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            grid-template-columns: repeat(5, 1fr);
             gap: 1rem;
             margin-top: 2rem;
         }
+        @media (max-width: 900px) { .areas-grid { grid-template-columns: repeat(3, 1fr); } }
+        @media (max-width: 560px) { .areas-grid { grid-template-columns: repeat(2, 1fr); } }
         .area-pill {
             background: #fff;
             border: 1px solid #e0e0e0;
@@ -287,6 +310,22 @@
             "@type": "Answer",
             "text": "Yes — combining DJ and photobooth services is one of the most popular options for Jacksonville events. Booking both with one company means better coordination, one point of contact, and often better combined value than hiring separately."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you DJ weddings at Jacksonville venues?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — wedding DJ services are one of our specialties in Jacksonville. We have performed at hundreds of Jacksonville weddings at venues including Epping Forest Yacht Club, Casa Marina Hotel, Ribault Club, TPC Sawgrass, and many others throughout the area."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are you insured for Jacksonville events?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Footloose Entertainment carries $1 million in liability insurance and provides certificates of insurance to Jacksonville venues upon request. Most venues require proof of insurance from entertainment vendors and we handle this routinely."
+          }
         }
       ]
     }
@@ -321,6 +360,17 @@
             </div>
         </div>
     </header>
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb-list">
+                <li><a href="index.html">Home</a></li>
+                <li aria-hidden="true">›</li>
+                <li aria-current="page">Jacksonville Event Entertainment</li>
+            </ol>
+        </div>
+    </nav>
 
     <!-- Page Hero -->
     <section class="page-hero">
@@ -645,11 +695,20 @@
                 </div>
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
-                        Do you offer DJ and photobooth packages in Jacksonville?
-                        <svg class="faq-arrow" width="20" height="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        Do you offer DJ and photobooth services in Jacksonville?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </button>
                     <div class="faq-answer">
                         <p>Yes — combining DJ and photobooth services is one of our most popular options for Jacksonville events. Booking both with Footloose means seamless coordination, one point of contact, and often better combined value than hiring separately. Contact us to discuss options for your specific event.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Do you DJ weddings at Jacksonville venues?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes &mdash; wedding DJ services are one of our specialties in Jacksonville. We have performed at hundreds of Jacksonville weddings at venues including Epping Forest Yacht Club, Casa Marina Hotel, Ribault Club, TPC Sawgrass, Cummer Museum, and many others throughout the area. We know the load-in logistics and coordinator teams at virtually every major Jacksonville venue.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -658,7 +717,7 @@
                         <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </button>
                     <div class="faq-answer">
-                        <p>Yes — Footloose Entertainment carries $1 million in liability insurance and can provide certificates of insurance to Jacksonville venues upon request. Most Jacksonville venues require proof of insurance from entertainment vendors and we handle this routinely.</p>
+                        <p>Yes &mdash; Footloose Entertainment carries $1 million in liability insurance and can provide certificates of insurance to Jacksonville venues upon request. Most Jacksonville venues require proof of insurance from entertainment vendors and we handle this routinely.</p>
                     </div>
                 </div>
                 <div class="faq-item">
