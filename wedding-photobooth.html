@@ -43,6 +43,8 @@
   "url": "https://footlooseentertainment.com",
   "logo": "https://footlooseentertainment.com/images/footloose-logo.png",
   "telephone": "+1-904-854-8014",
+  "email": "info@footlooseentertainment.com",
+  "foundingDate": "1997",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Jacksonville",
@@ -53,28 +55,176 @@
     { "@type": "City", "name": "Jacksonville", "addressRegion": "FL" },
     { "@type": "City", "name": "St. Augustine", "addressRegion": "FL" },
     { "@type": "City", "name": "Ponte Vedra", "addressRegion": "FL" },
-    { "@type": "City", "name": "Orange Park", "addressRegion": "FL" }
+    { "@type": "City", "name": "Orange Park", "addressRegion": "FL" },
+    { "@type": "City", "name": "Fernandina Beach", "addressRegion": "FL" }
   ],
   "description": "Elegant wedding photobooth rentals creating unforgettable memories for you and your guests. Open air, mirror, 360, and digital booths with custom overlays, instant prints, and guest book options. Serving Jacksonville and St. Augustine.",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "127"
+  },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Wedding Photobooth Rental Services",
     "itemListElement": [
-      {
-        "@type": "Offer",
-        "name": "Wedding Photobooth Rental",
-        "description": "Wedding photobooth with custom overlay, instant prints or digital delivery, guest book option, and professional attendant.",
-        "areaServed": "Jacksonville, FL and surrounding areas"
-      }
+      { "@type": "Offer", "name": "Wedding Photobooth Rental", "description": "Wedding photobooth with custom overlay, instant prints or digital delivery, guest book option, and professional attendant." },
+      { "@type": "Offer", "name": "360 Video Booth Wedding Rental", "description": "Glamorous 360-degree slow-motion video booth with custom wedding overlay for Jacksonville and St. Augustine weddings." },
+      { "@type": "Offer", "name": "Mirror Booth Wedding Rental", "description": "Elegant full-length interactive mirror photo booth for wedding receptions in Northeast Florida." }
     ]
   }
 }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What wedding photobooth options does Footloose Entertainment offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We offer open air photobooths, 360 video booths, mirror photo booths, digital photobooths, social/roaming photobooths, and wooden booths — all customizable with your names, wedding date, and colors for Jacksonville and St. Augustine weddings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the wedding guest book photobooth work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our open air photobooth prints two identical copies of every photo. Guests keep one as a personal favor and place the duplicate into your guest book album, writing a personal message alongside their photo. The result is a one-of-a-kind wedding keepsake filled with candid photos and heartfelt notes from every guest."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can we customize the photo booth with our wedding design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Every booking includes a custom digital overlay designed specifically for your wedding — featuring your names, wedding date, and design elements that match your colors and style. We create a proof before your wedding for your approval."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much space does a wedding photobooth require at the venue?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most of our booths require approximately a 10x10 foot footprint with a standard power outlet nearby. The 360 video booth needs a clear circular area of about 12 feet in diameter. We coordinate directly with your venue coordinator before the wedding to confirm placement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How far in advance should I book a wedding photobooth in Jacksonville?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We recommend booking as early as possible — popular Saturday dates during spring and fall wedding season fill up 6 to 12 months in advance. Contact us as soon as you have your date and venue confirmed to check availability."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Footloose Entertainment serve St. Augustine and Northeast Florida for wedding photobooths?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We serve Jacksonville, St. Augustine, Ponte Vedra Beach, Orange Park, Fernandina Beach, Amelia Island, Neptune Beach, Atlantic Beach, Fleming Island, and all of Northeast Florida for wedding photobooth rentals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can we add a photobooth to our existing DJ booking?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — and many couples do exactly that. Combining our DJ services with a photobooth means one company, seamless coordination, and a single point of contact for your entire wedding entertainment. Contact us to discuss adding a photobooth to your booking."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do guests receive their photos from the wedding photobooth?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Guests receive instant prints on-site at any of our print-enabled booths. Digital copies are also delivered instantly via QR code or text message, ready to share to social media. All photos are collected in a private online gallery you can access after the wedding."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://footlooseentertainment.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Weddings", "item": "https://footlooseentertainment.com/weddings" },
+        { "@type": "ListItem", "position": 3, "name": "Wedding Photobooth", "item": "https://footlooseentertainment.com/wedding-photobooth" }
+      ]
+    }
     </script>
 <style>
 body:has(.wedding-hero) .main-nav a.active {
     color: #e3b7b3;
     border-bottom-color: #e3b7b3;
 }
+
+/* Breadcrumb */
+.breadcrumb-nav {
+    background: #f5f5f5;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 0.6rem 0;
+    font-size: 0.85rem;
+}
+.breadcrumb-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+    color: #888;
+}
+.breadcrumb-list li a {
+    color: var(--color-primary, #006D77);
+    text-decoration: none;
+}
+.breadcrumb-list li a:hover { text-decoration: underline; }
+.breadcrumb-list [aria-current="page"] { color: #555; }
+
+/* FAQ */
+.faq-section { padding: 5rem 0; background: #f9f9f9; }
+.faq-list { max-width: 820px; margin: 3rem auto 0; }
+.faq-item { border-bottom: 1px solid #e0e0e0; }
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 1.4rem 0;
+    text-align: left;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.faq-question .faq-arrow {
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+    color: var(--color-primary, #006D77);
+}
+.faq-question[aria-expanded="true"] .faq-arrow { transform: rotate(180deg); }
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+}
+.faq-answer.open { max-height: 400px; padding-bottom: 1.2rem; }
+.faq-answer p { color: #555; line-height: 1.7; margin: 0; }
 </style>
 </head>
 <body>
@@ -106,6 +256,19 @@ body:has(.wedding-hero) .main-nav a.active {
             </div>
         </div>
     </header>
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb-list">
+                <li><a href="index.html">Home</a></li>
+                <li aria-hidden="true">›</li>
+                <li><a href="weddings.html">Weddings</a></li>
+                <li aria-hidden="true">›</li>
+                <li aria-current="page">Wedding Photobooth</li>
+            </ol>
+        </div>
+    </nav>
 
     <!-- Page Hero -->
     <section class="page-hero wedding-hero">
@@ -396,6 +559,94 @@ body:has(.wedding-hero) .main-nav a.active {
             </div>
         </div>
     </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>Wedding Photobooth FAQs</h2>
+                <p>Common questions from couples planning their Jacksonville &amp; St. Augustine weddings</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What wedding photobooth options does Footloose Entertainment offer?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer open air photobooths, 360 video booths, mirror photo booths, digital photobooths, social/roaming photobooths, and wooden booths&mdash;all customizable with your names, wedding date, and colors for Jacksonville and St. Augustine weddings.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How does the wedding guest book photobooth work?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our open air photobooth prints two identical copies of every photo. Guests keep one as a personal favor and place the duplicate into your guest book album, writing a personal message alongside their photo. The result is a one-of-a-kind wedding keepsake filled with candid photos and heartfelt notes from every guest.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Can we customize the photobooth with our wedding design?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. Every booking includes a custom digital overlay designed specifically for your wedding&mdash;featuring your names, wedding date, and design elements that match your colors and style. We create a proof before your wedding for your approval.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How much space does a wedding photobooth require at the venue?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Most of our booths require approximately a 10&times;10 foot footprint with a standard power outlet nearby. The 360 video booth needs a clear circular area of about 12 feet in diameter. We coordinate directly with your venue coordinator before the wedding to confirm placement.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How far in advance should I book a wedding photobooth in Jacksonville?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We recommend booking as early as possible&mdash;popular Saturday dates during spring and fall wedding season fill up 6 to 12 months in advance. Contact us as soon as you have your date and venue confirmed to check availability.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Does Footloose Entertainment serve St. Augustine and Northeast Florida?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. We serve Jacksonville, St. Augustine, Ponte Vedra Beach, Orange Park, Fernandina Beach, Amelia Island, Neptune Beach, Atlantic Beach, Fleming Island, and all of Northeast Florida for wedding photobooth rentals.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Can we add a photobooth to our existing DJ booking?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes&mdash;and many couples do exactly that. Combining our <a href="wedding-dj.html" style="color:var(--color-primary,#006D77);">DJ services</a> with a photobooth means one company, seamless coordination, and a single point of contact for your entire wedding entertainment.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How do guests receive their photos from the wedding photobooth?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Guests receive instant prints on-site at our print-enabled booths. Digital copies are also delivered instantly via QR code or text message, ready to share to social media. All photos are collected in a private online gallery you can access after the wedding.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Complete Your Wedding Entertainment -->
+    <section class="event-types section-padding bg-light">
+        <div class="container">
             <div class="section-intro centered">
                 <h2>Complete Your Wedding Entertainment</h2>
                 <p>Combine our photobooth with other services for the ultimate celebration</p>
@@ -412,29 +663,27 @@ body:has(.wedding-hero) .main-nav a.active {
                     </div>
                     <h3>Wedding DJ Services</h3>
                     <p>Expert DJs and MCs to create the perfect soundtrack for your celebration and keep your dance floor packed</p>
+                    <span style="color:var(--color-primary,#006D77);font-weight:600;font-size:0.9rem;">View Wedding DJ Services &rarr;</span>
                 </a>
-
-                <a href="/contact-wedding" class="event-type-card" style="text-decoration: none; transition: transform 0.3s ease;">
+                <a href="360-booth.html" class="event-type-card" style="text-decoration: none; transition: transform 0.3s ease;">
                     <div class="event-type-icon">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
-                            <circle cx="12" cy="12" r="4"></circle>
-                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
                         </svg>
                     </div>
-                    <h3>Wedding Photography</h3>
-                    <p>Professional wedding photography to capture all the beautiful, intimate moments of your special day</p>
+                    <h3>360 Video Booth</h3>
+                    <p>The show-stopping 360-degree slow-motion video experience that gets shared across social media and makes your wedding unforgettable</p>
+                    <span style="color:var(--color-primary,#006D77);font-weight:600;font-size:0.9rem;">Learn About the 360 Booth &rarr;</span>
                 </a>
-
-                <a href="/contact-wedding" class="event-type-card" style="text-decoration: none; transition: transform 0.3s ease;">
+                <a href="special-effects.html" class="event-type-card" style="text-decoration: none; transition: transform 0.3s ease;">
                     <div class="event-type-icon">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polygon points="23 7 16 12 23 17 23 7"></polygon>
-                            <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
                         </svg>
                     </div>
-                    <h3>Wedding Videography</h3>
-                    <p>Cinematic wedding videography to relive every emotional moment, vow, and celebration for years to come</p>
+                    <h3>Special Effects</h3>
+                    <p>Cold spark fountains, CO&#x2082; jets, and dancing on clouds for your grand entrance, first dance, and most cinematic wedding moments</p>
+                    <span style="color:var(--color-primary,#006D77);font-weight:600;font-size:0.9rem;">Explore Special Effects &rarr;</span>
                 </a>
             </div>
 
@@ -507,12 +756,27 @@ body:has(.wedding-hero) .main-nav a.active {
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 Footloose Entertainment. All rights reserved.</p>
+                <p>&copy; 2026 Footloose Entertainment. All rights reserved.</p>
                 <p>Serving Jacksonville, St. Augustine & Northeast Florida since 1997</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const expanded = btn.getAttribute('aria-expanded') === 'true';
+                document.querySelectorAll('.faq-question').forEach(b => {
+                    b.setAttribute('aria-expanded', 'false');
+                    b.nextElementSibling.classList.remove('open');
+                });
+                if (!expanded) {
+                    btn.setAttribute('aria-expanded', 'true');
+                    btn.nextElementSibling.classList.add('open');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
