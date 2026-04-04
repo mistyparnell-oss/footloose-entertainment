@@ -4,13 +4,339 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corporate DJ Services Jacksonville | Professional Event DJs & MCs | Footloose Entertainment</title>
-    <meta name="description" content="Professional corporate DJ services in Jacksonville. Expert DJs and MCs for business events, company parties, and corporate celebrations. Premium sound, extensive music library, fully insured.">
-    <meta name="keywords" content="corporate DJ Jacksonville, corporate event DJ, professional MC, business event DJ, company party DJ Jacksonville">
-    
+    <meta name="description" content="Professional corporate DJ and MC services in Jacksonville & Northeast Florida. Expert entertainment for holiday parties, award ceremonies, conferences, and company celebrations. Fully insured, 29 years of experience.">
+    <meta name="keywords" content="corporate DJ Jacksonville, corporate event DJ Jacksonville FL, holiday party DJ Jacksonville, company party DJ, professional MC Jacksonville, business event DJ Northeast Florida">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://footlooseentertainment.com/corporate-dj">
+    <meta property="og:title" content="Corporate DJ Services Jacksonville | Professional Event DJs & MCs | Footloose Entertainment">
+    <meta property="og:description" content="Professional corporate DJ and MC services for holiday parties, award ceremonies, conferences, and company celebrations throughout Jacksonville and Northeast Florida.">
+    <meta property="og:image" content="https://footlooseentertainment.com/images/corporate-dj-detail.jpg">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://footlooseentertainment.com/corporate-dj">
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="US-FL">
+    <meta name="geo.placename" content="Jacksonville">
+    <meta name="geo.position" content="30.3322;-81.6557">
+
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-primary: #006D77;
+            --color-primary-dark: #004E57;
+            --color-accent: #D4A843;
+            --color-gold: #D4A843;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb-nav {
+            background: #f5f5f5;
+            border-bottom: 1px solid #e8e8e8;
+            padding: 0.6rem 0;
+            font-size: 0.85rem;
+        }
+        .breadcrumb-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.4rem;
+            color: #888;
+        }
+        .breadcrumb-list li a {
+            color: var(--color-primary);
+            text-decoration: none;
+        }
+        .breadcrumb-list li a:hover { text-decoration: underline; }
+        .breadcrumb-list [aria-current="page"] { color: #555; }
+
+        /* Event types section */
+        .event-types-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 2.5rem;
+        }
+        @media (max-width: 900px) { .event-types-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 560px) { .event-types-grid { grid-template-columns: 1fr; } }
+
+        /* Event type targeting section */
+        .event-type-targeting {
+            padding: 5rem 0;
+            background: var(--color-bg-light);
+        }
+        .targeting-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) { .targeting-grid { grid-template-columns: 1fr; } }
+        .targeting-card {
+            background: #fff;
+            border-radius: 14px;
+            padding: 2rem;
+            border-left: 4px solid var(--color-primary);
+            box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+        }
+        .targeting-card h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.4rem;
+            letter-spacing: 0.05em;
+            color: var(--color-secondary);
+            margin-bottom: 0.7rem;
+        }
+        .targeting-card p {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 0.8rem;
+        }
+        .targeting-card ul {
+            margin: 0;
+            padding-left: 1.2rem;
+            color: #555;
+            font-size: 0.9rem;
+            line-height: 1.8;
+        }
+
+        /* FAQ */
+        .faq-section {
+            padding: 5rem 0;
+            background: var(--color-bg-white);
+        }
+        .faq-list {
+            max-width: 800px;
+            margin: 3rem auto 0;
+        }
+        .faq-item {
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 1.4rem 0;
+            text-align: left;
+            font-family: 'Barlow', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--color-secondary);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+        .faq-question .faq-arrow {
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+            color: var(--color-primary);
+        }
+        .faq-question[aria-expanded="true"] .faq-arrow {
+            transform: rotate(180deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+        }
+        .faq-answer.open {
+            max-height: 400px;
+            padding-bottom: 1.2rem;
+        }
+        .faq-answer p {
+            color: #555;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* Add-ons grid */
+        .addons-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+        }
+        @media (max-width: 900px) { .addons-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 560px) { .addons-grid { grid-template-columns: 1fr; } }
+        .addon-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 1.8rem 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            border-top: 3px solid var(--color-primary);
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        .addon-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 28px rgba(0,109,119,0.13);
+        }
+        .addon-card svg { color: var(--color-primary); margin-bottom: 0.8rem; }
+        .addon-card h4 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.2rem;
+            letter-spacing: 0.05em;
+            color: var(--color-secondary);
+            margin-bottom: 0.5rem;
+        }
+        .addon-card p {
+            font-size: 0.88rem;
+            color: #666;
+            line-height: 1.6;
+        }
+    </style>
+
+    <!-- Structured Data: LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Footloose Entertainment",
+      "url": "https://footlooseentertainment.com",
+      "telephone": "+1-904-854-8014",
+      "email": "info@footlooseentertainment.com",
+      "logo": "https://footlooseentertainment.com/images/footloose-logo.png",
+      "description": "Professional corporate DJ and MC services for holiday parties, award ceremonies, conferences, and company celebrations throughout Jacksonville and Northeast Florida since 1997.",
+      "foundingDate": "1997",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Jacksonville",
+        "addressRegion": "FL",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Jacksonville", "addressRegion": "FL" },
+        { "@type": "City", "name": "St. Augustine", "addressRegion": "FL" },
+        { "@type": "City", "name": "Orange Park", "addressRegion": "FL" },
+        { "@type": "City", "name": "Ponte Vedra", "addressRegion": "FL" },
+        { "@type": "City", "name": "Fernandina Beach", "addressRegion": "FL" }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "127"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+          "author": { "@type": "Person", "name": "Sarah M., Events Manager" },
+          "reviewBody": "The DJ was professional, the music was perfect, and the MC services for our awards ceremony were flawless. Exactly what we needed."
+        },
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+          "author": { "@type": "Person", "name": "David C., VP Operations" },
+          "reviewBody": "We've used Footloose for three years running. Reliable, professional, and they understand corporate environments. Highly recommend."
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/footlooseentertainment",
+        "https://instagram.com/footloosedjs"
+      ]
+    }
+    </script>
+
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What types of corporate events does Footloose Entertainment service?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We serve all types of corporate events throughout Jacksonville and Northeast Florida, including holiday parties, award ceremonies, company galas, team building events, product launches, conferences, client appreciation events, and employee celebrations of all sizes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How far in advance should I book a corporate DJ in Jacksonville?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For peak seasons—especially November and December for holiday parties—we recommend booking 3 to 6 months in advance. We often accommodate last-minute corporate event requests when availability allows, so contact us even for upcoming events."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does your corporate DJ service include?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our corporate DJ service includes a professional DJ and MC in business attire, premium sound system scaled to your venue, wireless microphones for speeches and presentations, pre-event consultation and custom playlist planning, timeline management, and backup equipment at every event."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide MC services for award ceremonies and corporate events?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Our DJs are experienced MCs who handle welcome announcements, program introductions, award presentations, toast coordination, raffle announcements, and all other speaking requirements with professionalism and polish."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you handle both background music and dancing at our corporate event?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. We excel at transitioning between event phases—sophisticated background music during cocktail hour and dinner, then higher energy for dancing. We read the room and adjust in real time based on your crowd and your direction."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Footloose Entertainment insured for corporate events?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We carry $2 million in general liability insurance and provide certificates of insurance to venues upon request at no additional cost. We also bring redundant backup equipment to every event."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you serve areas outside of Jacksonville for corporate events?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We serve all of Northeast Florida including St. Augustine, Orange Park, Ponte Vedra, Fernandina Beach, Fleming Island, and surrounding communities. Contact us to confirm availability for your specific venue location."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can we combine DJ services with a photo booth for our corporate event?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, and many corporate clients do exactly that. Adding a 360 video booth, mirror booth, or open air photo booth alongside DJ services creates a more complete entertainment experience. Contact us to discuss combining services for your event."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Breadcrumb Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://footlooseentertainment.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Corporate Events", "item": "https://footlooseentertainment.com/corporate-events" },
+        { "@type": "ListItem", "position": 3, "name": "Corporate DJ Services", "item": "https://footlooseentertainment.com/corporate-dj" }
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- Header / Navigation -->
@@ -41,6 +367,19 @@
             </div>
         </div>
     </header>
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb-list">
+                <li><a href="index.html">Home</a></li>
+                <li aria-hidden="true">›</li>
+                <li><a href="corporate-events.html">Corporate Events</a></li>
+                <li aria-hidden="true">›</li>
+                <li aria-current="page">Corporate DJ Services</li>
+            </ol>
+        </div>
+    </nav>
 
     <!-- Page Hero -->
     <section class="page-hero corporate-hero">
@@ -275,7 +614,27 @@
                 <p>Enhance your DJ package with these professional services</p>
             </div>
             
-            <div class="event-types-grid" style="grid-template-columns: repeat(4, 1fr); max-width: 1200px; margin: 0 auto;">
+            <div class="addons-grid">
+                <a href="360-booth.html" class="addon-card">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>
+                    <h4>360 Video Booth</h4>
+                    <p>Slow-motion branded videos guests share instantly to social media. The ultimate corporate event conversation starter.</p>
+                </a>
+                <a href="mirror-booth.html" class="addon-card">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="2" width="18" height="20" rx="2"/><line x1="8" y1="22" x2="16" y2="22"/><line x1="12" y1="20" x2="12" y2="22"/></svg>
+                    <h4>Mirror Photo Booth</h4>
+                    <p>Full-length touchscreen mirror with custom company branding and instant prints for a sophisticated touch.</p>
+                </a>
+                <a href="special-effects.html" class="addon-card">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    <h4>Special Effects</h4>
+                    <p>Cold spark fountains and CO₂ jets that add dramatic flair to grand entrances, awards reveals, and key moments.</p>
+                </a>
+                <a href="corporate-photobooth.html" class="addon-card">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                    <h4>Photo Booth Rental</h4>
+                    <p>Open air and digital booths with custom branded overlays — perfect for any corporate event size or venue.</p>
+                </a>
             </div>
 
             <div style="text-align: center; margin-top: var(--spacing-lg);">
@@ -314,6 +673,142 @@
                     <div class="testimonial-author">
                         <strong>Michael T., Marketing Director</strong>
                         <span>Consumer Products Company</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Type Targeting -->
+    <section class="event-type-targeting">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>Corporate DJ Services for Every Type of Business Event</h2>
+                <p>From intimate company dinners to 500-person galas&mdash;we know what each event needs</p>
+            </div>
+            <div class="targeting-grid">
+                <div class="targeting-card">
+                    <h3>Holiday Parties</h3>
+                    <p>The annual holiday party sets the tone for company culture. Our DJs curate festive, inclusive playlists that get everyone on the floor while keeping the atmosphere appropriate for mixed company. We handle:</p>
+                    <ul>
+                        <li>Seasonal music blended with all-year favorites</li>
+                        <li>Announcements, toasts, and award presentations</li>
+                        <li>Photo booth integration for memorable keepsakes</li>
+                        <li>Coordination with catering and venue staff</li>
+                    </ul>
+                </div>
+                <div class="targeting-card">
+                    <h3>Award Ceremonies &amp; Galas</h3>
+                    <p>Recognition events demand polished MC work and precise timing. Our experienced corporate MCs handle every speaking moment with confidence and professionalism, from walk-up music for honorees to keeping the program moving on schedule.</p>
+                    <ul>
+                        <li>Custom intro music for each award category</li>
+                        <li>Coordinated microphone hand-off for recipients</li>
+                        <li>Elegant background music during dinner service</li>
+                        <li>Seamless transition to dancing after the program</li>
+                    </ul>
+                </div>
+                <div class="targeting-card">
+                    <h3>Team Building Events</h3>
+                    <p>Team building events need energy without chaos. We create an atmosphere that encourages natural interaction and keeps the mood upbeat without overpowering conversation. Interactive add-ons like photo booths become organic icebreakers.</p>
+                    <ul>
+                        <li>Background music tuned to the event's energy level</li>
+                        <li>Activity soundtrack and transition cues</li>
+                        <li>360 or open-air photo booths for shared experiences</li>
+                        <li>Flexible volume for indoor and outdoor settings</li>
+                    </ul>
+                </div>
+                <div class="targeting-card">
+                    <h3>Product Launches &amp; Conferences</h3>
+                    <p>High-stakes corporate events require flawless audio-visual execution. We provide crystal-clear sound for presentations and panel discussions, pre-session walk-in music, and seamless transitions between segments&mdash;so your technology never becomes the story.</p>
+                    <ul>
+                        <li>Wireless lapel and handheld microphones</li>
+                        <li>Walk-in and break music programming</li>
+                        <li>On-site technician throughout the event</li>
+                        <li>Redundant backup systems at every setup</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>Corporate DJ FAQ</h2>
+                <p>Common questions about our corporate DJ and MC services in Jacksonville &amp; Northeast Florida</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What types of corporate events does Footloose Entertainment service?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We serve all types of corporate events throughout Jacksonville and Northeast Florida&mdash;including holiday parties, award ceremonies, company galas, team building events, product launches, conferences, client appreciation events, and employee celebrations of all sizes.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How far in advance should I book a corporate DJ in Jacksonville?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>For peak seasons&mdash;especially November and December for holiday parties&mdash;we recommend booking 3 to 6 months in advance. We often accommodate last-minute corporate event requests when availability allows, so reach out even for upcoming events.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What does your corporate DJ service include?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our corporate DJ service includes a professional DJ and MC in business attire, a premium sound system scaled to your venue size, wireless microphones for speeches and presentations, pre-event consultation and custom playlist planning, timeline management, and redundant backup equipment at every event.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Do you provide MC services for award ceremonies?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. Our DJs are experienced MCs who handle welcome announcements, program introductions, award presentations, toast coordination, raffle announcements, and all other speaking requirements with professionalism and polish. You'll never hear awkward silences or stumbled words.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Can you handle background music AND dancing at our corporate event?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. We excel at transitioning between event phases&mdash;sophisticated background music during cocktail hour and dinner, then building energy for dancing after the program. We read the room and adjust in real time based on your crowd and your direction.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Is Footloose Entertainment insured for corporate events?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. We carry $2 million in general liability insurance and provide certificates of insurance to venues at no additional cost. We bring redundant backup equipment to every event and have never had a technical failure cancel or ruin an event in nearly 30 years.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Do you serve areas outside of Jacksonville for corporate events?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. We serve all of Northeast Florida including St. Augustine, Orange Park, Ponte Vedra, Fernandina Beach, Fleming Island, and surrounding communities. <a href="contact.html" style="color:var(--color-primary);">Contact us</a> to confirm availability for your specific venue location.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Can we add a photo booth to our corporate DJ booking?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, and many corporate clients do exactly that. Adding a <a href="360-booth.html" style="color:var(--color-primary);">360 video booth</a>, <a href="mirror-booth.html" style="color:var(--color-primary);">mirror booth</a>, or <a href="corporate-photobooth.html" style="color:var(--color-primary);">open air photo booth</a> alongside DJ services creates a more complete entertainment experience for your team. Contact us to discuss combining services.</p>
                     </div>
                 </div>
             </div>
@@ -390,5 +885,20 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const expanded = btn.getAttribute('aria-expanded') === 'true';
+                document.querySelectorAll('.faq-question').forEach(b => {
+                    b.setAttribute('aria-expanded', 'false');
+                    b.nextElementSibling.classList.remove('open');
+                });
+                if (!expanded) {
+                    btn.setAttribute('aria-expanded', 'true');
+                    btn.nextElementSibling.classList.add('open');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
