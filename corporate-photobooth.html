@@ -40,6 +40,30 @@
             border-bottom-color: #800020;
         }
 
+        /* Breadcrumb */
+        .breadcrumb-nav {
+            background: #f7f7f7;
+            border-bottom: 1px solid #e8e8e8;
+            padding: 0.6rem 0;
+            font-size: 0.85rem;
+        }
+        .breadcrumb-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.4rem;
+            color: #888;
+        }
+        .breadcrumb-list li a {
+            color: #800020;
+            text-decoration: none;
+        }
+        .breadcrumb-list li a:hover { text-decoration: underline; }
+        .breadcrumb-list [aria-current="page"] { color: #555; }
+
         /* FAQ */
         .faq-section { padding: 5rem 0; }
         .faq-list { max-width: 820px; margin: 3rem auto 0; }
@@ -230,6 +254,22 @@
             "@type": "Answer",
             "text": "Yes — we carry redundant backup equipment to every event. In 29 years of operation, we've built our systems and protocols specifically to prevent and handle any technical issue so your corporate event runs flawlessly. Your company's reputation matters — ours does too."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "How are photos delivered to guests at a corporate photo booth event?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Guests receive instant prints on-site (for print-enabled booths) and can also retrieve digital copies immediately via QR code or text message, ready to share to social media. A complete online gallery is provided after the event for your records and follow-up sharing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can the corporate photo booth be set up outdoors?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, with the right conditions. Outdoor setups require a covered or sheltered area, a level surface, and access to a standard power outlet. We discuss your specific outdoor venue during planning to confirm feasibility and ensure a great experience."
+          }
         }
       ]
     }
@@ -265,14 +305,14 @@
     </header>
 
     <!-- Breadcrumb Navigation -->
-    <nav class="breadcrumb-nav" aria-label="Breadcrumb" style="background:#f7f7f7;border-bottom:1px solid #e8e8e8;padding:0.6rem 0;font-size:0.85rem;">
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
         <div class="container">
-            <ol style="list-style:none;margin:0;padding:0;display:flex;gap:0.4rem;align-items:center;flex-wrap:wrap;">
-                <li><a href="index.html" style="color:#800020;text-decoration:none;">Home</a></li>
-                <li style="color:#aaa;">/</li>
-                <li><a href="corporate-events.html" style="color:#800020;text-decoration:none;">Corporate Events</a></li>
-                <li style="color:#aaa;">/</li>
-                <li style="color:#555;">Corporate Photo Booth</li>
+            <ol class="breadcrumb-list">
+                <li><a href="index.html">Home</a></li>
+                <li aria-hidden="true">›</li>
+                <li><a href="corporate-events.html">Corporate Events</a></li>
+                <li aria-hidden="true">›</li>
+                <li aria-current="page">Corporate Photo Booth</li>
             </ol>
         </div>
     </nav>
@@ -643,6 +683,24 @@
                     </button>
                     <div class="faq-answer">
                         <p>Yes &mdash; we carry redundant backup equipment to every corporate event. In 29 years of operation, we&rsquo;ve built our systems and protocols specifically to prevent and handle any technical issue so your corporate event runs flawlessly. Your company&rsquo;s reputation matters &mdash; and so does ours.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How are photos delivered to guests after the event?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Guests receive instant prints on-site (for print-enabled booths) and can also retrieve digital copies immediately via QR code or text message&mdash;ready to share to social media in seconds. A complete online gallery of all event photos is provided after the event for your records and any follow-up sharing.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Can the photo booth be set up outdoors for corporate events?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, with the right conditions. Outdoor setups require a covered or sheltered area, a level surface, and access to a standard power outlet. Northeast Florida's climate means we take precautions for heat, humidity, and weather. We'll discuss your specific outdoor venue during the planning process to confirm feasibility and ensure a great experience.</p>
                     </div>
                 </div>
             </div>
