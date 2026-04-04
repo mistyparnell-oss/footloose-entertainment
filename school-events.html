@@ -4,18 +4,227 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Event DJ Jacksonville | Prom, Homecoming & Dance Entertainment | Footloose Entertainment</title>
-    <meta name="description" content="Make your school event unforgettable with Jacksonville's premier school dance DJ and entertainment. Expert prom DJs, homecoming entertainment, grad parties, and school dances throughout Northeast Florida. Trusted by schools for 29 years.">
-    <meta name="keywords" content="prom DJ Jacksonville, school dance DJ, homecoming entertainment, graduation party DJ, Jacksonville school events, high school dance DJ, middle school dance, school dance entertainment St Augustine">
-    
+    <meta name="description" content="Jacksonville's trusted school event DJ and entertainment company. Expert prom DJs, homecoming entertainment, graduation parties, and school dances throughout Duval, St. Johns, Clay & Nassau counties. Background-checked staff. Trusted by Northeast Florida schools for 29 years.">
+    <meta name="keywords" content="prom DJ Jacksonville, school dance DJ Jacksonville FL, homecoming entertainment Northeast Florida, graduation party DJ, school event DJ Duval County, high school dance DJ St Johns County, prom DJ St Augustine, school dance entertainment Clay County Nassau County">
+
     <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="School Event DJ Jacksonville | Prom & Homecoming Entertainment">
-    <meta property="og:description" content="Professional DJ services for proms, homecoming, grad parties, and school dances. Trusted by Northeast Florida schools for 29 years.">
+    <meta property="og:title" content="School Event DJ Jacksonville | Prom & Homecoming Entertainment | Footloose Entertainment">
+    <meta property="og:description" content="Professional DJ services for proms, homecoming, grad parties, and school dances. Background-checked, trusted by Northeast Florida schools for 29 years.">
     <meta property="og:type" content="website">
-    
+    <meta property="og:url" content="https://footlooseentertainment.com/school-events">
+    <meta property="og:image" content="https://footlooseentertainment.com/images/school-event-hero.jpg">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://footlooseentertainment.com/school-events">
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="US-FL">
+    <meta name="geo.placename" content="Jacksonville">
+    <meta name="geo.position" content="30.3322;-81.6557">
+
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-primary: #006D77;
+            --color-primary-dark: #004E57;
+            --color-accent: #D4A843;
+        }
+        /* Breadcrumb */
+        .breadcrumb-nav {
+            background: #f5f5f5;
+            border-bottom: 1px solid #e8e8e8;
+            padding: 0.6rem 0;
+            font-size: 0.85rem;
+        }
+        .breadcrumb-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.4rem;
+            color: #888;
+        }
+        .breadcrumb-list li a { color: var(--color-primary); text-decoration: none; }
+        .breadcrumb-list li a:hover { text-decoration: underline; }
+        .breadcrumb-list [aria-current="page"] { color: #555; }
+        /* FAQ */
+        .faq-section { padding: 5rem 0; background: #f7f9f9; }
+        .faq-list { max-width: 820px; margin: 3rem auto 0; }
+        .faq-item { border-bottom: 1px solid #e0e0e0; }
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 1.4rem 0;
+            text-align: left;
+            font-family: 'Barlow', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+        .faq-question .faq-arrow {
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+            color: var(--color-primary);
+        }
+        .faq-question[aria-expanded="true"] .faq-arrow { transform: rotate(180deg); }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+        }
+        .faq-answer.open { max-height: 400px; padding-bottom: 1.2rem; }
+        .faq-answer p { color: #555; line-height: 1.7; margin: 0; }
+    </style>
+
+    <!-- LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Footloose Entertainment",
+      "url": "https://footlooseentertainment.com",
+      "logo": "https://footlooseentertainment.com/images/footloose-logo.png",
+      "telephone": "+1-904-854-8014",
+      "email": "info@footlooseentertainment.com",
+      "foundingDate": "1997",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Jacksonville",
+        "addressRegion": "FL",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Jacksonville", "addressRegion": "FL" },
+        { "@type": "City", "name": "St. Augustine", "addressRegion": "FL" },
+        { "@type": "City", "name": "Ponte Vedra", "addressRegion": "FL" },
+        { "@type": "City", "name": "Orange Park", "addressRegion": "FL" },
+        { "@type": "City", "name": "Fleming Island", "addressRegion": "FL" },
+        { "@type": "City", "name": "Fernandina Beach", "addressRegion": "FL" },
+        { "@type": "AdministrativeArea", "name": "Duval County", "addressRegion": "FL" },
+        { "@type": "AdministrativeArea", "name": "St. Johns County", "addressRegion": "FL" },
+        { "@type": "AdministrativeArea", "name": "Clay County", "addressRegion": "FL" },
+        { "@type": "AdministrativeArea", "name": "Nassau County", "addressRegion": "FL" }
+      ],
+      "description": "Professional school event DJ and entertainment services for proms, homecoming dances, graduation parties, and school dances throughout Northeast Florida. Background-checked staff, age-appropriate music, trusted by schools since 1997.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "127"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "School Event Entertainment Services",
+        "itemListElement": [
+          { "@type": "Offer", "name": "Prom DJ Jacksonville FL", "description": "Professional prom DJ with lighting, MCing, and grand march coordination for high schools in Northeast Florida." },
+          { "@type": "Offer", "name": "Homecoming Dance DJ", "description": "High-energy homecoming dance DJ with school spirit integration and age-appropriate music." },
+          { "@type": "Offer", "name": "Graduation Party Entertainment", "description": "DJ, photobooth, and entertainment for all-night graduation parties throughout Northeast Florida." },
+          { "@type": "Offer", "name": "School Dance DJ", "description": "Winter formal, spring fling, and school dance DJ services for middle and high schools." }
+        ]
+      },
+      "sameAs": [
+        "https://www.facebook.com/footlooseentertainment",
+        "https://instagram.com/footloosedjs"
+      ]
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How far in advance should schools book entertainment for prom or homecoming?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We recommend booking 2 to 4 months in advance for prom season (typically April and May) and homecoming (September and October). Popular dates across Duval, St. Johns, Clay, and Nassau counties fill quickly — early booking ensures you get your preferred date and gives us time to plan music with student input."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are your staff background-checked for school events?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. All Footloose Entertainment staff are background-checked and trained to work in educational environments. We provide certificates of insurance to schools and follow all district safety protocols."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you play age-appropriate, school-approved music?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. We play clean versions of current songs, work with administration to ensure all music meets school standards, and take direction from faculty and chaperones throughout the event. Students get the music they want — parents and staff get the professionalism they need."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can students have input on the music playlist?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — we encourage it. We hold music planning sessions with student councils or event committees before the event, accept must-play and do-not-play lists, and take requests during the dance. Our DJs read the crowd and keep energy high all night."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What school events does Footloose Entertainment service?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We service proms, homecoming dances, winter formals, spring flings, graduation parties, middle school dances, back-to-school events, spirit week celebrations, school carnivals, family fun nights, and after-school events throughout Northeast Florida."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you serve schools outside Jacksonville?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We serve schools throughout Northeast Florida including all of Duval, St. Johns, Clay, and Nassau counties — covering Jacksonville, St. Augustine, Ponte Vedra, Orange Park, Fleming Island, Fernandina Beach, and surrounding areas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can we add a photobooth to our school dance or prom?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — and it's one of the most popular add-ons for school events. A 360 video booth or open air photobooth with custom school overlays gives students instant social-media-ready memories. One company handles everything — DJ and photobooth — for seamless coordination."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer flexible payment options for school budgets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We work with student councils, PTAs, and school purchasing departments. We accept direct invoicing to schools or PTAs, accept purchase orders, and offer payment plans where a deposit holds your date while the balance is paid closer to the event."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://footlooseentertainment.com/" },
+        { "@type": "ListItem", "position": 2, "name": "School Events", "item": "https://footlooseentertainment.com/school-events" }
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- Header / Navigation -->
@@ -46,6 +255,17 @@
             </div>
         </div>
     </header>
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb-list">
+                <li><a href="index.html">Home</a></li>
+                <li aria-hidden="true">›</li>
+                <li aria-current="page">School Events &amp; Proms</li>
+            </ol>
+        </div>
+    </nav>
 
     <!-- Page Hero -->
     <section class="page-hero school-hero">
@@ -345,7 +565,7 @@
     <section class="corporate-why">
         <div class="container">
             <div class="section-intro centered">
-                <h2>Why Northeast Florida Schools Choose Footloose Entertainment Entertainment</h2>
+                <h2>Why Northeast Florida Schools Choose Footloose Entertainment</h2>
             </div>
             
             <div class="corporate-benefits">
@@ -494,7 +714,91 @@
                         </ul>
                     </div>
                 </div>
-                <p class="venues-note">Don't see your school listed? We work with schools throughout Northeast Florida. <a href="/contact-school">Contact us</a> to discuss your event.</p>
+                <p class="venues-note">Don't see your school listed? We work with schools throughout Northeast Florida including Duval, St. Johns, Clay, and Nassau counties. <a href="/contact-school">Contact us</a> to discuss your event.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>School Event Entertainment FAQs</h2>
+                <p>Common questions from school administrators, activities directors, and PTA coordinators throughout Northeast Florida</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How far in advance should schools book entertainment for prom or homecoming?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We recommend booking 2 to 4 months in advance for prom season (typically April and May) and homecoming (September and October). Popular dates across Duval, St. Johns, Clay, and Nassau counties fill quickly&mdash;early booking ensures you get your preferred date and gives us time to plan music with student input.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Are your staff background-checked for school events?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. All Footloose Entertainment staff are background-checked and trained to work in educational environments. We provide certificates of insurance to schools and follow all district safety protocols. We respect chaperone authority and maintain professional conduct at every school event.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Do you play age-appropriate, school-approved music?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. We play clean versions of current songs, work with administration to ensure all music meets school standards, and take direction from faculty and chaperones throughout the event. Students get the music they want&mdash;parents and staff get the professionalism they need.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Can students have input on the music playlist?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes&mdash;we encourage it. We hold music planning sessions with student councils or event committees before the event, accept must-play and do-not-play lists, and take requests during the dance. Our DJs read the crowd and keep energy high all night.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What school events does Footloose Entertainment service?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We service proms, homecoming dances, winter formals, spring flings, graduation parties, middle school dances, back-to-school events, spirit week celebrations, school carnivals, family fun nights, and after-school events throughout Northeast Florida.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Do you serve schools outside of Jacksonville?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. We serve schools throughout all of Northeast Florida&mdash;Duval, St. Johns, Clay, and Nassau counties&mdash;covering Jacksonville, St. Augustine, Ponte Vedra, Orange Park, Fleming Island, Fernandina Beach, and surrounding communities.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Can we add a photobooth to our school dance or prom?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes&mdash;and it&rsquo;s one of the most popular add-ons for school events. A <a href="360-booth.html" style="color:var(--color-primary);">360 video booth</a> or <a href="school-photobooth.html" style="color:var(--color-primary);">open air photobooth</a> with custom school overlays gives students instant social-media-ready memories. One company handles both DJ and photobooth for seamless coordination.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Do you offer flexible payment options for school budgets?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. We work with student councils, PTAs, and school purchasing departments. We accept direct invoicing to schools or PTAs, accept purchase orders, and offer payment plans where a deposit holds your date while the balance is paid closer to the event.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -569,5 +873,20 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const expanded = btn.getAttribute('aria-expanded') === 'true';
+                document.querySelectorAll('.faq-question').forEach(b => {
+                    b.setAttribute('aria-expanded', 'false');
+                    b.nextElementSibling.classList.remove('open');
+                });
+                if (!expanded) {
+                    btn.setAttribute('aria-expanded', 'true');
+                    btn.nextElementSibling.classList.add('open');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
