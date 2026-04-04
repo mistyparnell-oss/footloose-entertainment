@@ -37,44 +37,195 @@
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Footloose Entertainment",
-  "url": "https://footlooseentertainment.com",
-  "logo": "https://footlooseentertainment.com/images/footloose-logo.png",
-  "telephone": "+1-904-854-8014",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Jacksonville",
-    "addressRegion": "FL",
-    "addressCountry": "US"
-  },
-  "areaServed": [
-    { "@type": "City", "name": "Jacksonville", "addressRegion": "FL" },
-    { "@type": "City", "name": "St. Augustine", "addressRegion": "FL" },
-    { "@type": "City", "name": "Ponte Vedra", "addressRegion": "FL" },
-    { "@type": "City", "name": "Orange Park", "addressRegion": "FL" }
-  ],
-  "description": "Exciting photobooth rentals for proms, homecomings, and school events. 360 video booths, mirror booths, and open air photobooths with custom school overlays. Serving Jacksonville and Northeast Florida.",
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "School Event Photobooth Rental Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "name": "School Event Photobooth Rental",
-        "description": "Photobooth rental for school events with custom overlay, unlimited sessions, and professional attendant.",
-        "areaServed": "Jacksonville, FL and surrounding areas"
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Footloose Entertainment",
+      "url": "https://footlooseentertainment.com",
+      "logo": "https://footlooseentertainment.com/images/footloose-logo.png",
+      "telephone": "+1-904-854-8014",
+      "email": "info@footlooseentertainment.com",
+      "foundingDate": "1997",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Jacksonville",
+        "addressRegion": "FL",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Jacksonville", "addressRegion": "FL" },
+        { "@type": "City", "name": "St. Augustine", "addressRegion": "FL" },
+        { "@type": "City", "name": "Ponte Vedra", "addressRegion": "FL" },
+        { "@type": "City", "name": "Orange Park", "addressRegion": "FL" },
+        { "@type": "City", "name": "Fernandina Beach", "addressRegion": "FL" },
+        { "@type": "City", "name": "Fleming Island", "addressRegion": "FL" }
+      ],
+      "description": "Exciting photobooth rentals for proms, homecomings, and school events. 360 video booths, mirror booths, and open air photobooths with custom school overlays. Background-checked staff trusted by Jacksonville and Northeast Florida schools.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "127"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "School Event Photobooth Rental Services",
+        "itemListElement": [
+          { "@type": "Offer", "name": "Prom Photobooth Rental Jacksonville", "description": "Open air and 360 video photobooth rentals for high school proms in Jacksonville and Northeast Florida." },
+          { "@type": "Offer", "name": "Homecoming Photobooth Rental", "description": "Custom school-branded photobooth experiences for homecoming dances throughout Northeast Florida." },
+          { "@type": "Offer", "name": "Graduation Party Photobooth", "description": "Graduation-themed photobooth with custom overlays for school graduation parties and ceremonies." }
+        ]
       }
-    ]
-  }
-}
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What photobooth options are available for school events in Jacksonville?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We offer open air photobooths, 360 video booths, mirror photo booths, digital photobooths, and social/roaming photobooths — all customizable with your school name, colors, mascot, and event theme for proms, homecomings, and school dances throughout Jacksonville and Northeast Florida."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are your staff background-checked for school events?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. All Footloose Entertainment staff are background-checked and trained to work in educational environments. We follow school district policies, respect chaperone authority, and maintain professional conduct at all school events throughout Jacksonville, Duval, St. Johns, Clay, and Nassau counties."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How far in advance should schools book a photobooth for prom or homecoming?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We recommend booking 2 to 4 months in advance for prom season (typically April and May) and homecoming (September and October). Popular dates fill up quickly across Northeast Florida schools, so early booking ensures you get your preferred booth type and date."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you customize the photobooth with our school's name and colors?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Every school event booking includes a custom digital overlay featuring your school name, colors, mascot, and event theme. We create a design proof before the event for your approval, ensuring it matches your school spirit and branding perfectly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What space and power requirements does a school photobooth need?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most booths require approximately a 10x10 foot footprint with a standard power outlet within 50 feet. The 360 video booth needs a clear circular area of about 12 feet in diameter. We coordinate with your school's facilities team in advance to confirm placement in the gym, cafeteria, or event space."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you serve schools outside of Jacksonville?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We serve schools throughout Northeast Florida including Duval, St. Johns, Clay, Nassau, and Flagler counties — covering Jacksonville, St. Augustine, Ponte Vedra, Orange Park, Fleming Island, Fernandina Beach, and surrounding communities."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can we combine a photobooth with DJ services for our school event?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — and many schools do exactly that. Combining DJ and photobooth services with Footloose Entertainment means one background-checked team, seamless coordination, and a single point of contact for your entire school event. Contact us to discuss adding a photobooth to your DJ booking."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are your props appropriate for school events?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. All props provided for school events are age-appropriate and school-friendly. We tailor our prop selection to match your event theme and school's standards, and we work with administrators to ensure everything meets district guidelines."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://footlooseentertainment.com/" },
+        { "@type": "ListItem", "position": 2, "name": "School Events", "item": "https://footlooseentertainment.com/school-events" },
+        { "@type": "ListItem", "position": 3, "name": "School Photobooth", "item": "https://footlooseentertainment.com/school-photobooth" }
+      ]
+    }
     </script>
 <style>
 body:has(.school-hero) .main-nav a.active {
     color: #7B2CBF;
     border-bottom-color: #7B2CBF;
 }
+
+/* Breadcrumb */
+.breadcrumb-nav {
+    background: #f5f5f5;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 0.6rem 0;
+    font-size: 0.85rem;
+}
+.breadcrumb-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+    color: #888;
+}
+.breadcrumb-list li a {
+    color: var(--color-primary, #006D77);
+    text-decoration: none;
+}
+.breadcrumb-list li a:hover { text-decoration: underline; }
+.breadcrumb-list [aria-current="page"] { color: #555; }
+
+/* FAQ */
+.faq-section { padding: 5rem 0; background: #fff; }
+.faq-list { max-width: 820px; margin: 3rem auto 0; }
+.faq-item { border-bottom: 1px solid #e0e0e0; }
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 1.4rem 0;
+    text-align: left;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.faq-question .faq-arrow {
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+    color: #7B2CBF;
+}
+.faq-question[aria-expanded="true"] .faq-arrow { transform: rotate(180deg); }
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+}
+.faq-answer.open { max-height: 400px; padding-bottom: 1.2rem; }
+.faq-answer p { color: #555; line-height: 1.7; margin: 0; }
 </style>
 </head>
 <body>
@@ -106,6 +257,19 @@ body:has(.school-hero) .main-nav a.active {
             </div>
         </div>
     </header>
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb-list">
+                <li><a href="index.html">Home</a></li>
+                <li aria-hidden="true">›</li>
+                <li><a href="school-events.html">School Events</a></li>
+                <li aria-hidden="true">›</li>
+                <li aria-current="page">School Photobooth</li>
+            </ol>
+        </div>
+    </nav>
 
     <!-- Page Hero -->
     <section class="page-hero school-hero">
@@ -251,7 +415,7 @@ body:has(.school-hero) .main-nav a.active {
     <section class="why-choose section-padding">
         <div class="container">
             <div class="section-header text-center">
-                <h2>Why Schools Choose Footloose Entertainment Entertainment Photobooths</h2>
+                <h2>Why Schools Choose Footloose Entertainment Photobooths</h2>
             </div>
             
             <div class="why-grid">
@@ -396,6 +560,94 @@ body:has(.school-hero) .main-nav a.active {
             </div>
         </div>
     </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>School Event Photobooth FAQs</h2>
+                <p>Common questions from Jacksonville area schools, PTAs, and student activity coordinators</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What photobooth options are available for school events in Jacksonville?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer open air photobooths, 360 video booths, mirror photo booths, digital photobooths, and social/roaming photobooths&mdash;all customizable with your school name, colors, mascot, and event theme for proms, homecomings, and school dances throughout Jacksonville and Northeast Florida.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Are your staff background-checked for school events?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. All Footloose Entertainment staff are background-checked and trained to work in educational environments. We follow school district policies, respect chaperone authority, and maintain professional conduct at all school events throughout Jacksonville, Duval, St. Johns, Clay, and Nassau counties.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How far in advance should schools book a photobooth for prom or homecoming?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We recommend booking 2 to 4 months in advance for prom season (typically April and May) and homecoming (September and October). Popular dates fill up quickly across Northeast Florida schools, so early booking ensures you get your preferred booth type and date.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Can you customize the photobooth with our school&rsquo;s name and colors?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. Every school event booking includes a custom digital overlay featuring your school name, colors, mascot, and event theme. We create a design proof before the event for your approval, ensuring it matches your school spirit and branding perfectly.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What space and power requirements does a school photobooth need?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Most booths require approximately a 10&times;10 foot footprint with a standard power outlet within 50 feet. The 360 video booth needs a clear circular area of about 12 feet in diameter. We coordinate with your school&rsquo;s facilities team in advance to confirm placement in the gym, cafeteria, or event space.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Do you serve schools outside of Jacksonville?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. We serve schools throughout Northeast Florida including Duval, St. Johns, Clay, Nassau, and Flagler counties&mdash;covering Jacksonville, St. Augustine, Ponte Vedra, Orange Park, Fleming Island, Fernandina Beach, and surrounding communities.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Can we combine a photobooth with DJ services for our school event?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes&mdash;and many schools do exactly that. Combining <a href="school-dj.html" style="color:#7B2CBF;">DJ and photobooth services</a> with Footloose Entertainment means one background-checked team, seamless coordination, and a single point of contact for your entire school event.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Are your props appropriate for school events?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. All props for school events are age-appropriate and school-friendly. We tailor our prop selection to match your event theme and school&rsquo;s standards, and we work with administrators to ensure everything meets district guidelines.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Complete Your School Event -->
+    <section class="event-types section-padding bg-light">
+        <div class="container">
             <div class="section-intro centered">
                 <h2>Complete Your School Event</h2>
                 <p>Combine our photobooth with other services for the ultimate experience</p>
@@ -412,29 +664,27 @@ body:has(.school-hero) .main-nav a.active {
                     </div>
                     <h3>School Event DJ Services</h3>
                     <p>DJs who play the music students actually want with the professionalism schools require</p>
+                    <span style="color:var(--color-primary,#006D77);font-weight:600;font-size:0.9rem;">View School DJ Services &rarr;</span>
                 </a>
-
-                <a href="/contact-school" class="event-type-card" style="text-decoration: none; transition: transform 0.3s ease;">
+                <a href="360-booth.html" class="event-type-card" style="text-decoration: none; transition: transform 0.3s ease;">
                     <div class="event-type-icon">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="3"></circle>
-                            <path d="M12 1v6m0 6v6m5.2-13.8l-1.4 1.4m-11.6 0l1.4 1.4m15.6 11.6l-1.4-1.4m-11.6 0l-1.4 1.4"></path>
+                            <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
                         </svg>
                     </div>
-                    <h3>Dance Floor Lighting</h3>
-                    <p>Transform your gym into an epic dance venue with professional lighting effects</p>
+                    <h3>360 Video Booth</h3>
+                    <p>The viral 360-degree slow-motion experience students will post everywhere&mdash;the most-talked-about moment of any prom or homecoming</p>
+                    <span style="color:var(--color-primary,#006D77);font-weight:600;font-size:0.9rem;">Learn About the 360 Booth &rarr;</span>
                 </a>
-
-                <a href="/contact-school" class="event-type-card" style="text-decoration: none; transition: transform 0.3s ease;">
+                <a href="special-effects.html" class="event-type-card" style="text-decoration: none; transition: transform 0.3s ease;">
                     <div class="event-type-icon">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
-                            <circle cx="12" cy="12" r="4"></circle>
-                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
                         </svg>
                     </div>
-                    <h3>Event Photography</h3>
-                    <p>Professional photography to capture all the special moments of your school dance or prom</p>
+                    <h3>Special Effects</h3>
+                    <p>Cold spark fountains and CO&#x2082; jets that transform your prom grand march or homecoming court reveal into an unforgettable moment</p>
+                    <span style="color:var(--color-primary,#006D77);font-weight:600;font-size:0.9rem;">Explore Special Effects &rarr;</span>
                 </a>
             </div>
 
@@ -514,5 +764,20 @@ body:has(.school-hero) .main-nav a.active {
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const expanded = btn.getAttribute('aria-expanded') === 'true';
+                document.querySelectorAll('.faq-question').forEach(b => {
+                    b.setAttribute('aria-expanded', 'false');
+                    b.nextElementSibling.classList.remove('open');
+                });
+                if (!expanded) {
+                    btn.setAttribute('aria-expanded', 'true');
+                    btn.nextElementSibling.classList.add('open');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
