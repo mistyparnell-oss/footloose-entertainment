@@ -231,6 +231,129 @@
             line-height: 1.5;
         }
 
+        /* Breadcrumb */
+        .breadcrumb-nav {
+            background: #f5f5f5;
+            border-bottom: 1px solid #e8e8e8;
+            padding: 0.6rem 0;
+            font-size: 0.85rem;
+        }
+        .breadcrumb-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.4rem;
+            color: #888;
+        }
+        .breadcrumb-list li a {
+            color: var(--color-primary);
+            text-decoration: none;
+        }
+        .breadcrumb-list li a:hover { text-decoration: underline; }
+        .breadcrumb-list [aria-current="page"] { color: #555; }
+
+        /* Services overview */
+        .services-overview {
+            padding: 5rem 0;
+            background: var(--color-bg-white);
+        }
+        .services-overview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .service-overview-card {
+            border-radius: 14px;
+            border: 1px solid #e8e8e8;
+            padding: 2rem 1.8rem;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+            display: block;
+        }
+        .service-overview-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 32px rgba(0,109,119,0.12);
+            border-color: var(--color-primary);
+        }
+        .service-overview-card .soc-icon {
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+        .service-overview-card h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.4rem;
+            letter-spacing: 0.05em;
+            color: var(--color-secondary);
+            margin-bottom: 0.6rem;
+        }
+        .service-overview-card p {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.65;
+            margin-bottom: 1rem;
+        }
+        .service-overview-card .soc-link {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--color-primary);
+        }
+
+        /* FAQ */
+        .faq-section {
+            padding: 5rem 0;
+            background: var(--color-bg-light);
+        }
+        .faq-list {
+            max-width: 800px;
+            margin: 3rem auto 0;
+        }
+        .faq-item {
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 1.4rem 0;
+            text-align: left;
+            font-family: 'Barlow', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--color-secondary);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+        .faq-question .faq-arrow {
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+            color: var(--color-primary);
+        }
+        .faq-question[aria-expanded="true"] .faq-arrow {
+            transform: rotate(180deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+        }
+        .faq-answer.open {
+            max-height: 400px;
+            padding-bottom: 1.2rem;
+        }
+        .faq-answer p {
+            color: #555;
+            line-height: 1.7;
+            margin: 0;
+        }
+
         /* Event selector */
         .event-selector-grid {
             display: grid;
@@ -284,6 +407,102 @@
       ]
     }
     </script>
+
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What areas does Footloose Entertainment serve?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We serve Jacksonville, St. Augustine, Ponte Vedra Beach, Orange Park, Fleming Island, Neptune Beach, Atlantic Beach, Jacksonville Beach, Fernandina Beach, and all of Northeast Florida for DJ services, photo booth rentals, and event entertainment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How far in advance should I book a wedding DJ in Jacksonville?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We recommend booking 6 to 12 months in advance for weddings, especially for popular Saturday dates during spring and fall wedding season. That said, we do accommodate last-minute requests when availability allows—contact us and we'll let you know right away."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Footloose Entertainment provide both DJ services and photo booths?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Footloose Entertainment offers professional DJ services, 360 video booths, mirror photo booths, open air photo booths, digital photo booths, special effects, and audio guestbooks—all from one local family-owned company serving Jacksonville and Northeast Florida since 1997."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you take music requests at weddings and events?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. We encourage every couple and event organizer to share must-play and do-not-play lists. Our DJs specialize in reading the crowd and blending your preferences with dance floor favorites to keep guests engaged all night."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Footloose Entertainment insured?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Footloose Entertainment carries $1 million in general liability insurance and can provide certificates of insurance to venues upon request. We also bring backup equipment to every event."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Footloose Entertainment handle corporate events?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We've served corporate holiday parties, company galas, award ceremonies, and team events throughout Jacksonville and Northeast Florida. We adjust music selection, volume, and energy to match the professional atmosphere you need."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes Footloose Entertainment different from other DJ companies?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Footloose Entertainment is a family-owned business founded in Jacksonville in 1997—not a franchise or booking agency. You work directly with the people serving your event. With nearly 30 years of experience and 5,000+ events served, we bring a level of local expertise and personal care that larger companies simply can't match."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What photo booth options does Footloose Entertainment offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We offer open air photo booths, 360 video booths, mirror photo booths, digital photo booths, social media booths, and wooden photo booths—along with add-ons like custom overlays, themed backgrounds, props, and an audio guestbook."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Breadcrumb Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://footlooseentertainment.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About Us",
+          "item": "https://footlooseentertainment.com/about"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
 
@@ -315,6 +534,17 @@
             </div>
         </div>
     </header>
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb-list">
+                <li><a href="index.html">Home</a></li>
+                <li aria-hidden="true">›</li>
+                <li aria-current="page">About Us</li>
+            </ol>
+        </div>
+    </nav>
 
     <!-- Page Hero -->
     <section class="page-hero">
@@ -565,6 +795,150 @@
         </div>
     </section>
 
+    <!-- Services Overview -->
+    <section class="services-overview">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>What We Do — DJ &amp; Event Entertainment in Jacksonville &amp; St. Augustine</h2>
+                <p>One trusted local company for every entertainment need at your event</p>
+            </div>
+            <div class="services-overview-grid">
+                <a href="wedding-dj.html" class="service-overview-card">
+                    <div class="soc-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49M7.76 7.76a6 6 0 0 0 0 8.49M21.54 4.47a12 12 0 0 1 0 15.06M2.46 4.47a12 12 0 0 0 0 15.06"/></svg>
+                    </div>
+                    <h3>Professional DJ Services</h3>
+                    <p>From ceremony to last dance, our experienced DJs create the perfect soundtrack for weddings, corporate events, school events, and private parties throughout Northeast Florida. Wireless microphones, professional sound systems, and backup equipment included.</p>
+                    <span class="soc-link">Explore DJ Services &rarr;</span>
+                </a>
+                <a href="360-booth.html" class="service-overview-card">
+                    <div class="soc-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>
+                    </div>
+                    <h3>360 Video Booth</h3>
+                    <p>The most-talked-about entertainment at any event. Guests step onto our platform while a rotating arm camera captures glamorous slow-motion video from every angle — complete with a custom overlay and instant social sharing.</p>
+                    <span class="soc-link">Learn About 360 Booths &rarr;</span>
+                </a>
+                <a href="mirror-booth.html" class="service-overview-card">
+                    <div class="soc-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="2" width="18" height="20" rx="2"/><line x1="8" y1="22" x2="16" y2="22"/><line x1="12" y1="20" x2="12" y2="22"/></svg>
+                    </div>
+                    <h3>Mirror Photo Booth</h3>
+                    <p>A full-length touchscreen mirror with animated prompts, custom branding, and instant prints. Elegant, glamorous, and endlessly entertaining for guests of all ages at weddings and events in Jacksonville and St. Augustine.</p>
+                    <span class="soc-link">Learn About Mirror Booths &rarr;</span>
+                </a>
+                <a href="special-effects.html" class="service-overview-card">
+                    <div class="soc-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3>Special Effects</h3>
+                    <p>Cold spark fountains, CO₂ jets, fog machines, and more — dramatic effects that transform your grand entrance, first dance, or key moments into unforgettable cinematic experiences.</p>
+                    <span class="soc-link">Explore Special Effects &rarr;</span>
+                </a>
+                <a href="audio-guestbook.html" class="service-overview-card">
+                    <div class="soc-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <h3>Audio Guestbook</h3>
+                    <p>A vintage-style phone your guests pick up and leave heartfelt voice messages — a keepsake you'll treasure long after the event. A unique and meaningful alternative to a traditional written guestbook.</p>
+                    <span class="soc-link">Learn About Audio Guestbooks &rarr;</span>
+                </a>
+                <a href="contact.html" class="service-overview-card">
+                    <div class="soc-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    </div>
+                    <h3>Not Sure What You Need?</h3>
+                    <p>Every event is different. Tell us about your celebration and we'll help you figure out the right combination of services to make it everything you've imagined — with no pressure and no hidden fees.</p>
+                    <span class="soc-link">Get a Free Quote &rarr;</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>Frequently Asked Questions</h2>
+                <p>Common questions about our DJ and event entertainment services in Jacksonville &amp; St. Augustine</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What areas does Footloose Entertainment serve?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We serve Jacksonville, St. Augustine, Ponte Vedra Beach, Orange Park, Fleming Island, Neptune Beach, Atlantic Beach, Jacksonville Beach, Fernandina Beach, and all of Northeast Florida. <a href="jacksonville-event-entertainment.html" style="color:var(--color-primary);">Learn more about our Jacksonville services</a> or <a href="st-augustine-event-entertainment.html" style="color:var(--color-primary);">St. Augustine services</a>.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How far in advance should I book a wedding DJ in Jacksonville?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We recommend booking 6 to 12 months in advance for weddings, especially for popular Saturday dates during spring and fall wedding season. That said, we do accommodate last-minute requests when availability allows&mdash;contact us and we'll let you know right away.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Does Footloose Entertainment provide both DJ services and photo booths?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We offer professional DJ services, 360 video booths, mirror photo booths, open air photo booths, digital photo booths, special effects, and audio guestbooks&mdash;all from one local family-owned company. Many clients combine services for a complete entertainment experience at their event.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Do you take music requests at weddings and events?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. We encourage every couple and event organizer to share must-play and do-not-play lists. Our DJs specialize in reading the crowd and blending your preferences with dance floor favorites&mdash;we coordinate with you in the weeks before your event to finalize every detail.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Is Footloose Entertainment insured?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. We carry $1 million in general liability insurance and can provide certificates of insurance to venues upon request. We also bring redundant backup equipment to every single event&mdash;in nearly 30 years of operation, we've never had a technical failure ruin an event.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Can Footloose Entertainment handle corporate events?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. We've served corporate holiday parties, company galas, award ceremonies, product launches, and team events throughout Jacksonville and Northeast Florida. We adjust music selection, volume, and energy to suit professional atmospheres while keeping guests engaged and the event memorable.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What photo booth options does Footloose Entertainment offer?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer open air photo booths, 360 video booths, mirror photo booths, digital photo booths, social media booths, and wooden photo booths. Add-ons include custom overlays, themed backgrounds, props, and an audio guestbook. We'll help you choose the right fit for your venue and event style.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What makes Footloose Entertainment different from other DJ companies?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Footloose Entertainment is a family-owned business founded in Jacksonville in 1997&mdash;not a franchise or booking agency. You work directly with the people serving your event. With nearly 30 years of experience and 5,000+ events served, we bring local expertise and personal care that larger companies simply can't match. Our DJs aren't contractors&mdash;they're part of the Footloose family.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Event Type Selector -->
     <section class="event-types section-padding bg-light">
         <div class="container">
@@ -677,5 +1051,20 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const expanded = btn.getAttribute('aria-expanded') === 'true';
+                document.querySelectorAll('.faq-question').forEach(b => {
+                    b.setAttribute('aria-expanded', 'false');
+                    b.nextElementSibling.classList.remove('open');
+                });
+                if (!expanded) {
+                    btn.setAttribute('aria-expanded', 'true');
+                    btn.nextElementSibling.classList.add('open');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
