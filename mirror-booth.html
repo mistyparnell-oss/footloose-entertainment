@@ -292,6 +292,30 @@
             margin: 3rem auto 0;
         }
         @media (max-width: 600px) { .event-selector-grid { grid-template-columns: 1fr; } }
+
+        /* Breadcrumb */
+        .breadcrumb-nav {
+            background: #f5f5f5;
+            border-bottom: 1px solid #e8e8e8;
+            padding: 0.6rem 0;
+            font-size: 0.85rem;
+        }
+        .breadcrumb-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.4rem;
+            color: #888;
+        }
+        .breadcrumb-list li a {
+            color: var(--color-primary);
+            text-decoration: none;
+        }
+        .breadcrumb-list li a:hover { text-decoration: underline; }
+        .breadcrumb-list [aria-current="page"] { color: #555; }
     </style>
 
     <!-- Structured Data (JSON-LD) -->
@@ -303,6 +327,8 @@
       "url": "https://footlooseentertainment.com",
       "logo": "https://footlooseentertainment.com/images/footloose-logo.png",
       "telephone": "+1-904-854-8014",
+      "email": "info@footlooseentertainment.com",
+      "foundingDate": "1997",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Jacksonville",
@@ -313,26 +339,37 @@
         { "@type": "City", "name": "Jacksonville", "addressRegion": "FL" },
         { "@type": "City", "name": "St. Augustine", "addressRegion": "FL" },
         { "@type": "City", "name": "Ponte Vedra", "addressRegion": "FL" },
-        { "@type": "City", "name": "Orange Park", "addressRegion": "FL" }
+        { "@type": "City", "name": "Orange Park", "addressRegion": "FL" },
+        { "@type": "City", "name": "Fernandina Beach", "addressRegion": "FL" },
+        { "@type": "City", "name": "Fleming Island", "addressRegion": "FL" }
       ],
-      "description": "Interactive full-length mirror photo booth rental for weddings, corporate events, school proms, and private parties. Custom overlays, instant prints or digital delivery, props included. Serving Jacksonville, St. Augustine, and Northeast Florida.",
+      "description": "Interactive full-length mirror photo booth rental for weddings, corporate events, school proms, and private parties. Custom overlays, instant prints or digital delivery, props included. Serving Jacksonville, St. Augustine, and Northeast Florida since 1997.",
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Mirror Photo Booth Services",
         "itemListElement": [
-          {
-            "@type": "Offer",
-            "name": "Mirror Photo Booth Rental",
-            "description": "Full-length interactive mirror photo booth with custom overlay, choice of instant prints or digital delivery, props, and professional attendant.",
-            "areaServed": "Jacksonville, FL and surrounding areas"
-          }
+          { "@type": "Offer", "name": "Mirror Photo Booth Rental", "description": "Full-length interactive mirror photo booth with custom overlay, choice of instant prints or digital delivery, props, and professional attendant." },
+          { "@type": "Offer", "name": "Wedding Mirror Booth Rental Jacksonville", "description": "Elegant mirror photo booth for wedding receptions in Jacksonville and St. Augustine with custom wedding overlay and instant prints." },
+          { "@type": "Offer", "name": "Corporate Mirror Booth Rental", "description": "Branded mirror photo booth for corporate events with company logo overlay and digital delivery throughout Northeast Florida." }
         ]
       },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5",
-        "reviewCount": "38"
-      }
+        "reviewCount": "127"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+          "author": { "@type": "Person", "name": "Jessica & Ryan" },
+          "reviewBody": "The mirror booth was hands down the most popular thing at our wedding reception. Guests of all ages were lining up all night. The custom overlay with our names looked incredible on the prints, and everyone went home with a keepsake."
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/footlooseentertainment",
+        "https://instagram.com/footloosedjs"
+      ]
     }
     </script>
 
@@ -389,7 +426,44 @@
             "@type": "Answer",
             "text": "Absolutely — combining the mirror booth with our DJ services or other photobooth options creates a complete entertainment package, often at better value. Contact us to discuss options for your event."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "How far in advance should I book a mirror photo booth in Jacksonville?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We recommend booking as early as possible — popular Saturday dates during wedding season and holiday corporate event season fill up 3 to 6 months in advance. Contact us as soon as your date is confirmed to check availability."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How early does the mirror booth team arrive to set up?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our team arrives 1 hour before your event to set up, test, and ensure everything is running perfectly before your first guests arrive. We coordinate with your venue in advance to confirm load-in access and timing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the mirror booth suitable for outdoor events in Northeast Florida?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The mirror booth can be used outdoors with proper shelter, a level surface, and access to power. Northeast Florida's heat and humidity require a covered or air-conditioned area to protect the touchscreen components. We'll discuss your outdoor venue specifics during planning."
+          }
         }
+      ]
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://footlooseentertainment.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Photo Booths", "item": "https://footlooseentertainment.com/#photobooths" },
+        { "@type": "ListItem", "position": 3, "name": "Mirror Photo Booth", "item": "https://footlooseentertainment.com/mirror-booth" }
       ]
     }
     </script>
@@ -423,6 +497,19 @@
             </div>
         </div>
     </header>
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb-list">
+                <li><a href="index.html">Home</a></li>
+                <li aria-hidden="true">›</li>
+                <li><a href="index.html#photobooths">Photo Booths</a></li>
+                <li aria-hidden="true">›</li>
+                <li aria-current="page">Mirror Photo Booth</li>
+            </ol>
+        </div>
+    </nav>
 
     <!-- Page Hero -->
     <section class="page-hero">
@@ -771,7 +858,34 @@
                         <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </button>
                     <div class="faq-answer">
-                        <p>Absolutely — combining the mirror booth with our DJ services, 360 booth, or other photobooth options creates a complete entertainment experience, often at better combined value. Contact us to discuss options for your event.</p>
+                        <p>Absolutely &mdash; combining the mirror booth with our DJ services, <a href="360-booth.html" style="color:var(--color-primary);">360 video booth</a>, or other photobooth options creates a complete entertainment experience, often at better combined value. Contact us to discuss options for your event.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How far in advance should I book a mirror photo booth in Jacksonville?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We recommend booking as early as possible&mdash;popular Saturday dates during wedding season and holiday corporate event season can fill up 3 to 6 months in advance. Contact us as soon as your date is confirmed to check availability.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How early does the mirror booth team arrive to set up?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our team arrives 1 hour before your event to set up, test, and ensure everything is running perfectly before your first guests arrive. We coordinate with your venue in advance to confirm load-in access and placement.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Is the mirror booth suitable for outdoor events in Northeast Florida?
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The mirror booth can be used outdoors with proper shelter, a level surface, and access to a standard power outlet. Northeast Florida&rsquo;s heat and humidity require a covered or climate-controlled area to protect the touchscreen components. We&rsquo;ll discuss your specific outdoor venue during the planning process to confirm feasibility.</p>
                     </div>
                 </div>
             </div>
