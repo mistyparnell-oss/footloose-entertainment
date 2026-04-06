@@ -37,8 +37,8 @@
 /school-events                                  /school-events.html                     301
 /private-parties/                               /private-parties.html                   301
 /private-parties                                /private-parties.html                   301
-/wedding-planner-31/                            /weddings.html                          301
-/wedding-planner-31                             /weddings.html                          301
+/wedding-planner-31/                            404
+/wedding-planner-31                             404
 
 # --- Add-ons / extras old paths ---
 /4x6-party-enhancements/                        /special-effects.html                   301
@@ -49,20 +49,20 @@
 /4x6-open-air-booth                             /wedding-photobooth.html                301
 /special-effects/                               /special-effects.html                   301
 /special-effects                                /special-effects.html                   301
-/extras/                                        /special-effects.html                   301
-/extras                                         /special-effects.html                   301
-/social-ring/                                   /360-booth.html                         301
-/social-ring                                    /360-booth.html                         301
+/extras/                                        404
+/extras                                         404
+/social-ring/                                   404
+/social-ring                                    404
 /audio-guestbook/                               /audio-guestbook.html                   301
 /audio-guestbook                                /audio-guestbook.html                   301
 /photo-booth-backgrounds/                       /photobooth-backgrounds.html            301
 /photo-booth-backgrounds                        /photobooth-backgrounds.html            301
 /backgrounds/                                   /photobooth-backgrounds.html            301
 /backgrounds                                    /photobooth-backgrounds.html            301
-/memory-book/                                   /audio-guestbook.html                   301
-/memory-book                                    /audio-guestbook.html                   301
-/booth-copy-3/                                  /wedding-photobooth.html                301
-/booth-copy-3                                   /wedding-photobooth.html                301
+/memory-book/                                   404
+/memory-book                                    404
+/booth-copy-3/                                  404
+/booth-copy-3                                   404
 
 # --- About / Contact / Jobs old paths ---
 /about/                                         /about.html                             301
@@ -71,22 +71,22 @@
 /about-us                                       /about.html                             301
 /who-we-are/                                    /about.html                             301
 /who-we-are                                     /about.html                             301
-/who-we-are-2/                                  /about.html                             301
-/who-we-are-2                                   /about.html                             301
+/who-we-are-2/                                  404
+/who-we-are-2                                   404
 /contact-us/                                    /contact.html                           301
 /contact-us                                     /contact.html                           301
-/jobs/                                          /contact.html                           301
-/jobs                                           /contact.html                           301
-/jobs/dj-assistant/                             /contact.html                           301
-/jobs/dj-assistant                              /contact.html                           301
-/jobs/:splat                                    /contact.html                           301
-/careers/                                       /contact.html                           301
-/careers                                        /contact.html                           301
-/embed/                                         /                                       301
-/embed                                          /                                       301
-/ytvideotm02/                                   /                                       301
-/ytvideotm02                                    /                                       301
-/locations.kml                                  /                                       301
+/jobs/                                          404
+/jobs                                           404
+/jobs/dj-assistant/                             404
+/jobs/dj-assistant                              404
+/jobs/:splat                                    404
+/careers/                                       404
+/careers                                        404
+/embed/                                         404
+/embed                                          404
+/ytvideotm02/                                   404
+/ytvideotm02                                    404
+/locations.kml                                  404
 
 # --- Current Clients old path ---
 /current-clients/                               /current-clients.html                   301
@@ -94,28 +94,28 @@
 /client-login/                                  /current-clients.html                   301
 /client-login                                   /current-clients.html                   301
 
-# --- WordPress attachment / media URLs → homepage ---
-/?attachment_id=*                               /                                       301
+# --- WordPress attachment / media URLs → 404 ---
+/?attachment_id=*                               /                                       404
 
 # --- WordPress feed URLs ---
-/feed/                                          /                                       301
-/feed                                           /                                       301
-/:slug/feed/                                    /                                       301
+/feed/                                          404
+/feed                                           404
+/:slug/feed/                                    404
 
 # --- WordPress image scaled variants ---
-/photobooths/overlays/img_9234-scaled-2/        /overlays.html                          301
-/photobooths/overlays/img_9234-scaled-2         /overlays.html                          301
-/photobooths/open-air-photobooth/img_0066-2-scaled/ /wedding-photobooth.html            301
+/photobooths/overlays/img_9234-scaled-2/        404
+/photobooths/overlays/img_9234-scaled-2         404
+/photobooths/open-air-photobooth/img_0066-2-scaled/ 404
 
 # --- WordPress core files ---
-/wp-content/*                                   /                                       301
-/wp-includes/*                                  /                                       301
-/wp-admin/*                                     /                                       301
-/wp-login.php                                   /                                       301
+/wp-content/*                                   404
+/wp-includes/*                                  404
+/wp-admin/*                                     404
+/wp-login.php                                   404
 
 # --- WordPress page/2/, page/3/ archive pagination ---
-/page/*                                         /                                       301
+/page/*                                         404
 
 # --- Tag and category archive pages ---
-/tag/*                                          /                                       301
-/category/*                                     /                                       301
+/tag/*                                          404
+/category/*                                     404
