@@ -148,6 +148,16 @@
             border: 1px solid rgba(0,109,119,0.2);
         }
 
+        /* Featured wide card – stack on mobile */
+        @media (max-width: 700px) {
+            .effect-card[style*="grid-column"] {
+                grid-template-columns: 1fr !important;
+            }
+            .effect-card[style*="grid-column"] .effect-card-image {
+                min-height: 220px !important;
+            }
+        }
+
         /* FAQ */
         .faq-section { padding: 5rem 0; }
         .faq-list { max-width: 800px; margin: 3rem auto 0; }
@@ -442,15 +452,15 @@
             </div>
             <div class="effects-grid">
 
-                <!-- Cold Sparklers -->
-                <div class="effect-card">
-                    <div class="effect-card-image">
+                <!-- Cold Sparklers – Featured Wide Card -->
+                <div class="effect-card" style="grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; min-height: 320px;">
+                    <div class="effect-card-image" style="aspect-ratio: unset; min-height: 320px;">
                         <img src="images/cold-sparklers.jpg" alt="Cold sparklers at Jacksonville wedding reception first dance" loading="lazy"
                              onerror="this.parentElement.innerHTML='<div class=\'effect-card-image-placeholder\'><svg width=\'40\' height=\'40\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.5\'><circle cx=\'12\' cy=\'12\' r=\'10\'/><line x1=\'12\' y1=\'8\' x2=\'12\' y2=\'12\'/><line x1=\'12\' y1=\'16\' x2=\'12.01\' y2=\'16\'/></svg><span>cold-sparklers.jpg</span></div>'">
                     </div>
-                    <div class="effect-card-body">
-                        <div class="effect-icon">✨</div>
-                        <div class="effect-name">Cold Sparklers</div>
+                    <div class="effect-card-body" style="display: flex; flex-direction: column; justify-content: center; padding: 2.5rem;">
+                        <div class="effect-icon" style="font-size: 2.5rem;">✨</div>
+                        <div class="effect-name" style="font-size: 2rem;">Cold Sparklers</div>
                         <div class="effect-tagline">Indoor-Safe Spark Fountains</div>
                         <p class="effect-desc">Dramatic fountain-style sparks shooting 4&ndash;6 feet into the air — without heat, flame, or fire hazard. The most popular effect for wedding first dances, grand entrances, and cake cutting moments. Creates stunning photos and videos that look like traditional sparklers but are completely safe for indoor venues.</p>
                         <ul class="effect-uses">
@@ -610,23 +620,23 @@
                     </div>
                 </div>
 
-                <!-- Party Enhancements -->
+                <!-- Uplights -->
                 <div class="effect-card">
                     <div class="effect-card-image">
-                        <img src="images/party-enhancements.jpg" alt="Glow sticks and party enhancements at Jacksonville event dance floor" loading="lazy"
-                             onerror="this.parentElement.innerHTML='<div class=\'effect-card-image-placeholder\'><svg width=\'40\' height=\'40\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.5\'><circle cx=\'12\' cy=\'12\' r=\'10\'/><line x1=\'12\' y1=\'8\' x2=\'12\' y2=\'12\'/><line x1=\'12\' y1=\'16\' x2=\'12.01\' y2=\'16\'/></svg><span>party-enhancements.jpg</span></div>'">
+                        <img src="images/uplights.jpg" alt="LED uplighting transforming a Jacksonville wedding venue with color" loading="lazy"
+                             onerror="this.parentElement.innerHTML='<div class=\'effect-card-image-placeholder\'><svg width=\'40\' height=\'40\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.5\'><circle cx=\'12\' cy=\'12\' r=\'10\'/><line x1=\'12\' y1=\'8\' x2=\'12\' y2=\'12\'/><line x1=\'12\' y1=\'16\' x2=\'12.01\' y2=\'16\'/></svg><span>uplights.jpg</span></div>'">
                     </div>
                     <div class="effect-card-body">
-                        <div class="effect-icon">🎉</div>
-                        <div class="effect-name">Party Enhancements</div>
-                        <div class="effect-tagline">Glow &amp; Crowd Effects</div>
-                        <p class="effect-desc">Take your dance floor to the next level with glow sticks, light-up batons, glow necklaces, and other crowd engagement items distributed to your guests. When the lights go down and the glow comes out, the energy in the room transforms instantly. Your DJ distributes and cues these at peak moments for maximum crowd impact — and the photos look incredible.</p>
+                        <div class="effect-icon">🔆</div>
+                        <div class="effect-name">Uplights</div>
+                        <div class="effect-tagline">Transform Your Venue with Color</div>
+                        <p class="effect-desc">LED uplights placed around the perimeter of your venue wash the walls in any color you choose — instantly transforming the entire feel of the space. Match your wedding colors, your brand palette, or set a dramatic mood. Uplighting is one of the highest-impact, most cost-effective upgrades you can add to any event, and the difference in photos is night and day.</p>
                         <ul class="effect-uses">
-                            <li>Wedding Last Dance</li>
+                            <li>Wedding Reception</li>
+                            <li>Corporate Gala</li>
                             <li>Prom</li>
                             <li>Sweet 16</li>
-                            <li>Corporate Party</li>
-                            <li>Any Dance Floor</li>
+                            <li>Any Venue Event</li>
                         </ul>
                     </div>
                 </div>
