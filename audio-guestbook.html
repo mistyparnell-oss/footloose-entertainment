@@ -163,6 +163,11 @@
         .check { color: var(--color-primary); font-weight: 700; flex-shrink: 0; }
         .cross { color: #ccc; font-weight: 700; flex-shrink: 0; }
 
+        /* Audio guestbook options grid – responsive */
+        @media (max-width: 900px) {
+            .ag-options-grid { grid-template-columns: 1fr !important; }
+        }
+
         /* FAQ */
         .faq-section { padding: 5rem 0; }
         .faq-list { max-width: 800px; margin: 3rem auto 0; }
@@ -499,6 +504,56 @@
                     <p class="step-desc">All recordings are delivered to your private online gallery after the event — ready to listen, download, and treasure for the rest of your life.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Audio Guestbook Options -->
+    <section class="section-padding" style="background: var(--color-bg-light);">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>Choose Your Style</h2>
+                <p>Every audio guestbook option delivers the same heartfelt experience &mdash; pick the look that fits your event</p>
+            </div>
+            <div class="ag-options-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem;">
+
+                <!-- Jameson -->
+                <div style="background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.08); border: 2px solid transparent; transition: border-color 0.3s ease, transform 0.3s ease; text-align: center;" onmouseover="this.style.borderColor='var(--color-primary)';this.style.transform='translateY(-6px)'" onmouseout="this.style.borderColor='transparent';this.style.transform='translateY(0)'">
+                    <div style="width: 100%; aspect-ratio: 4/3; overflow: hidden; background: #f0f0f0;">
+                        <img src="images/audio-guestbook-jameson.jpg" alt="Jameson White Vintage audio guestbook rental Jacksonville" loading="lazy" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"
+                             onerror="this.parentElement.innerHTML='<div style=\'width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:#999;font-size:0.85rem;flex-direction:column;gap:0.5rem;\'>&#9742;<br>audio-guestbook-jameson.jpg</div>'">
+                    </div>
+                    <div style="padding: 1.5rem;">
+                        <div style="font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; letter-spacing: 0.06em; color: var(--color-secondary); margin-bottom: 0.2rem;">Jameson</div>
+                        <div style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-primary);">White Vintage</div>
+                    </div>
+                </div>
+
+                <!-- Morgan -->
+                <div style="background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.08); border: 2px solid transparent; transition: border-color 0.3s ease, transform 0.3s ease; text-align: center;" onmouseover="this.style.borderColor='var(--color-primary)';this.style.transform='translateY(-6px)'" onmouseout="this.style.borderColor='transparent';this.style.transform='translateY(0)'">
+                    <div style="width: 100%; aspect-ratio: 4/3; overflow: hidden; background: #f0f0f0;">
+                        <img src="images/audio-guestbook-morgan.jpg" alt="Morgan Brass Vintage audio guestbook rental Jacksonville" loading="lazy" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"
+                             onerror="this.parentElement.innerHTML='<div style=\'width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:#999;font-size:0.85rem;flex-direction:column;gap:0.5rem;\'>&#9742;<br>audio-guestbook-morgan.jpg</div>'">
+                    </div>
+                    <div style="padding: 1.5rem;">
+                        <div style="font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; letter-spacing: 0.06em; color: var(--color-secondary); margin-bottom: 0.2rem;">Morgan</div>
+                        <div style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-primary);">Brass Vintage</div>
+                    </div>
+                </div>
+
+                <!-- Killian -->
+                <div style="background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.08); border: 2px solid transparent; transition: border-color 0.3s ease, transform 0.3s ease; text-align: center;" onmouseover="this.style.borderColor='var(--color-primary)';this.style.transform='translateY(-6px)'" onmouseout="this.style.borderColor='transparent';this.style.transform='translateY(0)'">
+                    <div style="width: 100%; aspect-ratio: 4/3; overflow: hidden; background: #f0f0f0;">
+                        <img src="images/audio-guestbook-killian.jpg" alt="Killian Red Contemporary audio guestbook rental Jacksonville" loading="lazy" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"
+                             onerror="this.parentElement.innerHTML='<div style=\'width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:#999;font-size:0.85rem;flex-direction:column;gap:0.5rem;\'>&#9742;<br>audio-guestbook-killian.jpg</div>'">
+                    </div>
+                    <div style="padding: 1.5rem;">
+                        <div style="font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; letter-spacing: 0.06em; color: var(--color-secondary); margin-bottom: 0.2rem;">Killian</div>
+                        <div style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-primary);">Red Contemporary</div>
+                    </div>
+                </div>
+
+            </div>
+            <p style="text-align:center; margin-top: 2rem; color: #666; font-size: 0.95rem;">Not sure which style fits your event? <a href="contact.html" style="color:var(--color-primary);font-weight:600;">Contact us</a> and we&rsquo;ll help you choose.</p>
         </div>
     </section>
 
