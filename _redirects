@@ -3,10 +3,6 @@
 # Old WordPress URLs → New Site Pages
 # =============================================================
 
-# --- www → non-www canonical redirect ---
-https://www.footlooseentertainment.com/*             https://footlooseentertainment.com/:splat          301!
-
-
 # --- Old WordPress page paths → new pages ---
 /photobooths/overlays/                          /overlays.html                          301
 /photobooths/overlays                           /overlays.html                          301
