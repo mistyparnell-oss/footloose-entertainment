@@ -3,6 +3,9 @@
 # Old WordPress URLs → New Site Pages
 # =============================================================
 
+# --- www → non-www canonical redirect ---
+https://www.footlooseentertainment.com/*             https://footlooseentertainment.com/:splat          301!
+
 
 # --- Old WordPress page paths → new pages ---
 /photobooths/overlays/                          /overlays.html                          301
@@ -95,7 +98,7 @@
 /client-login                                   /current-clients.html                   301
 
 # --- WordPress attachment / media URLs → 404 ---
-/?attachment_id=*                               /                                       404
+/?attachment_id=*                               /                                       301
 
 # --- WordPress feed URLs ---
 /feed/                                          404
