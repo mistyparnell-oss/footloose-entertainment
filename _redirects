@@ -22,26 +22,31 @@ https://www.footlooseentertainment.com/*             https://footlooseentertainm
 /photobooths                                    /wedding-photobooth.html                301
 
 # --- DJ / Services old paths ---
-/dj-services/                                   /wedding-dj.html                        301
-/dj-services                                    /wedding-dj.html                        301
-/services/                                      /index.html                             301
-/services                                       /index.html                             301
-/wedding-dj/                                    /wedding-dj.html                        301
-/wedding-dj                                     /wedding-dj.html                        301
-/corporate-dj/                                  /corporate-dj.html                      301
-/corporate-dj                                   /corporate-dj.html                      301
+/dj-services/                                   /wedding-dj                             301
+/dj-services                                    /wedding-dj                             301
+/services/                                      /                                       301
+/services                                       /                                       301
+/wedding-dj/                                    /wedding-dj                             301
+/wedding-dj.html                                /wedding-dj                             301
+/corporate-dj/                                  /corporate-dj                           301
+/corporate-dj.html                              /corporate-dj                           301
 
 # --- Event category old paths ---
-/weddings/                                      /weddings.html                          301
-/weddings                                       /weddings.html                          301
-/corporate-events/                              /corporate-events.html                  301
-/corporate-events                               /corporate-events.html                  301
-/school-events/                                 /school-events.html                     301
-/school-events                                  /school-events.html                     301
-/private-parties/                               /private-parties.html                   301
-/private-parties                                /private-parties.html                   301
+/weddings/                                      /weddings                               301
+/weddings.html                                  /weddings                               301
+/corporate-events/                              /corporate-events                       301
+/corporate-events.html                          /corporate-events                       301
+/school-events/                                 /school-events                          301
+/school-events.html                             /school-events                          301
+/private-parties/                               /private-parties                        301
+/private-parties.html                           /private-parties                        301
 /wedding-planner-31/                            404
 /wedding-planner-31                             404
+
+# --- .html → clean URL for pages with extensionless canonicals ---
+/private-party-dj.html                          /private-party-dj                       301
+/school-dj.html                                 /school-dj                              301
+/corporate-photobooth.html                      /corporate-photobooth                   301
 
 # --- Add-ons / extras old paths ---
 /4x6-party-enhancements/                        /special-effects.html                   301
