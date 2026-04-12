@@ -789,47 +789,71 @@
             margin-bottom: 0.2rem;
         }
 
-        /* ---- RESPONSIVE ---- */
+        /* ---- RESPONSIVE: TABLET ---- */
         @media (max-width: 960px) {
+            .flow-layout { grid-template-columns: 1fr; gap: 3rem; }
+            .flow-image { aspect-ratio: 16/9; order: -1; }
+            .service-cards-grid { grid-template-columns: 1fr; }
+            .why-grid { grid-template-columns: 1fr 1fr; }
+            .venue-columns { grid-template-columns: repeat(2, 1fr); }
+            .testimonials-grid-3 { grid-template-columns: 1fr 1fr; gap: 1.25rem; }
             .celebrations-grid { grid-template-columns: repeat(2, 1fr); }
             .genres-grid { grid-template-columns: repeat(2, 1fr); }
         }
-        @media (max-width: 600px) {
-            .celebrations-grid { grid-template-columns: 1fr; }
-            .genres-grid { grid-template-columns: 1fr 1fr; }
-        }
-        @media (max-width: 960px) {
-            .flow-layout {
-                grid-template-columns: 1fr;
-                gap: 3rem;
-            }
-            .flow-image {
-                aspect-ratio: 16/9;
-                order: -1;
-            }
-            .venue-columns {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .testimonials-grid-3 {
-                grid-template-columns: 1fr;
-            }
-        }
-        @media (max-width: 700px) {
-            .why-grid {
-                grid-template-columns: 1fr;
-            }
-            .venue-columns {
-                grid-template-columns: 1fr;
-            }
+
+        /* ---- RESPONSIVE: MOBILE ---- */
+        @media (max-width: 680px) {
+            /* Hero */
+            .wedding-events-hero { min-height: 65vh; }
+            .hero-eyebrow { display: none; }
+            .hero-script { font-size: 2.2rem; }
+            .hero-headline { font-size: 1.9rem; }
+            .hero-sub { font-size: 0.92rem; }
+            .hero-cta-row { flex-direction: column; gap: 0.75rem; }
+            .hero-cta-row a { text-align: center; width: 100%; }
+
+            /* Chapter sections */
+            .chapter-section { padding: 3rem 0 2.5rem; }
+            .chapter-label { font-size: 2rem; }
+
+            /* Trust bar — 2 column grid */
             .wedding-trust-bar .trust-inner {
-                gap: 1.5rem;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 0;
             }
-            .forward-banner-inner-wedding {
-                flex-direction: column;
-                text-align: center;
+            .wedding-trust-bar .trust-item {
+                border-right: none;
+                border-bottom: 1px solid #e0e0e0;
+                padding: 0.75rem 0.5rem;
             }
-            .hero-headline { font-size: 2.4rem; }
-            .hero-script { font-size: 3rem; }
+            .wedding-trust-bar .trust-item:nth-child(odd) { border-right: 1px solid #e0e0e0; }
+            .wedding-trust-bar .trust-item:last-child,
+            .wedding-trust-bar .trust-item:nth-last-child(2):nth-child(odd) { border-bottom: none; }
+
+            /* Service nav */
+            .service-nav-list li a { font-size: 0.7rem; padding: 0.35rem 0.6rem; }
+
+            /* All grids collapse to 1 column */
+            .service-cards-grid { grid-template-columns: 1fr; }
+            .why-grid { grid-template-columns: 1fr; }
+            .celebrations-grid { grid-template-columns: 1fr; }
+            .venue-columns { grid-template-columns: 1fr; }
+            .testimonials-grid-3 { grid-template-columns: 1fr; }
+            .genres-grid { grid-template-columns: 1fr 1fr; }
+
+            /* Flow steps */
+            .flow-step { gap: 1rem; }
+            .flow-step-num { width: 36px; height: 36px; min-width: 36px; font-size: 0.95rem; }
+
+            /* CTA */
+            .wedding-cta { padding: 3rem 0; }
+            .wedding-cta h2 { font-size: 1.8rem; }
+            .cta-buttons-new { flex-direction: column; align-items: stretch; }
+            .btn-cta-rose, .btn-cta-outline { text-align: center; }
+
+            /* Footer */
+            .footer-grid { grid-template-columns: 1fr; }
         }
     </style>
 
