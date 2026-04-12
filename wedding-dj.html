@@ -782,12 +782,17 @@
             .mobile-only-nav-item { display: list-item; }
 
             /* Hero — content to bottom on mobile */
-            .wedding-dj-hero { min-height: 90svh; align-items: flex-end; overflow: hidden; }
+            /* Hero — bottom aligned on mobile */
+            .wedding-dj-hero { min-height: 90svh; align-items: flex-end !important; overflow: hidden; }
             .wedding-dj-hero .hero-bg img { object-position: center center; }
-            .wedding-dj-hero .hero-bg::after { background: linear-gradient(to top, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.55) 50%, rgba(10,10,10,0.35) 100%); }
+            .wedding-dj-hero .hero-bg::after { background: linear-gradient(to top, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.55) 50%, rgba(10,10,10,0.35) 100%) !important; }
+            .hero-eyebrow { display: none !important; }
             .hero-inner { padding-bottom: 3rem; max-width: 100%; }
             .hero-cta-row { flex-direction: column; gap: 0.75rem; }
             .hero-cta-row a { text-align: center; width: 100%; box-sizing: border-box; }
+            /* Service nav — prevent wrapping on mobile */
+            .service-nav-list { flex-wrap: nowrap; overflow-x: auto; }
+            .service-nav-list li a { font-size: 0.7rem; padding: 0.35rem 0.6rem; white-space: nowrap; }
             .client-resources-link { display: none; }
             .phone-link { display: none; }
             .site-header .btn-primary { white-space: nowrap; padding: 0.5rem 1rem; font-size: 0.78rem; }
