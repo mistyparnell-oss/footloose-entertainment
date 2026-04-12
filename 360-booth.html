@@ -322,7 +322,21 @@
             color: #fff;
             font-size: 1rem;
         }
-    </style>
+    
+        /* ---- MOBILE HEADER FIXES ---- */
+        .mobile-only-nav-item { display: none; }
+        @media (max-width: 680px) {
+            .mobile-only-nav-item { display: list-item; }
+            .client-resources-link { display: none; }
+            .phone-link { display: none; }
+            .site-header .btn-primary {
+                white-space: nowrap;
+                padding: 0.5rem 1rem;
+                font-size: 0.78rem;
+            }
+            .logo img { width: 140px; height: auto; }
+        }
+        </style>
 
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">

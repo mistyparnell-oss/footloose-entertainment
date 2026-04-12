@@ -100,7 +100,21 @@
             line-height: 1.6;
             margin: 0;
         }
-    </style>
+    
+        /* ---- MOBILE HEADER FIXES ---- */
+        .mobile-only-nav-item { display: none; }
+        @media (max-width: 680px) {
+            .mobile-only-nav-item { display: list-item; }
+            .client-resources-link { display: none; }
+            .phone-link { display: none; }
+            .site-header .btn-primary {
+                white-space: nowrap;
+                padding: 0.5rem 1rem;
+                font-size: 0.78rem;
+            }
+            .logo img { width: 140px; height: auto; }
+        }
+        </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">

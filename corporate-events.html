@@ -86,7 +86,21 @@
         }
         .faq-answer.open { max-height: 400px; padding-bottom: 1.2rem; }
         .faq-answer p { color: #555; line-height: 1.7; margin: 0; }
-    </style>
+    
+        /* ---- MOBILE HEADER FIXES ---- */
+        .mobile-only-nav-item { display: none; }
+        @media (max-width: 680px) {
+            .mobile-only-nav-item { display: list-item; }
+            .client-resources-link { display: none; }
+            .phone-link { display: none; }
+            .site-header .btn-primary {
+                white-space: nowrap;
+                padding: 0.5rem 1rem;
+                font-size: 0.78rem;
+            }
+            .logo img { width: 140px; height: auto; }
+        }
+        </style>
 
     <!-- LocalBusiness Schema -->
     <script type="application/ld+json">
