@@ -879,6 +879,11 @@
             /* Footer */
             .footer-grid { grid-template-columns: 1fr; }
 
+            /* Hero — better image treatment on mobile */
+            .wedding-events-hero { min-height: 90svh; }
+            .wedding-events-hero .hero-bg img { object-position: 70% center; }
+            .wedding-events-hero .hero-bg::after { background: linear-gradient(to top, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.55) 50%, rgba(10,10,10,0.35) 100%); }
+
             /* Header */
             .site-header .btn-primary { white-space: nowrap; padding: 0.5rem 1rem; font-size: 0.78rem; }
             .phone-link { display: none; }
