@@ -807,33 +807,37 @@
         /* ---- RESPONSIVE: MOBILE ---- */
         @media (max-width: 680px) {
             .mobile-only-nav-item { display: list-item; }
-            /* Hero */
-            .wedding-events-hero { min-height: 65vh; }
+
+            /* Hero — fix overflow, eyebrow, sizing */
+            .wedding-events-hero { min-height: 100svh; overflow: hidden; }
+            .wedding-events-hero .hero-bg img { width: 100%; height: 100%; object-fit: cover; }
             .hero-eyebrow { display: none; }
-            .hero-script { font-size: 2.2rem; }
-            .hero-headline { font-size: 1.9rem; }
-            .hero-sub { font-size: 0.92rem; }
+            .hero-inner { padding: 2rem 0 2.5rem; max-width: 100%; }
+            .hero-script { font-size: 2.4rem; }
+            .hero-headline { font-size: 2rem; }
+            .hero-sub { font-size: 0.92rem; max-width: 100%; }
             .hero-cta-row { flex-direction: column; gap: 0.75rem; }
-            .hero-cta-row a { text-align: center; width: 100%; }
+            .hero-cta-row a { text-align: center; width: 100%; box-sizing: border-box; }
 
             /* Chapter sections */
             .chapter-section { padding: 3rem 0 2.5rem; }
             .chapter-label { font-size: 2rem; }
 
-            /* Trust bar — 2 column grid */
-            .wedding-trust-bar .trust-inner {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 0;
-            }
+            /* Trust bar — clean stacked rows */
+            .wedding-trust-bar { padding: 1rem 0; }
+            .wedding-trust-bar .trust-inner { flex-direction: column; gap: 0; }
             .wedding-trust-bar .trust-item {
                 border-right: none;
                 border-bottom: 1px solid #e0e0e0;
-                padding: 0.75rem 0.5rem;
+                padding: 0.65rem 1rem;
+                flex-direction: row;
+                justify-content: center;
+                gap: 0.75rem;
+                align-items: center;
             }
-            .wedding-trust-bar .trust-item:nth-child(odd) { border-right: 1px solid #e0e0e0; }
-            .wedding-trust-bar .trust-item:last-child,
-            .wedding-trust-bar .trust-item:nth-last-child(2):nth-child(odd) { border-bottom: none; }
+            .wedding-trust-bar .trust-item:last-child { border-bottom: none; }
+            .wedding-trust-bar .trust-item strong { font-size: 1.1rem; }
+            .wedding-trust-bar .trust-item span { font-size: 0.72rem; }
 
             /* Service nav */
             .service-nav-list li a { font-size: 0.7rem; padding: 0.35rem 0.6rem; }
@@ -859,20 +863,12 @@
             /* Footer */
             .footer-grid { grid-template-columns: 1fr; }
 
-            /* Header — prevent Get Quote button from wrapping */
-            .site-header .btn-primary {
-                white-space: nowrap;
-                padding: 0.5rem 1rem;
-                font-size: 0.78rem;
-            }
+            /* Header */
+            .site-header .btn-primary { white-space: nowrap; padding: 0.5rem 1rem; font-size: 0.78rem; }
             .phone-link { display: none; }
             .client-resources-link { display: none; }
-
-            /* Ensure logo is always visible */
             .logo img { width: 140px; height: auto; }
-
-            /* Hero — tighten top padding so content isn't cut off */
-            .hero-inner { padding: 4rem 0 2.5rem; }
+        }
         }
     </style>
 
