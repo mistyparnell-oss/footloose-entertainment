@@ -854,6 +854,17 @@
 
             /* Footer */
             .footer-grid { grid-template-columns: 1fr; }
+
+            /* Header — prevent Get Quote button from wrapping */
+            .site-header .btn-primary {
+                white-space: nowrap;
+                padding: 0.5rem 1rem;
+                font-size: 0.78rem;
+            }
+            .phone-link { display: none; }
+
+            /* Hero — tighten top padding so content isn't cut off */
+            .hero-inner { padding: 4rem 0 2.5rem; }
         }
     </style>
 
