@@ -706,6 +706,9 @@
         }
         .forward-banner-btn-wedding:hover { background: var(--wedding-rose-dark); }
 
+        /* Client Resources — hidden on desktop, visible in mobile menu */
+        .mobile-only-nav-item { display: none; }
+
         /* Header Get Quote button — dusty rose */
         .site-header .btn-primary { background: #e3b7b3; border-color: #e3b7b3; color: #fff; }
         .site-header .btn-primary:hover { background: #d4a7a3; border-color: #d4a7a3; }
@@ -803,6 +806,7 @@
 
         /* ---- RESPONSIVE: MOBILE ---- */
         @media (max-width: 680px) {
+            .mobile-only-nav-item { display: list-item; }
             /* Hero */
             .wedding-events-hero { min-height: 65vh; }
             .hero-eyebrow { display: none; }
@@ -909,6 +913,7 @@
                                 <li><a href="/private-parties">Private Parties</a></li>
                             </ul>
                         </li>
+                        <li class="mobile-only-nav-item"><a href="/current-clients">Client Resources</a></li>
                     </ul>
                 </nav>
                 <div class="header-cta">
