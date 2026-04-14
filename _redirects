@@ -20,6 +20,8 @@
 # --- DJ / Services old paths ---
 # NOTE: /wedding-dj/, /wedding-dj.html, /corporate-dj/, /corporate-dj.html removed —
 # Netlify serves .html files at clean URLs natively; these were causing redirect loops.
+/djs/                                           /wedding-dj.html                        301
+/djs                                            /wedding-dj.html                        301
 /dj-services/                                   /wedding-dj.html                        301
 /dj-services                                    /wedding-dj.html                        301
 /services/                                      /                                       301
@@ -57,6 +59,8 @@
 /memory-book                                    404
 /booth-copy-3/                                  404
 /booth-copy-3                                   404
+/flower-walls/                                  404
+/flower-walls                                   404
 
 # --- About / Contact / Jobs old paths ---
 /about/                                         /about.html                             301
@@ -73,7 +77,7 @@
 /jobs                                           404
 /jobs/dj-assistant/                             404
 /jobs/dj-assistant                              404
-/jobs/:splat                                    404
+/jobs/*                                         404
 /careers/                                       404
 /careers                                        404
 /embed/                                         404
