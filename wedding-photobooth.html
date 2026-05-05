@@ -246,6 +246,12 @@
             .booth-card-body h4 { font-size: 1.1rem; }
             .booth-card-body p { font-size: 0.78rem; }
             .booth-card-features li { font-size: 0.72rem; }
+            /* Featured booth: stack image above content and let the wide group photo
+               display at its natural aspect ratio so no one gets cropped off the sides. */
+            .featured-booth-wrap { grid-template-columns: 1fr; }
+            .featured-booth-img { min-height: 0; }
+            .featured-booth-img img { height: auto; }
+            .featured-booth-content { padding: 1.5rem; }
             .wow-grid { grid-template-columns: repeat(2, 1fr); }
             .ek-grid { grid-template-columns: repeat(2, 1fr); }
             .venues-cols { grid-template-columns: 1fr; }
