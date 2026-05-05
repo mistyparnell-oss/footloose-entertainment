@@ -238,15 +238,14 @@
         }
         @media (max-width: 640px) {
             .booth-grid { grid-template-columns: 1fr; }
-            .booth-card { grid-template-columns: 1fr; }
-            .booth-card-img { height: 220px; }
-            /* On mobile the wide booth-card image becomes a horizontal banner, so
-               the desktop "center top" crop shows ceilings/walls instead of the booth.
-               Re-center, then nudge per-image where the subject sits elsewhere. */
-            .booth-card-img img { object-position: center center; }
-            .booth-card-img img[src*="open-air-booth"] { object-position: center 30%; }
-            .booth-card-img img[src*="360-booth"] { object-position: center 45%; }
-            .booth-card-img img[src*="mirror-booth"] { object-position: center 40%; }
+            /* Keep image-left / text-right layout on mobile so the portrait-composed
+               booth photos stay vertical instead of becoming awkward horizontal banners. */
+            .booth-card { grid-template-columns: 130px 1fr; min-height: 240px; }
+            .booth-card-img { height: auto; }
+            .booth-card-body { padding: 1rem; }
+            .booth-card-body h4 { font-size: 1.1rem; }
+            .booth-card-body p { font-size: 0.78rem; }
+            .booth-card-features li { font-size: 0.72rem; }
             .wow-grid { grid-template-columns: repeat(2, 1fr); }
             .ek-grid { grid-template-columns: repeat(2, 1fr); }
             .venues-cols { grid-template-columns: 1fr; }
