@@ -528,6 +528,161 @@
 .bg-cta h2 { color: #fff; margin-bottom: 0.75rem; }
 .bg-cta p { color: rgba(255,255,255,0.75); max-width: 540px; margin: 0 auto 2rem; }
 
+/* ── Lightbox ── */
+.bg-card__zoom {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    width: 40px;
+    height: 40px;
+    background: rgba(0,0,0,0.62);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: scale(0.75);
+    transition: opacity 0.2s, transform 0.2s, background 0.2s;
+    cursor: pointer;
+    z-index: 2;
+    border: 2px solid rgba(255,255,255,0.35);
+    color: #fff;
+}
+.bg-card__zoom svg {
+    width: 20px;
+    height: 20px;
+}
+.bg-card:hover .bg-card__zoom {
+    opacity: 1;
+    transform: scale(1);
+}
+.bg-card__zoom:hover {
+    background: rgba(0,0,0,0.85);
+}
+
+.lightbox-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+}
+.lightbox-overlay.open {
+    opacity: 1;
+    pointer-events: all;
+}
+.lightbox-inner {
+    position: relative;
+    max-width: min(90vw, 860px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.lightbox-img-wrap {
+    position: relative;
+    width: 100%;
+    max-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lightbox-img-wrap img {
+    max-width: 100%;
+    max-height: 75vh;
+    object-fit: contain;
+    border-radius: var(--radius-md);
+    box-shadow: 0 8px 48px rgba(0,0,0,0.6);
+    display: block;
+}
+.lightbox-close {
+    position: fixed;
+    top: 1.25rem;
+    right: 1.25rem;
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.12);
+    border: 2px solid rgba(255,255,255,0.25);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+    z-index: 1001;
+}
+.lightbox-close:hover { background: rgba(255,255,255,0.22); }
+
+.lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    background: rgba(255,255,255,0.12);
+    border: 2px solid rgba(255,255,255,0.25);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+    z-index: 2;
+}
+.lightbox-nav:hover { background: rgba(255,255,255,0.25); }
+.lightbox-nav.prev { left: -56px; }
+.lightbox-nav.next { right: -56px; }
+.lightbox-nav[hidden] { display: none; }
+
+.lightbox-info {
+    text-align: center;
+    color: #fff;
+}
+.lightbox-info__name {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.2rem;
+}
+.lightbox-info__meta {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.6);
+}
+.lightbox-counter {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.45);
+    margin-top: 0.25rem;
+}
+
+.lightbox-thumbs {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.lightbox-thumb {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0.55;
+    border: 2px solid transparent;
+    transition: opacity 0.2s, border-color 0.2s;
+}
+.lightbox-thumb.active,
+.lightbox-thumb:hover { opacity: 1; border-color: #fff; }
+
 /* ── Responsive ── */
 @media (max-width: 600px) {
     .bg-grid { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
@@ -537,6 +692,10 @@
     .tray-fields-row { grid-template-columns: 1fr; }
     .tray-bottom-row { flex-direction: column; align-items: stretch; }
     .tray-btn-quote { justify-content: center; }
+    .lightbox-nav.prev { left: -4px; }
+    .lightbox-nav.next { right: -4px; }
+    .lightbox-inner { max-width: 96vw; }
+    .bg-card__zoom { opacity: 1; transform: scale(1); }
 }
 
         /* ---- MOBILE HEADER FIXES ---- */
@@ -606,7 +765,7 @@
         <div class="container">
             <button class="filter-btn active" data-filter="all">All Backgrounds</button>
             <button class="filter-btn" data-filter="pipe-drape">Pipe &amp; Drape (Included)</button>
-            <button class="filter-btn" data-filter="pillow">Pillow Cover (+$50)</button>
+            <button class="filter-btn" data-filter="pillow">Pillow Cover (+$25)</button>
             <button class="filter-btn" data-filter="flower">Flower Walls</button>
         </div>
     </div>
@@ -636,6 +795,9 @@
                         <img src="images/backgrounds/gold-glitz.jpg"
                              alt="Gold Glitz photobooth background" loading="lazy">
                         <span class="bg-card__price-tag free">Included</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
                         </div>
@@ -652,6 +814,9 @@
                         <img src="images/backgrounds/navy-glitz.jpg"
                              alt="Navy Glitz photobooth background" loading="lazy">
                         <span class="bg-card__price-tag free">Included</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
                         </div>
@@ -668,6 +833,9 @@
                         <img src="images/backgrounds/silver-petals.jpg"
                              alt="Silver Petals photobooth background" loading="lazy">
                         <span class="bg-card__price-tag free">Included</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
                         </div>
@@ -684,6 +852,9 @@
                         <img src="images/backgrounds/black.jpg"
                              alt="Black photobooth background" loading="lazy">
                         <span class="bg-card__price-tag free">Included</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
                         </div>
@@ -700,6 +871,9 @@
                         <img src="images/backgrounds/red-glitz.jpg"
                              alt="Red Glitz photobooth background" loading="lazy">
                         <span class="bg-card__price-tag free">Included</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
                         </div>
@@ -710,28 +884,15 @@
                     </div>
                 </div>
 
-                <!-- White Glitz -->
-                <div class="bg-card" data-name="White Glitz" data-category="pipe-drape" data-price="Included">
-                    <div class="bg-card__img-wrap">
-                        <img src="images/backgrounds/white-glitz.jpg"
-                             alt="White Glitz photobooth background" loading="lazy">
-                        <span class="bg-card__price-tag free">Included</span>
-                        <div class="bg-card__check">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                        </div>
-                    </div>
-                    <div class="bg-card__info">
-                        <div class="bg-card__name">White Glitz</div>
-                        <div class="bg-card__meta">8×8 · Pipe &amp; Drape · Included</div>
-                    </div>
-                </div>
-
                 <!-- Teal Petals -->
                 <div class="bg-card" data-name="Teal Petals" data-category="pipe-drape" data-price="Included">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/teal-petals.jpg"
                              alt="Teal Petals photobooth background" loading="lazy">
                         <span class="bg-card__price-tag free">Included</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
                         </div>
@@ -748,6 +909,9 @@
                         <img src="images/backgrounds/pink-glitz.jpg"
                              alt="Pink Glitz photobooth background" loading="lazy">
                         <span class="bg-card__price-tag free">Included</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
                         </div>
@@ -764,6 +928,9 @@
                         <img src="images/backgrounds/silver-glitz.jpg"
                              alt="Silver Glitz photobooth background" loading="lazy">
                         <span class="bg-card__price-tag free">Included</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
                         </div>
@@ -789,7 +956,7 @@
                 <h2>Pillow Cover Backgrounds</h2>
                 <p>Photo-realistic printed pillow covers that create stunning, high-definition backdrops. Add a premium look to any event.</p>
                 <div class="price-note">
-                    <span class="price-badge paid">+$50 upgrade</span>
+                    <span class="price-badge paid">+$25 upgrade</span>
                     &nbsp;·&nbsp; 7.6×7.6 ft &nbsp;·&nbsp; Pillow Cover Print
                 </div>
             </div>
@@ -798,328 +965,436 @@
 
                 <!-- helper macro — each card below follows the same pattern -->
 
-                <div class="bg-card" data-name="Champagne Sequin" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="Champagne Sequin" data-category="pillow" data-price="+$25">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/champagne-sequin.jpg" alt="Champagne Sequin background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">Champagne Sequin</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">Champagne Sequin</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="Golden Lattice" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="Golden Lattice" data-category="pillow" data-price="+$25" data-gallery="images/backgrounds/golden-lattice-1.jpg,images/backgrounds/golden-lattice-2.jpg">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/golden-lattice.jpg" alt="Golden Lattice background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">Golden Lattice</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">Golden Lattice</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="Lighted Wood" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="Lighted Wood" data-category="pillow" data-price="+$25">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/lighted-wood.jpg" alt="Lighted Wood background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">Lighted Wood</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">Lighted Wood</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="Slay Girlie" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="Slay Girlie" data-category="pillow" data-price="+$25" data-gallery="images/backgrounds/slay-girlie-1.jpg">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/slay-girlie.jpg" alt="Slay Girlie background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">Slay Girlie</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">Slay Girlie</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="White Brick" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="White Brick" data-category="pillow" data-price="+$25" data-gallery="images/backgrounds/white-brick-1.jpg">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/white-brick.jpg" alt="White Brick background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">White Brick</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">White Brick</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="Silver Glitter" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="Silver Glitter" data-category="pillow" data-price="+$25" data-gallery="images/backgrounds/silver-glitter-1.jpg">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/silver-glitter.jpg" alt="Silver Glitter background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">Silver Glitter</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">Silver Glitter</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="Pink Mosaic" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="Pink Mosaic" data-category="pillow" data-price="+$25" data-gallery="images/backgrounds/pink-mosaic-1.jpg">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/pink-mosaic.jpg" alt="Pink Mosaic background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">Pink Mosaic</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">Pink Mosaic</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="Storm Portrait" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="Storm Portrait" data-category="pillow" data-price="+$25">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/storm-portrait.jpg" alt="Storm Portrait background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">Storm Portrait</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">Storm Portrait</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="Golden Trefolis" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="Golden Trefolis" data-category="pillow" data-price="+$25">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/golden-trefolis.jpg" alt="Golden Trefolis background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">Golden Trefolis</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">Golden Trefolis</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="Cloudy" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="Cloudy" data-category="pillow" data-price="+$25">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/cloudy.jpg" alt="Cloudy background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">Cloudy</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">Cloudy</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="Chalkboard Bokeh" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="Chalkboard Bokeh" data-category="pillow" data-price="+$25" data-gallery="images/backgrounds/chalkboard-bokeh-1.jpg">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/chalkboard-bokeh.jpg" alt="Chalkboard Bokeh background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">Chalkboard Bokeh</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">Chalkboard Bokeh</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="Light Rock Wall" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="Light Rock Wall" data-category="pillow" data-price="+$25" data-gallery="images/backgrounds/light-rock-wall-1.jpg">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/light-rock-wall.jpg" alt="Light Rock Wall background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">Light Rock Wall</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">Light Rock Wall</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="Champagne Sparkle" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="Champagne Sparkle" data-category="pillow" data-price="+$25" data-gallery="images/backgrounds/champagne-sparkle-1.jpg">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/champagne-sparkle.jpg" alt="Champagne Sparkle background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">Champagne Sparkle</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">Champagne Sparkle</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="Gray Vintage Grunge" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="Gray Vintage Grunge" data-category="pillow" data-price="+$25">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/gray-vintage-grunge.jpg" alt="Gray Vintage Grunge background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">Gray Vintage Grunge</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">Gray Vintage Grunge</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="Dark Wood with String Lights" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="Dark Wood with String Lights" data-category="pillow" data-price="+$25" data-gallery="images/backgrounds/dark-wood-&-string-lights-1.jpg,images/backgrounds/dark-wood-&-string-lights-2.jpg">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/dark-wood-string-lights.jpg" alt="Dark Wood with String Lights background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">Dark Wood &amp; String Lights</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">Dark Wood &amp; String Lights</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="Princess Bokeh" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="Princess Bokeh" data-category="pillow" data-price="+$25" data-gallery="images/backgrounds/princess-bokeh-1.jpg">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/princess-bokeh.jpg" alt="Princess Bokeh background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">Princess Bokeh</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">Princess Bokeh</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="Sunset Paradise" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="Sunset Paradise" data-category="pillow" data-price="+$25">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/sunset-paradise.jpg" alt="Sunset Paradise background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">Sunset Paradise</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">Sunset Paradise</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="Green Screen" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="Green Screen" data-category="pillow" data-price="+$25">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/green-screen.jpg" alt="Green Screen background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">Green Screen</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">Green Screen</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="Night" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="Night" data-category="pillow" data-price="+$25">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/night.jpg" alt="Night background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">Night</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">Night</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="Pure" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="Pure" data-category="pillow" data-price="+$25">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/pure.jpg" alt="Pure background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">Pure</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">Pure</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="Glistening Garland" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="Glistening Garland" data-category="pillow" data-price="+$25">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/glistening-garland.jpg" alt="Glistening Garland background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">Glistening Garland</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">Glistening Garland</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="KB Red Glitter" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="KB Red Glitter" data-category="pillow" data-price="+$25">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/kb-red-glitter.jpg" alt="KB Red Glitter background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">KB Red Glitter</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">KB Red Glitter</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="Rose Gold Glitter Drip" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="Rose Gold Glitter Drip" data-category="pillow" data-price="+$25">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/rose-gold-glitter-drip.jpg" alt="Rose Gold Glitter Drip background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">Rose Gold Glitter Drip</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">Rose Gold Glitter Drip</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="A Strange Christmas" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="A Strange Christmas" data-category="pillow" data-price="+$25">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/a-strange-christmas.jpg" alt="A Strange Christmas background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">A Strange Christmas</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">A Strange Christmas</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="Home of the Brave" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="Home of the Brave" data-category="pillow" data-price="+$25">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/home-of-the-brave.jpg" alt="Home of the Brave background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">Home of the Brave</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">Home of the Brave</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="A Wind's Whisper" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="A Wind's Whisper" data-category="pillow" data-price="+$25">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/a-winds-whisper.jpg" alt="A Wind's Whisper background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">A Wind's Whisper</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">A Wind's Whisper</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="Textured Gold Wall" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="Textured Gold Wall" data-category="pillow" data-price="+$25">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/textured-gold-wall.jpg" alt="Textured Gold Wall background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">Textured Gold Wall</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">Textured Gold Wall</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="Magical Forest" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="Magical Forest" data-category="pillow" data-price="+$25">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/magical-forest.jpg" alt="Magical Forest background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">Magical Forest</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">Magical Forest</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="Saphire Sparkle" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="Saphire Sparkle" data-category="pillow" data-price="+$25">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/saphire-sparkle.jpg" alt="Saphire Sparkle background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">Saphire Sparkle</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">Saphire Sparkle</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="Seduction" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="Seduction" data-category="pillow" data-price="+$25">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/seduction.jpg" alt="Seduction background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">Seduction</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">Seduction</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="NYE Disco" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="NYE Disco" data-category="pillow" data-price="+$25">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/NYE-Disco.jpg" alt="NYE Disco background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">NYE Disco</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">NYE Disco</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="Sparkle Soiree" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="Sparkle Soiree" data-category="pillow" data-price="+$25">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/sparkle-soiree.jpg" alt="Sparkle Soiree background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">Sparkle Soiree</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">Sparkle Soiree</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="Christmas Tree Glow" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="Christmas Tree Glow" data-category="pillow" data-price="+$25">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/christmas-tree-glow.jpg" alt="Christmas Tree Glow background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">Christmas Tree Glow</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">Christmas Tree Glow</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="The Party Starts Here" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="The Party Starts Here" data-category="pillow" data-price="+$25">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/the-party-starts-here.jpg" alt="The Party Starts Here background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">The Party Starts Here</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">The Party Starts Here</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="Model Material" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="Model Material" data-category="pillow" data-price="+$25">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/model-material.jpg" alt="Model Material background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">Model Material</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">Model Material</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
-                <div class="bg-card" data-name="Decorative Interior Wall" data-category="pillow" data-price="+$50">
+                <div class="bg-card" data-name="Decorative Interior Wall" data-category="pillow" data-price="+$25" data-gallery="images/backgrounds/decorative-interior-wall-1.jpg,images/backgrounds/decorative-interior-wall-2.jpg">
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/decorative-interior-wall.jpg" alt="Decorative Interior Wall background" loading="lazy">
-                        <span class="bg-card__price-tag paid">+$50</span>
+                        <span class="bg-card__price-tag paid">+$25</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
-                    <div class="bg-card__info"><div class="bg-card__name">Decorative Interior Wall</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$50</div></div>
+                    <div class="bg-card__info"><div class="bg-card__name">Decorative Interior Wall</div><div class="bg-card__meta">7.6×7.6 · Pillow Cover · +$25</div></div>
                 </div>
 
             </div><!-- /.bg-grid -->
@@ -1153,6 +1428,9 @@
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/destiny.jpg" alt="Destiny flower wall" loading="lazy">
                         <span class="bg-card__price-tag premium">$375</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
                     <div class="bg-card__info">
@@ -1165,6 +1443,9 @@
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/beccah.jpg" alt="Beccah flower wall" loading="lazy">
                         <span class="bg-card__price-tag premium">$375</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
                     <div class="bg-card__info">
@@ -1177,6 +1458,9 @@
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/misty.jpg" alt="Misty flower wall" loading="lazy">
                         <span class="bg-card__price-tag premium">$375</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
                     <div class="bg-card__info">
@@ -1189,6 +1473,9 @@
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/gisele.jpg" alt="Gisele flower wall" loading="lazy">
                         <span class="bg-card__price-tag premium">$375</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
                     <div class="bg-card__info">
@@ -1201,6 +1488,9 @@
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/hedgie.jpg" alt="Hedgie flower wall" loading="lazy">
                         <span class="bg-card__price-tag premium">$275</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
                     <div class="bg-card__info">
@@ -1213,6 +1503,9 @@
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/meghan.jpg" alt="Meghan flower wall" loading="lazy">
                         <span class="bg-card__price-tag premium">$375</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
                     <div class="bg-card__info">
@@ -1225,6 +1518,9 @@
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/tia.jpg" alt="Tia flower wall" loading="lazy">
                         <span class="bg-card__price-tag premium">$375</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
                     <div class="bg-card__info">
@@ -1237,6 +1533,9 @@
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/tanya.jpg" alt="Tanya flower wall" loading="lazy">
                         <span class="bg-card__price-tag premium">$375</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
                     <div class="bg-card__info">
@@ -1249,6 +1548,9 @@
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/sabrina.jpg" alt="Sabrina flower wall" loading="lazy">
                         <span class="bg-card__price-tag premium">$375</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
                     <div class="bg-card__info">
@@ -1261,6 +1563,9 @@
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/alli.jpg" alt="Alli flower wall" loading="lazy">
                         <span class="bg-card__price-tag premium">$375</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
                     <div class="bg-card__info">
@@ -1273,6 +1578,9 @@
                     <div class="bg-card__img-wrap">
                         <img src="images/backgrounds/scarlett.jpg" alt="Scarlett flower wall" loading="lazy">
                         <span class="bg-card__price-tag premium">$375</span>
+                        <button class="bg-card__zoom" aria-label="View larger image">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
                         <div class="bg-card__check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     </div>
                     <div class="bg-card__info">
@@ -1414,6 +1722,24 @@
             </div>
         </div>
     </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-overlay" id="lightbox" role="dialog" aria-modal="true" aria-label="Background preview">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close preview">&#10005;</button>
+        <div class="lightbox-inner">
+            <div class="lightbox-img-wrap">
+                <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Previous image">&#8592;</button>
+                <img id="lightboxImg" src="" alt="">
+                <button class="lightbox-nav next" id="lightboxNext" aria-label="Next image">&#8594;</button>
+            </div>
+            <div class="lightbox-info">
+                <div class="lightbox-info__name" id="lightboxName"></div>
+                <div class="lightbox-info__meta" id="lightboxMeta"></div>
+                <div class="lightbox-counter" id="lightboxCounter"></div>
+            </div>
+            <div class="lightbox-thumbs" id="lightboxThumbs"></div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
     <script>
@@ -1582,6 +1908,115 @@
                     if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
+        });
+    })();
+    </script>
+    <script>
+    /* ── Lightbox ── */
+    (function () {
+        const overlay   = document.getElementById('lightbox');
+        const img       = document.getElementById('lightboxImg');
+        const nameEl    = document.getElementById('lightboxName');
+        const metaEl    = document.getElementById('lightboxMeta');
+        const counter   = document.getElementById('lightboxCounter');
+        const thumbsEl  = document.getElementById('lightboxThumbs');
+        const closeBtn  = document.getElementById('lightboxClose');
+        const prevBtn   = document.getElementById('lightboxPrev');
+        const nextBtn   = document.getElementById('lightboxNext');
+
+        let images = [];  // array of { src, alt }
+        let current = 0;
+
+        function show(index) {
+            current = (index + images.length) % images.length;
+            img.src = images[current].src;
+            img.alt = images[current].alt;
+
+            prevBtn.hidden = images.length <= 1;
+            nextBtn.hidden = images.length <= 1;
+            counter.textContent = images.length > 1 ? `${current + 1} / ${images.length}` : '';
+
+            // Thumbs
+            thumbsEl.innerHTML = '';
+            if (images.length > 1) {
+                images.forEach((im, i) => {
+                    const t = document.createElement('img');
+                    t.src = im.src;
+                    t.alt = im.alt;
+                    t.className = 'lightbox-thumb' + (i === current ? ' active' : '');
+                    t.addEventListener('click', (e) => { e.stopPropagation(); show(i); });
+                    thumbsEl.appendChild(t);
+                });
+            }
+        }
+
+        function open(card, zoomBtn) {
+            const cardImg  = card.querySelector('.bg-card__img-wrap img');
+            const name     = card.dataset.name || '';
+            const price    = card.dataset.price || '';
+            const category = card.dataset.category || '';
+
+            // Primary image
+            const primary = { src: cardImg.src, alt: cardImg.alt };
+
+            // Additional images from data-gallery="path1,path2" on the card
+            const extra = (card.dataset.gallery || '')
+                .split(',')
+                .map(s => s.trim())
+                .filter(Boolean)
+                .map(s => ({ src: s, alt: name }));
+
+            images = [primary, ...extra];
+            current = 0;
+
+            // Labels
+            nameEl.textContent = name;
+            const catLabel = category === 'pipe-drape' ? 'Pipe & Drape · Included'
+                           : category === 'pillow'     ? `Pillow Cover · ${price}`
+                           : category === 'flower'     ? `Flower Wall · ${price}`
+                           : price;
+            metaEl.textContent = catLabel;
+
+            show(0);
+            overlay.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function close() {
+            overlay.classList.remove('open');
+            document.body.style.overflow = '';
+            img.src = '';
+        }
+
+        // Wire zoom buttons — stop propagation so card selection doesn't fire
+        document.querySelectorAll('.bg-card__zoom').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                open(btn.closest('.bg-card'), btn);
+            });
+        });
+
+        // Also allow double-click on the card image as an alternate entry point
+        document.querySelectorAll('.bg-card__img-wrap img').forEach(cardImg => {
+            cardImg.addEventListener('dblclick', (e) => {
+                e.stopPropagation();
+                open(cardImg.closest('.bg-card'));
+            });
+        });
+
+        closeBtn.addEventListener('click', close);
+        prevBtn.addEventListener('click', (e) => { e.stopPropagation(); show(current - 1); });
+        nextBtn.addEventListener('click', (e) => { e.stopPropagation(); show(current + 1); });
+
+        // Close on backdrop click
+        overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+
+        // Keyboard nav
+        document.addEventListener('keydown', (e) => {
+            if (!overlay.classList.contains('open')) return;
+            if (e.key === 'Escape') close();
+            if (e.key === 'ArrowLeft')  show(current - 1);
+            if (e.key === 'ArrowRight') show(current + 1);
         });
     })();
     </script>
