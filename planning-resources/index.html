@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding &amp; Event Planning Resources | Jacksonville &amp; St. Augustine | Footloose Entertainment</title>
+    <meta name="description" content="Venue guides, song lists, and planning advice for weddings and events in Jacksonville, St. Augustine &amp; Northeast Florida &mdash; from the entertainment company that knows the venues best.">
+    <meta name="keywords" content="Jacksonville wedding planning, St Augustine venue guides, wedding DJ advice, Northeast Florida wedding resources">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.footlooseentertainment.com/planning-resources">
+    <meta property="og:title" content="Wedding &amp; Event Planning Resources | Footloose Entertainment">
+    <meta property="og:description" content="Venue guides, song lists, and planning advice for weddings and events across Jacksonville, St. Augustine &amp; Northeast Florida.">
+    <meta property="og:image" content="https://www.footlooseentertainment.com/images/hero-event.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wedding &amp; Event Planning Resources | Footloose Entertainment">
+    <meta name="twitter:description" content="Venue guides, song lists, and planning advice for Jacksonville and St. Augustine weddings and events.">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://footlooseentertainment.com/planning-resources">
+
+    <!-- Geo -->
+    <meta name="geo.region" content="US-FL">
+    <meta name="geo.placename" content="Jacksonville">
+    <meta name="geo.position" content="30.3322;-81.6557">
+
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        /* ── Planning Resources palette (matches home page brand identity) ── */
+        :root {
+            --color-primary: #006D77;
+            --color-primary-dark: #004E57;
+            --color-accent: #D4A843;
+            --color-gold: #D4A843;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb-nav { background: #f7f7f7; border-bottom: 1px solid #e8e8e8; padding: 0.6rem 0; font-size: 0.85rem; }
+        .breadcrumb-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; color: #888; }
+        .breadcrumb-list li a { color: var(--color-primary); text-decoration: none; }
+        .breadcrumb-list li a:hover { text-decoration: underline; }
+        .breadcrumb-list [aria-current="page"] { color: #555; }
+
+        /* Hero */
+        .resources-hero {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+            padding: 4.5rem 0 4rem;
+            text-align: center;
+        }
+        .resources-hero-eyebrow {
+            font-family: 'Barlow', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--color-gold);
+            display: block;
+            margin-bottom: 0.75rem;
+        }
+        .resources-hero h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3rem;
+            letter-spacing: 0.04em;
+            color: #fff;
+            line-height: 1.1;
+            margin: 0 0 1rem;
+        }
+        .resources-hero p {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.88);
+            max-width: 620px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        /* Category sections */
+        .resource-category { padding: 4rem 0; }
+        .resource-category.bg-faint { background: #f7f9f9; }
+        .resource-category-label {
+            font-family: 'Barlow', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: var(--color-primary);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .resource-category h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2.1rem;
+            letter-spacing: 0.03em;
+            color: #1a1a2e;
+            margin: 0 0 0.6rem;
+        }
+        .resource-category-intro {
+            font-size: 1rem;
+            color: #555;
+            max-width: 680px;
+            line-height: 1.7;
+            margin-bottom: 2.25rem;
+        }
+
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.75rem;
+        }
+        .resource-card {
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 12px;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;
+        }
+        .resource-card:hover { border-color: var(--color-primary); box-shadow: 0 8px 28px rgba(0,0,0,0.08); transform: translateY(-2px); }
+        .resource-card-image {
+            width: 100%;
+            aspect-ratio: 16/10;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+            background-size: cover;
+            background-position: center;
+        }
+        .resource-card-tag {
+            font-family: 'Barlow', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--color-primary);
+            background: #e7f1f2;
+            display: inline-block;
+            padding: 0.3rem 0.75rem;
+            border-radius: 20px;
+            margin: 1.5rem 1.5rem 0;
+            align-self: flex-start;
+        }
+        .resource-card h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.35rem;
+            letter-spacing: 0.03em;
+            color: #1a1a2e;
+            margin: 1rem 1.5rem 0.5rem;
+        }
+        .resource-card p {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.65;
+            margin: 0 1.5rem 1.5rem;
+        }
+        .resource-card-link {
+            margin: 0 1.5rem 1.5rem;
+            font-family: 'Barlow', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--color-primary);
+        }
+
+        .resource-coming-soon {
+            background: #fff;
+            border: 1px dashed #d5d5d5;
+            border-radius: 12px;
+            padding: 1.75rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .resource-coming-soon span {
+            font-family: 'Barlow', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #999;
+            margin-bottom: 0.5rem;
+        }
+        .resource-coming-soon p { font-size: 0.88rem; color: #888; line-height: 1.6; margin: 0; }
+
+        @media (max-width: 900px) {
+            .resources-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 680px) {
+            .resources-hero { padding: 3.5rem 0 3rem; }
+            .resources-hero h1 { font-size: 2.2rem; }
+            .resources-grid { grid-template-columns: 1fr; }
+        }
+
+        /* Mobile header fixes (site-wide pattern) */
+        .mobile-only-nav-item { display: none; }
+        @media (max-width: 680px) {
+            .mobile-only-nav-item { display: list-item; }
+            .client-resources-link { display: none; }
+            .phone-link { display: none; }
+            .site-header .btn-primary { white-space: nowrap; padding: 0.5rem 1rem; font-size: 0.78rem; }
+            .logo img { width: 140px; height: auto; }
+        }
+    </style>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.footlooseentertainment.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Planning Resources", "item": "https://www.footlooseentertainment.com/planning-resources" }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="/">
+                        <img src="../images/footloose-logo.png" alt="Footloose Entertainment Logo" width="200" height="80">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li class="has-dropdown">
+                            <a href="#">Events &#9662;</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/weddings">Weddings</a></li>
+                                <li><a href="/corporate-events">Corporate</a></li>
+                                <li><a href="/school-events">School Events</a></li>
+                                <li><a href="/private-parties">Private Parties</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile-only-nav-item"><a href="/current-clients">Client Resources</a></li>
+                    </ul>
+                </nav>
+                <div class="header-cta">
+                    <a href="/current-clients" class="client-resources-link">Client Resources</a>
+                    <a href="tel:+19048548014" class="phone-link">(904) 854-8014</a>
+                    <a href="/contact" class="btn btn-primary">Get Quote</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb-list">
+                <li><a href="/">Home</a></li>
+                <li aria-hidden="true">&rsaquo;</li>
+                <li aria-current="page">Planning Resources</li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="resources-hero">
+        <div class="container">
+            <span class="resources-hero-eyebrow">Footloose Entertainment</span>
+            <h1>Wedding &amp; Event Planning Resources</h1>
+            <p>Venue guides, song lists, and planning advice from the entertainment company that's worked Northeast Florida celebrations for over 29 years &mdash; so you can plan with confidence, not guesswork.</p>
+        </div>
+    </section>
+
+    <!-- Venue Guides -->
+    <section class="resource-category">
+        <div class="container">
+            <span class="resource-category-label">Venue Guides</span>
+            <h2>Know Your Venue Before You Book Entertainment</h2>
+            <p class="resource-category-intro">Every venue has its own layout, acoustics, and logistics. These guides cover what to expect at some of Jacksonville and St. Augustine's most-booked wedding and event venues.</p>
+            <div class="resources-grid">
+                <a href="/planning-resources/epping-forest-yacht-club-wedding" class="resource-card">
+                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/epping-forest-hero.jpg');"></div>
+                    <span class="resource-card-tag">Venue Guide</span>
+                    <h3>Epping Forest Yacht &amp; Country Club Wedding Guide</h3>
+                    <p>Room capacities, garden ceremony options, and what to know about entertainment logistics at this riverside Jacksonville venue.</p>
+                    <span class="resource-card-link">Read the guide &rarr;</span>
+                </a>
+                <a href="/planning-resources/club-continental-wedding" class="resource-card">
+                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/club-continental-hero.jpg');"></div>
+                    <span class="resource-card-tag">Venue Guide</span>
+                    <h3>Club Continental Wedding Guide</h3>
+                    <p>Room capacities, the riverside oak grove ceremony spot, and entertainment logistics at this historic Orange Park resort.</p>
+                    <span class="resource-card-link">Read the guide &rarr;</span>
+                </a>
+                <a href="/planning-resources/white-room-wedding" class="resource-card">
+                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/white-room-hero.jpg');"></div>
+                    <span class="resource-card-tag">Venue Guide</span>
+                    <h3>The White Room Wedding Guide</h3>
+                    <p>Venue spaces, rooftop ceremony options, and entertainment logistics at this historic St. Augustine waterfront venue.</p>
+                    <span class="resource-card-link">Read the guide &rarr;</span>
+                </a>
+                <a href="/planning-resources/treasury-on-the-plaza-wedding" class="resource-card">
+                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/treasury-on-the-plaza-hero.jpg');"></div>
+                    <span class="resource-card-tag">Venue Guide</span>
+                    <h3>Treasury on the Plaza Wedding Guide</h3>
+                    <p>The Vault, guest capacities, and package options at this converted 1920s bank building in downtown St. Augustine.</p>
+                    <span class="resource-card-link">Read the guide &rarr;</span>
+                </a>
+                <a href="/planning-resources/tpc-sawgrass-wedding-and-events" class="resource-card">
+                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/tpc-sawgrass-hero.jpg');"></div>
+                    <span class="resource-card-tag">Wedding &amp; Corporate Guide</span>
+                    <h3>TPC Sawgrass Wedding &amp; Events Guide</h3>
+                    <p>Clubhouse capacities and Event Lawn views at this Ponte Vedra Beach venue, for weddings and corporate events alike.</p>
+                    <span class="resource-card-link">Read the guide &rarr;</span>
+                </a>
+                <a href="/planning-resources/sawgrass-marriott-wedding-and-events" class="resource-card">
+                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/sawgrass-marriott-hero.jpg');"></div>
+                    <span class="resource-card-tag">Wedding &amp; Corporate Guide</span>
+                    <h3>Sawgrass Marriott Wedding &amp; Events Guide</h3>
+                    <p>Ballroom capacities, the Cascade Lawn, and oceanfront Cabana Beach Club options for weddings and corporate events.</p>
+                    <span class="resource-card-link">Read the guide &rarr;</span>
+                </a>
+                <a href="/planning-resources/st-augustine-wedding-venues" class="resource-card">
+                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/st-augustine-venues-hero.jpg');"></div>
+                    <span class="resource-card-tag">Venue Roundup</span>
+                    <h3>Best St. Augustine Wedding Venues</h3>
+                    <p>A roundup of eight popular St. Augustine venues, from historic downtown buildings to golf clubhouses.</p>
+                    <span class="resource-card-link">Read the roundup &rarr;</span>
+                </a>
+                <a href="/planning-resources/amelia-island-wedding-venues" class="resource-card">
+                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/amelia-island-venues-hero.jpg');"></div>
+                    <span class="resource-card-tag">Venue Roundup</span>
+                    <h3>Best Amelia Island Wedding Venues</h3>
+                    <p>A roundup of eight venues and options on Amelia Island, from oceanfront resorts to historic inns.</p>
+                    <span class="resource-card-link">Read the roundup &rarr;</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planning & Advice -->
+    <section class="resource-category bg-faint">
+        <div class="container">
+            <span class="resource-category-label">Planning &amp; Advice</span>
+            <h2>Music, Timelines &amp; Everything In Between</h2>
+            <p class="resource-category-intro">Practical advice from DJs who've run thousands of receptions &mdash; song lists, timeline templates, and answers to the questions couples ask us most.</p>
+            <div class="resources-grid">
+                <div class="resource-coming-soon">
+                    <span>Coming Soon</span>
+                    <p>Mother-daughter dance songs, first dance songs, questions to ask your wedding DJ, what uplighting actually is, and a full reception timeline guide &mdash; all in progress.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Talk Entertainment for Your Event?</h2>
+                <p>Whatever you're planning and wherever you're hosting it, we can help you figure out what your entertainment needs &mdash; no obligation, quick response guaranteed.</p>
+                <div class="cta-buttons">
+                    <a href="/contact" class="btn btn-large btn-primary">Get Your Free Quote</a>
+                    <a href="tel:+19048548014" class="btn btn-large btn-outline-light">Call (904) 854-8014</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <img src="../images/footloose-logo-white.png" alt="Footloose Entertainment" width="180" height="72">
+                    <p>Jacksonville and St. Augustine&rsquo;s premier event entertainment company since 1997.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/footlooseentertainment" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="https://instagram.com/footloosedjs" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Event Types</h4>
+                    <ul>
+                        <li><a href="/corporate-events">Corporate Events</a></li>
+                        <li><a href="/weddings">Weddings &amp; Celebrations</a></li>
+                        <li><a href="/school-events">School Events &amp; Proms</a></li>
+                        <li><a href="/private-parties">Private Parties</a></li>
+                        <li><a href="/planning-resources">Planning Resources</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Specialty Services</h4>
+                    <ul>
+                        <li><a href="/360-booth">360 Video Booth</a></li>
+                        <li><a href="/mirror-booth">Mirror Photo Booth</a></li>
+                        <li><a href="/special-effects">Special Effects</a></li>
+                        <li><a href="/audio-guestbook">Audio Guestbook</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="/jacksonville-event-entertainment">Jacksonville</a></li>
+                        <li><a href="/st-augustine-event-entertainment">St. Augustine</a></li>
+                        <li><a href="https://www.jacksonvillephotobooths.com">Jacksonville Photobooths</a></li>
+                        <li><a href="/contact">Service Area</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                        <li><a href="/current-clients">Current Clients</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Footloose Entertainment. All rights reserved.</p>
+                <p>Serving Jacksonville, St. Augustine &amp; Northeast Florida since 1997</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
