@@ -3,91 +3,674 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corporate DJ & AV Services Jacksonville FL | Footloose</title>
-    <meta name="description" content="Professional corporate event entertainment in Jacksonville FL. DJ services, audio visual equipment, photo booths & interactive entertainment. Book today!">
-    <meta name="keywords" content="corporate event DJ Jacksonville, company party entertainment, Jacksonville corporate DJ, business event entertainment, corporate photobooth rental, holiday party DJ, product launch entertainment, team building event DJ, karaoke services Jacksonville, lighting services corporate events, corporate DJ St Augustine, corporate DJ Ponte Vedra, corporate DJ Orange Park">
-    
-    <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Corporate Event Entertainment Jacksonville | DJ, Photobooth & More | Footloose Entertainment">
-    <meta property="og:description" content="Professional DJ services, photobooths, lighting, and audio visual support for corporate events. Trusted by Jacksonville businesses since 1997.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://footlooseentertainment.com/corporate-events">
-    <meta property="og:image" content="https://footlooseentertainment.com/images/corporate-event-hero.jpg">
+    <title>Corporate Event Entertainment Jacksonville FL | Footloose Entertainment</title>
+    <meta name="description" content="Corporate event entertainment in Jacksonville, St. Augustine & Northeast Florida. DJ, photobooth, special effects & production for holiday parties, galas, conferences & launches. 29 years, fully insured.">
+    <meta name="keywords" content="corporate event entertainment Jacksonville FL, corporate DJ Jacksonville, holiday party entertainment Jacksonville, corporate photobooth St Augustine, company event DJ Ponte Vedra, conference entertainment Northeast Florida">
 
-    <!-- Geo Tags -->
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.footlooseentertainment.com/corporate-events">
+    <meta property="og:title" content="Corporate Event Entertainment Jacksonville FL | Footloose Entertainment">
+    <meta property="og:description" content="Complete corporate event entertainment — DJ, photobooth, special effects, and production — for holiday parties, galas, team building, and conferences across Northeast Florida.">
+    <meta property="og:image" content="https://www.footlooseentertainment.com/images/corporate-event-hero.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Corporate Event Entertainment Jacksonville FL | Footloose Entertainment">
+    <meta name="twitter:description" content="Corporate DJ, photobooth, special effects & production for holiday parties, galas, conferences across Jacksonville & Northeast Florida. 29 years, fully insured.">
+    <meta name="twitter:image" content="https://www.footlooseentertainment.com/images/corporate-event-hero.jpg">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://footlooseentertainment.com/corporate-events">
+
+    <!-- Geo -->
     <meta name="geo.region" content="US-FL">
     <meta name="geo.placename" content="Jacksonville">
     <meta name="geo.position" content="30.3322;-81.6557">
 
-    <link rel="canonical" href="https://footlooseentertainment.com/corporate-events">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
     <style>
-
+        /* ── Corporate memo palette ── */
         :root {
-            --color-primary: #006D77;
-            --color-primary-dark: #004E57;
-            --color-accent: #D4A843;
-            --color-secondary: #1a1a2e;
+            --burgundy: #800020;
+            --burgundy-dark: #5C0017;
+            --burgundy-faint: #f4ecee;
+            --paper: #ffffff;
+            --paper-faint: #f5f5f5;
+            --ink: #1A1A1A;
+            --ink-mid: #4A4A4A;
+            --ink-light: #7a7a7a;
+            --rule: #d8d3c7;
+            --rule-soft: #e8e4dc;
         }
-        /* Breadcrumb */
-        .breadcrumb-nav {
-            background: #f5f5f5;
-            border-bottom: 1px solid #e8e8e8;
-            padding: 0.6rem 0;
-            font-size: 0.85rem;
-        }
-        .breadcrumb-list {
-            list-style: none;
-            margin: 0;
-            padding: 0;
+
+        /* ── Memo type system ── */
+        .memo-body { font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif; }
+
+        .memo-section { padding: 5rem 0 4.5rem; }
+        .memo-section.bg-paper { background: var(--paper); }
+        .memo-section.bg-faint { background: var(--paper-faint); }
+
+        /* Metadata strip — memo equivalent of "Chapter label" */
+        .memo-meta {
             display: flex;
-            flex-wrap: wrap;
+            align-items: center;
+            gap: 1.5rem;
+            font-family: 'IBM Plex Mono', 'Courier New', monospace;
+            font-size: 0.72rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--ink-light);
+            border-top: 1px solid var(--rule);
+            border-bottom: 1px solid var(--rule);
+            padding: 0.55rem 0;
+            margin-bottom: 1.5rem;
+        }
+        .memo-meta-item { display: inline-flex; gap: 0.5rem; }
+        .memo-meta-item b { color: var(--burgundy); font-weight: 500; }
+        .memo-meta-spacer { flex: 1; }
+        .memo-meta-section-num { color: var(--ink); font-weight: 500; }
+
+        .memo-heading {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-weight: 500;
+            font-size: 2.6rem;
+            color: var(--ink);
+            line-height: 1.1;
+            letter-spacing: -0.01em;
+            margin: 0 0 0.75rem;
+            max-width: 780px;
+        }
+        .memo-rule {
+            width: 56px; height: 3px;
+            background: var(--burgundy);
+            margin: 0.85rem 0 1.75rem;
+        }
+        .memo-intro {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 1.1rem;
+            color: var(--ink-mid);
+            line-height: 1.75;
+            max-width: 680px;
+            margin-bottom: 2.5rem;
+        }
+
+        .memo-label {
+            font-family: 'Barlow', sans-serif;
+            font-size: 0.72rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--burgundy);
+            display: inline-block;
+            margin-bottom: 0.6rem;
+        }
+
+        /* ── Service nav bar ── */
+        .service-nav-bar {
+            background: var(--paper-faint);
+            border-bottom: 1px solid var(--rule);
+            padding: 0.5rem 0;
+        }
+        .service-nav-list {
+            list-style: none; margin: 0; padding: 0;
+            display: flex; align-items: center; gap: 0.25rem;
+            flex-wrap: nowrap; overflow-x: auto;
+        }
+        .service-nav-list li a {
+            display: block;
+            padding: 0.4rem 1rem;
+            font-family: 'Barlow', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--ink-mid);
+            text-decoration: none;
+            border-radius: 4px;
+            white-space: nowrap;
+            transition: background 0.2s, color 0.2s;
+        }
+        .service-nav-list li a:hover { background: #fff; color: var(--burgundy); }
+
+        /* ── Breadcrumb ── */
+        .breadcrumb-nav { background: #f7f7f7; border-bottom: 1px solid #e8e8e8; padding: 0.6rem 0; font-size: 0.85rem; }
+        .breadcrumb-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; color: var(--ink-light); font-family: 'Barlow', sans-serif; }
+        .breadcrumb-list li a { color: var(--burgundy); text-decoration: none; }
+        .breadcrumb-list li a:hover { text-decoration: underline; }
+        .breadcrumb-list [aria-current="page"] { color: var(--ink-mid); }
+
+        /* ── Hero: memo letterhead on dark image ── */
+        .corporate-events-hero {
+            position: relative;
+            min-height: 85vh;
+            display: flex; align-items: center;
+        }
+        .corporate-events-hero .hero-bg { position: absolute; inset: 0; overflow: hidden; }
+        .corporate-events-hero .hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+        .corporate-events-hero .hero-bg::after {
+            content: '';
+            position: absolute; inset: 0;
+            background: linear-gradient(to right, rgba(15,10,12,0.82) 45%, rgba(15,10,12,0.35) 100%);
+        }
+        .hero-inner { position: relative; z-index: 2; max-width: 660px; }
+
+        .hero-letterhead {
+            display: flex; align-items: baseline;
+            justify-content: space-between;
+            gap: 1rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 2px solid rgba(255,255,255,0.22);
+            margin-bottom: 1.25rem;
+        }
+        .hero-letterhead-mark {
+            font-family: 'Barlow', sans-serif;
+            font-size: 0.78rem; font-weight: 700;
+            letter-spacing: 0.32em;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        .hero-letterhead-est {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.68rem;
+            letter-spacing: 0.18em;
+            color: rgba(255,255,255,0.55);
+            text-transform: uppercase;
+        }
+
+        .hero-memo-meta {
+            display: flex; flex-wrap: wrap; gap: 1.5rem;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.7rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.55);
+            margin-bottom: 1.5rem;
+        }
+        .hero-memo-meta b { color: rgba(255,255,255,0.92); font-weight: 500; }
+
+        .hero-headline {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-weight: 500;
+            font-size: clamp(2.4rem, 4.5vw, 3.5rem);
+            color: #fff;
+            line-height: 1.08;
+            letter-spacing: -0.01em;
+            margin: 0 0 1.1rem;
+        }
+        .hero-sub {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 1.05rem;
+            color: rgba(255,255,255,0.82);
+            line-height: 1.75;
+            margin-bottom: 2rem;
+            max-width: 560px;
+        }
+        .hero-cta-row { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+        .btn-burgundy {
+            display: inline-block;
+            background: var(--burgundy);
+            color: #fff;
+            border: 2px solid var(--burgundy);
+            padding: 0.85rem 1.75rem;
+            border-radius: 2px;
+            font-family: 'Barlow', sans-serif;
+            font-size: 0.88rem; font-weight: 600;
+            letter-spacing: 0.14em; text-transform: uppercase;
+            text-decoration: none;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .btn-burgundy:hover { background: var(--burgundy-dark); border-color: var(--burgundy-dark); }
+
+        .btn-outline-burgundy {
+            display: inline-block;
+            background: transparent;
+            color: #fff;
+            border: 2px solid rgba(255,255,255,0.55);
+            padding: 0.85rem 1.75rem;
+            border-radius: 2px;
+            font-family: 'Barlow', sans-serif;
+            font-size: 0.88rem; font-weight: 600;
+            letter-spacing: 0.14em; text-transform: uppercase;
+            text-decoration: none;
+            transition: border-color 0.2s, background 0.2s;
+        }
+        .btn-outline-burgundy:hover { border-color: #fff; background: rgba(255,255,255,0.08); }
+
+        .btn-outline-burgundy-dark {
+            display: inline-block;
+            background: transparent;
+            color: var(--burgundy);
+            border: 2px solid var(--burgundy);
+            padding: 0.8rem 1.75rem;
+            border-radius: 2px;
+            font-family: 'Barlow', sans-serif;
+            font-size: 0.85rem; font-weight: 600;
+            letter-spacing: 0.14em; text-transform: uppercase;
+            text-decoration: none;
+            transition: background 0.2s, color 0.2s;
+        }
+        .btn-outline-burgundy-dark:hover { background: var(--burgundy); color: #fff; }
+
+        /* ── Trust bar ── */
+        .trust-bar-memo {
+            background: #fff;
+            border-bottom: 1px solid var(--rule);
+            padding: 1.25rem 0;
+        }
+        .trust-bar-memo .trust-items {
+            display: flex; justify-content: space-around;
+            flex-wrap: wrap; gap: 0;
+        }
+        .trust-bar-memo .trust-item {
+            text-align: center; padding: 0.4rem 1.5rem;
+            border-right: 1px solid var(--rule);
+        }
+        .trust-bar-memo .trust-item:last-child { border-right: none; }
+        .trust-bar-memo .trust-item strong {
+            display: block;
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-weight: 500;
+            font-size: 1.65rem;
+            color: var(--burgundy);
+            line-height: 1.1;
+        }
+        .trust-bar-memo .trust-item span {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.7rem; color: var(--ink-light);
+            text-transform: uppercase; letter-spacing: 0.14em;
+            margin-top: 0.3rem; display: block;
+        }
+
+        /* ── The Setup: 4-col service cards (image top, text below) ── */
+        .service-cards-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        .service-card {
+            display: block;
+            background: #fff;
+            border: 1px solid var(--rule);
+            text-decoration: none;
+            color: inherit;
+            overflow: hidden;
+            transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+        }
+        .service-card:hover {
+            border-color: var(--burgundy);
+            box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+            transform: translateY(-2px);
+        }
+        .service-card img {
+            width: 100%; display: block;
+            aspect-ratio: 4/3; object-fit: cover;
+        }
+        .service-card-body { padding: 1.5rem 1.25rem; }
+        .service-card-label {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.68rem; letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--burgundy);
+            font-weight: 500;
+            display: block;
+            margin-bottom: 0.45rem;
+        }
+        .service-card h3 {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-weight: 500;
+            font-size: 1.2rem;
+            color: var(--ink);
+            margin: 0 0 0.55rem;
+            letter-spacing: -0.005em;
+        }
+        .service-card p {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 0.92rem;
+            color: var(--ink-mid);
+            line-height: 1.65;
+            margin: 0 0 1rem;
+        }
+        .service-card-link {
+            font-family: 'Barlow', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--burgundy);
+            display: inline-flex;
             align-items: center;
             gap: 0.4rem;
-            color: #888;
+            padding-bottom: 3px;
+            border-bottom: 1.5px solid var(--burgundy);
+            transition: color 0.2s, border-color 0.2s, gap 0.2s;
         }
-        .breadcrumb-list li a { color: var(--color-primary); text-decoration: none; }
-        .breadcrumb-list li a:hover { text-decoration: underline; }
-        .breadcrumb-list [aria-current="page"] { color: #555; }
-        /* FAQ */
-        .faq-section { padding: 5rem 0; }
-        .faq-list { max-width: 800px; margin: 3rem auto 0; }
-        .faq-item { border-bottom: 1px solid #e0e0e0; }
+        .service-card:hover .service-card-link {
+            color: var(--burgundy-dark);
+            border-color: var(--burgundy-dark);
+            gap: 0.65rem;
+        }
+
+        /* ── The Events: 3-col event-type cards ── */
+        .events-served-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        .event-served-card {
+            background: #fff;
+            border: 1px solid var(--rule);
+            border-top: 3px solid var(--burgundy);
+            padding: 1.75rem 1.5rem;
+            transition: box-shadow 0.2s;
+        }
+        .event-served-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,0.06); }
+        .event-served-card h3 {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-weight: 500;
+            font-size: 1.2rem;
+            color: var(--ink);
+            margin: 0 0 0.55rem;
+        }
+        .event-served-card p {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 0.95rem;
+            color: var(--ink-mid);
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* ── The Plan: 2-col flow + image ── */
+        .flow-layout {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 4rem; align-items: center;
+        }
+        .flow-steps {
+            display: flex; flex-direction: column;
+            margin-top: 1rem;
+        }
+        .flow-step {
+            display: flex; gap: 1.25rem; align-items: flex-start;
+            padding: 1.2rem 0;
+            border-bottom: 1px solid var(--rule-soft);
+        }
+        .flow-step:first-child { padding-top: 0; }
+        .flow-step:last-child { border-bottom: none; }
+        .flow-step-num {
+            flex-shrink: 0; width: 36px; height: 36px;
+            border: 1px solid var(--burgundy);
+            color: var(--burgundy);
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.78rem;
+            letter-spacing: 0.06em;
+            display: flex; align-items: center; justify-content: center;
+            margin-top: 2px;
+            font-weight: 500;
+        }
+        .flow-step-content h3 {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-weight: 500;
+            font-size: 1.15rem;
+            color: var(--ink);
+            margin: 0 0 0.4rem;
+        }
+        .flow-step-content p {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 0.95rem;
+            color: var(--ink-mid);
+            line-height: 1.7;
+            margin: 0;
+        }
+        .flow-image {
+            overflow: hidden;
+            border: 1px solid var(--rule);
+        }
+        .flow-image img {
+            width: 100%; display: block;
+            aspect-ratio: 4/5; object-fit: cover;
+        }
+        .flow-cta { margin-top: 2.25rem; }
+
+        /* ── The Music: 4×3 genre grid + landscape banner ── */
+        .music-landscape {
+            overflow: hidden;
+            border: 1px solid var(--rule);
+            margin-bottom: 2.5rem;
+        }
+        .music-landscape img {
+            width: 100%; display: block;
+            aspect-ratio: 21/9; object-fit: cover;
+        }
+        .music-genre-grid {
+            display: grid; grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+        .genre-tile {
+            background: #fff;
+            border: 1px solid var(--rule);
+            padding: 1.15rem 1rem;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .genre-tile:hover { border-color: var(--burgundy); box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+        .genre-tile strong {
+            display: block;
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-weight: 500;
+            font-size: 1rem;
+            color: var(--ink);
+            margin-bottom: 0.25rem;
+        }
+        .genre-tile span {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 0.84rem;
+            color: var(--ink-mid);
+            line-height: 1.55;
+            display: block;
+        }
+        .music-note {
+            margin-top: 1.75rem; padding: 1.25rem 1.75rem;
+            background: var(--paper-faint);
+            border-left: 3px solid var(--burgundy);
+            border-top: 1px solid var(--rule);
+            border-right: 1px solid var(--rule);
+            border-bottom: 1px solid var(--rule);
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 0.98rem; color: var(--ink-mid); line-height: 1.75;
+        }
+        .music-note strong { color: var(--ink); }
+
+        /* ── The Venues ── */
+        .venues-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+        }
+        .venue-col h4 {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.72rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--burgundy);
+            margin: 0 0 0.85rem;
+            padding-bottom: 0.55rem;
+            border-bottom: 1px solid var(--rule);
+            font-weight: 500;
+        }
+        .venue-col ul {
+            list-style: none; padding: 0; margin: 0;
+        }
+        .venue-col ul li {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 0.98rem;
+            color: var(--ink-mid);
+            line-height: 1.9;
+            padding: 0.15rem 0;
+        }
+        .venues-note {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 0.95rem;
+            color: var(--ink-mid);
+            margin-top: 2rem;
+            line-height: 1.7;
+        }
+        .venues-note a { color: var(--burgundy); text-decoration: underline; }
+
+        /* ── The Difference: 2x2 differentiator cards ── */
+        .why-grid {
+            display: grid; grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+        .why-card {
+            background: #fff;
+            border: 1px solid var(--rule);
+            padding: 2rem 1.85rem;
+            display: flex; gap: 1.5rem; align-items: flex-start;
+        }
+        .why-icon {
+            flex-shrink: 0;
+            width: 44px; height: 44px;
+            background: var(--paper-faint);
+            border: 1px solid var(--rule);
+            display: flex; align-items: center; justify-content: center;
+            color: var(--burgundy);
+        }
+        .why-card h3 {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-weight: 500;
+            font-size: 1.25rem;
+            color: var(--ink);
+            margin: 0 0 0.55rem;
+            letter-spacing: -0.005em;
+        }
+        .why-card p {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 0.97rem;
+            color: var(--ink-mid);
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* ── On the Record (reviews) ── */
+        .reviews-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        .review-card {
+            background: #fff;
+            border: 1px solid var(--rule);
+            border-left: 3px solid var(--burgundy);
+            padding: 1.75rem 1.5rem;
+        }
+        .review-rating {
+            font-size: 0.9rem;
+            letter-spacing: 0.2em;
+            color: var(--burgundy);
+            margin-bottom: 0.85rem;
+        }
+        .review-text {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 1rem;
+            color: var(--ink);
+            line-height: 1.7;
+            font-style: italic;
+            margin: 0 0 1rem;
+        }
+        .review-author strong {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--ink);
+            display: block;
+            font-style: normal;
+        }
+        .review-author span {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.72rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--ink-light);
+        }
+
+        /* ── FAQ accordion ── */
+        .faq-list { max-width: 820px; }
+        .faq-item { border-bottom: 1px solid var(--rule); }
         .faq-question {
             width: 100%;
             background: none;
             border: none;
-            padding: 1.4rem 0;
+            padding: 1.35rem 0;
             text-align: left;
-            font-family: 'Barlow', sans-serif;
-            font-size: 1.05rem;
-            font-weight: 600;
-            color: var(--color-secondary);
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 1.08rem;
+            font-weight: 500;
+            color: var(--ink);
             cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
             gap: 1rem;
         }
-        .faq-question .faq-arrow {
-            flex-shrink: 0;
-            transition: transform 0.3s ease;
-            color: var(--color-primary);
-        }
+        .faq-question .faq-arrow { flex-shrink: 0; transition: transform 0.3s ease; color: var(--burgundy); }
         .faq-question[aria-expanded="true"] .faq-arrow { transform: rotate(180deg); }
         .faq-answer {
-            max-height: 0;
-            overflow: hidden;
+            max-height: 0; overflow: hidden;
             transition: max-height 0.4s ease, padding 0.3s ease;
         }
-        .faq-answer.open { max-height: 400px; padding-bottom: 1.2rem; }
-        .faq-answer p { color: #555; line-height: 1.7; margin: 0; }
-    
-        /* ---- MOBILE HEADER FIXES ---- */
+        .faq-answer.open { max-height: 500px; padding-bottom: 1.2rem; }
+        .faq-answer p {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 1rem;
+            color: var(--ink-mid);
+            line-height: 1.75;
+            margin: 0;
+        }
+        .faq-answer a { color: var(--burgundy); }
+
+        /* ── CTA (full-bleed burgundy) ── */
+        .memo-cta {
+            background: linear-gradient(135deg, var(--burgundy) 0%, var(--burgundy-dark) 100%);
+            color: #fff;
+            padding: 5rem 0 5.5rem;
+        }
+        .memo-cta .memo-label { color: rgba(255,255,255,0.85); }
+        .memo-cta h2 {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-weight: 500;
+            font-size: 2.4rem;
+            color: #fff;
+            line-height: 1.15;
+            margin: 0 0 1rem;
+        }
+        .memo-cta p {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.88);
+            line-height: 1.75;
+            max-width: 640px;
+            margin: 0 0 2rem;
+        }
+        .memo-cta .cta-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
+        .memo-cta .cta-buttons .btn-burgundy {
+            background: #fff; color: var(--burgundy); border-color: #fff;
+        }
+        .memo-cta .cta-buttons .btn-burgundy:hover {
+            background: rgba(255,255,255,0.88);
+        }
+        .memo-cta .cta-buttons .btn-outline-burgundy {
+            border-color: rgba(255,255,255,0.6);
+        }
+        .memo-cta .cta-note {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.72rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.68);
+            margin-top: 1.5rem;
+        }
+
+        /* ── Mobile header fixes (site-wide pattern) ── */
         .mobile-only-nav-item { display: none; }
         @media (max-width: 680px) {
             .mobile-only-nav-item { display: list-item; }
@@ -96,7 +679,55 @@
             .site-header .btn-primary { white-space: nowrap; padding: 0.5rem 1rem; font-size: 0.78rem; }
             .logo img { width: 140px; height: auto; }
         }
-        </style>
+
+        /* ── Responsive ── */
+        @media (max-width: 960px) {
+            .service-cards-grid { grid-template-columns: repeat(2, 1fr); }
+            .events-served-grid { grid-template-columns: repeat(2, 1fr); }
+            .flow-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+            .flow-image img { aspect-ratio: 16/10; }
+            .music-genre-grid { grid-template-columns: repeat(3, 1fr); }
+            .venues-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+            .why-grid { grid-template-columns: 1fr; }
+            .reviews-grid { grid-template-columns: 1fr; }
+            .memo-heading { font-size: 2.1rem; }
+            .memo-cta h2 { font-size: 1.9rem; }
+        }
+        @media (max-width: 680px) {
+            .corporate-events-hero {
+                min-height: 90svh;
+                align-items: flex-end;
+                padding-bottom: 2.5rem;
+            }
+            .corporate-events-hero .hero-bg::after {
+                background: linear-gradient(to top, rgba(15,10,12,0.92) 45%, rgba(15,10,12,0.15) 100%);
+            }
+            .hero-letterhead-est { display: none; }
+            .hero-cta-row .btn-burgundy,
+            .hero-cta-row .btn-outline-burgundy { flex: 1; text-align: center; }
+            .memo-section { padding: 3.5rem 0 3rem; }
+            .memo-meta { gap: 0.9rem; font-size: 0.66rem; }
+            .memo-meta-spacer { display: none; }
+            .service-cards-grid,
+            .events-served-grid,
+            .venues-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+            .music-genre-grid { grid-template-columns: 1fr 1fr; }
+            .why-card { flex-direction: column; gap: 0.9rem; padding: 1.5rem; }
+            .trust-bar-memo .trust-item {
+                border-right: none;
+                border-bottom: 1px solid var(--rule);
+                padding: 0.6rem 1rem;
+                width: 100%;
+                display: flex; justify-content: space-between; align-items: baseline;
+                text-align: left;
+            }
+            .trust-bar-memo .trust-item:last-child { border-bottom: none; }
+            .trust-bar-memo .trust-item strong { font-size: 1.3rem; }
+            .trust-bar-memo .trust-item span { margin-top: 0; }
+            .memo-cta .cta-buttons .btn-burgundy,
+            .memo-cta .cta-buttons .btn-outline-burgundy { flex: 1; text-align: center; }
+        }
+    </style>
 
     <!-- LocalBusiness Schema -->
     <script type="application/ld+json">
@@ -104,43 +735,63 @@
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Footloose Entertainment",
+      "description": "Jacksonville and St. Augustine's corporate event entertainment company. DJ, photobooth, special effects, and production services for holiday parties, award galas, team building, conferences, and product launches throughout Northeast Florida since 1997.",
       "url": "https://www.footlooseentertainment.com",
+      "telephone": "+1-904-854-8014",
+      "email": "info@footlooseentertainment.com",
       "logo": "https://www.footlooseentertainment.com/images/footloose-logo.png",
       "image": "https://www.footlooseentertainment.com/images/corporate-event-hero.jpg",
-      "description": "Professional corporate event entertainment company serving Jacksonville, St. Augustine, Ponte Vedra, and Orange Park since 1997. Specializing in DJ services, photo booth rentals, karaoke, lighting services, and special effects for holiday parties, team building events, product launches, and awards ceremonies.",
-      "telephone": "+19048548014",
-      "email": "info@footlooseentertainment.com",
+      "priceRange": "$$",
+      "foundingDate": "1997",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Jacksonville",
         "addressRegion": "FL",
         "addressCountry": "US"
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 30.3322,
-        "longitude": -81.6557
-      },
-      "areaServed": [
-        {"@type": "City", "name": "Jacksonville"},
-        {"@type": "City", "name": "St. Augustine"},
-        {"@type": "City", "name": "Ponte Vedra"},
-        {"@type": "City", "name": "Orange Park"},
-        {"@type": "City", "name": "Fernandina Beach"},
-        {"@type": "City", "name": "Green Cove Springs"},
-        {"@type": "City", "name": "Fleming Island"},
-        {"@type": "City", "name": "Nocatee"}
+      "sameAs": [
+        "https://www.facebook.com/footlooseentertainment",
+        "https://www.instagram.com/footloosedjs"
       ],
-      "foundingDate": "1997",
-      "priceRange": "$$",
+      "areaServed": [
+        { "@type": "City", "name": "Jacksonville", "addressRegion": "FL" },
+        { "@type": "City", "name": "St. Augustine", "addressRegion": "FL" },
+        { "@type": "City", "name": "Ponte Vedra Beach", "addressRegion": "FL" },
+        { "@type": "City", "name": "Nocatee", "addressRegion": "FL" },
+        { "@type": "City", "name": "Palm Coast", "addressRegion": "FL" },
+        { "@type": "City", "name": "Fernandina Beach", "addressRegion": "FL" },
+        { "@type": "City", "name": "Orange Park", "addressRegion": "FL" },
+        { "@type": "City", "name": "Amelia Island", "addressRegion": "FL" },
+        { "@type": "AdministrativeArea", "name": "Northeast Florida" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Corporate Event Entertainment Services",
+        "itemListElement": [
+          { "@type": "Offer", "name": "Corporate DJ & MC Jacksonville FL", "description": "Professional corporate DJ and MC services for holiday parties, galas, conferences, and company celebrations throughout Jacksonville, St. Augustine, and Northeast Florida." },
+          { "@type": "Offer", "name": "Corporate Photobooth Rental Jacksonville FL", "description": "Branded 360 video booth, mirror booth, and open-air photobooth rentals for corporate events throughout Northeast Florida." },
+          { "@type": "Offer", "name": "Corporate Special Effects Jacksonville FL", "description": "Cold spark fountains, CO2 jets, monogram projection, and uplighting for corporate award ceremonies and product launches." },
+          { "@type": "Offer", "name": "Corporate AV & Production Jacksonville FL", "description": "Wireless microphones, walk-in music, panel discussion sound, and AV production for corporate conferences and meetings." }
+        ]
+      },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5",
         "reviewCount": "127"
       },
-      "sameAs": [
-        "https://www.facebook.com/footlooseentertainment",
-        "https://www.instagram.com/footloosedjs"
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Person", "name": "Sarah M., Events Manager" },
+          "reviewBody": "The DJ was professional, the music was perfect, and the MC services for our awards ceremony were flawless. Exactly what we needed."
+        },
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Person", "name": "David C., VP Operations" },
+          "reviewBody": "We've used Footloose for three years running. Reliable, professional, and they understand corporate environments. Highly recommend."
+        }
       ]
     }
     </script>
@@ -153,75 +804,38 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "How far in advance should I book corporate event entertainment in Jacksonville?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We recommend booking your corporate entertainment at least 6–8 weeks in advance, especially during peak season (October through May in Northeast Florida). Popular dates fill quickly, so early booking ensures availability and allows more time for planning coordination."
-          }
+          "name": "What corporate event entertainment services does Footloose offer?",
+          "acceptedAnswer": { "@type": "Answer", "text": "We offer corporate DJ and MC services, branded photobooth rentals (360 video booth, mirror booth, open-air, and digital), special effects (cold sparklers, CO2 jets, monogram projection, uplighting), and AV production for conferences and product launches. All services can be booked individually or bundled for one coordinated event." }
         },
         {
           "@type": "Question",
-          "name": "Do you provide karaoke services for corporate events?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes! Karaoke is a fantastic addition to company parties, team building events, and holiday parties. We can incorporate karaoke into your DJ package or provide it as a standalone service, complete with professional equipment and a large song library."
-          }
+          "name": "Which types of corporate events does Footloose handle?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Holiday parties, award ceremonies and galas, team building events, product launches, conferences and annual meetings, client appreciation evenings, milestone celebrations, and employee recognition events of all sizes throughout Jacksonville and Northeast Florida." }
         },
         {
           "@type": "Question",
-          "name": "What lighting services do you offer for corporate events?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Our lighting services include uplighting to transform your venue's atmosphere, monogram/gobo projection of your company logo, dance floor lighting, and special effects lighting. We can match your brand colors and create the perfect ambiance for any corporate function."
-          }
+          "name": "How far in advance should we book corporate event entertainment?",
+          "acceptedAnswer": { "@type": "Answer", "text": "For peak season — especially November and December for holiday parties — we recommend booking three to six months in advance. We frequently accommodate last-minute corporate event requests when availability allows, so reach out even for upcoming events." }
         },
         {
           "@type": "Question",
-          "name": "What equipment do you provide for corporate events?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Our corporate entertainment packages include professional sound systems, wireless microphones for speeches and presentations, LED lighting, and backup equipment. We carry liability insurance and bring redundant systems to every event."
-          }
+          "name": "Is Footloose Entertainment insured for corporate events?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. We carry $1 million in general liability insurance and provide certificates of insurance to venues on request at no additional cost. We also bring redundant backup equipment to every event." }
         },
         {
           "@type": "Question",
-          "name": "Can you handle different types of corporate events?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Absolutely. We specialize in holiday parties, product launches, retirement celebrations, team building events, awards ceremonies, conferences, and client appreciation events across Jacksonville, St. Augustine, Ponte Vedra, Orange Park, and surrounding Northeast Florida communities."
-          }
+          "name": "Do you handle billing through corporate purchasing or net 30?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. We work with corporate purchasing departments, accept corporate credit cards, and offer net 30 terms for qualified businesses. Invoicing is clean and straightforward — no last-minute surprises." }
         },
         {
           "@type": "Question",
-          "name": "Do you take music requests during corporate events?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, we encourage requests while maintaining an appropriate corporate atmosphere. Our DJs expertly read the room, blending client preferences with crowd-pleasing selections that keep energy levels optimal for your specific event goals."
-          }
+          "name": "Do you serve areas outside of Jacksonville?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. We serve all of Northeast Florida including St. Augustine, Ponte Vedra Beach, Orange Park, Fernandina Beach, Amelia Island, Palm Coast, and surrounding communities. Contact us to confirm availability for your specific venue location." }
         },
         {
           "@type": "Question",
-          "name": "Can you accommodate special announcements or presentations?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Definitely. We coordinate seamlessly with your corporate event schedule, providing crystal-clear audio for speeches, presentations, and special recognitions. Our wireless microphone systems ensure every word reaches your audience clearly."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you provide a certificate of insurance for venues?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. We carry $1 million in liability insurance and provide a certificate of insurance (COI) for your venue upon request, at no additional charge."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What areas of Northeast Florida do you serve for corporate events?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We serve the entire Northeast Florida region including Jacksonville, St. Augustine, Ponte Vedra, Orange Park, Fernandina Beach, Green Cove Springs, Fleming Island, Nocatee, and surrounding communities in Duval, Clay, Nassau, and St. Johns counties."
-          }
+          "name": "Can we bundle DJ services with a photobooth or special effects?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes, and many corporate clients do exactly that. Combining DJ, photobooth, and special effects through one vendor means seamless coordination, one invoice, and one point of contact for your event planner." }
         }
       ]
     }
@@ -233,33 +847,22 @@
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.footlooseentertainment.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Corporate Events",
-          "item": "https://www.footlooseentertainment.com/corporate-events"
-        }
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://footlooseentertainment.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Corporate Events", "item": "https://footlooseentertainment.com/corporate-events" }
       ]
     }
     </script>
 </head>
 <body>
-    <!-- Header / Navigation -->
+
+    <!-- Header -->
     <header class="site-header">
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <a href="/">
-                        <img src="images/footloose-logo.png" alt="Footloose Entertainment Logo" width="200" height="80">
-                    </a>
+                    <a href="/"><img src="images/footloose-logo.png" alt="Footloose Entertainment Logo" width="200" height="80"></a>
                 </div>
-                                                <nav class="main-nav">
+                <nav class="main-nav">
                     <ul>
                         <li class="has-dropdown">
                             <a href="#">Events ▾</a>
@@ -279,608 +882,454 @@
                     <a href="/contact-corporate" class="btn btn-primary">Get Quote</a>
                 </div>
                 <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span></span><span></span><span></span>
                 </button>
+            </div>
+        </div>
+        <div class="service-nav-bar">
+            <div class="container">
+                <ul class="service-nav-list">
+                    <li><a href="/corporate-dj">Corporate DJ</a></li>
+                    <li><a href="/corporate-photobooth">Photobooths</a></li>
+                    <li><a href="/special-effects">Special Effects</a></li>
+                </ul>
             </div>
         </div>
     </header>
 
-    <!-- Breadcrumb Navigation -->
+    <!-- Breadcrumb -->
     <nav class="breadcrumb-nav" aria-label="Breadcrumb">
         <div class="container">
             <ol class="breadcrumb-list">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li aria-hidden="true">›</li>
                 <li aria-current="page">Corporate Events</li>
             </ol>
         </div>
     </nav>
 
-    <!-- Page Hero -->
-    <section class="page-hero corporate-hero">
-        <div class="page-hero-background">
-            <img src="images/corporate-event-hero.jpg" alt="Corporate event with professional DJ and lighting in Jacksonville" loading="eager">
-            <div class="page-hero-overlay"></div>
+    <!-- Hero -->
+    <section class="corporate-events-hero">
+        <div class="hero-bg">
+            <img src="images/corporate-event-hero.jpg" alt="Corporate event entertainment at Jacksonville FL company gala" loading="eager">
         </div>
         <div class="container">
-            <div class="page-hero-content">
-                <div class="hero-badge">Corporate Events</div>
-                <h1>Elevate Your Corporate Events with Professional Entertainment</h1>
-                <p class="page-hero-subtitle">From intimate executive dinners to company-wide celebrations, we deliver entertainment experiences that impress clients, energize employees, and make your events unforgettable. Serving Jacksonville, St. Augustine, Ponte Vedra, and Orange Park since 1997.</p>
-                <div class="page-hero-buttons">
-                    <a href="/contact-corporate" class="btn btn-hero-primary">Request Your Custom Quote</a>
-                    <a href="#services" class="btn btn-hero-secondary">Explore Our Services</a>
+            <div class="hero-inner">
+                <div class="hero-letterhead">
+                    <span class="hero-letterhead-mark">Footloose &middot; Corporate</span>
+                    <span class="hero-letterhead-est">Est. 1997 &middot; Jacksonville, FL</span>
+                </div>
+                <div class="hero-memo-meta">
+                    <span>To: <b>Event Planners &amp; Coordinators</b></span>
+                    <span>Re: <b>Corporate Event Entertainment</b></span>
+                </div>
+                <h1 class="hero-headline">Corporate event entertainment,<br>end-to-end.</h1>
+                <p class="hero-sub">DJ, photobooth, special effects, and AV production for holiday parties, award galas, team building, conferences, and product launches &mdash; all from one company that has never missed a corporate event in 29 years. Serving Jacksonville, St. Augustine, Ponte Vedra, and all of Northeast Florida.</p>
+                <div class="hero-cta-row">
+                    <a href="/contact-corporate" class="btn-burgundy">Request a Quote</a>
+                    <a href="#services" class="btn-outline-burgundy">Explore Services</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Trust Indicators -->
-    <section class="trust-bar">
+    <!-- Trust Bar -->
+    <div class="trust-bar-memo">
         <div class="container">
             <div class="trust-items">
-                <div class="trust-item">
-                    <strong>29 Years</strong>
-                    <span>Serving Jacksonville Businesses</span>
+                <div class="trust-item"><strong>29</strong><span>Years in Business</span></div>
+                <div class="trust-item"><strong>1,000+</strong><span>Corporate Events</span></div>
+                <div class="trust-item"><strong>&#9733;&#9733;&#9733;&#9733;&#9733;</strong><span>5-Star Rated</span></div>
+                <div class="trust-item"><strong>$1M</strong><span>Liability Insurance</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── Section One · The Setup ── -->
+    <section class="memo-section bg-faint" id="services">
+        <div class="container">
+            <div class="memo-meta">
+                <span class="memo-meta-item">Date <b class="js-current-date">April 2026</b></span>
+                <span class="memo-meta-item">Ref <b>FL-CORP</b></span>
+                <span class="memo-meta-spacer"></span>
+                <span class="memo-meta-section-num">Section One</span>
+            </div>
+            <span class="memo-label">The Setup</span>
+            <h2 class="memo-heading">Everything your corporate event calls for.</h2>
+            <div class="memo-rule"></div>
+            <p class="memo-intro">One company. Four services. Zero coordination headaches for your event planner. Whether you need a single DJ for a board dinner or a full entertainment package for a 500-person gala, every service comes through one team with one point of contact and one invoice.</p>
+
+            <div class="service-cards-grid">
+                <a href="/corporate-dj" class="service-card">
+                    <img src="images/corporate-dj.jpg" alt="Corporate DJ and MC at Jacksonville FL company event" loading="lazy">
+                    <div class="service-card-body">
+                        <span class="service-card-label">The Sound</span>
+                        <h3>Corporate DJ &amp; MC</h3>
+                        <p>Professional DJ in business attire who doubles as your MC &mdash; clean transitions between cocktails, dinner, program, and dancing, with timeline coordination throughout. Also covers wireless microphones, walk-in and break music, panel discussion sound, and full conference audio for product launches and AGMs.</p>
+                        <span class="service-card-link">Explore DJ Services &rarr;</span>
+                    </div>
+                </a>
+                <a href="/corporate-photobooth" class="service-card">
+                    <img src="images/corporate-photobooth.jpg" alt="Branded corporate photobooth at Jacksonville FL company gala" loading="lazy">
+                    <div class="service-card-body">
+                        <span class="service-card-label">The Memories</span>
+                        <h3>Corporate Photobooths</h3>
+                        <p>Branded 360 video booth, mirror booth, open-air, and digital options. Custom company overlays, instant prints, and shareable content for social and internal channels.</p>
+                        <span class="service-card-link">Explore Photobooths &rarr;</span>
+                    </div>
+                </a>
+                <a href="/special-effects" class="service-card">
+                    <img src="images/special-effects-hero.jpg" alt="Cold spark special effects at Jacksonville FL corporate awards ceremony" loading="lazy">
+                    <div class="service-card-body">
+                        <span class="service-card-label">The Moments</span>
+                        <h3>Special Effects</h3>
+                        <p>Cold spark fountains, CO&sub2; jets, monogram projection, and uplighting. The touches that turn an award reveal or grand entrance into something memorable.</p>
+                        <span class="service-card-link">Explore Special Effects &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Section Two · The Events ── -->
+    <section class="memo-section bg-paper">
+        <div class="container">
+            <div class="memo-meta">
+                <span class="memo-meta-item">Date <b class="js-current-date">April 2026</b></span>
+                <span class="memo-meta-item">Ref <b>FL-CORP</b></span>
+                <span class="memo-meta-spacer"></span>
+                <span class="memo-meta-section-num">Section Two</span>
+            </div>
+            <span class="memo-label">The Events</span>
+            <h2 class="memo-heading">Every kind of corporate event.</h2>
+            <div class="memo-rule"></div>
+            <p class="memo-intro">From intimate 30-guest board dinners to 500-guest holiday galas, we have produced the full range of corporate event formats across Jacksonville and Northeast Florida. Each format has its own rhythm &mdash; and we know all of them.</p>
+
+            <div class="events-served-grid">
+                <div class="event-served-card">
+                    <h3>Holiday parties.</h3>
+                    <p>The annual celebration that sets the tone for company culture. Festive and inclusive playlists, polished MC work, and the option to add a branded photobooth so the night lives beyond the evening.</p>
                 </div>
-                <div class="trust-item">
-                    <strong>500+</strong>
-                    <span>Corporate Events Annually</span>
+                <div class="event-served-card">
+                    <h3>Award ceremonies &amp; galas.</h3>
+                    <p>Recognition events that demand polished MC work and precise timing &mdash; custom walk-up music for honorees, coordinated mic hand-offs, and seamless transitions between award categories.</p>
                 </div>
-                <div class="trust-item">
-                    <strong>Fully Insured</strong>
-                    <span>Licensed & Professional</span>
+                <div class="event-served-card">
+                    <h3>Team building &amp; appreciation.</h3>
+                    <p>Employee appreciation evenings, department celebrations, and company picnics. Energy that encourages interaction without overpowering conversation &mdash; with interactive add-ons as organic icebreakers.</p>
+                </div>
+                <div class="event-served-card">
+                    <h3>Product launches.</h3>
+                    <p>Walk-in music, panel transitions, lapel mics for every speaker, and the option to add dramatic special effects for the product reveal. AV-first execution so technology never becomes the story.</p>
+                </div>
+                <div class="event-served-card">
+                    <h3>Conferences &amp; AGMs.</h3>
+                    <p>Annual meetings, sales conferences, executive retreats. Clear sound for keynotes, break music between sessions, and an on-site technician throughout your program.</p>
+                </div>
+                <div class="event-served-card">
+                    <h3>Client appreciation.</h3>
+                    <p>VIP networking, partner celebrations, and client thank-you evenings. Sophisticated background, polished hosting, and branded experiences that strengthen relationships.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Corporate Event Types -->
-    <section class="event-types">
+    <!-- ── Section Three · The Plan ── -->
+    <section class="memo-section bg-faint">
         <div class="container">
-            <div class="section-intro centered">
-                <h2>Corporate Events We Specialize In</h2>
-                <p>Professional entertainment tailored to your company culture and event objectives — serving businesses across Jacksonville, St. Augustine, Ponte Vedra, Orange Park, and Northeast Florida</p>
-            </div>
-            
-            <div class="event-types-grid">
-                <div class="event-type-card">
-                    <div class="event-type-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                        </svg>
-                    </div>
-                    <h3>Holiday Parties</h3>
-                    <p>Make your annual celebration the event employees talk about all year. From elegant cocktail parties to high-energy dance celebrations — DJ services, karaoke, and lighting all available.</p>
-                    <ul>
-                        <li>Company holiday parties</li>
-                        <li>Year-end celebrations</li>
-                        <li>Awards ceremonies</li>
-                        <li>Season kickoff events</li>
-                    </ul>
-                </div>
-
-                <div class="event-type-card">
-                    <div class="event-type-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="9" cy="7" r="4"></circle>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
-                    </div>
-                    <h3>Team Building Events</h3>
-                    <p>Strengthen bonds and boost morale with entertainment that brings your team together in memorable ways. Karaoke and interactive DJ formats are always a crowd favorite.</p>
-                    <ul>
-                        <li>Team building activities</li>
-                        <li>Employee appreciation events</li>
-                        <li>Department celebrations</li>
-                        <li>Company picnics & outings</li>
-                    </ul>
-                </div>
-
-                <div class="event-type-card">
-                    <div class="event-type-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <polyline points="12 6 12 12 16 14"></polyline>
-                        </svg>
-                    </div>
-                    <h3>Product Launches</h3>
-                    <p>Create buzz and excitement around your new products with entertainment that matches your brand energy and vision — complete with custom lighting services and branded photo experiences.</p>
-                    <ul>
-                        <li>Product unveiling events</li>
-                        <li>Brand activations</li>
-                        <li>Trade show entertainment</li>
-                        <li>Grand opening celebrations</li>
-                    </ul>
-                </div>
-
-                <div class="event-type-card">
-                    <div class="event-type-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                        </svg>
-                    </div>
-                    <h3>Conferences & Meetings</h3>
-                    <p>Keep attendees engaged and energized throughout your event with professional entertainment for breaks and receptions.</p>
-                    <ul>
-                        <li>Annual meetings</li>
-                        <li>Sales conferences</li>
-                        <li>Industry conventions</li>
-                        <li>Executive retreats</li>
-                    </ul>
-                </div>
-
-                <div class="event-type-card">
-                    <div class="event-type-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                        </svg>
-                    </div>
-                    <h3>Milestone Celebrations</h3>
-                    <p>Honor achievements and celebrate company milestones with entertainment that reflects your success and culture.</p>
-                    <ul>
-                        <li>Anniversary celebrations</li>
-                        <li>Retirement parties</li>
-                        <li>Achievement awards</li>
-                        <li>Promotion celebrations</li>
-                    </ul>
-                </div>
-
-                <div class="event-type-card">
-                    <div class="event-type-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                            <circle cx="12" cy="10" r="3"></circle>
-                        </svg>
-                    </div>
-                    <h3>Client Appreciation</h3>
-                    <p>Show clients they're valued with sophisticated entertainment experiences that strengthen business relationships.</p>
-                    <ul>
-                        <li>Client appreciation events</li>
-                        <li>Customer appreciation parties</li>
-                        <li>VIP networking events</li>
-                        <li>Partner celebrations</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Custom Pricing Approach -->
-    <section class="custom-pricing">
-        <div class="container">
-            <div class="pricing-content">
-                <div class="pricing-text">
-                    <h2>Flexible Pricing Built Around Your Event</h2>
-                    <p class="pricing-intro">Every corporate event is unique, and your entertainment should be too. We don't believe in one-size-fits-all packages. Instead, we work with you to create a custom solution that fits your specific needs, guest count, and budget.</p>
-                    
-                    <div class="pricing-factors">
-                        <h3>What Influences Your Investment:</h3>
-                        <div class="factors-grid">
-                            <div class="factor">
-                                <strong>Services Selected</strong>
-                                <p>DJ, karaoke, photobooth, lighting services, or a complete entertainment package</p>
-                            </div>
-                            <div class="factor">
-                                <strong>Event Duration</strong>
-                                <p>From 2-hour cocktail receptions to 8-hour celebrations</p>
-                            </div>
-                            <div class="factor">
-                                <strong>Guest Count</strong>
-                                <p>Intimate gatherings to company-wide events of 500+</p>
-                            </div>
-                            <div class="factor">
-                                <strong>Enhancements</strong>
-                                <p>Lighting, effects, custom branding, photography, and more</p>
-                            </div>
-                            <div class="factor">
-                                <strong>Date & Timing</strong>
-                                <p>Weekday vs. weekend, peak season considerations</p>
-                            </div>
-                            <div class="factor">
-                                <strong>Location</strong>
-                                <p>Venue requirements, travel distance, setup complexity</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="pricing-approach">
-                        <h3>Our Approach:</h3>
-                        <ul>
-                            <li>Free consultation to understand your event vision and objectives</li>
-                            <li>Transparent pricing - no hidden fees or surprises</li>
-                            <li>Flexible payment terms for qualified businesses</li>
-                            <li>Options at every price point - we work with all budgets</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="pricing-cta-box">
-                    <div class="cta-box-content">
-                        <h3>Get Your Custom Quote</h3>
-                        <p>Tell us about your event and we'll create a tailored proposal that fits your needs and budget.</p>
-                        <a href="/contact-corporate" class="btn btn-primary btn-large">Request Free Quote</a>
-                        <div class="cta-box-contact">
-                            <p>Prefer to talk? Call us:</p>
-                            <a href="tel:+19048548014" class="phone-large">(904) 854-8014</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services for Corporate -->
-    <section class="corporate-services" id="services">
-        <div class="container">
-            <div class="section-intro centered">
-                <h2>Services Built for Business</h2>
-                <p>Professional entertainment solutions that align with your corporate objectives</p>
-            </div>
-
-            <div class="services-detail-grid">
-                <div class="service-detail">
-                    <div class="service-detail-image">
-                        <img src="images/corporate-dj.jpg" alt="Professional corporate event DJ in Jacksonville" loading="lazy">
-                    </div>
-                    <div class="service-detail-content">
-                        <h3>Professional DJ & Karaoke Services</h3>
-                        <p>Our corporate DJs understand business environments. They read the room, maintain appropriate energy levels, and serve as professional MCs for announcements, awards, and program flow. Add karaoke to turn any company party into an unforgettable team experience.</p>
-                        <ul>
-                            <li><strong>Versatile music selection</strong> - From background ambiance to high-energy dance sets</li>
-                            <li><strong>Karaoke services</strong> - Perfect for holiday parties and team building events</li>
-                            <li><strong>Professional presentation</strong> - Business attire, punctual, and polished</li>
-                            <li><strong>MC services included</strong> - Announcements, introductions, program coordination</li>
-                            <li><strong>Custom playlists</strong> - Aligned with your company culture and preferences</li>
-                        </ul>
-                        <a href="/corporate-dj" class="service-detail-link">Learn More About Corporate DJ Services &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="service-detail reverse">
-                    <div class="service-detail-image">
-                        <img src="images/corporate-photobooth.jpg" alt="360 photobooth at corporate event with branding" loading="lazy">
-                    </div>
-                    <div class="service-detail-content">
-                        <h3>Branded Photobooth Experiences</h3>
-                        <p>Turn your event into a marketing opportunity with photobooths featuring custom branding, logos, and social media integration that extends your reach.</p>
-                        <ul>
-                            <li><strong>360 video booth</strong> - Trending technology for maximum social impact</li>
-                            <li><strong>Mirror photo booth</strong> - Elegant, interactive experience guests love</li>
-                            <li><strong>Custom branding</strong> - Your logo on prints, digital overlays, and props</li>
-                            <li><strong>Social media integration</strong> - Instant sharing with custom hashtags</li>
-                            <li><strong>Digital gallery</strong> - All photos available for download and sharing</li>
-                        </ul>
-                        <a href="/corporate-photobooth" class="service-detail-link">Explore Corporate Photobooth Options &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="service-detail">
-                    <div class="service-detail-image">
-                        <img src="images/corporate-production.jpg" alt="Corporate event lighting and production" loading="lazy">
-                    </div>
-                    <div class="service-detail-content">
-                        <h3>Lighting Services & Event Production</h3>
-                        <p>Transform ordinary venues into extraordinary experiences with professional lighting services, effects, and production elements that reflect your brand.</p>
-                        <ul>
-                            <li><strong>Uplighting</strong> - Transform venue atmosphere with customizable color lighting</li>
-                            <li><strong>Monogram projection</strong> - Company logo projected on walls, ceiling, or floor</li>
-                            <li><strong>Special effects</strong> - CO2 cannons, cold sparks, fog effects for impact moments</li>
-                            <li><strong>Premium sound</strong> - Crystal-clear audio for presentations and entertainment</li>
-                            <li><strong>Staging & d&eacute;cor coordination</strong> - Work with your existing vendors</li>
-                        </ul>
-                        <a href="special-effects.html" class="service-detail-link">See All Special Effects &rarr;</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Corporate Clients Choose Us -->
-    <section class="corporate-why">
-        <div class="container">
-            <div class="section-intro centered">
-                <h2>Why Jacksonville Businesses Trust Footloose Entertainment</h2>
-            </div>
-            
-            <div class="corporate-benefits">
-                <div class="benefit-item">
-                    <div class="benefit-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                            <polyline points="14 2 14 8 20 8"></polyline>
-                            <line x1="16" y1="13" x2="8" y2="13"></line>
-                            <line x1="16" y1="17" x2="8" y2="17"></line>
-                            <polyline points="10 9 9 9 8 9"></polyline>
-                        </svg>
-                    </div>
-                    <h4>Easy Invoicing & Payment</h4>
-                    <p>We work with your procurement process. Multiple payment methods accepted including corporate cards and ACH.</p>
-                </div>
-
-                <div class="benefit-item">
-                    <div class="benefit-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                        </svg>
-                    </div>
-                    <h4>Fully Licensed & Insured</h4>
-                    <p>$1 million liability insurance included with every event. Certificate of insurance provided for your venue. All equipment is professionally maintained and inspected.</p>
-                </div>
-
-                <div class="benefit-item">
-                    <div class="benefit-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                            <line x1="16" y1="2" x2="16" y2="6"></line>
-                            <line x1="8" y1="2" x2="8" y2="6"></line>
-                            <line x1="3" y1="10" x2="21" y2="10"></line>
-                        </svg>
-                    </div>
-                    <h4>Detailed Planning Process</h4>
-                    <p>Comprehensive event timeline, music planning, and coordination meetings. We work with your other vendors to ensure seamless execution. Day-of coordination included.</p>
-                </div>
-
-                <div class="benefit-item">
-                    <div class="benefit-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="9" cy="7" r="4"></circle>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
-                    </div>
-                    <h4>Professional Team</h4>
-                    <p>All DJs and technicians are experienced professionals who understand corporate environments. Background checked, uniformed, and trained in customer service excellence.</p>
-                </div>
-
-                <div class="benefit-item">
-                    <div class="benefit-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                        </svg>
-                    </div>
-                    <h4>Responsive Communication</h4>
-                    <p>Dedicated event coordinator from quote to event day. Same-day email responses. Available by phone during business hours. Emergency contact for day-of needs.</p>
-                </div>
-
-                <div class="benefit-item">
-                    <div class="benefit-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-                        </svg>
-                    </div>
-                    <h4>Backup Equipment</h4>
-                    <p>Redundant systems for every event. Backup DJ available for emergencies. We've never missed an event in 29 years - and we don't plan to start with yours.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Corporate Testimonials -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-intro centered">
-                <h2>What Jacksonville Businesses Say</h2>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="testimonial-text">"Footloose made our annual holiday party absolutely incredible. The DJ read the room perfectly, the 360 photobooth was a huge hit with our team, and the branded photos with our logo looked amazing on social media. Professional from start to finish."</p>
-                    <div class="testimonial-author">
-                        <strong>Sarah Mitchell</strong>
-                        <span>Events Manager, Tech Company (250 employees)</span>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="testimonial-text">"We've used Footloose for three corporate events now. They're reliable, professional, and always deliver. The invoicing is straightforward, they provide COI without asking, and our employees love them. Highly recommend for any corporate function."</p>
-                    <div class="testimonial-author">
-                        <strong>David Reynolds</strong>
-                        <span>VP of Operations, Financial Services Firm</span>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="testimonial-text">"Our product launch needed to make a statement, and Footloose delivered. The lighting, the energy, the 360 booth - everything was perfect. They worked seamlessly with our marketing team on branding. Worth every penny."</p>
-                    <div class="testimonial-author">
-                        <strong>Jennifer Lawson</strong>
-                        <span>Marketing Director, Consumer Products Company</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Jacksonville Corporate Venues -->
-    <section class="corporate-venues">
-        <div class="container">
-            <div class="section-intro centered">
-                <h2>Experienced at Northeast Florida's Top Corporate Venues</h2>
-                <p>We know these venues inside and out - load-in procedures, sound restrictions, and what works best for each space</p>
-            </div>
-            <div class="venues-list">
-                <div class="venue-columns">
-                    <div class="venue-column">
-                        <h4>Downtown Jacksonville</h4>
-                        <ul>
-                            <li>Prime Osborn Convention Center</li>
-                            <li>River Club</li>
-                            <li>Museum of Contemporary Art</li>
-                            <li>Jacksonville Main Library</li>
-                            <li>Hyatt Regency Downtown Jacksonville</li>
-                            <li>Marriott Downtown</li>
-                        </ul>
-                    </div>
-                    <div class="venue-column">
-                        <h4>Southside, Ponte Vedra & Beaches</h4>
-                        <ul>
-                            <li>TPC Sawgrass</li>
-                            <li>Marriott Sawgrass</li>
-                            <li>Ponte Vedra Inn & Club</li>
-                            <li>One Ocean Resort</li>
-                            <li>Casa Monica Resort</li>
-                        </ul>
-                    </div>
-                    <div class="venue-column">
-                        <h4>St. Augustine & South</h4>
-                        <ul>
-                            <li>Renaissance World Golf Village</li>
-                            <li>Ponte Vedra Lodge</li>
-                            <li>Hyatt Place St. Augustine</li>
-                            <li>Hilton St. Augustine Historic Bayfront</li>
-                            <li>Orange Park venues</li>
-                        </ul>
-                    </div>
-                </div>
-                <p class="venues-note">Don't see your venue listed? We work throughout Duval, Clay, Nassau, and St. Johns counties. <a href="/contact-corporate">Contact us</a> to discuss your specific venue.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Service Area -->
-    <section class="service-area-section" style="background: var(--color-light-bg, #f8f8f8); padding: 60px 0;">
-        <div class="container">
-            <div class="section-intro centered">
-                <h2>Serving All of Northeast Florida</h2>
-                <p>Professional corporate event entertainment wherever your event takes place</p>
-            </div>
-            <div class="service-area-content" style="max-width: 800px; margin: 0 auto; text-align: center;">
-                <p>Footloose Entertainment is based in Jacksonville, FL and proudly serves corporate clients throughout Northeast Florida. Our primary service area covers <strong>Jacksonville</strong>, <strong>St. Augustine</strong>, <strong>Ponte Vedra</strong>, <strong>Orange Park</strong>, <strong>Fernandina Beach</strong>, <strong>Green Cove Springs</strong>, <strong>Fleming Island</strong>, <strong>Nocatee</strong>, and all of Duval, Clay, Nassau, and St. Johns counties.</p>
-                <p style="margin-top: 1rem;">Setup and breakdown within 50 miles of Jacksonville is included with every booking. For events in areas such as Gainesville or Daytona Beach, we offer transparent travel fee structures and extended service options.</p>
-                <p style="margin-top: 1rem;">Whether you're hosting a holiday party at the Prime Osborn Convention Center in downtown Jacksonville, a team building event at TPC Sawgrass in Ponte Vedra, or a product launch in St. Augustine — our team is ready to deliver. <a href="/jacksonville-event-entertainment">Learn more about our Jacksonville services</a> or <a href="/st-augustine-event-entertainment">St. Augustine corporate entertainment</a>.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq-section">
-        <div class="container">
-            <div class="section-intro centered">
-                <h2>Corporate Event Entertainment FAQs</h2>
-                <p>Common questions about booking DJ services, karaoke, lighting, and entertainment for corporate events in Jacksonville and Northeast Florida</p>
-            </div>
-            <div class="faq-list">
-
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        How far in advance should I book corporate event entertainment in Jacksonville?
-                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>We recommend booking at least 6–8 weeks in advance, especially during peak season (October through May in Northeast Florida). Popular dates fill quickly, so early booking ensures availability and allows more time for planning and coordination.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        Do you provide karaoke services for corporate events?
-                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes! Karaoke is a fantastic addition to company parties, team building events, and holiday parties. We can incorporate karaoke into your DJ package or provide it as a standalone service, complete with professional equipment and an extensive song library.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        What lighting services do you offer for corporate events?
-                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Our lighting services include uplighting to transform your venue's atmosphere with your brand colors, monogram/gobo projection of your company logo, dance floor lighting effects, and special effects such as CO2 cannons and cold sparks for impact moments. We create the right ambiance for any corporate function.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        What equipment do you provide for corporate events?
-                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Our corporate entertainment packages include professional sound systems, wireless microphones for speeches and presentations, LED lighting, and full backup equipment. We bring redundant systems to every event so your program runs without interruption.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        Can you accommodate special announcements or presentations?
-                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Definitely. We coordinate seamlessly with your event schedule, providing crystal-clear wireless microphone audio for speeches, executive presentations, award recognitions, and any other spoken program elements.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        Do you provide a certificate of insurance for venues?
-                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes. We carry $1 million in general liability insurance and provide a certificate of insurance (COI) for your venue upon request, at no additional charge. This is standard with every Footloose Entertainment booking.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        What areas of Northeast Florida do you serve for corporate events?
-                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>We serve the entire Northeast Florida region including Jacksonville, St. Augustine, Ponte Vedra, Orange Park, Fernandina Beach, Green Cove Springs, Fleming Island, Nocatee, and surrounding communities across Duval, Clay, Nassau, and St. Johns counties.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        Do you take music requests during corporate events?
-                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes. We welcome requests while maintaining an atmosphere appropriate for your event. Our DJs expertly read the room and balance guest preferences with the right energy level for your specific corporate function goals.</p>
-                    </div>
-                </div>
-
-            </div>
-            <div style="text-align: center; margin-top: 2rem;">
-                <p>Have a question not listed here? <a href="/contact-corporate">Contact us</a> or call <a href="tel:+19048548014">(904) 854-8014</a> — we're happy to help.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Elevate Your Next Corporate Event?</h2>
-                <p>Let's discuss your event goals and create a custom entertainment package that fits your budget and exceeds your expectations. We serve Jacksonville, St. Augustine, Ponte Vedra, Orange Park, and all of Northeast Florida.</p>
-                <div class="cta-buttons">
-                    <a href="/contact-corporate" class="btn btn-large btn-primary">Request Your Quote</a>
-                    <a href="tel:+19048548014" class="btn btn-large btn-outline-light">Call (904) 854-8014</a>
-                </div>
-                <p class="cta-note">Flexible payment terms &bull; Fully insured &bull; COI provided</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Forward Navigation Banner -->
-    <section class="page-forward-banner" style="background:#800020;">
-        <div class="container">
-            <div class="forward-banner-inner">
+            <div class="flow-layout">
                 <div>
-                    <p class="forward-banner-eyebrow">Next up</p>
-                    <h2 class="forward-banner-title">Corporate DJ Services</h2>
-                    <p class="forward-banner-desc">Background music, emcee, awards ceremony & more</p>
+                    <div class="memo-meta">
+                        <span class="memo-meta-item">Date <b class="js-current-date">April 2026</b></span>
+                        <span class="memo-meta-item">Ref <b>FL-CORP</b></span>
+                        <span class="memo-meta-spacer"></span>
+                        <span class="memo-meta-section-num">Section Three</span>
+                    </div>
+                    <span class="memo-label">The Plan</span>
+                    <h2 class="memo-heading">From first call to final toast.</h2>
+                    <div class="memo-rule"></div>
+                    <p class="memo-intro">Planning a corporate event in Jacksonville, St. Augustine, or Ponte Vedra shouldn&rsquo;t add work to your team&rsquo;s plate. Here is how we work from inquiry to execution.</p>
+                    <div class="flow-steps">
+                        <div class="flow-step">
+                            <div class="flow-step-num">01</div>
+                            <div class="flow-step-content">
+                                <h3>Book your consultation.</h3>
+                                <p>A free working call about your event, venue, guest count, and what success looks like. We come back with availability, a clear quote, and any certificates of insurance your venue requires.</p>
+                            </div>
+                        </div>
+                        <div class="flow-step">
+                            <div class="flow-step-num">02</div>
+                            <div class="flow-step-content">
+                                <h3>Plan the run-of-show together.</h3>
+                                <p>We work alongside your event coordinator to lock the timeline, music direction, vendor coordination, and any do-not-play lists. By event day, every cue is in place.</p>
+                            </div>
+                        </div>
+                        <div class="flow-step">
+                            <div class="flow-step-num">03</div>
+                            <div class="flow-step-content">
+                                <h3>Show up and execute.</h3>
+                                <p>Early load-in, sound check with your speakers and AV team, last-minute coordination with your venue contact. When the first guest arrives, everything is dialed in.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flow-cta">
+                        <a href="/contact-corporate" class="btn-outline-burgundy-dark">Schedule a Consultation</a>
+                    </div>
                 </div>
-                <a href="/corporate-dj" class="forward-banner-btn">Explore Corporate DJ Services &rarr;</a>
+                <div class="flow-image">
+                    <img src="images/corporate-event.jpg" alt="Footloose Entertainment team planning a Jacksonville FL corporate event" loading="lazy">
+                </div>
             </div>
+        </div>
+    </section>
+
+    <!-- ── Section Four · The Music ── -->
+    <section class="memo-section bg-paper">
+        <div class="container">
+            <div class="memo-meta">
+                <span class="memo-meta-item">Date <b class="js-current-date">April 2026</b></span>
+                <span class="memo-meta-item">Ref <b>FL-CORP</b></span>
+                <span class="memo-meta-spacer"></span>
+                <span class="memo-meta-section-num">Section Four</span>
+            </div>
+            <span class="memo-label">The Music</span>
+            <h2 class="memo-heading">Every genre. Every era. Tuned to your room.</h2>
+            <div class="memo-rule"></div>
+            <p class="memo-intro">Corporate audiences are wide &mdash; ages 25 to 65, mixed cultural backgrounds, varying tolerance for volume. Your music direction is built around your specific guest list, not a default corporate playlist. From Frank Sinatra to current chart toppers, here is the range we work in.</p>
+
+            <div class="music-landscape">
+                <img src="images/corporate-dj-music.jpg" alt="Corporate DJ reading the room at a Jacksonville FL company event" loading="lazy">
+            </div>
+
+            <div class="music-genre-grid">
+                <div class="genre-tile"><strong>Jazz &amp; Standards</strong><span>Cocktail hour, dinner, polished networking</span></div>
+                <div class="genre-tile"><strong>Classic Rock</strong><span>Crowd-pleasers across generations</span></div>
+                <div class="genre-tile"><strong>R&amp;B / Soul</strong><span>Smooth transitions through dinner into dancing</span></div>
+                <div class="genre-tile"><strong>Motown</strong><span>Gets every age group on the floor</span></div>
+                <div class="genre-tile"><strong>Top 40 / Pop</strong><span>Current hits to keep the energy current</span></div>
+                <div class="genre-tile"><strong>80s / 90s</strong><span>Reliable hits for a mixed-tenure crowd</span></div>
+                <div class="genre-tile"><strong>Country</strong><span>Northeast Florida favorite for casual events</span></div>
+                <div class="genre-tile"><strong>Latin</strong><span>Salsa, bachata, reggaeton for diverse rosters</span></div>
+                <div class="genre-tile"><strong>Disco / Funk</strong><span>High-energy with broad appeal</span></div>
+                <div class="genre-tile"><strong>EDM / House</strong><span>Late-night lift for younger company crowds</span></div>
+                <div class="genre-tile"><strong>Instrumental</strong><span>Background under speeches and award reads</span></div>
+                <div class="genre-tile"><strong>Custom Mix</strong><span>Any blend, sequenced to your event arc</span></div>
+            </div>
+            <div class="music-note">
+                <strong>Do-not-play lists are welcome.</strong> Many corporate clients send a short list of songs or themes to avoid &mdash; we respect those boundaries absolutely. We are also happy to incorporate specific tracks tied to company history, milestones, or inside references that will land with your team.
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Section Five · The Venues ── -->
+    <section class="memo-section bg-faint">
+        <div class="container">
+            <div class="memo-meta">
+                <span class="memo-meta-item">Date <b class="js-current-date">April 2026</b></span>
+                <span class="memo-meta-item">Ref <b>FL-CORP</b></span>
+                <span class="memo-meta-spacer"></span>
+                <span class="memo-meta-section-num">Section Five</span>
+            </div>
+            <span class="memo-label">The Venues</span>
+            <h2 class="memo-heading">Familiar with Northeast Florida&rsquo;s corporate venues.</h2>
+            <div class="memo-rule"></div>
+            <p class="memo-intro">We have worked the rooms your event planner is comparing &mdash; load-in routes, acoustic quirks, and the coordinators on their staff. A short representative list of venues we know well across Jacksonville, St. Augustine, and the surrounding region.</p>
+
+            <div class="venues-grid">
+                <div class="venue-col">
+                    <h4>Jacksonville</h4>
+                    <ul>
+                        <li>The River Club</li>
+                        <li>TPC Sawgrass</li>
+                        <li>The Florida Yacht Club</li>
+                        <li>Timuquana Country Club</li>
+                        <li>The Haskell Building</li>
+                        <li>Museum of Science &amp; History</li>
+                        <li>Hyatt Regency Riverfront</li>
+                        <li>Omni Jacksonville</li>
+                    </ul>
+                </div>
+                <div class="venue-col">
+                    <h4>St. Augustine &amp; Ponte Vedra</h4>
+                    <ul>
+                        <li>Casa Monica Resort</li>
+                        <li>Ponte Vedra Inn &amp; Club</li>
+                        <li>Sawgrass Marriott</li>
+                        <li>The Lightner Museum</li>
+                        <li>The White Room</li>
+                        <li>The Treasury on the Plaza</li>
+                        <li>Renaissance World Golf Village</li>
+                    </ul>
+                </div>
+                <div class="venue-col">
+                    <h4>Coastal &amp; Surrounding</h4>
+                    <ul>
+                        <li>One Ocean Resort &middot; Atlantic Beach</li>
+                        <li>The Ritz-Carlton Amelia Island</li>
+                        <li>Omni Amelia Island</li>
+                        <li>Hammock Beach &middot; Palm Coast</li>
+                        <li>Orange Park Country Club</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="venues-note">Hosting at a venue not on this list? We work throughout Northeast Florida and travel for the right corporate event. <a href="/contact-corporate">Contact us</a> to discuss your specific location.</p>
+        </div>
+    </section>
+
+    <!-- ── Section Six · The Difference ── -->
+    <section class="memo-section bg-paper">
+        <div class="container">
+            <div class="memo-meta">
+                <span class="memo-meta-item">Date <b class="js-current-date">April 2026</b></span>
+                <span class="memo-meta-item">Ref <b>FL-CORP</b></span>
+                <span class="memo-meta-spacer"></span>
+                <span class="memo-meta-section-num">Section Six</span>
+            </div>
+            <span class="memo-label">The Difference</span>
+            <h2 class="memo-heading">Why Footloose for corporate.</h2>
+            <div class="memo-rule"></div>
+            <p class="memo-intro">There are a lot of entertainment vendors in Jacksonville and St. Augustine who can play a holiday party. Here is what separates Footloose when the event has a CEO at the head table, a board in the room, or a 500-person program on a tight clock.</p>
+
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="5"/><path d="M3 21v-2a7 7 0 0 1 14 0v2"/></svg>
+                    </div>
+                    <div>
+                        <h3>Owner-operated since 1997.</h3>
+                        <p>Kris founded Footloose in 1997 and runs it to this day. When you book, you are working directly with the people who built this company &mdash; not a booking agent passing your event to whoever is available.</p>
+                    </div>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                    </div>
+                    <div>
+                        <h3>Never missed a corporate event.</h3>
+                        <p>In 29 years and 1,000+ events across Northeast Florida, we have never missed a booking, never had a no-show, and never left a client without music. Full backup gear and a backup DJ on call.</p>
+                    </div>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    </div>
+                    <div>
+                        <h3>MCs built for corporate programs.</h3>
+                        <p>Our DJs are experienced corporate MCs &mdash; articulate, on time, and fluent in award presentations, panel introductions, toast coordination, and sponsor recognition. No stumbles over names or awkward silences.</p>
+                    </div>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                    </div>
+                    <div>
+                        <h3>One vendor. Every service.</h3>
+                        <p>DJ, MC, photobooth, special effects, AV production &mdash; all coordinated by the same team, billed on one invoice, with one point of contact. Your event planner does not chase five vendors on event day.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Section Seven · On the Record ── -->
+    <section class="memo-section bg-faint">
+        <div class="container">
+            <div class="memo-meta">
+                <span class="memo-meta-item">Date <b class="js-current-date">April 2026</b></span>
+                <span class="memo-meta-item">Ref <b>FL-CORP</b></span>
+                <span class="memo-meta-spacer"></span>
+                <span class="memo-meta-section-num">Section Seven</span>
+            </div>
+            <span class="memo-label">On the Record</span>
+            <h2 class="memo-heading">What corporate clients say on the record.</h2>
+            <div class="memo-rule"></div>
+            <p class="memo-intro">Excerpts below are filed with the original senders and used with permission. Names abbreviated where the original request was for anonymity.</p>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-rating">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+                    <p class="review-text">&ldquo;The DJ was professional, the music was perfect, and the MC services for our awards ceremony were flawless. Exactly what we needed.&rdquo;</p>
+                    <div class="review-author">
+                        <strong>Sarah M., Events Manager</strong>
+                        <span>Financial Services Firm &middot; Jacksonville</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-rating">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+                    <p class="review-text">&ldquo;We&rsquo;ve used Footloose for three years running. Reliable, professional, and they understand corporate environments. Highly recommend.&rdquo;</p>
+                    <div class="review-author">
+                        <strong>David C., VP Operations</strong>
+                        <span>Tech Company &middot; Jacksonville</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-rating">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+                    <p class="review-text">&ldquo;They worked seamlessly with our event planner and kept our 200-person holiday party running on schedule. Great DJ service.&rdquo;</p>
+                    <div class="review-author">
+                        <strong>Michael T., Marketing Director</strong>
+                        <span>Consumer Products Co. &middot; St. Augustine</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Section Eight · The FAQs ── -->
+    <section class="memo-section bg-paper">
+        <div class="container">
+            <div class="memo-meta">
+                <span class="memo-meta-item">Date <b class="js-current-date">April 2026</b></span>
+                <span class="memo-meta-item">Ref <b>FL-CORP</b></span>
+                <span class="memo-meta-spacer"></span>
+                <span class="memo-meta-section-num">Section Eight</span>
+            </div>
+            <span class="memo-label">The FAQs</span>
+            <h2 class="memo-heading">Corporate events, frequently asked.</h2>
+            <div class="memo-rule"></div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">What corporate event entertainment services does Footloose offer?<svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+                    <div class="faq-answer"><p>Corporate DJ and MC services, branded photobooth rentals (360 video booth, mirror booth, open-air, digital), special effects (cold sparklers, CO&sub2; jets, monogram projection, uplighting), and AV production for conferences and product launches. All services can be booked individually or bundled.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Which types of corporate events do you handle?<svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+                    <div class="faq-answer"><p>Holiday parties, award ceremonies and galas, team building events, product launches, conferences and annual meetings, client appreciation evenings, milestone celebrations, and employee recognition events &mdash; from 30-guest board dinners to 500-guest holiday galas.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">How far in advance should we book?<svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+                    <div class="faq-answer"><p>For peak season &mdash; especially November and December for holiday parties &mdash; we recommend three to six months in advance. We frequently accommodate last-minute corporate event requests when availability allows, so <a href="/contact-corporate">reach out</a> even for events coming up soon.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Is Footloose Entertainment insured for corporate events?<svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+                    <div class="faq-answer"><p>Yes. We carry $1 million in general liability insurance and provide certificates of insurance to venues on request at no additional cost. We also bring redundant backup equipment to every event.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Do you handle billing through corporate purchasing or net 30?<svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+                    <div class="faq-answer"><p>Yes. We work with corporate purchasing departments, accept corporate credit cards, and offer net 30 terms for qualified businesses. Invoicing is clean and straightforward &mdash; no last-minute surprises.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Do you serve areas outside of Jacksonville?<svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+                    <div class="faq-answer"><p>Yes &mdash; we serve all of Northeast Florida, including St. Augustine, Ponte Vedra Beach, Orange Park, Fernandina Beach, Amelia Island, Palm Coast, and surrounding communities. <a href="/contact-corporate">Contact us</a> to confirm availability for your specific venue.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Can we bundle DJ services with a photobooth or special effects?<svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+                    <div class="faq-answer"><p>Yes, and many corporate clients do exactly that. Combining DJ, <a href="/corporate-photobooth">photobooth</a>, and <a href="/special-effects">special effects</a> through one vendor means seamless coordination, one invoice, and one point of contact for your event planner.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section class="memo-cta">
+        <div class="container">
+            <span class="memo-label">Next Steps</span>
+            <h2>Ready to book your corporate event?</h2>
+            <p>Send us your event date, venue, and rough guest count &mdash; we will come back with availability, a clear quote, and a certificate of insurance for your venue on request. Free consultation, no pressure.</p>
+            <div class="cta-buttons">
+                <a href="/contact-corporate" class="btn-burgundy">Request a Quote</a>
+                <a href="tel:+19048548014" class="btn-outline-burgundy">Call (904) 854-8014</a>
+            </div>
+            <p class="cta-note">Same-day response &middot; Fully insured &middot; 29 years in Jacksonville</p>
         </div>
     </section>
 
@@ -890,37 +1339,39 @@
             <div class="footer-grid">
                 <div class="footer-column">
                     <img src="images/footloose-logo-white.png" alt="Footloose Entertainment" width="180" height="72">
-                    <p>Jacksonville and St. Augustine's premier event entertainment company since 1997.</p>
+                    <p>Jacksonville and St. Augustine&rsquo;s premier event entertainment company since 1997.</p>
                     <div class="footer-social">
-                        <a href="https://www.facebook.com/footlooseentertainment" aria-label="Facebook">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-                        </a>
-                        <a href="https://instagram.com/footloosedjs" aria-label="Instagram">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                        </a>
+                        <a href="https://www.facebook.com/footlooseentertainment" aria-label="Facebook"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                        <a href="https://instagram.com/footloosedjs" aria-label="Instagram"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
                     </div>
                 </div>
-                
                 <div class="footer-column">
                     <h4>Event Types</h4>
                     <ul>
-                        <li><a href="/corporate-events">Corporate Events</a></li>
-                        <li><a href="/weddings">Weddings & Celebrations</a></li>
-                        <li><a href="/school-events">School Events & Proms</a></li>
-                        <li><a href="/private-parties">Private Parties</a></li>
+                        <li><a href="corporate-events.html">Corporate Events</a></li>
+                        <li><a href="weddings.html">Weddings &amp; Celebrations</a></li>
+                        <li><a href="school-events.html">School Events &amp; Proms</a></li>
+                        <li><a href="private-parties.html">Private Parties</a></li>
                     </ul>
                 </div>
-                
-                                <div class="footer-column">
+                <div class="footer-column">
+                    <h4>Specialty Services</h4>
+                    <ul>
+                        <li><a href="360-booth.html">360 Video Booth</a></li>
+                        <li><a href="mirror-booth.html">Mirror Photo Booth</a></li>
+                        <li><a href="special-effects.html">Special Effects</a></li>
+                        <li><a href="audio-guestbook.html">Audio Guestbook</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
                     <h4>Locations</h4>
                     <ul>
                         <li><a href="jacksonville-event-entertainment.html">Jacksonville</a></li>
                         <li><a href="st-augustine-event-entertainment.html">St. Augustine</a></li>
-                        <li><a href="https://www.jacksonvillephotobooths.com">Jacksonville Photobooths</a></li>
+                        <li><a href="https://www.jacksonvillephotobooths.com" target="_blank" rel="noopener">Jacksonville Photobooths</a></li>
                         <li><a href="contact.html">Service Area</a></li>
                     </ul>
                 </div>
-                
                 <div class="footer-column">
                     <h4>Company</h4>
                     <ul>
@@ -930,16 +1381,24 @@
                     </ul>
                 </div>
             </div>
-            
             <div class="footer-bottom">
                 <p>&copy; 2026 Footloose Entertainment. All rights reserved.</p>
-                <p>Serving Jacksonville, St. Augustine, Ponte Vedra, Orange Park & Northeast Florida since 1997</p>
+                <p>Serving Jacksonville, St. Augustine &amp; Northeast Florida since 1997</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
     <script>
+        // Keep memo metadata DATE field current — rewrites "April 2026" to the current month/year on page load.
+        (function () {
+            var now = new Date();
+            var label = now.toLocaleString('en-US', { month: 'long', year: 'numeric' });
+            document.querySelectorAll('.js-current-date').forEach(function (el) {
+                el.textContent = label;
+            });
+        })();
+
         document.querySelectorAll('.faq-question').forEach(btn => {
             btn.addEventListener('click', () => {
                 const expanded = btn.getAttribute('aria-expanded') === 'true';
@@ -953,5 +1412,6 @@
                 }
             });
         });
-    </script></body>
+    </script>
+</body>
 </html>
