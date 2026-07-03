@@ -3,28 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corporate Photo Booth Rental Jacksonville FL | Interactive 360</title>
-    <meta name="description" content="Professional corporate photo booth rentals in Jacksonville FL. Interactive 360 degree, green screen & AI enhanced booths. Book your event today!">
-    <meta name="keywords" content="corporate photobooth Jacksonville, Jacksonville photo booth rental, 360 booth corporate event, branded photobooth Jacksonville FL, corporate event photobooth, mirror booth rental Jacksonville, photo booth rental Northeast Florida, corporate photobooth St Augustine">
+    <title>Corporate Photobooth Rental Jacksonville FL | Branded 360, Mirror & Open-Air | Footloose Entertainment</title>
+    <meta name="description" content="Corporate photobooth rental in Jacksonville, St. Augustine & Northeast Florida. Branded 360 video, mirror, open-air & digital booths for holiday parties, galas, conferences & product launches. 29 years, fully insured.">
+    <meta name="keywords" content="corporate photobooth Jacksonville FL, branded photobooth rental Jacksonville, 360 video booth corporate event, mirror photo booth Jacksonville, conference photobooth St Augustine, holiday party photobooth Ponte Vedra">
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.footlooseentertainment.com/corporate-photobooth">
-    <meta property="og:title" content="Corporate Photo Booth Rental Jacksonville FL | Footloose Entertainment">
-    <meta property="og:description" content="Professional photobooths for corporate events in Jacksonville & Northeast Florida. 360 video booth, mirror booth, digital photobooths. Custom branding, instant sharing.">
-    <meta property="og:image" content="https://www.footlooseentertainment.com/images/photobooths/corporate-photobooth-og.jpg">
+    <meta property="og:title" content="Corporate Photobooth Rental Jacksonville FL | Branded 360, Mirror & Open-Air | Footloose Entertainment">
+    <meta property="og:description" content="Branded corporate photobooths for holiday parties, galas, conferences and product launches. 29 years across Jacksonville, St. Augustine and Northeast Florida.">
+    <meta property="og:image" content="https://www.footlooseentertainment.com/images/corporate-photobooth-detail.jpg">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.footlooseentertainment.com/corporate-photobooth">
-    <meta property="twitter:title" content="Corporate Photo Booth Rental Jacksonville FL | Footloose Entertainment">
-    <meta property="twitter:description" content="Professional photobooths for corporate events in Jacksonville & Northeast Florida. 360 video booth, mirror booth, digital photobooths. Custom branding, instant sharing.">
-    <meta property="twitter:image" content="https://www.footlooseentertainment.com/images/photobooths/corporate-photobooth-og.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Corporate Photobooth Rental Jacksonville FL | Footloose Entertainment">
+    <meta name="twitter:description" content="Branded 360 video, mirror, open-air and digital photobooths for corporate events across Jacksonville and Northeast Florida.">
+    <meta name="twitter:image" content="https://www.footlooseentertainment.com/images/corporate-photobooth-detail.jpg">
 
-    <!-- Canonical URL -->
+    <!-- Canonical -->
     <link rel="canonical" href="https://footlooseentertainment.com/corporate-photobooth">
 
-    <!-- Geo Tags -->
+    <!-- Geo -->
     <meta name="geo.region" content="US-FL">
     <meta name="geo.placename" content="Jacksonville">
     <meta name="geo.position" content="30.3322;-81.6557">
@@ -32,102 +31,724 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
     <style>
-
-        body:has(.corporate-hero) .main-nav a.active {
-            color: #800020;
-            border-bottom-color: #800020;
+        /* ── Corporate memo palette ── */
+        :root {
+            --burgundy: #800020;
+            --burgundy-dark: #5C0017;
+            --burgundy-faint: #f4ecee;
+            --paper: #ffffff;
+            --paper-faint: #f5f5f5;
+            --ink: #1A1A1A;
+            --ink-mid: #4A4A4A;
+            --ink-light: #7a7a7a;
+            --rule: #d8d3c7;
+            --rule-soft: #e8e4dc;
         }
 
-        /* Breadcrumb */
-        .breadcrumb-nav {
-            background: #f7f7f7;
-            border-bottom: 1px solid #e8e8e8;
-            padding: 0.6rem 0;
-            font-size: 0.85rem;
-        }
-        .breadcrumb-list {
-            list-style: none;
-            margin: 0;
-            padding: 0;
+        /* ── Memo type system ── */
+        .memo-body { font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif; }
+
+        .memo-section { padding: 5rem 0 4.5rem; }
+        .memo-section.bg-paper { background: var(--paper); }
+        .memo-section.bg-faint { background: var(--paper-faint); }
+
+        .memo-meta {
             display: flex;
-            flex-wrap: wrap;
             align-items: center;
-            gap: 0.4rem;
-            color: #888;
+            gap: 1.5rem;
+            font-family: 'IBM Plex Mono', 'Courier New', monospace;
+            font-size: 0.72rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--ink-light);
+            border-top: 1px solid var(--rule);
+            border-bottom: 1px solid var(--rule);
+            padding: 0.55rem 0;
+            margin-bottom: 1.5rem;
         }
-        .breadcrumb-list li a {
-            color: #800020;
+        .memo-meta-item { display: inline-flex; gap: 0.5rem; }
+        .memo-meta-item b { color: var(--burgundy); font-weight: 500; }
+        .memo-meta-spacer { flex: 1; }
+        .memo-meta-section-num { color: var(--ink); font-weight: 500; }
+
+        .memo-heading {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-weight: 500;
+            font-size: 2.6rem;
+            color: var(--ink);
+            line-height: 1.1;
+            letter-spacing: -0.01em;
+            margin: 0 0 0.75rem;
+            max-width: 780px;
+        }
+        .memo-rule {
+            width: 56px; height: 3px;
+            background: var(--burgundy);
+            margin: 0.85rem 0 1.75rem;
+        }
+        .memo-intro {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 1.1rem;
+            color: var(--ink-mid);
+            line-height: 1.75;
+            max-width: 680px;
+            margin-bottom: 2.5rem;
+        }
+
+        .memo-label {
+            font-family: 'Barlow', sans-serif;
+            font-size: 0.72rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--burgundy);
+            display: inline-block;
+            margin-bottom: 0.6rem;
+        }
+
+        /* ── Service nav bar ── */
+        .service-nav-bar {
+            background: var(--paper-faint);
+            border-bottom: 1px solid var(--rule);
+            padding: 0.5rem 0;
+        }
+        .service-nav-list {
+            list-style: none; margin: 0; padding: 0;
+            display: flex; align-items: center; gap: 0.25rem;
+            flex-wrap: nowrap; overflow-x: auto;
+        }
+        .service-nav-list li a {
+            display: block;
+            padding: 0.4rem 1rem;
+            font-family: 'Barlow', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--ink-mid);
+            text-decoration: none;
+            border-radius: 4px;
+            white-space: nowrap;
+            transition: background 0.2s, color 0.2s;
+        }
+        .service-nav-list li a:hover { background: #fff; color: var(--burgundy); }
+
+        /* ── Breadcrumb ── */
+        .breadcrumb-nav { background: #f7f7f7; border-bottom: 1px solid #e8e8e8; padding: 0.6rem 0; font-size: 0.85rem; }
+        .breadcrumb-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; color: var(--ink-light); font-family: 'Barlow', sans-serif; }
+        .breadcrumb-list li a { color: var(--burgundy); text-decoration: none; }
+        .breadcrumb-list li a:hover { text-decoration: underline; }
+        .breadcrumb-list [aria-current="page"] { color: var(--ink-mid); }
+
+        /* ── Hero ── */
+        .corporate-pb-hero {
+            position: relative;
+            min-height: 85vh;
+            display: flex; align-items: center;
+        }
+        .corporate-pb-hero .hero-bg { position: absolute; inset: 0; overflow: hidden; }
+        .corporate-pb-hero .hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+        .corporate-pb-hero .hero-bg::after {
+            content: '';
+            position: absolute; inset: 0;
+            background: linear-gradient(to right, rgba(15,10,12,0.82) 45%, rgba(15,10,12,0.35) 100%);
+        }
+        .hero-inner { position: relative; z-index: 2; max-width: 660px; }
+
+        .hero-letterhead {
+            display: flex; align-items: baseline;
+            justify-content: space-between;
+            gap: 1rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 2px solid rgba(255,255,255,0.22);
+            margin-bottom: 1.25rem;
+        }
+        .hero-letterhead-mark {
+            font-family: 'Barlow', sans-serif;
+            font-size: 0.78rem; font-weight: 700;
+            letter-spacing: 0.32em;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        .hero-letterhead-est {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.68rem;
+            letter-spacing: 0.18em;
+            color: rgba(255,255,255,0.55);
+            text-transform: uppercase;
+        }
+        .hero-memo-meta {
+            display: flex; flex-wrap: wrap; gap: 1.5rem;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.7rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.55);
+            margin-bottom: 1.5rem;
+        }
+        .hero-memo-meta b { color: rgba(255,255,255,0.92); font-weight: 500; }
+        .hero-headline {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-weight: 500;
+            font-size: clamp(2.4rem, 4.5vw, 3.5rem);
+            color: #fff;
+            line-height: 1.08;
+            letter-spacing: -0.01em;
+            margin: 0 0 1.1rem;
+        }
+        .hero-sub {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 1.05rem;
+            color: rgba(255,255,255,0.82);
+            line-height: 1.75;
+            margin-bottom: 2rem;
+            max-width: 560px;
+        }
+        .hero-cta-row { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+        .btn-burgundy {
+            display: inline-block;
+            background: var(--burgundy);
+            color: #fff;
+            border: 2px solid var(--burgundy);
+            padding: 0.85rem 1.75rem;
+            border-radius: 2px;
+            font-family: 'Barlow', sans-serif;
+            font-size: 0.88rem; font-weight: 600;
+            letter-spacing: 0.14em; text-transform: uppercase;
+            text-decoration: none;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .btn-burgundy:hover { background: var(--burgundy-dark); border-color: var(--burgundy-dark); }
+        .btn-outline-burgundy {
+            display: inline-block;
+            background: transparent;
+            color: #fff;
+            border: 2px solid rgba(255,255,255,0.55);
+            padding: 0.85rem 1.75rem;
+            border-radius: 2px;
+            font-family: 'Barlow', sans-serif;
+            font-size: 0.88rem; font-weight: 600;
+            letter-spacing: 0.14em; text-transform: uppercase;
+            text-decoration: none;
+            transition: border-color 0.2s, background 0.2s;
+        }
+        .btn-outline-burgundy:hover { border-color: #fff; background: rgba(255,255,255,0.08); }
+        .btn-outline-burgundy-dark {
+            display: inline-block;
+            background: transparent;
+            color: var(--burgundy);
+            border: 2px solid var(--burgundy);
+            padding: 0.8rem 1.75rem;
+            border-radius: 2px;
+            font-family: 'Barlow', sans-serif;
+            font-size: 0.85rem; font-weight: 600;
+            letter-spacing: 0.14em; text-transform: uppercase;
+            text-decoration: none;
+            transition: background 0.2s, color 0.2s;
+        }
+        .btn-outline-burgundy-dark:hover { background: var(--burgundy); color: #fff; }
+
+        /* ── Trust bar ── */
+        .trust-bar-memo {
+            background: #fff;
+            border-bottom: 1px solid var(--rule);
+            padding: 1.25rem 0;
+        }
+        .trust-bar-memo .trust-items {
+            display: flex; justify-content: space-around;
+            flex-wrap: wrap; gap: 0;
+        }
+        .trust-bar-memo .trust-item {
+            text-align: center; padding: 0.4rem 1.5rem;
+            border-right: 1px solid var(--rule);
+        }
+        .trust-bar-memo .trust-item:last-child { border-right: none; }
+        .trust-bar-memo .trust-item strong {
+            display: block;
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-weight: 500;
+            font-size: 1.65rem;
+            color: var(--burgundy);
+            line-height: 1.1;
+        }
+        .trust-bar-memo .trust-item span {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.7rem; color: var(--ink-light);
+            text-transform: uppercase; letter-spacing: 0.14em;
+            margin-top: 0.3rem; display: block;
+        }
+
+        /* ── The Booth: wide banner + 2-col booth cards ── */
+        .booth-banner {
+            overflow: hidden;
+            border: 1px solid var(--rule);
+            margin-bottom: 2.5rem;
+        }
+        .booth-banner img {
+            width: 100%; display: block;
+            aspect-ratio: 21/9; object-fit: cover;
+        }
+        .booth-grid {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        .booth-card {
+            background: #fff;
+            border: 1px solid var(--rule);
+            overflow: hidden;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            display: grid; grid-template-columns: 160px 1fr; min-height: 260px;
+        }
+        .booth-card:hover { border-color: var(--burgundy); box-shadow: 0 6px 24px rgba(0,0,0,0.07); }
+        .booth-card-img { overflow: hidden; }
+        .booth-card-img img {
+            width: 100%; height: 100%; display: block;
+            object-fit: cover; object-position: center top;
+        }
+        .booth-card-body { padding: 1.5rem; display: flex; flex-direction: column; justify-content: center; }
+        .booth-card-body h4 {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-weight: 500;
+            font-size: 1.3rem;
+            color: var(--ink);
+            margin: 0 0 0.3rem;
+            letter-spacing: -0.005em;
+        }
+        .booth-card-tagline {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.7rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--burgundy);
+            font-weight: 500;
+            display: block;
+            margin-bottom: 0.85rem;
+        }
+        .booth-card-body p {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 0.97rem;
+            color: var(--ink-mid);
+            line-height: 1.7;
+            margin: 0 0 1rem;
+        }
+        .booth-card-features {
+            list-style: none; padding: 0; margin: 0 0 1rem;
+            border-top: 1px solid var(--rule-soft);
+            padding-top: 0.85rem;
+        }
+        .booth-card-features li {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 0.9rem;
+            color: var(--ink-mid);
+            line-height: 1.55;
+            padding: 0.25rem 0 0.25rem 1.25rem;
+            position: relative;
+        }
+        .booth-card-features li::before {
+            content: '';
+            position: absolute; left: 0; top: 0.8rem;
+            width: 8px; height: 1px;
+            background: var(--burgundy);
+        }
+        .booth-card-link {
+            font-family: 'Barlow', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--burgundy);
             text-decoration: none;
         }
-        .breadcrumb-list li a:hover { text-decoration: underline; }
-        .breadcrumb-list [aria-current="page"] { color: #555; }
+        .booth-card-link:hover { text-decoration: underline; }
 
-        /* FAQ */
-        .faq-section { padding: 5rem 0; }
-        .faq-list { max-width: 820px; margin: 3rem auto 0; }
-        .faq-item { border-bottom: 1px solid #e0e0e0; }
+        /* ── The Output: 3-col icon cards ── */
+        .output-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        .output-card {
+            background: #fff;
+            border: 1px solid var(--rule);
+            border-top: 3px solid var(--burgundy);
+            padding: 1.85rem 1.5rem;
+            display: flex; flex-direction: column;
+            gap: 0.85rem;
+        }
+        .output-icon {
+            width: 44px; height: 44px;
+            background: var(--paper-faint);
+            border: 1px solid var(--rule);
+            display: flex; align-items: center; justify-content: center;
+            color: var(--burgundy);
+        }
+        .output-card h3 {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-weight: 500;
+            font-size: 1.2rem;
+            color: var(--ink);
+            margin: 0 0 0.45rem;
+        }
+        .output-card p {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 0.95rem;
+            color: var(--ink-mid);
+            line-height: 1.7;
+            margin: 0;
+        }
+        .output-footnote {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.72rem;
+            color: var(--ink-light);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-top: 1.5rem;
+        }
+
+        /* ── The Flow: 2-col steps + image ── */
+        .flow-layout {
+            display: grid; grid-template-columns: 1.1fr 1fr;
+            gap: 4rem; align-items: center;
+        }
+        .flow-steps { display: flex; flex-direction: column; }
+        .flow-step {
+            display: flex; gap: 1.25rem; align-items: flex-start;
+            padding: 1.2rem 0;
+            border-bottom: 1px solid var(--rule-soft);
+        }
+        .flow-step:first-child { padding-top: 0; }
+        .flow-step:last-child { border-bottom: none; }
+        .flow-step-num {
+            flex-shrink: 0; width: 36px; height: 36px;
+            border: 1px solid var(--burgundy);
+            color: var(--burgundy);
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.78rem;
+            letter-spacing: 0.06em;
+            display: flex; align-items: center; justify-content: center;
+            margin-top: 2px;
+            font-weight: 500;
+        }
+        .flow-step-content h4 {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-weight: 500;
+            font-size: 1.15rem;
+            color: var(--ink);
+            margin: 0 0 0.4rem;
+        }
+        .flow-step-content p {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 0.95rem;
+            color: var(--ink-mid);
+            line-height: 1.7;
+            margin: 0;
+        }
+        .flow-image {
+            overflow: hidden;
+            border: 1px solid var(--rule);
+        }
+        .flow-image img {
+            width: 100%; display: block;
+            aspect-ratio: 4/5; object-fit: cover;
+        }
+        .flow-note {
+            margin-top: 1.75rem; padding: 1.25rem 1.75rem;
+            background: var(--paper-faint);
+            border-left: 3px solid var(--burgundy);
+            border-top: 1px solid var(--rule);
+            border-right: 1px solid var(--rule);
+            border-bottom: 1px solid var(--rule);
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 0.97rem; color: var(--ink-mid); line-height: 1.75;
+        }
+        .flow-note strong { color: var(--ink); }
+
+        /* ── Experiences & Keepsakes ── */
+        .ek-subheading {
+            margin: 1.5rem 0 1.5rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 1px solid var(--rule);
+            display: flex; align-items: baseline;
+            justify-content: space-between;
+            gap: 2rem; flex-wrap: wrap;
+        }
+        .ek-subheading.spaced { margin-top: 4rem; }
+        .ek-sub-title {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-weight: 500;
+            font-size: 1.4rem;
+            color: var(--ink);
+            margin: 0;
+        }
+        .ek-sub-desc {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 0.95rem;
+            color: var(--ink-mid);
+            margin: 0;
+            max-width: 540px;
+        }
+        .ek-grid {
+            display: grid; grid-template-columns: repeat(5, 1fr);
+            gap: 1rem;
+        }
+        .ek-card {
+            background: #fff;
+            border: 1px solid var(--rule);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .ek-card:hover {
+            border-color: var(--burgundy);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+        }
+        .ek-card-img { aspect-ratio: 4/3; overflow: hidden; background: #f4f1ec; }
+        .ek-card-img img {
+            width: 100%; height: 100%; display: block;
+            object-fit: cover; transition: transform 0.4s ease;
+        }
+        .ek-card:hover .ek-card-img img { transform: scale(1.04); }
+        .ek-card-body { padding: 1.1rem 1.25rem 1.25rem; }
+        .ek-card-body h4 {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-weight: 500;
+            font-size: 1rem;
+            color: var(--ink);
+            margin: 0 0 0.4rem;
+        }
+        .ek-card-body p {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 0.85rem;
+            color: var(--ink-mid);
+            line-height: 1.6;
+            margin: 0;
+        }
+        .ek-cta { text-align: center; margin-top: 2.5rem; }
+
+        /* ── The Venues ── */
+        .venues-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+        }
+        .venue-col h4 {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.72rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--burgundy);
+            margin: 0 0 0.85rem;
+            padding-bottom: 0.55rem;
+            border-bottom: 1px solid var(--rule);
+            font-weight: 500;
+        }
+        .venue-col ul { list-style: none; padding: 0; margin: 0; }
+        .venue-col ul li {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 0.98rem;
+            color: var(--ink-mid);
+            line-height: 1.9;
+            padding: 0.15rem 0;
+        }
+        .venues-note {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 0.95rem;
+            color: var(--ink-mid);
+            margin-top: 2rem;
+            line-height: 1.7;
+        }
+        .venues-note a { color: var(--burgundy); text-decoration: underline; }
+
+        /* ── The Difference ── */
+        .why-grid {
+            display: grid; grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+        .why-card {
+            background: #fff;
+            border: 1px solid var(--rule);
+            padding: 2rem 1.85rem;
+            display: flex; gap: 1.5rem; align-items: flex-start;
+        }
+        .why-num {
+            flex-shrink: 0;
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-weight: 500;
+            font-size: 2.2rem;
+            color: var(--burgundy);
+            line-height: 1;
+            min-width: 50px;
+        }
+        .why-card h3 {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-weight: 500;
+            font-size: 1.25rem;
+            color: var(--ink);
+            margin: 0 0 0.55rem;
+            letter-spacing: -0.005em;
+        }
+        .why-card p {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 0.97rem;
+            color: var(--ink-mid);
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* ── On the Record ── */
+        .reviews-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        .review-card {
+            background: #fff;
+            border: 1px solid var(--rule);
+            border-left: 3px solid var(--burgundy);
+            padding: 1.75rem 1.5rem;
+        }
+        .review-rating {
+            font-size: 0.9rem;
+            letter-spacing: 0.2em;
+            color: var(--burgundy);
+            margin-bottom: 0.85rem;
+        }
+        .review-text {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 1rem;
+            color: var(--ink);
+            line-height: 1.7;
+            font-style: italic;
+            margin: 0 0 1rem;
+        }
+        .review-author strong {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--ink);
+            display: block;
+            font-style: normal;
+        }
+        .review-author span {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.72rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--ink-light);
+        }
+
+        /* ── FAQ ── */
+        .faq-list { max-width: 820px; }
+        .faq-item { border-bottom: 1px solid var(--rule); }
         .faq-question {
             width: 100%;
             background: none;
             border: none;
-            padding: 1.4rem 0;
+            padding: 1.35rem 0;
             text-align: left;
-            font-family: 'Barlow', sans-serif;
-            font-size: 1.05rem;
-            font-weight: 600;
-            color: #1a1a2e;
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 1.08rem;
+            font-weight: 500;
+            color: var(--ink);
             cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
             gap: 1rem;
         }
-        .faq-question .faq-arrow {
-            flex-shrink: 0;
-            transition: transform 0.3s ease;
-            color: #800020;
-        }
+        .faq-question .faq-arrow { flex-shrink: 0; transition: transform 0.3s ease; color: var(--burgundy); }
         .faq-question[aria-expanded="true"] .faq-arrow { transform: rotate(180deg); }
         .faq-answer {
-            max-height: 0;
-            overflow: hidden;
+            max-height: 0; overflow: hidden;
             transition: max-height 0.4s ease, padding 0.3s ease;
         }
-        .faq-answer.open { max-height: 400px; padding-bottom: 1.2rem; }
-        .faq-answer p { color: #555; line-height: 1.7; margin: 0; }
-
-        /* Service area grid */
-        .service-area-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
-            margin-top: 2.5rem;
-        }
-        .service-area-card {
-            background: #fff;
-            border-radius: 12px;
-            padding: 1.5rem;
-            border-left: 4px solid #800020;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-        }
-        .service-area-card h4 {
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: 1.2rem;
-            letter-spacing: 0.05em;
-            color: #800020;
-            margin-bottom: 0.5rem;
-        }
-        .service-area-card p {
-            font-size: 0.88rem;
-            color: #666;
-            line-height: 1.6;
+        .faq-answer.open { max-height: 500px; padding-bottom: 1.2rem; }
+        .faq-answer p {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 1rem;
+            color: var(--ink-mid);
+            line-height: 1.75;
             margin: 0;
         }
-    
-        /* ---- MOBILE HEADER FIXES ---- */
+        .faq-answer a { color: var(--burgundy); }
+
+        /* ── CTA ── */
+        .memo-cta {
+            background: linear-gradient(135deg, var(--burgundy) 0%, var(--burgundy-dark) 100%);
+            color: #fff;
+            padding: 5rem 0 5.5rem;
+        }
+        .memo-cta .memo-label { color: rgba(255,255,255,0.85); }
+        .memo-cta h2 {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-weight: 500;
+            font-size: 2.4rem;
+            color: #fff;
+            line-height: 1.15;
+            margin: 0 0 1rem;
+        }
+        .memo-cta p {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.88);
+            line-height: 1.75;
+            max-width: 640px;
+            margin: 0 0 2rem;
+        }
+        .memo-cta .cta-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
+        .memo-cta .cta-buttons .btn-burgundy {
+            background: #fff; color: var(--burgundy); border-color: #fff;
+        }
+        .memo-cta .cta-buttons .btn-burgundy:hover { background: rgba(255,255,255,0.88); }
+        .memo-cta .cta-buttons .btn-outline-burgundy { border-color: rgba(255,255,255,0.6); }
+        .memo-cta .cta-note {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.72rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.68);
+            margin-top: 1.5rem;
+        }
+
+        /* ── The Investment (pricing exhibit) ── */
+        .investment-card {
+            background: #fff;
+            border: 1px solid var(--rule);
+            border-top: 3px solid var(--burgundy);
+            padding: 2.5rem 2.25rem;
+            max-width: 560px;
+        }
+        .investment-figure {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-weight: 500;
+            font-size: 3rem;
+            color: var(--burgundy);
+            line-height: 1;
+        }
+        .investment-figure sup {
+            font-size: 1.4rem;
+            top: -1.1rem;
+            margin-right: 0.15rem;
+        }
+        .investment-label {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.7rem;
+            color: var(--ink-light);
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            margin-top: 0.5rem;
+            display: block;
+        }
+        .investment-note {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 0.95rem;
+            color: var(--ink-mid);
+            line-height: 1.7;
+            margin: 1.5rem 0 1.75rem;
+        }
+
+        /* ── Mobile header (site-wide pattern) ── */
         .mobile-only-nav-item { display: none; }
         @media (max-width: 680px) {
             .mobile-only-nav-item { display: list-item; }
@@ -136,7 +757,58 @@
             .site-header .btn-primary { white-space: nowrap; padding: 0.5rem 1rem; font-size: 0.78rem; }
             .logo img { width: 140px; height: auto; }
         }
-        </style>
+
+        /* ── Responsive ── */
+        @media (max-width: 960px) {
+            .booth-grid { grid-template-columns: 1fr; }
+            .booth-card { grid-template-columns: 130px 1fr; min-height: 240px; }
+            .booth-card-body { padding: 1rem; }
+            .output-grid { grid-template-columns: 1fr; }
+            .flow-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+            .flow-image img { aspect-ratio: 16/10; }
+            .ek-grid { grid-template-columns: repeat(3, 1fr); }
+            .venues-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+            .why-grid { grid-template-columns: 1fr; }
+            .reviews-grid { grid-template-columns: 1fr; }
+            .memo-heading { font-size: 2.1rem; }
+            .memo-cta h2 { font-size: 1.9rem; }
+        }
+        @media (max-width: 680px) {
+            .corporate-pb-hero {
+                min-height: 90svh;
+                align-items: flex-end;
+                padding-bottom: 2.5rem;
+            }
+            .corporate-pb-hero .hero-bg::after {
+                background: linear-gradient(to top, rgba(15,10,12,0.92) 45%, rgba(15,10,12,0.15) 100%);
+            }
+            .hero-letterhead-est { display: none; }
+            .hero-cta-row .btn-burgundy,
+            .hero-cta-row .btn-outline-burgundy { flex: 1; text-align: center; }
+            .memo-section { padding: 3.5rem 0 3rem; }
+            .memo-meta { gap: 0.9rem; font-size: 0.66rem; }
+            .memo-meta-spacer { display: none; }
+            .ek-grid { grid-template-columns: 1fr 1fr; }
+            .venues-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+            .why-card { flex-direction: column; gap: 0.9rem; padding: 1.5rem; }
+            .why-num { font-size: 1.8rem; }
+            .trust-bar-memo .trust-item {
+                border-right: none;
+                border-bottom: 1px solid var(--rule);
+                padding: 0.6rem 1rem;
+                width: 100%;
+                display: flex; justify-content: space-between; align-items: baseline;
+                text-align: left;
+            }
+            .trust-bar-memo .trust-item:last-child { border-bottom: none; }
+            .trust-bar-memo .trust-item strong { font-size: 1.3rem; }
+            .trust-bar-memo .trust-item span { margin-top: 0; }
+            .memo-cta .cta-buttons .btn-burgundy,
+            .memo-cta .cta-buttons .btn-outline-burgundy { flex: 1; text-align: center; }
+            .investment-card { padding: 1.75rem 1.5rem; }
+            .investment-figure { font-size: 2.4rem; }
+        }
+    </style>
 
     <!-- LocalBusiness Schema -->
     <script type="application/ld+json">
@@ -144,10 +816,13 @@
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Footloose Entertainment",
+      "description": "Branded corporate photobooth rentals throughout Jacksonville, St. Augustine, and Northeast Florida. 360 video, mirror, open-air, and digital photobooths for holiday parties, galas, conferences, and product launches since 1997.",
       "url": "https://www.footlooseentertainment.com",
-      "logo": "https://www.footlooseentertainment.com/images/footloose-logo.png",
       "telephone": "+1-904-854-8014",
       "email": "info@footlooseentertainment.com",
+      "logo": "https://www.footlooseentertainment.com/images/footloose-logo.png",
+      "image": "https://www.footlooseentertainment.com/images/corporate-photobooth-detail.jpg",
+      "priceRange": "$$",
       "foundingDate": "1997",
       "address": {
         "@type": "PostalAddress",
@@ -155,43 +830,49 @@
         "addressRegion": "FL",
         "addressCountry": "US"
       },
+      "sameAs": [
+        "https://www.facebook.com/footlooseentertainment",
+        "https://www.instagram.com/footloosedjs"
+      ],
       "areaServed": [
         { "@type": "City", "name": "Jacksonville", "addressRegion": "FL" },
         { "@type": "City", "name": "St. Augustine", "addressRegion": "FL" },
         { "@type": "City", "name": "Ponte Vedra Beach", "addressRegion": "FL" },
-        { "@type": "City", "name": "Orange Park", "addressRegion": "FL" },
-        { "@type": "City", "name": "Fernandina Beach", "addressRegion": "FL" },
+        { "@type": "City", "name": "Nocatee", "addressRegion": "FL" },
         { "@type": "City", "name": "Palm Coast", "addressRegion": "FL" },
+        { "@type": "City", "name": "Fernandina Beach", "addressRegion": "FL" },
+        { "@type": "City", "name": "Orange Park", "addressRegion": "FL" },
+        { "@type": "City", "name": "Amelia Island", "addressRegion": "FL" },
         { "@type": "AdministrativeArea", "name": "Northeast Florida" }
       ],
-      "description": "Professional corporate photo booth rental in Jacksonville FL and Northeast Florida. 360 video booths, mirror booths, open air and digital photobooths with custom branded overlays and instant social sharing for corporate events.",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Corporate Photobooth Rentals",
+        "itemListElement": [
+          { "@type": "Offer", "name": "360 Video Booth Corporate Rental Jacksonville FL", "description": "Branded 360-degree slow-motion video booth rental with custom company overlay for corporate events throughout Jacksonville and Northeast Florida." },
+          { "@type": "Offer", "name": "Mirror Photo Booth Corporate Rental Jacksonville FL", "description": "Full-length interactive mirror photo booth with branded prints and digital sharing for corporate galas, holiday parties, and product launches." },
+          { "@type": "Offer", "name": "Open-Air Photobooth Corporate Rental Jacksonville FL", "description": "Versatile open-air photobooth rental with custom corporate overlays and instant printed and digital delivery." },
+          { "@type": "Offer", "name": "Digital Photobooth Corporate Rental Jacksonville FL", "description": "All-digital photo, boomerang, and GIF booth with QR code delivery and online gallery access for corporate events." }
+        ]
+      },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5",
         "reviewCount": "127"
       },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Corporate Photo Booth Rental Services Jacksonville FL",
-        "itemListElement": [
-          { "@type": "Offer", "name": "360 Video Booth Corporate Rental", "description": "Trending 360-degree slow-motion video booth with custom branded overlays for corporate events in Jacksonville FL." },
-          { "@type": "Offer", "name": "Mirror Booth Corporate Rental", "description": "Elegant full-length interactive mirror photo booth for corporate events and galas in Northeast Florida." },
-          { "@type": "Offer", "name": "Open Air Photobooth Corporate Rental", "description": "Classic open air photo booth with branded prints and digital delivery for corporate events in Jacksonville." },
-          { "@type": "Offer", "name": "Digital Photobooth Corporate Rental", "description": "Eco-friendly all-digital photobooth with photos, GIFs and boomerangs for corporate events in Northeast Florida." }
-        ]
-      }
-    }
-    </script>
-
-    <!-- Breadcrumb Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.footlooseentertainment.com/" },
-        { "@type": "ListItem", "position": 2, "name": "Corporate Events", "item": "https://www.footlooseentertainment.com/corporate-events" },
-        { "@type": "ListItem", "position": 3, "name": "Corporate Photo Booth", "item": "https://www.footlooseentertainment.com/corporate-photobooth" }
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Person", "name": "Jennifer L., Marketing Director" },
+          "reviewBody": "The 360 booth was the hit of our product launch. Guests shared the videos to LinkedIn and Instagram all night — exactly the buzz we hoped for. Setup was clean, the attendant was professional, and the branded overlay matched our visual identity perfectly."
+        },
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Person", "name": "David C., VP Operations" },
+          "reviewBody": "We've used Footloose for three years running. Reliable, professional, and they understand corporate environments. Highly recommend."
+        }
       ]
     }
     </script>
@@ -204,81 +885,69 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What areas do you serve for corporate photo booth rental in Northeast Florida?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We serve all of Northeast Florida including Jacksonville, St. Augustine, Ponte Vedra Beach, Orange Park, Fernandina Beach, Amelia Island, Palm Coast, and surrounding communities throughout Duval, St. Johns, Clay, Nassau, and Flagler Counties. Travel is included for most local venues — contact us to confirm for your specific location."
-          }
+          "name": "What types of photobooths does Footloose offer for corporate events?",
+          "acceptedAnswer": { "@type": "Answer", "text": "We offer eight booth options for corporate events — open-air photobooth, 360 video booth, mirror booth, digital booth, social roaming booth, wooden booth, enclosed booth, and the Glambot cinematic video arm. Each booth comes with a custom-branded overlay matched to your company identity." }
         },
         {
           "@type": "Question",
-          "name": "Can you add our company logo and branding to the photos?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Absolutely — custom branded overlays are a standard part of our corporate photobooth service. We incorporate your company logo, brand colors, event name, date, and any other design elements into every photo and video. Branded prints make excellent takeaways that keep your company visible long after the event."
-          }
+          "name": "Can the photobooth be branded with our company logo or product?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every booking includes a custom overlay designed to your brand — logo, colors, event name, hashtag, sponsor marks, or product imagery. We design the overlay in the weeks before your event and send you a proof to approve before the day arrives." }
         },
         {
           "@type": "Question",
-          "name": "What are the space and power requirements for a corporate photo booth?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Most of our booths require approximately a 10x10 foot footprint with a standard power outlet within 100 feet. The 360 video booth requires a clear circular area of approximately 12 feet in diameter. We'll discuss your specific venue layout during consultation to ensure a seamless fit."
-          }
+          "name": "Can our guests share photos directly to social media?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Digital, 360, and mirror booths deliver instantly via QR code or text — no app required. Guests share to LinkedIn, Instagram, or any platform from their own phones. Every image also goes into an online gallery you can access, download, and use for your own marketing channels after the event." }
         },
         {
           "@type": "Question",
-          "name": "How far in advance should we book a corporate photo booth in Jacksonville?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We recommend booking as early as possible. Holiday party season (November–December) and large corporate event dates fill up quickly. For peak season dates, booking 3–6 months in advance is ideal. Contact us to check availability for your date."
-          }
+          "name": "Is Footloose insured for corporate venue events?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. We carry $1 million in general liability insurance and provide certificates of insurance to venues on request at no additional cost. We bring backup equipment to every event." }
         },
         {
           "@type": "Question",
-          "name": "Can you combine photobooth services with DJ services for a corporate event?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes — bundling DJ and photobooth services is one of our most popular options for corporate events. One company means seamless coordination, one point of contact, and better combined value. We offer complete corporate entertainment packages including DJ, photobooth, special effects, and more."
-          }
+          "name": "Do you offer net 30 billing for corporate clients?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. We work with corporate purchasing departments, accept corporate credit cards, and offer net 30 terms for qualified businesses. Invoicing is clean and straightforward." }
         },
         {
           "@type": "Question",
-          "name": "What photobooth options are available for corporate events?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We offer 360 video booths, mirror photo booths, open air photobooths, digital photobooths, social/roaming photobooths, and wooden booths. Each can be customized with corporate branding. The 360 video booth and mirror booth are particularly popular for corporate events and galas."
-          }
+          "name": "How far in advance should we book a corporate photobooth?",
+          "acceptedAnswer": { "@type": "Answer", "text": "For peak season — especially November and December for holiday parties — we recommend three to six months in advance. For other corporate events, two to three months is comfortable. Last-minute requests are accommodated when availability allows." }
         },
         {
           "@type": "Question",
-          "name": "Do you have backup equipment in case of technical issues at corporate events?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes — we carry redundant backup equipment to every event. In 29 years of operation, we've built our systems and protocols specifically to prevent and handle any technical issue so your corporate event runs flawlessly. Your company's reputation matters — ours does too."
-          }
+          "name": "Do you serve corporate events outside Jacksonville?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. We serve all of Northeast Florida including St. Augustine, Ponte Vedra Beach, Orange Park, Fernandina Beach, Amelia Island, Palm Coast, and surrounding communities. We travel for the right corporate event." }
         },
         {
           "@type": "Question",
-          "name": "Can the corporate photo booth be set up outdoors?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, with the right conditions. Outdoor setups require a covered or sheltered area, a level surface, and access to a standard power outlet. We discuss your specific outdoor venue during planning to confirm feasibility and ensure a great experience."
-          }
+          "name": "Can we combine a photobooth with DJ services or special effects?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes, and many corporate clients do exactly that. Combining DJ, photobooth, and special effects through one vendor means seamless coordination, one invoice, and one point of contact for your event planner." }
         }
+      ]
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://footlooseentertainment.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Corporate Events", "item": "https://footlooseentertainment.com/corporate-events" },
+        { "@type": "ListItem", "position": 3, "name": "Corporate Photobooth", "item": "https://footlooseentertainment.com/corporate-photobooth" }
       ]
     }
     </script>
 </head>
 <body>
-    <!-- Header / Navigation -->
+
+    <!-- Header -->
     <header class="site-header">
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <a href="/">
-                        <img src="images/footloose-logo.png" alt="Footloose Entertainment Logo" width="200" height="80">
-                    </a>
+                    <a href="/"><img src="images/footloose-logo.png" alt="Footloose Entertainment Logo" width="200" height="80"></a>
                 </div>
                 <nav class="main-nav">
                     <ul>
@@ -291,6 +960,7 @@
                                 <li><a href="/private-parties">Private Parties</a></li>
                             </ul>
                         </li>
+                        <li><a href="/planning-resources">Planning Resources</a></li>
                         <li class="mobile-only-nav-item"><a href="/current-clients">Client Resources</a></li>
                     </ul>
                 </nav>
@@ -300,502 +970,675 @@
                     <a href="/contact-corporate" class="btn btn-primary">Get Quote</a>
                 </div>
                 <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span></span><span></span><span></span>
                 </button>
+            </div>
+        </div>
+        <div class="service-nav-bar">
+            <div class="container">
+                <ul class="service-nav-list">
+                    <li><a href="/corporate-events">Corporate Overview</a></li>
+                    <li><a href="/corporate-dj">Corporate DJ</a></li>
+                    <li><a href="/special-effects">Special Effects</a></li>
+                </ul>
             </div>
         </div>
     </header>
 
-    <!-- Breadcrumb Navigation -->
+    <!-- Breadcrumb -->
     <nav class="breadcrumb-nav" aria-label="Breadcrumb">
         <div class="container">
             <ol class="breadcrumb-list">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li aria-hidden="true">›</li>
-                <li><a href="corporate-events.html">Corporate Events</a></li>
+                <li><a href="/corporate-events">Corporate Events</a></li>
                 <li aria-hidden="true">›</li>
-                <li aria-current="page">Corporate Photo Booth</li>
+                <li aria-current="page">Corporate Photobooth</li>
             </ol>
         </div>
     </nav>
 
-    <!-- Page Hero -->
-    <section class="page-hero corporate-hero">
-        <div class="page-hero-background">
-            <img src="images/corporate-photobooth-detail.jpg" alt="Professional corporate photo booth rental at Jacksonville FL corporate event" loading="eager">
-            <div class="page-hero-overlay"></div>
+    <!-- Hero -->
+    <section class="corporate-pb-hero">
+        <div class="hero-bg">
+            <img src="images/corporate-photobooth-detail.jpg" alt="Branded corporate photobooth at Jacksonville FL company event" loading="eager">
         </div>
         <div class="container">
-            <div class="page-hero-content">
-                <div class="hero-badge">Corporate Photo Booth Rental &mdash; Jacksonville FL</div>
-                <h1>Transform Your Corporate Event with Branded Photobooth Experiences</h1>
-                <p class="page-hero-subtitle">From 360 video booths to elegant mirror booths, we create custom branded photo booth experiences that engage employees, impress clients, and amplify your company&rsquo;s social media presence. Serving Jacksonville and all of Northeast Florida for 29 years.</p>
-                <div class="page-hero-buttons">
-                    <a href="/contact-corporate" class="btn btn-hero-primary">Request Photobooth Quote</a>
+            <div class="hero-inner">
+                <div class="hero-letterhead">
+                    <span class="hero-letterhead-mark">Footloose &middot; Corporate</span>
+                    <span class="hero-letterhead-est">Est. 1997 &middot; Jacksonville, FL</span>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Photobooth Options -->
-    <section class="event-types">
-        <div class="container">
-            <div class="section-intro centered">
-                <h2>Corporate Photo Booth Options in Jacksonville &amp; Northeast Florida</h2>
-                <p>Choose the perfect photo booth experience for your corporate event</p>
-            </div>
-
-            <!-- Featured: Open Air Photobooth -->
-            <div class="featured-booth">
-                <div class="booth-image-container">
-                    <img src="images/photobooths/open-air-booth.jpg" alt="Open air photo booth at Jacksonville FL corporate event" class="booth-image">
-                    <div class="booth-badge">Most Popular</div>
+                <div class="hero-memo-meta">
+                    <span>To: <b>Event Planners &amp; Marketing Teams</b></span>
+                    <span>Re: <b>Branded Corporate Photobooths</b></span>
                 </div>
-                <div class="booth-content">
-                    <h3>Open Air Photobooth</h3>
-                    <p class="booth-subtitle">Classic Professional Experience</p>
-                    <p class="booth-description">The timeless photobooth experience upgraded for modern corporate events. Your guests receive instant high-quality branded prints to take home while digital copies are automatically delivered for easy sharing. Perfect for creating tangible branded keepsakes that showcase your company culture and keep your event memorable long after it ends. Our most requested Jacksonville photo booth rental option for corporate holiday parties, galas, and team events.</p>
-                    <div class="booth-features-compact">
-                        <span>&#10003; Instant branded prints</span>
-                        <span>&#10003; Digital copies included</span>
-                        <span>&#10003; Large group friendly</span>
-                        <span>&#10003; Custom logo overlays</span>
-                        <span>&#10003; Professional props</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Other Booth Options Grid -->
-            <div class="event-types-grid">
-                <div class="event-type-card">
-                    <div class="event-type-card-image">
-                        <img src="images/photobooths/360-booth.jpg" alt="360 video booth at Jacksonville FL corporate event">
-                    </div>
-                    <div class="event-type-card-content">
-                        <h4>360 Video Booth</h4>
-                        <p class="event-type-card-tagline">Trending &amp; Viral</p>
-                        <p>Create unforgettable slow-motion 360-degree videos with custom branded overlays. The game-changing corporate photo booth experience that gets shared across social media and extends your event&rsquo;s reach far beyond the venue.</p>
-                        <ul class="event-type-card-features">
-                            <li>Professional 360&deg; capture</li>
-                            <li>Custom branded overlays</li>
-                            <li>Instant social sharing</li>
-                            <li>Slow-motion effects</li>
-                        </ul>
-                        <a href="360-booth.html" class="btn btn-outline" style="margin-top:1rem;display:inline-block;">Learn More About the 360 Booth &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="event-type-card">
-                    <div class="event-type-card-image">
-                        <img src="images/photobooths/digital-booth.jpg" alt="Digital photobooth at corporate event in Northeast Florida">
-                    </div>
-                    <div class="event-type-card-content">
-                        <h4>Digital Photobooth</h4>
-                        <p class="event-type-card-tagline">Modern &amp; Eco-Friendly</p>
-                        <p>All-digital solution perfect for sustainability-focused companies. Creates photos, boomerangs, and GIFs with instant delivery to guests&rsquo; phones via text or email. Includes a branded online gallery for your entire event.</p>
-                        <ul class="event-type-card-features">
-                            <li>Photos, boomerangs &amp; GIFs</li>
-                            <li>Instant digital delivery</li>
-                            <li>Online event gallery</li>
-                            <li>Zero waste solution</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="event-type-card">
-                    <div class="event-type-card-image">
-                        <img src="images/photobooths/social-ring-booth.jpg" alt="Roaming social photobooth at Jacksonville corporate networking event">
-                    </div>
-                    <div class="event-type-card-content">
-                        <h4>Social Photobooth</h4>
-                        <p class="event-type-card-tagline">Mobile &amp; Roaming</p>
-                        <p>Mobile roaming photo booth perfect for networking events and cocktail hours. Our attendant comes to your guests for convenient photo opportunities throughout your Jacksonville corporate event &mdash; no waiting in line.</p>
-                        <ul class="event-type-card-features">
-                            <li>Roaming capability</li>
-                            <li>Perfect for networking</li>
-                            <li>Small footprint</li>
-                            <li>Instant sharing</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="event-type-card">
-                    <div class="event-type-card-image">
-                        <img src="images/photobooths/mirror-booth.jpg" alt="Mirror photo booth at Jacksonville FL corporate gala">
-                    </div>
-                    <div class="event-type-card-content">
-                        <h4>Mirror Booth</h4>
-                        <p class="event-type-card-tagline">Elegant &amp; Interactive</p>
-                        <p>Stunning full-length interactive mirror that becomes a beautiful focal point at corporate galas and upscale events. Guests touch the screen to create photos with digital signatures and custom messages &mdash; prints in seconds.</p>
-                        <ul class="event-type-card-features">
-                            <li>Interactive touch screen</li>
-                            <li>Elegant full-length mirror</li>
-                            <li>Digital guest signatures</li>
-                            <li>Instant custom prints</li>
-                        </ul>
-                        <a href="mirror-booth.html" class="btn btn-outline" style="margin-top:1rem;display:inline-block;">Learn More About the Mirror Booth &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="event-type-card">
-                    <div class="event-type-card-image">
-                        <img src="images/photobooths/wooden-booth.jpg" alt="Premium wooden photo booth at upscale corporate event in Jacksonville">
-                    </div>
-                    <div class="event-type-card-content">
-                        <h4>Wooden Booth</h4>
-                        <p class="event-type-card-tagline">Premium &amp; Upscale</p>
-                        <p>Elegant wooden construction for upscale corporate events and galas throughout Jacksonville and Northeast Florida. Premium appearance with traditional photobooth charm, perfectly suited for sophisticated venue settings.</p>
-                        <ul class="event-type-card-features">
-                            <li>Premium wooden design</li>
-                            <li>Upscale appearance</li>
-                            <li>Traditional charm</li>
-                            <li>Professional quality</li>
-                        </ul>
-                    </div>
+                <h1 class="hero-headline">Branded corporate photobooths,<br>fully managed.</h1>
+                <p class="hero-sub">Eight booth options, every one custom-branded for your company &mdash; 360 video, mirror, open-air, digital, and more. From holiday parties to product launches, we handle the design, setup, and on-site execution so your team can focus on the event. Serving Jacksonville, St. Augustine, Ponte Vedra, and Northeast Florida since 1997.</p>
+                <div class="hero-cta-row">
+                    <a href="/contact-corporate" class="btn-burgundy">Request a Quote</a>
+                    <a href="#the-booth" class="btn-outline-burgundy">See the Booths</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Why Choose Section -->
-    <section class="why-choose section-padding">
+    <!-- Trust Bar -->
+    <div class="trust-bar-memo">
         <div class="container">
-            <div class="section-header text-center">
-                <h2>Why Choose Footloose Entertainment for Your Jacksonville Corporate Photo Booth Rental</h2>
+            <div class="trust-items">
+                <div class="trust-item"><strong>29</strong><span>Years in Business</span></div>
+                <div class="trust-item"><strong>1,000+</strong><span>Corporate Events</span></div>
+                <div class="trust-item"><strong>&#9733;&#9733;&#9733;&#9733;&#9733;</strong><span>5-Star Rated</span></div>
+                <div class="trust-item"><strong>$1M</strong><span>Liability Insurance</span></div>
             </div>
-
-            <div class="why-grid">
-                <div class="why-card">
-                    <div class="why-icon">
-                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-                    </div>
-                    <h3>Amplify Your Brand &amp; ROI</h3>
-                    <p>Our photo booths aren&rsquo;t just entertainment &mdash; they&rsquo;re powerful marketing tools. Every photo and video features your custom branding, creating shareable content that extends your event&rsquo;s reach far beyond the venue. Guests become brand ambassadors, posting to their networks and creating organic social media visibility that would cost far more through traditional advertising.</p>
-                    <p>Custom branded prints serve as tangible takeaways that keep your company top-of-mind long after the event ends. It&rsquo;s one of the most cost-effective brand impressions available at any corporate event in Jacksonville or Northeast Florida.</p>
-                </div>
-
-                <div class="why-card">
-                    <div class="why-icon">
-                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                    </div>
-                    <h3>Professional Service &amp; Reliability</h3>
-                    <p>With 29 years serving Jacksonville&rsquo;s corporate community, we understand the importance of flawless execution at business events. Our professional attendants arrive early for discreet setup, operate equipment seamlessly throughout your event, and handle any technical needs without disrupting the professional atmosphere.</p>
-                    <p>We maintain backup equipment for every booking and have contingency plans for any situation. Your company&rsquo;s reputation is on the line at corporate events &mdash; we ensure the photo booth experience enhances rather than detracts from your carefully planned occasion.</p>
-                </div>
-
-                <div class="why-card">
-                    <div class="why-icon">
-                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                    </div>
-                    <h3>Boost Employee Engagement &amp; Culture</h3>
-                    <p>Our photo booths break down barriers and create genuine connections between colleagues. Whether it&rsquo;s executives mixing with entry-level employees or different departments collaborating on fun photos, the photo booth becomes a natural gathering point that strengthens company culture and morale.</p>
-                    <p>The experience creates shared memories that persist well beyond the event. Employees appreciate companies that invest in memorable experiences &mdash; it&rsquo;s a tangible demonstration that leadership values the team.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Benefits -->
-    <section class="benefits section-padding bg-light">
-        <div class="container">
-            <div class="section-header text-center">
-                <h2>Corporate Photo Booth Benefits</h2>
-                <p>Transform your Jacksonville corporate event with measurable impact</p>
-            </div>
-
-            <div class="benefits-visual">
-                <div class="benefit-item">
-                    <div class="benefit-icon-wrap">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
-                    </div>
-                    <div class="benefit-content">
-                        <h3>Marketing Asset Creation</h3>
-                        <p>Generate authentic branded content featuring real employees and clients for use in recruitment materials, social media, and internal communications throughout your Northeast Florida corporate presence.</p>
-                    </div>
-                </div>
-
-                <div class="benefit-item">
-                    <div class="benefit-icon-wrap">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                    </div>
-                    <div class="benefit-content">
-                        <h3>Networking Catalyst</h3>
-                        <p>Create natural opportunities for employees and clients to interact, breaking down professional barriers in a fun, relaxed setting that makes even large Jacksonville corporate events feel personal.</p>
-                    </div>
-                </div>
-
-                <div class="benefit-item">
-                    <div class="benefit-icon-wrap">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                    </div>
-                    <div class="benefit-content">
-                        <h3>Recognition &amp; Appreciation</h3>
-                        <p>Show employees they&rsquo;re valued with fun, memorable experiences that demonstrate company investment in culture and morale. A photo booth is one of the most talked-about elements at any corporate event.</p>
-                    </div>
-                </div>
-
-                <div class="benefit-item">
-                    <div class="benefit-icon-wrap">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-                    </div>
-                    <div class="benefit-content">
-                        <h3>Measurable Engagement</h3>
-                        <p>Track social media shares, photo counts, and online gallery views to demonstrate event success to leadership and stakeholders. Real data you can present after the event.</p>
-                    </div>
-                </div>
-
-                <div class="benefit-item">
-                    <div class="benefit-icon-wrap">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                    </div>
-                    <div class="benefit-content">
-                        <h3>Client Impression</h3>
-                        <p>Impress clients and prospects with innovative technology and attention to experiential details. A branded 360 booth or mirror booth at your Jacksonville event signals a company that invests in excellence.</p>
-                    </div>
-                </div>
-
-                <div class="benefit-item">
-                    <div class="benefit-icon-wrap">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                    </div>
-                    <div class="benefit-content">
-                        <h3>Sustainable Options</h3>
-                        <p>Choose our eco-friendly digital-only photo booth option that aligns with corporate sustainability goals while still delivering memorable, shareable experiences for all guests.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-intro centered">
-                <h2>What Jacksonville Corporate Clients Say</h2>
-                <p>Real reviews from real Northeast Florida corporate events</p>
-            </div>
-
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="testimonial-text">&ldquo;The 360 booth was the highlight of our annual company celebration. Employees had so much fun, and the branded videos generated more social media engagement than any of our paid campaigns. Footloose delivered exactly what we needed.&rdquo;</p>
-                    <div class="testimonial-author">
-                        <strong>Jennifer Martinez, Director</strong>
-                        <span>Financial Services Firm, Jacksonville</span>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="testimonial-text">&ldquo;We&rsquo;ve worked with Footloose for three years running at our corporate holiday parties. Their professionalism is unmatched. The photo booth has become a tradition our employees look forward to every year.&rdquo;</p>
-                    <div class="testimonial-author">
-                        <strong>David Chen, VP Operations</strong>
-                        <span>Tech Company, Jacksonville</span>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="testimonial-text">&ldquo;For our product launch event, we needed something that would create buzz. The custom branded overlays looked incredible and our team is still using the photos in presentations months later.&rdquo;</p>
-                    <div class="testimonial-author">
-                        <strong>Sarah Thompson, Marketing Manager</strong>
-                        <span>Healthcare Technology, Jacksonville</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq-section bg-light">
-        <div class="container">
-            <div class="section-intro centered">
-                <h2>Corporate Photo Booth FAQs</h2>
-                <p>Common questions from Jacksonville and Northeast Florida corporate clients</p>
-            </div>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        What areas do you serve for corporate photo booth rental?
-                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>We serve all of Northeast Florida including Jacksonville, St. Augustine, Ponte Vedra Beach, Orange Park, Fernandina Beach, Amelia Island, Palm Coast, and surrounding communities throughout Duval, St. Johns, Clay, Nassau, and Flagler Counties. Travel is included for most local venues &mdash; <a href="contact-corporate.html" style="color:#800020;">contact us</a> to confirm for your specific location.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        Can you add our company logo and branding to the photos?
-                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Absolutely &mdash; custom branded overlays are a standard part of our corporate photo booth service. We incorporate your company logo, brand colors, event name, date, and any other design elements into every photo and video. Branded prints make excellent takeaways that keep your company visible long after the event ends.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        What are the space and power requirements?
-                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Most of our booths require approximately a 10x10 foot footprint with a standard power outlet within 100 feet. The 360 video booth requires a clear circular area of approximately 12 feet in diameter. We&rsquo;ll discuss your specific venue layout during consultation to ensure a seamless fit at your Jacksonville corporate venue.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        How far in advance should we book a corporate photo booth?
-                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>We recommend booking as early as possible. Holiday party season (November&ndash;December) and large corporate event dates fill up quickly throughout Jacksonville and Northeast Florida. For peak season dates, booking 3&ndash;6 months in advance is ideal. <a href="contact-corporate.html" style="color:#800020;">Contact us</a> to check availability for your date.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        Can you bundle photo booth and DJ services for a corporate event?
-                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes &mdash; bundling <a href="corporate-dj.html" style="color:#800020;">DJ and photobooth services</a> is one of our most popular options for corporate events. One company means seamless coordination, one point of contact, and better combined value. We offer complete corporate entertainment packages including DJ, photo booth, special effects, and more.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        What photo booth options are available for corporate events?
-                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>We offer <a href="360-booth.html" style="color:#800020;">360 video booths</a>, <a href="mirror-booth.html" style="color:#800020;">mirror photo booths</a>, open air photo booths, digital photobooths, social/roaming photobooths, and wooden booths. Each can be customized with corporate branding. The 360 video booth and mirror booth are particularly popular for corporate events and galas throughout Jacksonville.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        Do you have backup equipment in case of technical issues?
-                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes &mdash; we carry redundant backup equipment to every corporate event. In 29 years of operation, we&rsquo;ve built our systems and protocols specifically to prevent and handle any technical issue so your corporate event runs flawlessly. Your company&rsquo;s reputation matters &mdash; and so does ours.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        Can the photo booth be set up outdoors for corporate events?
-                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes, with the right conditions. Outdoor setups require a covered or sheltered area, a level surface, and access to a standard power outlet. Northeast Florida's climate means we take precautions for heat, humidity, and weather. We'll discuss your specific outdoor venue during the planning process to confirm feasibility and ensure a great experience.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Service Area -->
-    <section style="padding: 5rem 0; background: #fff;">
-        <div class="container">
-            <div class="section-intro centered">
-                <h2>Corporate Photo Booth Rental Service Area &mdash; Northeast Florida</h2>
-                <p>We deliver professional photo booth experiences to corporate venues throughout the entire region</p>
-            </div>
-            <div class="service-area-grid">
-                <div class="service-area-card">
-                    <h4>Duval County</h4>
-                    <p>Jacksonville, Jacksonville Beach, Neptune Beach, Atlantic Beach, Ponte Vedra &mdash; our home base and primary corporate market.</p>
-                </div>
-                <div class="service-area-card">
-                    <h4>St. Johns County</h4>
-                    <p>St. Augustine, Ponte Vedra Beach, Nocatee, World Golf Village, and all St. Johns County corporate venues.</p>
-                </div>
-                <div class="service-area-card">
-                    <h4>Clay County</h4>
-                    <p>Orange Park, Fleming Island, Middleburg, Green Cove Springs, and Clay County corporate event locations.</p>
-                </div>
-                <div class="service-area-card">
-                    <h4>Nassau County</h4>
-                    <p>Fernandina Beach, Amelia Island, Yulee, and Nassau County &mdash; including resort and destination corporate events.</p>
-                </div>
-                <div class="service-area-card">
-                    <h4>Flagler County</h4>
-                    <p>Palm Coast, Flagler Beach, and Flagler County venues along Florida&rsquo;s Historic Coast.</p>
-                </div>
-                <div class="service-area-card">
-                    <h4>Beyond Northeast FL</h4>
-                    <p>We travel for destination corporate events. Contact us to discuss travel availability and rates for your specific venue.</p>
-                </div>
-            </div>
-            <p style="text-align:center;margin-top:2rem;color:#777;font-size:0.95rem;">Don&rsquo;t see your area? <a href="contact-corporate.html" style="color:#800020;">Contact us</a> &mdash; we travel throughout Florida for the right corporate event.</p>
-        </div>
-    </section>
-
-    <!-- Complete Your Corporate Event -->
-    <section class="event-types section-padding bg-light">
-        <div class="container">
-            <div class="section-intro centered">
-                <h2>Complete Your Corporate Event</h2>
-                <p>Combine our photo booth with other services for a comprehensive entertainment experience</p>
-            </div>
-
-            <div class="event-types-grid">
-                <a href="corporate-dj.html" class="event-type-card" style="text-decoration: none; transition: transform 0.3s ease;">
-                    <div class="event-type-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 18V5l12-2v13"></path>
-                            <circle cx="6" cy="18" r="3"></circle>
-                            <circle cx="18" cy="16" r="3"></circle>
-                        </svg>
-                    </div>
-                    <h3>Corporate DJ Services</h3>
-                    <p>Professional music and emcee services to complement your photo booth. Bundle DJ + photo booth for seamless coordination and better value.</p>
-                </a>
-
-                <a href="special-effects.html" class="event-type-card" style="text-decoration: none; transition: transform 0.3s ease;">
-                    <div class="event-type-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                        </svg>
-                    </div>
-                    <h3>Special Effects</h3>
-                    <p>Cold sparklers, CO2 jets, and dancing on clouds for corporate award ceremonies, product launches, and gala entrances.</p>
-                </a>
-
-                <a href="audio-guestbook.html" class="event-type-card" style="text-decoration: none; transition: transform 0.3s ease;">
-                    <div class="event-type-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.09 6.09l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                        </svg>
-                    </div>
-                    <h3>Audio Guestbook</h3>
-                    <p>A vintage telephone where guests leave voice messages &mdash; a unique corporate event keepsake perfect for milestone celebrations and company anniversaries.</p>
-                </a>
-            </div>
-
-            <div style="text-align: center; margin-top: var(--spacing-lg);">
-                <a href="/contact-corporate" class="btn btn-primary">Request Custom Corporate Quote</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <!-- Back Navigation Strip -->
-    <div class="page-back-strip">
-        <div class="container">
-            <a href="/corporate-dj" class="page-back-link">&larr; Back to Corporate DJ Services</a>
         </div>
     </div>
 
-    <section class="cta-section">
+    <!-- ── Section One · The Booth ── -->
+    <section class="memo-section bg-faint" id="the-booth">
         <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Book a Corporate Photo Booth in Jacksonville?</h2>
-                <p>Request a quote for your corporate event and let&rsquo;s discuss how we can create an unforgettable branded photo booth experience for your team throughout Jacksonville and Northeast Florida.</p>
-                <div class="cta-buttons">
-                    <a href="/contact-corporate" class="btn btn-large btn-primary">Request Photobooth Quote</a>
-                    <a href="tel:+19048548014" class="btn btn-large btn-outline-light">Call (904) 854-8014</a>
-                </div>
-                <p class="cta-note">Same-day response &bull; Flexible terms &bull; Fully insured &bull; 29 years serving Northeast Florida</p>
+            <div class="memo-meta">
+                <span class="memo-meta-item">Date <b class="js-current-date">April 2026</b></span>
+                <span class="memo-meta-item">Ref <b>FL-CORP-PB</b></span>
+                <span class="memo-meta-spacer"></span>
+                <span class="memo-meta-section-num">Section One</span>
             </div>
+            <span class="memo-label">The Booth</span>
+            <h2 class="memo-heading">Eight booth options. One that fits your event.</h2>
+            <div class="memo-rule"></div>
+            <p class="memo-intro">A corporate photobooth has a different job than a wedding one. It is a brand asset, a content engine for your marketing channels, an icebreaker between teams that rarely meet in person, and a conversation piece for clients you want to remember the night. Here is the full range &mdash; every option includes a custom-branded overlay.</p>
+
+            <div class="booth-banner">
+                <img src="images/corporate-photobooth.jpg" alt="Corporate guests at branded photobooth during Jacksonville FL holiday party" loading="lazy">
+            </div>
+
+            <div class="booth-grid">
+
+                <div class="booth-card">
+                    <div class="booth-card-img">
+                        <img src="images/photobooths/open-air-booth.jpg" alt="Open air corporate photobooth at Jacksonville FL company event" loading="lazy">
+                    </div>
+                    <div class="booth-card-body">
+                        <h4>Open Air Photobooth</h4>
+                        <span class="booth-card-tagline">Versatile &middot; Most Popular</span>
+                        <p>The reliable workhorse. Large groups fit comfortably, custom-branded prints come out instantly.</p>
+                        <ul class="booth-card-features">
+                            <li>Instant branded prints</li>
+                            <li>Custom company overlay</li>
+                            <li>Large group friendly</li>
+                            <li>On-site attendant included</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="booth-card">
+                    <div class="booth-card-img">
+                        <img src="images/photobooths/360-booth.jpg" alt="360 video booth corporate rental — slow motion branded video for Jacksonville FL product launches" loading="lazy">
+                    </div>
+                    <div class="booth-card-body">
+                        <h4>360 Video Booth</h4>
+                        <span class="booth-card-tagline">Brand-Forward &middot; Shareable</span>
+                        <p>A spinning arm captures slow-motion 360&deg; video of your guests, branded with your logo, hashtag, and product imagery. The content guests share to LinkedIn and Instagram all night &mdash; the booth most often booked for product launches and high-profile galas.</p>
+                        <ul class="booth-card-features">
+                            <li>Slow-motion 360&deg; capture</li>
+                            <li>Custom brand overlay &amp; music</li>
+                            <li>Instant social sharing via QR code</li>
+                            <li>Online gallery for marketing reuse</li>
+                        </ul>
+                        <a href="/360-booth" class="booth-card-link">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="booth-card">
+                    <div class="booth-card-img">
+                        <img src="images/photobooths/mirror-booth.jpg" alt="Mirror photo booth corporate rental — elegant full-length interactive mirror for Jacksonville FL galas" loading="lazy">
+                    </div>
+                    <div class="booth-card-body">
+                        <h4>Mirror Booth</h4>
+                        <span class="booth-card-tagline">Sophisticated &middot; Interactive</span>
+                        <p>A stunning full-length mirror that doubles as a touchscreen photo experience. Polished enough for boardroom galas and engaging enough for sales kickoffs &mdash; guests walk away with custom-branded prints.</p>
+                        <ul class="booth-card-features">
+                            <li>Full-length interactive touch mirror</li>
+                            <li>Digital signatures &amp; messages</li>
+                            <li>Instant custom-branded prints</li>
+                            <li>Elegant focal point for any venue</li>
+                        </ul>
+                        <a href="/mirror-booth" class="booth-card-link">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="booth-card">
+                    <div class="booth-card-img">
+                        <img src="images/photobooths/digital-booth.jpg" alt="Digital photo booth corporate rental — eco-friendly instant digital sharing for Jacksonville FL conferences" loading="lazy">
+                    </div>
+                    <div class="booth-card-body">
+                        <h4>Digital Photobooth</h4>
+                        <span class="booth-card-tagline">Paperless &middot; Lead-Capture Ready</span>
+                        <p>All-digital photos, boomerangs, and GIFs delivered to guests via QR code or text. Optional email and consent capture turns the booth into a low-friction lead-gen tool for conferences and trade shows &mdash; while staying paperless.</p>
+                        <ul class="booth-card-features">
+                            <li>Photos, boomerangs &amp; GIFs</li>
+                            <li>Instant delivery via QR or text</li>
+                            <li>Optional email capture for follow-up</li>
+                            <li>Zero waste, no print consumables</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="booth-card">
+                    <div class="booth-card-img">
+                        <img src="images/photobooths/social-ring-booth.jpg" alt="Social roaming photo booth corporate rental — mobile photobooth for Jacksonville FL networking receptions" loading="lazy">
+                    </div>
+                    <div class="booth-card-body">
+                        <h4>Social Roaming Booth</h4>
+                        <span class="booth-card-tagline">Networking-Friendly &middot; Mobile</span>
+                        <p>Our attendant roams the event with a mobile photobooth &mdash; capturing candid moments between tables, at the bar, and on the dance floor. The format most often paired with networking events and client appreciation evenings.</p>
+                        <ul class="booth-card-features">
+                            <li>Roams the entire venue all night</li>
+                            <li>Perfect for cocktail-style events</li>
+                            <li>No fixed setup zone required</li>
+                            <li>Instant digital sharing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="booth-card">
+                    <div class="booth-card-img">
+                        <img src="images/photobooths/wooden-booth.jpg" alt="Wooden photo booth corporate rental — refined handcrafted booth for Jacksonville FL executive events" loading="lazy">
+                    </div>
+                    <div class="booth-card-body">
+                        <h4>Wooden Booth</h4>
+                        <span class="booth-card-tagline">Refined &middot; Quietly Premium</span>
+                        <p>A handcrafted wooden booth that reads as decor as much as it does entertainment. The natural finish disappears tastefully into upscale venues &mdash; the right choice for buttoned-up dinners, donor appreciation events, and executive receptions.</p>
+                        <ul class="booth-card-features">
+                            <li>Handcrafted wood finish</li>
+                            <li>Instant prints &amp; digital delivery</li>
+                            <li>Disappears into elevated venues</li>
+                            <li>Custom company overlay</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="booth-card">
+                    <div class="booth-card-img">
+                        <img src="images/photobooths/enclosed-booth.jpg" alt="Enclosed photo booth corporate rental — private curtained booth for Jacksonville FL company parties" loading="lazy">
+                    </div>
+                    <div class="booth-card-body">
+                        <h4>Enclosed Photobooth</h4>
+                        <span class="booth-card-tagline">Private &middot; Approachable</span>
+                        <p>Step inside, close the curtain, and loosen up. The privacy of the enclosed format draws in guests who would never approach an open-air booth &mdash; perfect for employee appreciation parties where engagement is the metric that matters.</p>
+                        <ul class="booth-card-features">
+                            <li>Private curtained experience</li>
+                            <li>Classic strip print format</li>
+                            <li>Instant prints &amp; digital delivery</li>
+                            <li>Custom branded overlay</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="booth-card">
+                    <div class="booth-card-img">
+                        <img src="images/photobooths/glambot-booth.jpg" alt="Glambot photo booth corporate rental — cinematic slow-motion video for Jacksonville FL award events" loading="lazy">
+                    </div>
+                    <div class="booth-card-body">
+                        <h4>Glambot</h4>
+                        <span class="booth-card-tagline">Cinematic &middot; Premium</span>
+                        <p>A robotic arm sweeps around your guests capturing ultra-slow-motion cinematic video as they pose. Pure red-carpet energy &mdash; built for award reveals, top-performer recognition, and the moments you want guests to feel like the headline act.</p>
+                        <ul class="booth-card-features">
+                            <li>Robotic arm slow-motion capture</li>
+                            <li>Cinematic, shareable clips</li>
+                            <li>Custom branded overlay &amp; music</li>
+                            <li>Instant digital delivery</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Section Two · The Output ── -->
+    <section class="memo-section bg-paper">
+        <div class="container">
+            <div class="memo-meta">
+                <span class="memo-meta-item">Date <b class="js-current-date">April 2026</b></span>
+                <span class="memo-meta-item">Ref <b>FL-CORP-PB</b></span>
+                <span class="memo-meta-spacer"></span>
+                <span class="memo-meta-section-num">Section Two</span>
+            </div>
+            <span class="memo-label">The Output</span>
+            <h2 class="memo-heading">Branded prints, social-ready digital, cinematic video.</h2>
+            <div class="memo-rule"></div>
+            <p class="memo-intro">Every booth produces something your guests take home &mdash; and something your marketing team can reuse. Here is the full output picture, from physical keepsakes to content that lives on your company channels long after the event.</p>
+
+            <div class="output-grid">
+                <div class="output-card">
+                    <div class="output-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                    </div>
+                    <h3>Printed</h3>
+                    <p>Instant on-site prints in multiple formats &mdash; 2&times;6 strips, 4&times;6, 5&times;7, and panoramic 4&times;24 prints. Every print is branded with your company overlay. Available on standard, metallic, glitter, and transparent paper. Pairs with open-air, mirror, enclosed, and wooden booths.</p>
+                </div>
+                <div class="output-card">
+                    <div class="output-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+                    </div>
+                    <h3>Digital</h3>
+                    <p>Photos, boomerangs, GIFs, and AI-generated images delivered to guest phones via QR code or text &mdash; no app required. Every asset collects in an online gallery you can access, download, and reuse for company social channels and internal communications after the event.</p>
+                </div>
+                <div class="output-card">
+                    <div class="output-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+                    </div>
+                    <h3>Video</h3>
+                    <p>Slow-motion content from the 360 booth and cinematic Glambot footage &mdash; both delivered digitally and compiled into your gallery. The video options that turn a corporate event into content for your marketing team. Available with select booth types.</p>
+                </div>
+            </div>
+            <p class="output-footnote">Output options vary by booth &mdash; ask us what works with your selected format.</p>
+        </div>
+    </section>
+
+    <!-- ── Section Three · The Flow ── -->
+    <section class="memo-section bg-faint">
+        <div class="container">
+            <div class="memo-meta">
+                <span class="memo-meta-item">Date <b class="js-current-date">April 2026</b></span>
+                <span class="memo-meta-item">Ref <b>FL-CORP-PB</b></span>
+                <span class="memo-meta-spacer"></span>
+                <span class="memo-meta-section-num">Section Three</span>
+            </div>
+            <span class="memo-label">The Flow</span>
+            <h2 class="memo-heading">From booking to last photo.</h2>
+            <div class="memo-rule"></div>
+            <p class="memo-intro">Setting up a corporate photobooth should not become another open ticket on your event planner&rsquo;s list. Here is exactly how the work happens between booking and breakdown.</p>
+
+            <div class="flow-layout">
+                <div>
+                    <div class="flow-steps">
+                        <div class="flow-step">
+                            <div class="flow-step-num">01</div>
+                            <div class="flow-step-content">
+                                <h4>Brand assets &amp; overlay design.</h4>
+                                <p>Once your date is locked, we collect your logo, brand guidelines, event name, hashtag, and any product imagery. Our team designs a custom overlay matched to your visual identity and sends a proof for approval &mdash; usually 2&ndash;3 weeks before the event.</p>
+                            </div>
+                        </div>
+                        <div class="flow-step">
+                            <div class="flow-step-num">02</div>
+                            <div class="flow-step-content">
+                                <h4>Early load-in &amp; setup.</h4>
+                                <p>We arrive at your venue an hour before your photobooth time starts, coordinate with your event planner and venue contact, and have the booth tested and styled before the first guest arrives. Backup gear stays on hand the entire event.</p>
+                            </div>
+                        </div>
+                        <div class="flow-step">
+                            <div class="flow-step-num">03</div>
+                            <div class="flow-step-content">
+                                <h4>Attendant available to run the booth.</h4>
+                                <p>Most events include a professional attendant who stays with the booth through your entire event &mdash; keeping energy up, helping guests through the flow, encouraging participation, and making sure every output is on-brand.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flow-note">
+                        <strong>One vendor. Zero coordination overhead.</strong> When you book your DJ, photobooth, or special effects through Footloose, every team is coordinated by the same company &mdash; setup, timing, and transitions all handled together. Your event planner runs the event, not the vendors.
+                    </div>
+                </div>
+                <div class="flow-image">
+                    <img src="images/photobooths/wedding-photobooth-attendant.jpg" alt="Professional photobooth attendant working a Jacksonville FL corporate event" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Section Four · The Experiences & Keepsakes ── -->
+    <section class="memo-section bg-paper">
+        <div class="container">
+            <div class="memo-meta">
+                <span class="memo-meta-item">Date <b class="js-current-date">April 2026</b></span>
+                <span class="memo-meta-item">Ref <b>FL-CORP-PB</b></span>
+                <span class="memo-meta-spacer"></span>
+                <span class="memo-meta-section-num">Section Four</span>
+            </div>
+            <span class="memo-label">The Experiences &amp; Keepsakes</span>
+            <h2 class="memo-heading">Elevate the booth. Send guests home with something.</h2>
+            <div class="memo-rule"></div>
+            <p class="memo-intro">Beyond the booth itself, these are the creative activations and branded keepsakes that turn a corporate photobooth into something memorable &mdash; and something that lives on desks, in offices, and on social feeds long after the event ends.</p>
+
+            <div class="ek-subheading">
+                <h3 class="ek-sub-title">Photo booth experiences</h3>
+                <p class="ek-sub-desc">Creative activations that turn the booth into a conversation piece &mdash; not just another vendor station.</p>
+            </div>
+            <div class="ek-grid">
+                <div class="ek-card">
+                    <div class="ek-card-img">
+                        <img src="images/photobooths/ai-booth.jpg" alt="AI photo booth corporate experience for Jacksonville FL company events" loading="lazy">
+                    </div>
+                    <div class="ek-card-body">
+                        <h4>AI Photobooth</h4>
+                        <p>Watercolor, sketches, and themed transformations turn every guest into custom artwork &mdash; perfect for retreats, sales kickoffs, or culture-driven events.</p>
+                    </div>
+                </div>
+                <div class="ek-card">
+                    <div class="ek-card-img">
+                        <img src="images/photobooths/glam-booth.jpg" alt="Glam booth corporate experience — high fashion portraits for Jacksonville FL galas" loading="lazy">
+                    </div>
+                    <div class="ek-card-body">
+                        <h4>Glam Booth</h4>
+                        <p>Soft-focus studio lighting and high-fashion filters give every guest a polished, magazine-quality portrait. The natural fit for award galas and executive recognition.</p>
+                    </div>
+                </div>
+                <div class="ek-card">
+                    <div class="ek-card-img">
+                        <img src="images/photobooths/mosaic-booth.jpg" alt="Mosaic photo booth corporate experience for Jacksonville FL team events" loading="lazy">
+                    </div>
+                    <div class="ek-card-body">
+                        <h4>Mosaic</h4>
+                        <p>Guest photos assemble in real time into one large composite image &mdash; your logo, a product, or a team portrait. A wall-ready piece of content built from your guests.</p>
+                    </div>
+                </div>
+                <div class="ek-card">
+                    <div class="ek-card-img">
+                        <img src="images/photobooths/formal-portrait-station.jpg" alt="Formal portrait station corporate experience for Jacksonville FL recognition events" loading="lazy">
+                    </div>
+                    <div class="ek-card-body">
+                        <h4>Formal Portrait Station</h4>
+                        <p>Professional studio lighting and a dedicated backdrop give every guest a polished portrait &mdash; perfect for headshot refreshes or executive recognition events.</p>
+                    </div>
+                </div>
+                <div class="ek-card">
+                    <div class="ek-card-img">
+                        <img src="images/photobooths/flower-wall.jpg" alt="Flower wall corporate photo backdrop for Jacksonville FL company events" loading="lazy">
+                    </div>
+                    <div class="ek-card-body">
+                        <h4>Flower Walls</h4>
+                        <p>A lush floral backdrop that doubles as decor &mdash; works as a booth backdrop or standalone selfie station and photographs beautifully for your social channels.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ek-subheading spaced">
+                <h3 class="ek-sub-title">Branded keepsakes &amp; favors</h3>
+                <p class="ek-sub-desc">Tangible takeaways guests keep on their desks and in their offices &mdash; everyday reminders of your event and your brand.</p>
+            </div>
+            <div class="ek-grid">
+                <div class="ek-card">
+                    <div class="ek-card-img">
+                        <img src="images/photobooths/photo-keychains.jpg" alt="Corporate photo keychain branded keepsake for Jacksonville FL company events" loading="lazy">
+                    </div>
+                    <div class="ek-card-body">
+                        <h4>Keychains</h4>
+                        <p>A small acrylic keychain with the guest&rsquo;s photo embedded inside, branded with your company mark. Practical, durable, and reaches every guest&rsquo;s daily carry.</p>
+                    </div>
+                </div>
+                <div class="ek-card">
+                    <div class="ek-card-img">
+                        <img src="images/photobooths/photo-magnets.jpg" alt="Corporate photo magnet branded keepsake for Jacksonville FL company events" loading="lazy">
+                    </div>
+                    <div class="ek-card-body">
+                        <h4>Magnets</h4>
+                        <p>Custom photo magnets guests put on their fridge or office filing cabinet. One of the most enduring corporate favors &mdash; still visible months and years later.</p>
+                    </div>
+                </div>
+                <div class="ek-card">
+                    <div class="ek-card-img">
+                        <img src="images/photobooths/photo-bookmarks.jpg" alt="Corporate photo bookmark branded keepsake for Jacksonville FL company events" loading="lazy">
+                    </div>
+                    <div class="ek-card-body">
+                        <h4>Bookmarks</h4>
+                        <p>Elegant bookmarks printed with the guest&rsquo;s photo and your event branding. A refined, practical takeaway &mdash; particularly resonant for book-club, mentorship, or board recognition contexts.</p>
+                    </div>
+                </div>
+                <div class="ek-card">
+                    <div class="ek-card-img">
+                        <img src="images/photobooths/viewfinders.jpg" alt="Corporate photo viewfinder branded keepsake for Jacksonville FL company events" loading="lazy">
+                    </div>
+                    <div class="ek-card-body">
+                        <h4>Viewfinders</h4>
+                        <p>Retro viewfinder toys loaded with the guest&rsquo;s photo. Nostalgic, tactile, and completely unlike any other corporate favor &mdash; the kind of thing that ends up on a desk for years.</p>
+                    </div>
+                </div>
+                <div class="ek-card">
+                    <div class="ek-card-img">
+                        <img src="images/photobooths/paper-stocks.jpg" alt="Premium photo booth paper stocks for branded corporate prints Jacksonville FL" loading="lazy">
+                    </div>
+                    <div class="ek-card-body">
+                        <h4>Premium Paper Stocks</h4>
+                        <p>Upgrade your prints to glitter, metallic, or transparent paper. The right choice for galas, awards events, and brand activations where the takeaway should feel premium.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ek-cta">
+                <a href="/contact-corporate" class="btn-outline-burgundy-dark">Request a Combined Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Section Five · Where We Set Up ── -->
+    <section class="memo-section bg-faint">
+        <div class="container">
+            <div class="memo-meta">
+                <span class="memo-meta-item">Date <b class="js-current-date">April 2026</b></span>
+                <span class="memo-meta-item">Ref <b>FL-CORP-PB</b></span>
+                <span class="memo-meta-spacer"></span>
+                <span class="memo-meta-section-num">Section Five</span>
+            </div>
+            <span class="memo-label">Where We Set Up</span>
+            <h2 class="memo-heading">Familiar with Northeast Florida&rsquo;s corporate venues.</h2>
+            <div class="memo-rule"></div>
+            <p class="memo-intro">We have set up photobooths at virtually every major corporate venue in Jacksonville, St. Augustine, and Ponte Vedra. We know the layouts, the load-in routes, the power locations, and the corners that photograph cleanly under venue lighting.</p>
+
+            <div class="venues-grid">
+                <div class="venue-col">
+                    <h4>Jacksonville</h4>
+                    <ul>
+                        <li>The River Club</li>
+                        <li>TPC Sawgrass</li>
+                        <li>The Florida Yacht Club</li>
+                        <li>Timuquana Country Club</li>
+                        <li>The Haskell Building</li>
+                        <li>Museum of Science &amp; History</li>
+                        <li>Hyatt Regency Riverfront</li>
+                        <li>Omni Jacksonville</li>
+                    </ul>
+                </div>
+                <div class="venue-col">
+                    <h4>St. Augustine &amp; Ponte Vedra</h4>
+                    <ul>
+                        <li>Casa Monica Resort</li>
+                        <li>Ponte Vedra Inn &amp; Club</li>
+                        <li>Sawgrass Marriott</li>
+                        <li>The Lightner Museum</li>
+                        <li>The White Room</li>
+                        <li>The Treasury on the Plaza</li>
+                        <li>Renaissance World Golf Village</li>
+                    </ul>
+                </div>
+                <div class="venue-col">
+                    <h4>Coastal &amp; Surrounding</h4>
+                    <ul>
+                        <li>One Ocean Resort &middot; Atlantic Beach</li>
+                        <li>The Ritz-Carlton Amelia Island</li>
+                        <li>Omni Amelia Island</li>
+                        <li>Hammock Beach &middot; Palm Coast</li>
+                        <li>Orange Park Country Club</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="venues-note">Hosting at a venue not on this list? We work throughout Northeast Florida and travel for the right corporate event. <a href="/contact-corporate">Contact us</a> to discuss your specific location.</p>
+        </div>
+    </section>
+
+    <!-- ── Section Six · The Difference ── -->
+    <section class="memo-section bg-paper">
+        <div class="container">
+            <div class="memo-meta">
+                <span class="memo-meta-item">Date <b class="js-current-date">April 2026</b></span>
+                <span class="memo-meta-item">Ref <b>FL-CORP-PB</b></span>
+                <span class="memo-meta-spacer"></span>
+                <span class="memo-meta-section-num">Section Six</span>
+            </div>
+            <span class="memo-label">The Difference</span>
+            <h2 class="memo-heading">What separates our corporate photobooth.</h2>
+            <div class="memo-rule"></div>
+            <p class="memo-intro">There are a lot of photobooth vendors in Jacksonville and St. Augustine. Here is what makes Footloose the one corporate event planners book again the following year.</p>
+
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-num">01</div>
+                    <div>
+                        <h3>29 years. Owner-operated.</h3>
+                        <p>Footloose was founded by Kris in 1997 and has been owner-operated ever since. When you book, you are working directly with the people who built this business &mdash; not a national rental platform passing your event to a sub-contractor.</p>
+                    </div>
+                </div>
+                <div class="why-card">
+                    <div class="why-num">02</div>
+                    <div>
+                        <h3>We have never missed a corporate event.</h3>
+                        <p>In 29 years and 1,000+ events across Northeast Florida, we have never missed a booking, never had a no-show, and never left a client without their booth. Full backup gear at every event &mdash; because your AGM is not the day for contingencies.</p>
+                    </div>
+                </div>
+                <div class="why-card">
+                    <div class="why-num">03</div>
+                    <div>
+                        <h3>Custom branding every time.</h3>
+                        <p>Every corporate booking includes a custom-branded overlay designed by our team to match your brand guidelines &mdash; logo, colors, hashtag, sponsor marks, product imagery. Sent for approval before the event, never templated.</p>
+                    </div>
+                </div>
+                <div class="why-card">
+                    <div class="why-num">04</div>
+                    <div>
+                        <h3>One vendor. Every service.</h3>
+                        <p>Photobooth, DJ, special effects, AV production &mdash; all coordinated by the same team, billed on one invoice, with one point of contact. Most corporate clients who book the photobooth also book their DJ through Footloose.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Section Seven · On the Record ── -->
+    <section class="memo-section bg-faint">
+        <div class="container">
+            <div class="memo-meta">
+                <span class="memo-meta-item">Date <b class="js-current-date">April 2026</b></span>
+                <span class="memo-meta-item">Ref <b>FL-CORP-PB</b></span>
+                <span class="memo-meta-spacer"></span>
+                <span class="memo-meta-section-num">Section Seven</span>
+            </div>
+            <span class="memo-label">On the Record</span>
+            <h2 class="memo-heading">What corporate clients say about the booth.</h2>
+            <div class="memo-rule"></div>
+            <p class="memo-intro">Excerpts below are filed with the original senders and used with permission. Names abbreviated where the original request was for anonymity.</p>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-rating">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+                    <p class="review-text">&ldquo;The 360 booth was the hit of our product launch. Guests shared the videos to LinkedIn and Instagram all night &mdash; exactly the buzz we hoped for. Setup was clean and the branded overlay matched our identity perfectly.&rdquo;</p>
+                    <div class="review-author">
+                        <strong>Jennifer L., Marketing Director</strong>
+                        <span>Consumer Brand &middot; Jacksonville</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-rating">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+                    <p class="review-text">&ldquo;We&rsquo;ve used Footloose for three years running. Reliable, professional, and they understand corporate environments. Highly recommend.&rdquo;</p>
+                    <div class="review-author">
+                        <strong>David C., VP Operations</strong>
+                        <span>Tech Company &middot; Jacksonville</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-rating">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+                    <p class="review-text">&ldquo;The mirror booth elevated our donor gala in a way I didn&rsquo;t expect. Guests loved the touchscreen interaction and the branded prints turned out flawless. Our event planner stayed completely hands-off the booth all night.&rdquo;</p>
+                    <div class="review-author">
+                        <strong>Patricia R., Development Director</strong>
+                        <span>Nonprofit Gala &middot; St. Augustine</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Section Eight · The Investment ── -->
+    <section class="memo-section bg-paper">
+        <div class="container">
+            <div class="memo-meta">
+                <span class="memo-meta-item">Date <b class="js-current-date">April 2026</b></span>
+                <span class="memo-meta-item">Ref <b>FL-CORP-PB</b></span>
+                <span class="memo-meta-spacer"></span>
+                <span class="memo-meta-section-num">Section Eight</span>
+            </div>
+            <span class="memo-label">The Investment</span>
+            <h2 class="memo-heading">What a corporate photobooth runs in Jacksonville.</h2>
+            <div class="memo-rule"></div>
+            <p class="memo-intro">Pricing depends on which booth style you choose, hours of coverage, and any branded add-ons. Here is a starting point to plan against.</p>
+            <div class="investment-card">
+                <div class="investment-figure"><sup>$</sup>550</div>
+                <span class="investment-label">Starting investment &middot; corporate photobooth</span>
+                <p class="investment-note">Final quotes reflect booth style, hours, attendant staffing, and branded overlay design. Every booking includes a custom-branded overlay matched to your company identity.</p>
+                <a href="/contact-corporate" class="btn-burgundy">Get an Exact Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Section Nine · The FAQs ── -->
+    <section class="memo-section bg-faint">
+        <div class="container">
+            <div class="memo-meta">
+                <span class="memo-meta-item">Date <b class="js-current-date">April 2026</b></span>
+                <span class="memo-meta-item">Ref <b>FL-CORP-PB</b></span>
+                <span class="memo-meta-spacer"></span>
+                <span class="memo-meta-section-num">Section Nine</span>
+            </div>
+            <span class="memo-label">The FAQs</span>
+            <h2 class="memo-heading">Corporate photobooths, frequently asked.</h2>
+            <div class="memo-rule"></div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">What types of photobooths does Footloose offer for corporate events?<svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+                    <div class="faq-answer"><p>Eight booth options &mdash; open-air photobooth, 360 video booth, mirror booth, digital booth, social roaming booth, wooden booth, enclosed booth, and the Glambot cinematic video arm. Each comes with a custom-branded overlay matched to your company identity.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Can the photobooth be branded with our company logo or product?<svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+                    <div class="faq-answer"><p>Yes. Every booking includes a custom overlay designed to your brand &mdash; logo, colors, event name, hashtag, sponsor marks, or product imagery. We design the overlay 2&ndash;3 weeks before your event and send a proof to approve before the day arrives.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Can our guests share photos directly to social media?<svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+                    <div class="faq-answer"><p>Yes. Digital, 360, and mirror booths deliver instantly via QR code or text &mdash; no app required. Guests share to LinkedIn, Instagram, or any platform from their own phones. Every image also collects in an online gallery you can access, download, and reuse for company marketing channels after the event.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Is Footloose insured for corporate venue events?<svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+                    <div class="faq-answer"><p>Yes. We carry $1 million in general liability insurance and provide certificates of insurance to venues on request at no additional cost. We bring backup equipment to every event.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Do you offer net 30 billing for corporate clients?<svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+                    <div class="faq-answer"><p>Yes. We work with corporate purchasing departments, accept corporate credit cards, and offer net 30 terms for qualified businesses. Invoicing is clean and straightforward.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">How far in advance should we book a corporate photobooth?<svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+                    <div class="faq-answer"><p>For peak season &mdash; November and December for holiday parties &mdash; we recommend three to six months ahead. For other corporate events, two to three months is comfortable. <a href="/contact-corporate">Reach out</a> for last-minute requests; we accommodate them when availability allows.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Do you serve corporate events outside Jacksonville?<svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+                    <div class="faq-answer"><p>Yes. We serve all of Northeast Florida &mdash; St. Augustine, Ponte Vedra Beach, Orange Park, Fernandina Beach, Amelia Island, Palm Coast, and surrounding communities. We travel for the right corporate event.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Can we combine a photobooth with DJ services or special effects?<svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+                    <div class="faq-answer"><p>Yes, and many corporate clients do exactly that. Combining the photobooth with a <a href="/corporate-dj">corporate DJ</a> and <a href="/special-effects">special effects</a> through one vendor means seamless coordination, one invoice, and one point of contact for your event planner.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section class="memo-cta">
+        <div class="container">
+            <span class="memo-label">Next Steps</span>
+            <h2>Ready to book your corporate photobooth?</h2>
+            <p>Send us your event date, venue, expected guest count, and the booth style you have in mind &mdash; we will come back with availability, a clear quote, and a certificate of insurance for your venue on request. Free consultation, no pressure.</p>
+            <div class="cta-buttons">
+                <a href="/contact-corporate" class="btn-burgundy">Request a Quote</a>
+                <a href="tel:+19048548014" class="btn-outline-burgundy">Call (904) 854-8014</a>
+            </div>
+            <p class="cta-note">Same-day response &middot; Fully insured &middot; 29 years in Jacksonville</p>
         </div>
     </section>
 
@@ -807,15 +1650,10 @@
                     <img src="images/footloose-logo-white.png" alt="Footloose Entertainment" width="180" height="72">
                     <p>Jacksonville and St. Augustine&rsquo;s premier event entertainment company since 1997.</p>
                     <div class="footer-social">
-                        <a href="https://www.facebook.com/footlooseentertainment" aria-label="Facebook">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-                        </a>
-                        <a href="https://instagram.com/footloosedjs" aria-label="Instagram">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                        </a>
+                        <a href="https://www.facebook.com/footlooseentertainment" aria-label="Facebook"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                        <a href="https://instagram.com/footloosedjs" aria-label="Instagram"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
                     </div>
                 </div>
-
                 <div class="footer-column">
                     <h4>Event Types</h4>
                     <ul>
@@ -825,7 +1663,6 @@
                         <li><a href="private-parties.html">Private Parties</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-column">
                     <h4>Specialty Services</h4>
                     <ul>
@@ -835,17 +1672,15 @@
                         <li><a href="audio-guestbook.html">Audio Guestbook</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-column">
                     <h4>Locations</h4>
                     <ul>
                         <li><a href="jacksonville-event-entertainment.html">Jacksonville</a></li>
                         <li><a href="st-augustine-event-entertainment.html">St. Augustine</a></li>
-                        <li><a href="https://www.jacksonvillephotobooths.com">Jacksonville Photobooths</a></li>
+                        <li><a href="https://www.jacksonvillephotobooths.com" target="_blank" rel="noopener">Jacksonville Photobooths</a></li>
                         <li><a href="contact.html">Service Area</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-column">
                     <h4>Company</h4>
                     <ul>
@@ -855,7 +1690,6 @@
                     </ul>
                 </div>
             </div>
-
             <div class="footer-bottom">
                 <p>&copy; 2026 Footloose Entertainment. All rights reserved.</p>
                 <p>Serving Jacksonville, St. Augustine &amp; Northeast Florida since 1997</p>
@@ -865,6 +1699,15 @@
 
     <script src="script.js"></script>
     <script>
+        // Keep memo metadata DATE field current — rewrites "April 2026" to the current month/year on page load.
+        (function () {
+            var now = new Date();
+            var label = now.toLocaleString('en-US', { month: 'long', year: 'numeric' });
+            document.querySelectorAll('.js-current-date').forEach(function (el) {
+                el.textContent = label;
+            });
+        })();
+
         document.querySelectorAll('.faq-question').forEach(btn => {
             btn.addEventListener('click', () => {
                 const expanded = btn.getAttribute('aria-expanded') === 'true';
@@ -878,5 +1721,6 @@
                 }
             });
         });
-    </script></body>
+    </script>
+</body>
 </html>
