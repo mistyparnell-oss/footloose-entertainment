@@ -6,14 +6,26 @@
 # --- Old WordPress page paths → new pages ---
 /photobooths/overlays/                          /overlays.html                          301
 /photobooths/overlays                           /overlays.html                          301
+/photobooths/overlays/open-air-footers/         /overlay-printed-strips.html            301
+/photobooths/overlays/open-air-footers          /overlay-printed-strips.html            301
+/photobooths/overlays/digital-footers/          /overlay-digital.html                   301
+/photobooths/overlays/digital-footers           /overlay-digital.html                   301
 /photobooths/open-air-photobooth/               /wedding-photobooth.html                301
 /photobooths/open-air-photobooth                /wedding-photobooth.html                301
+/open-air-photobooth/                           /wedding-photobooth.html                301
+/open-air-photobooth                            /wedding-photobooth.html                301
+/photobooth/                                    /wedding-photobooth.html                301
+/photobooth                                     /wedding-photobooth.html                301
 /photobooths/360-photo-booth/                   /360-booth.html                         301
 /photobooths/360-photo-booth                    /360-booth.html                         301
+/photobooths/360-photobooth/                    /360-booth.html                         301
+/photobooths/360-photobooth                     /360-booth.html                         301
 /photobooths/mirror-booth/                      /mirror-booth.html                      301
 /photobooths/mirror-booth                       /mirror-booth.html                      301
 /photobooths/footers/open-air-footers/          /wedding-photobooth.html                301
 /photobooths/footers/open-air-footers           /wedding-photobooth.html                301
+/photobooths/social-ring/                       404
+/photobooths/social-ring                        404
 /photobooths/                                   /wedding-photobooth.html                301
 /photobooths                                    /wedding-photobooth.html                301
 
@@ -35,6 +47,9 @@
 /private-parties/                               /private-parties.html                   301
 /wedding-planner-31/                            404
 /wedding-planner-31                             404
+# Old individual "wedding planner" WP pages — brand no longer positions as a planner
+/wedding-planner-*/                             404
+/wedding-planner-*                              404
 
 # --- Add-ons / extras old paths ---
 /4x6-party-enhancements/                        /special-effects.html                   301
@@ -43,6 +58,10 @@
 /4x6-blow-up-cube                               /special-effects.html                   301
 /4x6-open-air-booth/                            /wedding-photobooth.html                301
 /4x6-open-air-booth                             /wedding-photobooth.html                301
+/monogram/                                      /monograms.html                         301
+/monogram                                       /monograms.html                         301
+# Catch-all: remaining old /4x6-*/ individual add-on product pages → special-effects hub
+/4x6-*                                          /special-effects.html                   301
 /special-effects/                               /special-effects.html                   301
 /special-effects                                /special-effects.html                   301
 /extras/                                        404
