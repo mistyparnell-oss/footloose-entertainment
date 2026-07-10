@@ -9,10 +9,10 @@
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.footlooseentertainment.com/planning-resources">
+    <meta property="og:url" content="https://footlooseentertainment.com/planning-resources">
     <meta property="og:title" content="Wedding &amp; Event Planning Resources | Footloose Entertainment">
     <meta property="og:description" content="Venue guides, song lists, and planning advice for weddings and events across Jacksonville, St. Augustine &amp; Northeast Florida.">
-    <meta property="og:image" content="https://www.footlooseentertainment.com/images/hero-event.jpg">
+    <meta property="og:image" content="https://footlooseentertainment.com/images/hero-event.jpg">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
@@ -187,6 +187,22 @@
         }
         .resource-coming-soon p { font-size: 0.88rem; color: #888; line-height: 1.6; margin: 0; }
 
+        /* Intro / explainer sections */
+        .intro-section { padding: 4rem 0; }
+        .intro-section h2 { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; letter-spacing: 0.03em; color: #1a1a2e; margin: 0 0 1.25rem; }
+        .intro-section p { font-size: 1rem; color: #444; line-height: 1.8; max-width: 780px; margin: 0 0 1.25rem; }
+        .intro-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.75rem; margin-top: 2rem; }
+        .intro-card { background: #fff; border: 1px solid #e5e5e5; border-radius: 10px; padding: 1.5rem; }
+        .intro-card h4 { font-family: 'Bebas Neue', sans-serif; font-size: 1.05rem; color: var(--color-primary); margin: 0 0 0.5rem; letter-spacing: 0.03em; }
+        .intro-card p { font-size: 0.9rem; color: #555; margin: 0; max-width: none; }
+
+        /* Testimonials */
+        .resources-testimonial-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2rem; }
+        .resources-testimonial { background: #fff; border: 1px solid #e5e5e5; border-left: 3px solid var(--color-gold); border-radius: 0 8px 8px 0; padding: 1.5rem 1.75rem; }
+        .resources-testimonial blockquote { margin: 0 0 0.75rem; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.1rem; color: #333; line-height: 1.6; }
+        .resources-testimonial cite { font-family: 'Barlow', sans-serif; font-size: 0.8rem; font-weight: 600; color: var(--color-primary); font-style: normal; }
+        @media (max-width: 680px) { .intro-grid { grid-template-columns: 1fr; } .resources-testimonial-grid { grid-template-columns: 1fr; } }
+
         @media (max-width: 900px) {
             .resources-grid { grid-template-columns: repeat(2, 1fr); }
         }
@@ -213,8 +229,8 @@
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.footlooseentertainment.com/" },
-        { "@type": "ListItem", "position": 2, "name": "Planning Resources", "item": "https://www.footlooseentertainment.com/planning-resources" }
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://footlooseentertainment.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Planning Resources", "item": "https://footlooseentertainment.com/planning-resources" }
       ]
     }
     </script>
@@ -275,16 +291,39 @@
         <div class="container">
             <span class="resources-hero-eyebrow">Footloose Entertainment</span>
             <h1>Wedding &amp; Event Planning Resources</h1>
-            <p>Venue guides, song lists, and planning advice from the entertainment company that's worked Northeast Florida celebrations for over 29 years &mdash; so you can plan with confidence, not guesswork.</p>
+            <p>Venue guides, song lists, and planning advice from the entertainment company that's worked Northeast Florida celebrations for over 29 years &mdash; so you can plan with confidence, not guesswork. Whether you already have a venue booked or you're still deciding between a few finalists, these guides are meant to answer the specific, practical questions that generic wedding-planning content never quite gets to.</p>
+        </div>
+    </section>
+
+    <!-- Why Venue-Specific Planning Matters -->
+    <section class="intro-section">
+        <div class="container">
+            <h2>Why Venue-Specific Planning Matters</h2>
+            <p>Most wedding and event planning advice online is generic &mdash; song lists, timeline templates, and tips that could apply to any venue anywhere. That's useful up to a point, but it misses the thing that actually determines how smoothly your entertainment runs on the day: the venue itself. A load-in that takes ten minutes at one property can take forty-five at another. A sound setup that works perfectly in an open-air garden can be entirely wrong for an acoustically live indoor ballroom two miles away.</p>
+            <p>We built this Planning Resources section because we kept having the same conversation with couples and event planners &mdash; questions about room capacities, ceremony logistics, and what to expect from a specific Jacksonville, St. Augustine, or Ponte Vedra Beach venue that generic wedding blogs simply don't answer. As a DJ and event entertainment company that has worked Northeast Florida celebrations for over 29 years, we've been inside most of these rooms more times than we can count, and these guides are built from that direct experience rather than secondhand research.</p>
+            <div class="intro-grid">
+                <div class="intro-card">
+                    <h4>Real Capacity Numbers</h4>
+                    <p>Room-by-room guest counts so you know which space fits your guest list before you tour the venue.</p>
+                </div>
+                <div class="intro-card">
+                    <h4>Entertainment Logistics</h4>
+                    <p>Load-in routes, power access, and sound considerations specific to each property &mdash; not generic advice.</p>
+                </div>
+                <div class="intro-card">
+                    <h4>Honest Pricing Context</h4>
+                    <p>Starting price points for our own DJ and entertainment services, so you can plan a realistic budget early.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Venue Guides -->
-    <section class="resource-category">
+    <section class="resource-category bg-faint">
         <div class="container">
             <span class="resource-category-label">Venue Guides</span>
             <h2>Know Your Venue Before You Book Entertainment</h2>
-            <p class="resource-category-intro">Every venue has its own layout, acoustics, and logistics. These guides cover what to expect at some of Jacksonville and St. Augustine's most-booked wedding and event venues.</p>
+            <p class="resource-category-intro">Every venue has its own layout, acoustics, and logistics. These guides cover what to expect at some of Jacksonville and St. Augustine's most-booked wedding and event venues, including two dual-purpose guides for venues that host both weddings and corporate events well.</p>
             <div class="resources-grid">
                 <a href="/planning-resources/epping-forest-yacht-club-wedding" class="resource-card">
                     <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/epping-forest-hero.jpg');"></div>
@@ -332,7 +371,7 @@
                     <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/st-augustine-venues-hero.jpg');"></div>
                     <span class="resource-card-tag">Venue Roundup</span>
                     <h3>Best St. Augustine Wedding Venues</h3>
-                    <p>A roundup of eight popular St. Augustine venues, from historic downtown buildings to golf clubhouses.</p>
+                    <p>A roundup of thirteen popular St. Augustine venues, from historic downtown buildings to golf clubhouses and rustic barns.</p>
                     <span class="resource-card-link">Read the roundup &rarr;</span>
                 </a>
                 <a href="/planning-resources/amelia-island-wedding-venues" class="resource-card">
@@ -343,6 +382,16 @@
                     <span class="resource-card-link">Read the roundup &rarr;</span>
                 </a>
             </div>
+        </div>
+    </section>
+
+    <!-- What Each Guide Covers -->
+    <section class="intro-section">
+        <div class="container">
+            <h2>What Each Guide Covers</h2>
+            <p>Every venue guide in this section follows the same structure, whether it's a deep-dive on a single property or a roundup of several. We start with the basics &mdash; address, room or space options, and guest capacity ranges &mdash; then move into why couples and event planners choose that venue over the alternatives nearby. From there, each guide gets specific about entertainment: what we'd confirm before your event, how load-in and sound coverage differ between indoor and outdoor spaces at that property, and what a wedding or corporate DJ starting price actually looks like once you factor in guest count and hours of coverage.</p>
+            <p>The two dual-purpose guides &mdash; TPC Sawgrass and Sawgrass Marriott &mdash; are built a little differently, since both venues host weddings and corporate events seriously rather than treating one as an afterthought. Those guides break out pricing and planning considerations for both audiences side by side, rather than assuming every reader is planning the same type of event.</p>
+            <p>If you don't see your venue listed yet, that doesn't mean we haven't worked there &mdash; it just means we haven't written the guide yet. <a href="/contact">Reach out</a> and ask; there's a good chance we can answer your specific venue questions directly, even before it has its own page here. We're continuing to add new venue guides and roundups over time, so it's worth checking back if the property you're considering isn't covered today.</p>
         </div>
     </section>
 
