@@ -20,6 +20,7 @@
 /photobooths/360-photo-booth                    /360-booth.html                         301
 /photobooths/360-photobooth/                    /360-booth.html                         301
 /photobooths/360-photobooth                     /360-booth.html                         301
+/360-booth.html                                 /360-booth                              301
 /photobooths/mirror-booth/                      /mirror-booth.html                      301
 /photobooths/mirror-booth                       /mirror-booth.html                      301
 /photobooths/footers/open-air-footers/          /wedding-photobooth.html                301
@@ -28,6 +29,14 @@
 /photobooths/social-ring                        404
 /photobooths/                                   /wedding-photobooth.html                301
 /photobooths                                    /wedding-photobooth.html                301
+
+# --- Cannibalization cleanup (2026-07-10) ---
+/corporate-dj                                   /corporate-events                       301
+/corporate-dj/                                  /corporate-events                       301
+/corporate-photobooth                           /corporate-events                       301
+/corporate-photobooth/                          /corporate-events                       301
+/school-photobooth                              /school-events                          301
+/school-photobooth/                             /school-events                          301
 
 # --- DJ / Services old paths ---
 # NOTE: /wedding-dj/, /wedding-dj.html, /corporate-dj/, /corporate-dj.html removed —
