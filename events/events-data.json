@@ -1,0 +1,40 @@
+[
+  {
+    "slug": "wedding-bowing-oaks-giselle-and-duncan-may-3-2026",
+    "eventType": "wedding",
+    "eventDate": "2026-05-03",
+    "pageTitle": "Wedding at Bowing Oaks — May 2026",
+    "venueName": "Bowing Oaks",
+    "venueCity": "St Augsutine",
+    "monthYear": "May 2026",
+    "serviceList": [
+      "DJ",
+      "Special Effects",
+      "Photo Booth Overlays"
+    ],
+    "coverImg": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-bowing-oaks-giselle-and-duncan-may-3-2026/cover.jpg",
+    "_full": {
+      "services": [
+        "DJ",
+        "Special Effects",
+        "Photo Booth Overlays"
+      ],
+      "eventDate": "2026-05-03",
+      "eventType": "wedding",
+      "venueCity": "St Augsutine",
+      "venueName": "Bowing Oaks",
+      "clientName": "Giselle & Duncan",
+      "description": "",
+      "vendorNames": [
+        "Rob Futrell"
+      ],
+      "venueGuideUrl": "",
+      "vendorWebsites": [
+        "www.robfutrell.com"
+      ],
+      "vendorCategories": [
+        "Photographer"
+      ]
+    }
+  }
+]
