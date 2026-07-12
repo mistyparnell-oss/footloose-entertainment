@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Events | Jacksonville &amp; St. Augustine DJ &amp; Photo Booth | Footloose Entertainment</title>
+    <meta name="description" content="See real weddings, corporate events, proms, and private parties from Footloose Entertainment — Jacksonville and St. Augustine's DJ and photo booth company since 1997.">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://footlooseentertainment.com/events">
+    <meta property="og:title" content="Real Events | Footloose Entertainment Jacksonville">
+    <meta property="og:description" content="Weddings, corporate events, proms, and parties — see what Footloose Entertainment brings to events across Jacksonville and St. Augustine.">
+    <meta property="og:image" content="https://footlooseentertainment.com/images/hero-event.jpg">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://footlooseentertainment.com/events">
+
+    <!-- Geo -->
+    <meta name="geo.region" content="US-FL">
+    <meta name="geo.placename" content="Jacksonville">
+    <meta name="geo.position" content="30.3322;-81.6557">
+
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-primary: #006D77;
+            --color-primary-dark: #004E57;
+            --color-accent: #D4A843;
+            --color-gold: #D4A843;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb-nav { background: #f7f7f7; border-bottom: 1px solid #e8e8e8; padding: 0.6rem 0; font-size: 0.85rem; }
+        .breadcrumb-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; color: #888; }
+        .breadcrumb-list li a { color: var(--color-primary); text-decoration: none; }
+        .breadcrumb-list li a:hover { text-decoration: underline; }
+        .breadcrumb-list [aria-current="page"] { color: #555; }
+
+        /* Hero */
+        .events-hero {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+            padding: 4.5rem 0 4rem;
+            text-align: center;
+        }
+        .events-hero-eyebrow {
+            font-family: 'Barlow', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--color-gold);
+            display: block;
+            margin-bottom: 0.8rem;
+        }
+        .events-hero h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3.2rem;
+            letter-spacing: 0.04em;
+            color: #fff;
+            margin: 0 0 1rem;
+        }
+        .events-hero p {
+            font-size: 1.05rem;
+            color: rgba(255,255,255,0.85);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+        @media (max-width: 680px) { .events-hero h1 { font-size: 2.2rem; } }
+
+        /* Filters */
+        .events-filters {
+            background: #fff;
+            border-bottom: 1px solid #e8e8e8;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .filter-row {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .filter-label {
+            font-family: 'Barlow', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #666;
+            margin-right: 0.25rem;
+        }
+        .filter-btn {
+            background: #f5f5f5;
+            border: 1px solid #e0e0e0;
+            border-radius: 20px;
+            padding: 0.35rem 1rem;
+            font-family: 'Barlow', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #444;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .filter-btn:hover, .filter-btn.active {
+            background: var(--color-primary);
+            border-color: var(--color-primary);
+            color: #fff;
+        }
+
+        /* Events Grid */
+        .events-section { padding: 3.5rem 0 5rem; }
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        @media (max-width: 960px) { .events-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 580px) { .events-grid { grid-template-columns: 1fr; } }
+
+        /* Event Card */
+        .event-card {
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 12px;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+        .event-card:hover {
+            box-shadow: 0 8px 30px rgba(0,0,0,0.10);
+            transform: translateY(-2px);
+        }
+        .event-card-photo {
+            width: 100%;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+            display: block;
+            background: #e8e8e8;
+        }
+        .event-card-photo-placeholder {
+            width: 100%;
+            aspect-ratio: 4/3;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .event-card-photo-placeholder svg { opacity: 0.3; }
+        .event-card-body { padding: 1.35rem 1.5rem 1.5rem; }
+        .event-type-badge {
+            display: inline-block;
+            font-family: 'Barlow', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            margin-bottom: 0.6rem;
+        }
+        .badge-wedding { background: #f0ebf8; color: #6b21a8; }
+        .badge-corporate { background: #e8f4f8; color: #0e6b8a; }
+        .badge-school { background: #fef3c7; color: #92400e; }
+        .badge-private { background: #fce7f3; color: #9d174d; }
+        .event-card h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.25rem;
+            letter-spacing: 0.03em;
+            color: #1a1a2e;
+            margin: 0 0 0.4rem;
+            line-height: 1.2;
+        }
+        .event-card-meta {
+            font-family: 'Barlow', sans-serif;
+            font-size: 0.82rem;
+            color: #777;
+            margin-bottom: 0.75rem;
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .event-card-meta .meta-sep { color: #ccc; }
+        .event-services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.35rem;
+        }
+        .service-pill {
+            background: #f0f8f8;
+            border: 1px solid #c2e0e3;
+            border-radius: 12px;
+            padding: 0.15rem 0.55rem;
+            font-size: 0.72rem;
+            font-family: 'Barlow', sans-serif;
+            font-weight: 600;
+            color: var(--color-primary);
+        }
+
+        /* Empty state */
+        .events-empty {
+            grid-column: 1/-1;
+            text-align: center;
+            padding: 4rem 0;
+            color: #888;
+        }
+        .events-empty p { font-size: 1rem; }
+
+        /* CTA */
+        .events-cta { background: linear-gradient(135deg, #004E57 0%, #006D77 100%); padding: 3.5rem 0; text-align: center; }
+        .events-cta h2 { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; color: #fff; letter-spacing: 0.04em; margin: 0 0 0.75rem; }
+        .events-cta p { color: rgba(255,255,255,0.85); font-size: 1rem; line-height: 1.7; max-width: 580px; margin: 0 auto 1.75rem; }
+        .events-cta .btn-primary { background: #D4A843; color: #1a1a1a; border-color: #D4A843; }
+        .events-cta .btn-primary:hover { background: #c09538; border-color: #c09538; }
+
+        /* Mobile nav */
+        .mobile-only-nav-item { display: none; }
+        @media (max-width: 680px) {
+            .mobile-only-nav-item { display: list-item; }
+            .client-resources-link { display: none; }
+            .phone-link { display: none; }
+            .site-header .btn-primary { white-space: nowrap; padding: 0.5rem 1rem; font-size: 0.78rem; }
+            .logo img { width: 140px; height: auto; }
+        }
+    </style>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://footlooseentertainment.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Real Events", "item": "https://footlooseentertainment.com/events" }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="/">
+                        <img src="../images/footloose-logo.png" alt="Footloose Entertainment Logo" width="200" height="80">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li class="has-dropdown">
+                            <a href="#">Events &#9662;</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/weddings">Weddings</a></li>
+                                <li><a href="/corporate-events">Corporate</a></li>
+                                <li><a href="/school-events">School Events</a></li>
+                                <li><a href="/private-parties">Private Parties</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/planning-resources">Planning Resources</a></li>
+                        <li class="mobile-only-nav-item"><a href="/current-clients">Client Resources</a></li>
+                    </ul>
+                </nav>
+                <div class="header-cta">
+                    <a href="/current-clients" class="client-resources-link">Client Resources</a>
+                    <a href="tel:+19048548014" class="phone-link">(904) 854-8014</a>
+                    <a href="/contact" class="btn btn-primary">Get Quote</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb-list">
+                <li><a href="/">Home</a></li>
+                <li aria-hidden="true">&rsaquo;</li>
+                <li aria-current="page">Real Events</li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="events-hero">
+        <div class="container">
+            <span class="events-hero-eyebrow">Weddings &middot; Corporate &middot; Schools &middot; Private Parties</span>
+            <h1>Real Events by Footloose</h1>
+            <p>A look inside the weddings, corporate events, proms, and private parties we've had the privilege of being part of across Jacksonville and St. Augustine.</p>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <div class="events-filters">
+        <div class="container">
+            <div class="filter-row">
+                <span class="filter-label">Filter:</span>
+                <button class="filter-btn active" data-filter="all">All Events</button>
+                <button class="filter-btn" data-filter="wedding">Weddings</button>
+                <button class="filter-btn" data-filter="corporate">Corporate</button>
+                <button class="filter-btn" data-filter="school">School</button>
+                <button class="filter-btn" data-filter="private">Private Parties</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Events Grid -->
+    <section class="events-section">
+        <div class="container">
+            <div class="events-grid" id="events-grid">
+
+                <!-- EVENT CARDS ARE INSERTED HERE BY event-publisher.js -->
+
+                <a href="/events/wedding-white-room-nathan-and-sarah-july-10-2026" class="event-card" data-type="wedding">
+                    <img src="/images/events/wedding-white-room-nathan-and-sarah-july-10-2026/cover.jpg" alt="Wedding at White Room — July 2026 — Footloose Entertainment Jacksonville" class="event-card-photo" loading="lazy">
+                    <div class="event-card-body">
+                        <span class="event-type-badge badge-wedding">Wedding</span>
+                        <h3>Wedding at White Room — July 2026</h3>
+                        <div class="event-card-meta">
+                            <span>White Room</span>
+                            <span class="meta-sep">&middot;</span>
+                            <span>July 2026</span>
+                        </div>
+                        <div class="event-services">
+                            <span class="service-pill">DJ</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="events-cta">
+        <div class="container">
+            <h2>Want Footloose at Your Event?</h2>
+            <p>We've been entertaining Jacksonville and St. Augustine for over 25 years. Let's talk about what we can bring to yours.</p>
+            <a href="/contact" class="btn btn-primary">Get a Free Quote</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <img src="../images/footloose-logo-white.png" alt="Footloose Entertainment" width="180" height="72">
+                    <p>Jacksonville and St. Augustine&rsquo;s premier event entertainment company since 1997.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/footlooseentertainment" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="https://instagram.com/footloosedjs" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Event Types</h4>
+                    <ul>
+                        <li><a href="/corporate-events">Corporate Events</a></li>
+                        <li><a href="/weddings">Weddings &amp; Celebrations</a></li>
+                        <li><a href="/school-events">School Events &amp; Proms</a></li>
+                        <li><a href="/private-parties">Private Parties</a></li>
+                        <li><a href="/planning-resources">Planning Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Specialty Services</h4>
+                    <ul>
+                        <li><a href="/360-booth">360 Video Booth</a></li>
+                        <li><a href="/mirror-booth">Mirror Photo Booth</a></li>
+                        <li><a href="/special-effects">Special Effects</a></li>
+                        <li><a href="/audio-guestbook">Audio Guestbook</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="/jacksonville-event-entertainment">Jacksonville</a></li>
+                        <li><a href="/st-augustine-event-entertainment">St. Augustine</a></li>
+                        <li><a href="https://www.jacksonvillephotobooths.com">Jacksonville Photobooths</a></li>
+                        <li><a href="/contact">Service Area</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/current-clients">Client Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Footloose Entertainment. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        // Filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const cards = document.querySelectorAll('.event-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.dataset.filter;
+                cards.forEach(card => {
+                    if (filter === 'all' || card.dataset.type === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
