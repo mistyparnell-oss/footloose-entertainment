@@ -275,8 +275,7 @@
     </script>
     <style>
         /* Recent Events home section — responsive grid */
-        #home-recent-events { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
-        @media (max-width: 960px) { #home-recent-events { grid-template-columns: repeat(2, 1fr); } }
+        #home-recent-events { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.25rem; }
         @media (max-width: 500px) { #home-recent-events { grid-template-columns: 1fr; } }
         #home-recent-events img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
     </style>
@@ -553,7 +552,7 @@
                 <p style="font-family: 'Barlow', sans-serif; color: #555; font-size: 1rem; max-width: 560px; margin: 0 auto;">A look at some of the recent weddings, corporate events, and parties we've been part of across Jacksonville and St. Augustine.</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; margin-bottom: 2.5rem;" id="home-recent-events">
+            <div style="margin-bottom: 2.5rem;" id="home-recent-events">
 <!-- RECENT-EVENTS-START -->
 
                 <a href="/events/wedding-white-room-nathan-and-sarah-july-10-2026" style="background:#fff;border:1px solid #e5e5e5;border-radius:10px;overflow:hidden;text-decoration:none;color:inherit;display:block;transition:box-shadow 0.2s,transform 0.2s;" onmouseover="this.style.boxShadow='0 6px 20px rgba(0,0,0,0.10)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='';this.style.transform=''">
