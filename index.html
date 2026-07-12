@@ -553,19 +553,43 @@
             </div>
 
             <div style="margin-bottom: 2.5rem;" id="home-recent-events">
-<!-- RECENT-EVENTS-START -->
-
-                <a href="/events/wedding-white-room-nathan-and-sarah-july-10-2026" style="background:#fff;border:1px solid #e5e5e5;border-radius:10px;overflow:hidden;text-decoration:none;color:inherit;display:block;transition:box-shadow 0.2s,transform 0.2s;" onmouseover="this.style.boxShadow='0 6px 20px rgba(0,0,0,0.10)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='';this.style.transform=''">
-                    <img src="/images/events/wedding-white-room-nathan-and-sarah-july-10-2026/cover.jpg" alt="Wedding at White Room — July 2026 — Footloose Entertainment Jacksonville" class="home-event-photo" loading="lazy">
-                    <div style="padding:1rem 1.1rem 1.2rem;">
-                        <span style="display:inline-block;font-family:'Barlow',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:0.18rem 0.5rem;border-radius:4px;margin-bottom:0.45rem;background:#f0ebf8;color:#6b21a8;">Wedding</span>
-                        <h3 style="font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:0.03em;color:#1a1a2e;margin:0 0 0.35rem;line-height:1.15;">Wedding at White Room — July 2026</h3>
-                        <div style="font-family:'Barlow',sans-serif;font-size:0.78rem;color:#888;margin-bottom:0.6rem;">White Room &middot; July 2026</div>
-                        <div style="display:flex;flex-wrap:wrap;gap:0.3rem;"><span class="home-event-pill">DJ</span></div>
-                    </div>
-                </a>
-<!-- RECENT-EVENTS-END -->
+                <p style="text-align:center;color:#aaa;font-size:0.9rem;grid-column:1/-1;" id="home-events-loading">Loading recent events…</p>
             </div>
+            <script>
+            (function(){
+                var SB='https://talmmdezbxavqvfzrdzy.supabase.co';
+                var KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRhbG1tZGV6YnhhdnF2ZnpyZHp5Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3ODU2MDIzOSwiZXhwIjoyMDk0MTM2MjM5fQ.x1NSGqjQVGd_hTXGdiaCfdmf_QGh_-vNBjwOMPprM20';
+                var TYPE_LABELS={wedding:'Wedding',corporate:'Corporate',school:'School Event',private:'Private Party'};
+                var BADGE_COLORS={wedding:'background:#f0ebf8;color:#6b21a8;',corporate:'background:#e8f4f8;color:#0e6b8a;',school:'background:#fef3c7;color:#92400e;',private:'background:#fce7f3;color:#9d174d;'};
+                fetch(SB+'/rest/v1/events?select=slug,event_type,page_title,venue_name,month_year,cover_img,service_list&order=event_date.desc&limit=4',{
+                    headers:{'apikey':KEY,'Authorization':'Bearer '+KEY}
+                }).then(function(r){return r.json();}).then(function(events){
+                    var grid=document.getElementById('home-recent-events');
+                    if(!events||!events.length){grid.innerHTML='';return;}
+                    grid.innerHTML=events.map(function(ev){
+                        var type=ev.event_type||'wedding';
+                        var label=TYPE_LABELS[type]||type;
+                        var badge=BADGE_COLORS[type]||BADGE_COLORS.wedding;
+                        var services=(ev.service_list||[]).map(function(s){
+                            return '<span style="display:inline-block;background:#e8f4f5;border:1px solid #b5dde1;border-radius:12px;padding:0.15rem 0.55rem;font-size:0.72rem;font-family:Barlow,sans-serif;font-weight:600;color:#006D77;">'+s+'</span>';
+                        }).join(' ');
+                        var img=ev.cover_img
+                            ?'<img src="'+ev.cover_img+'" alt="'+ev.page_title+'" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;" loading="lazy">'
+                            :'<div style="width:100%;aspect-ratio:4/3;background:linear-gradient(135deg,#006D77,#004E57);"></div>';
+                        return '<a href="/events/'+ev.slug+'" style="background:#fff;border:1px solid #e5e5e5;border-radius:10px;overflow:hidden;text-decoration:none;color:inherit;display:block;transition:box-shadow 0.2s,transform 0.2s;" onmouseover="this.style.boxShadow=\'0 6px 20px rgba(0,0,0,0.10)\';this.style.transform=\'translateY(-2px)\'" onmouseout="this.style.boxShadow=\'\';this.style.transform=\'\'">'
+                            +img
+                            +'<div style="padding:1rem 1.1rem 1.2rem;">'
+                            +'<span style="display:inline-block;font-family:Barlow,sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:0.18rem 0.5rem;border-radius:4px;margin-bottom:0.45rem;'+badge+'">'+label+'</span>'
+                            +'<h3 style="font-family:\'Bebas Neue\',sans-serif;font-size:1.1rem;letter-spacing:0.03em;color:#1a1a2e;margin:0 0 0.35rem;line-height:1.15;">'+ev.page_title+'</h3>'
+                            +'<div style="font-family:Barlow,sans-serif;font-size:0.78rem;color:#888;margin-bottom:0.6rem;">'+ev.venue_name+' &middot; '+ev.month_year+'</div>'
+                            +'<div style="display:flex;flex-wrap:wrap;gap:0.3rem;">'+services+'</div>'
+                            +'</div></a>';
+                    }).join('');
+                }).catch(function(){
+                    document.getElementById('home-events-loading').textContent='';
+                });
+            })();
+            </script>
 
             <div style="text-align: center;">
                 <a href="/events" class="btn btn-primary" style="font-family: 'Barlow', sans-serif; font-weight: 700; padding: 0.85rem 2.25rem; font-size: 0.95rem;">View All Events &rarr;</a>
