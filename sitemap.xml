@@ -221,4 +221,30 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://footlooseentertainment.com/blog/mother-daughter-dance-songs</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://footlooseentertainment.com/blog/first-dance-wedding-songs</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://footlooseentertainment.com/blog/questions-to-ask-a-wedding-dj</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://footlooseentertainment.com/blog/what-are-uplights</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
