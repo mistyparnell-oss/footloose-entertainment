@@ -1,5 +1,33 @@
 [
   {
+    "slug": "wedding-palencia-club-abigail-and-philip-may-16-2026",
+    "eventType": "wedding",
+    "eventDate": "2026-05-16",
+    "pageTitle": "Wedding at Palencia Club — May 2026",
+    "venueName": "Palencia Club",
+    "venueCity": "St Augustine",
+    "monthYear": "May 2026",
+    "serviceList": [
+      "DJ"
+    ],
+    "coverImg": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-palencia-club-abigail-and-philip-may-16-2026/cover.jpg",
+    "_full": {
+      "services": [
+        "DJ"
+      ],
+      "eventDate": "2026-05-16",
+      "eventType": "wedding",
+      "venueCity": "St Augustine",
+      "venueName": "Palencia Club",
+      "clientName": "Abigail & Philip",
+      "description": "",
+      "vendorNames": [],
+      "venueGuideUrl": "",
+      "vendorWebsites": [],
+      "vendorCategories": []
+    }
+  },
+  {
     "slug": "wedding-bowing-oaks-giselle-and-duncan-may-3-2026",
     "eventType": "wedding",
     "eventDate": "2026-05-03",
