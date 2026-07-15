@@ -10,8 +10,14 @@
     "service_list": [
       "DJ"
     ],
-    "cover_img": null,
-    "photo_files": []
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-white-room-sarah-nathan-smith-jul-10-2026/cover.jpg",
+    "photo_files": [
+      "cover.jpg",
+      "photo-1.jpg",
+      "photo-2.jpg",
+      "photo-3.jpg",
+      "photo-4.jpg"
+    ]
   },
   {
     "slug": "wedding-palencia-club-abigail-and-philip-may-16-2026",
