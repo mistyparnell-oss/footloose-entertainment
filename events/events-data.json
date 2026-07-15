@@ -91,10 +91,11 @@
       "Cold Sparks",
       "CO2 Blasts"
     ],
-    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-bowing-oaks-giselle-and-duncan-may-3-2026/photo-1.jpg",
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-bowing-oaks-giselle-and-duncan-may-3-2026/cover.jpg",
     "photo_files": [
-      "photo-1.jpg",
       "cover.jpg",
+      "photo-11.jpg",
+      "photo-1.jpg",
       "photo-3.jpg",
       "photo-4.jpg",
       "photo-5.jpg",
@@ -103,7 +104,6 @@
       "photo-8.jpg",
       "photo-9.jpg",
       "photo-10.jpg",
-      "photo-11.jpg",
       "photo-11.jpg"
     ]
   },
