@@ -20,6 +20,31 @@
     ]
   },
   {
+    "slug": "wedding-epping-forest-yacht-club-nick-megan-may-30-2026",
+    "event_type": "wedding",
+    "event_date": "2026-05-30",
+    "page_title": "Wedding at Epping  Forest Yacht Club — May 2026",
+    "venue_name": "Epping  Forest Yacht Club",
+    "venue_city": "Jacksonville",
+    "month_year": "May 2026",
+    "service_list": [
+      "DJ",
+      "Cold Sparkles"
+    ],
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-epping-forest-yacht-club-nick-megan-may-30-2026/cover.jpg",
+    "photo_files": [
+      "cover.jpg",
+      "photo-1.jpg",
+      "photo-2.jpg",
+      "photo-3.jpg",
+      "photo-4.jpg",
+      "photo-5.jpg",
+      "photo-6.jpg",
+      "photo-7.jpg",
+      "photo-8.jpg"
+    ]
+  },
+  {
     "slug": "wedding-palencia-club-abigail-and-philip-may-16-2026",
     "event_type": "wedding",
     "event_date": "2026-05-16",
