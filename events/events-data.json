@@ -74,6 +74,30 @@
     ]
   },
   {
+    "slug": "wedding-bellemont-estate-katelynn-jody-hoffman-may-08-2026",
+    "event_type": "wedding",
+    "event_date": "2026-05-08",
+    "page_title": "Wedding at Bellemont Estate — May 2026",
+    "venue_name": "Bellemont Estate",
+    "venue_city": "Callahan",
+    "month_year": "May 2026",
+    "service_list": [
+      "DJ"
+    ],
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-bellemont-estate-katelynn-jody-hoffman-may-08-2026/cover.jpg",
+    "photo_files": [
+      "cover.jpg",
+      "photo-1.jpg",
+      "photo-2.jpg",
+      "photo-3.jpg",
+      "photo-4.jpg",
+      "photo-5.jpg",
+      "photo-6.jpg",
+      "photo-7.jpg",
+      "photo-8.jpg"
+    ]
+  },
+  {
     "slug": "wedding-bowing-oaks-giselle-and-duncan-may-3-2026",
     "event_type": "wedding",
     "event_date": "2026-05-03",
@@ -101,9 +125,7 @@
       "photo-4.jpg",
       "photo-5.jpg",
       "photo-8.jpg",
-      "photo-9.jpg",
-      "photo-10.jpg",
-      "photo-10.jpg"
+      "photo-9.jpg"
     ]
   },
   {
