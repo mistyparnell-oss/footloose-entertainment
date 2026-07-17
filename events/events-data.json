@@ -102,6 +102,33 @@
     ]
   },
   {
+    "slug": "wedding-bowing-oaks-kylie-timothy-may-16-2026",
+    "event_type": "wedding",
+    "event_date": "2026-05-16",
+    "page_title": "Wedding at Bowing Oaks — May 2026",
+    "venue_name": "Bowing Oaks",
+    "venue_city": "Jacksonville",
+    "month_year": "May 2026",
+    "service_list": [
+      "DJ",
+      "Photo Booth"
+    ],
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-bowing-oaks-kylie-timothy-may-16-2026/cover.jpg",
+    "photo_files": [
+      "cover.jpg",
+      "photo-1.jpg",
+      "photo-2.jpg",
+      "photo-3.jpg",
+      "photo-4.jpg",
+      "photo-5.jpg",
+      "photo-6.jpg",
+      "photo-7.jpg",
+      "photo-8.jpg",
+      "photo-9.jpg",
+      "photo-10.jpg"
+    ]
+  },
+  {
     "slug": "wedding-epping-forest-yacht-club-madison-andy-wenker-may-09-2026",
     "event_type": "wedding",
     "event_date": "2026-05-09",
