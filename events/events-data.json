@@ -137,8 +137,21 @@
       "Uplights",
       "Photo Booth"
     ],
-    "cover_img": null,
-    "photo_files": []
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-marywood-retreat-conference-abby-austin-may-22-2026/cover.jpg",
+    "photo_files": [
+      "cover.jpg",
+      "photo-1.jpg",
+      "photo-2.jpg",
+      "photo-3.jpg",
+      "photo-4.jpg",
+      "photo-5.jpg",
+      "photo-6.jpg",
+      "photo-7.jpg",
+      "photo-8.jpg",
+      "photo-9.jpg",
+      "photo-10.jpg",
+      "photo-11.jpg"
+    ]
   },
   {
     "slug": "wedding-bowing-oaks-kylie-timothy-may-16-2026",
