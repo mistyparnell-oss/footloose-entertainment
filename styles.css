@@ -1,10 +1,10 @@
 /* ===================================
    Event Gallery (masonry — no cropping)
    =================================== */
-.gallery-grid { columns: 2; column-gap: 1rem; }
-.gallery-grid.three-col { columns: 3; }
-.gallery-photo { width: 100%; height: auto; max-height: 480px; object-fit: cover; object-position: top; display: block; border-radius: 8px; margin-bottom: 1rem; break-inside: avoid; }
-@media (max-width: 580px) { .gallery-grid, .gallery-grid.three-col { columns: 1; } }
+.gallery-grid { columns: 2 !important; column-gap: 1rem !important; display: block !important; }
+.gallery-grid.three-col { columns: 3 !important; }
+.gallery-photo { width: 100% !important; height: auto !important; max-height: 480px !important; aspect-ratio: unset !important; object-fit: cover !important; object-position: top !important; display: block !important; border-radius: 8px !important; margin-bottom: 1rem !important; break-inside: avoid !important; }
+@media (max-width: 580px) { .gallery-grid, .gallery-grid.three-col { columns: 1 !important; } }
 
 /* ===================================
    CSS Variables / Design Tokens
