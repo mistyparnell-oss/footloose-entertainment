@@ -292,14 +292,14 @@
     "slug": "wedding-the-white-room-veronica-scott-froede-apr-03-2026",
     "event_type": "wedding",
     "event_date": "2026-04-03",
-    "page_title": "Wedding at The White Room — April 2026",
+    "page_title": "Veronica & Scott Froede",
     "venue_name": "The White Room",
     "venue_city": "St. Augustine",
     "month_year": "April 2026",
     "service_list": [
-      "DJ",
       "Uplights",
-      "Photo Booth"
+      "Photo Booth",
+      "DJ"
     ],
     "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-white-room-veronica-scott-froede-apr-03-2026/cover.jpg",
     "photo_files": [
