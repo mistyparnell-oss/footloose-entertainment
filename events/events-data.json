@@ -296,9 +296,9 @@
     "venue_city": "St. Augustine",
     "month_year": "April 2026",
     "service_list": [
+      "DJ Kris",
       "Uplights",
-      "Photo Booth",
-      "DJ"
+      "Photo Booth"
     ],
     "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-white-room-veronica-scott-froede-apr-03-2026/cover.jpg",
     "photo_files": [
