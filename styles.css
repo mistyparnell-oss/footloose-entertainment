@@ -2924,3 +2924,66 @@ body:has(.private-hero) .main-nav a.active {
     font-weight: 500;
 }
 .page-back-link:hover { color: #006D77 !important; }
+
+/* ---- AWARDS & RECOGNITION ---- */
+.awards-section { padding: 4rem 0; background: #fff; }
+.awards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem 2.5rem;
+    margin-top: 2.5rem;
+}
+.award-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+    padding: 1.5rem 2rem;
+    background: #F5F5F5;
+    border-radius: 12px;
+    min-width: 130px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+a.award-badge:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.10);
+}
+.award-logo-img {
+    width: 38px;
+    height: 44px;
+    object-fit: contain;
+    image-rendering: -webkit-optimize-contrast;
+}
+.award-logo-img--wide {
+    width: auto;
+    max-width: 110px;
+    height: 44px;
+}
+.award-stars {
+    font-size: 1.4rem;
+    color: #F5A623;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+.award-label {
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #1A1A1A;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+.award-sublabel {
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.75rem;
+    color: #777;
+    text-align: center;
+}
+@media (max-width: 680px) {
+    .awards-grid { gap: 1rem 1.5rem; }
+    .award-badge { padding: 1.2rem 1.5rem; min-width: 110px; }
+}

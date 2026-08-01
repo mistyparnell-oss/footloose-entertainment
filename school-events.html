@@ -97,6 +97,13 @@
             .site-header .btn-primary { white-space: nowrap; padding: 0.5rem 1rem; font-size: 0.78rem; }
             .logo img { width: 140px; height: auto; }
         }
+
+        /* ---- SERVICE NAV BAR ---- */
+        .service-nav-bar { background: #f5f5f5; border-bottom: 1px solid #e0e0e0; padding: 0.5rem 0; }
+        .service-nav-list { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 0.25rem; }
+        .service-nav-list li a { display: block; padding: 0.4rem 1rem; font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #555; text-decoration: none; border-radius: 4px; transition: background 0.2s, color 0.2s; }
+        .service-nav-list li a:hover { background: #fff; color: #006D77; }
+        .service-nav-list li a.active { background: #fff; color: #006D77; font-weight: 700; }
         </style>
 
     <!-- LocalBusiness Schema -->
@@ -274,7 +281,17 @@
                 </button>
             </div>
         </div>
+        <div class="service-nav-bar">
+            <div class="container">
+                <ul class="service-nav-list">
+                    <li><a href="/school-dj">DJ</a></li>
+                    <li><a href="/school-photobooth">Photo Booths</a></li>
+                    <li><a href="/special-effects">Special Effects</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
+
 
     <!-- Breadcrumb Navigation -->
     <nav class="breadcrumb-nav" aria-label="Breadcrumb">
@@ -824,6 +841,43 @@
     </section>
 
     <!-- CTA Section -->
+    <!-- Awards & Recognition -->
+    <section class="awards-section">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>Awards &amp; Recognition</h2>
+                <p>Trusted, recognized, and top-rated by industry leaders across Northeast Florida</p>
+            </div>
+            <div class="awards-grid">
+                <a href="https://www.weddingwire.com/biz/footloose-entertainment-saint-augustine/a10eb6cbce98694b.html" target="_blank" rel="noopener" class="award-badge" aria-label="WeddingWire profile">
+                    <img src="images/FLE_weddingwire.png" alt="WeddingWire logo" class="award-logo-img">
+                    <span class="award-label">WeddingWire</span>
+                    <span class="award-sublabel">Top Rated</span>
+                </a>
+                <a href="https://www.theknot.com/marketplace/footloose-entertainment-st-augustine-fl-751742" target="_blank" rel="noopener" class="award-badge" aria-label="The Knot profile">
+                    <img src="images/FLE_theknot.png" alt="The Knot logo" class="award-logo-img">
+                    <span class="award-label">The Knot</span>
+                    <span class="award-sublabel">Top Rated</span>
+                </a>
+                <a href="https://share.google/axM4effoEEh1UJBTB" target="_blank" rel="noopener" class="award-badge" aria-label="Google Reviews">
+                    <span class="award-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <span class="award-label">Google Reviews</span>
+                    <span class="award-sublabel">5.0 &middot; 127+ Reviews</span>
+                </a>
+                <a href="https://staugweddingassoc.com" target="_blank" rel="noopener" class="award-badge" aria-label="St. Augustine Weddings and Events Association">
+                    <img src="images/FLE_sawea.png" alt="SAWEA - St. Augustine Weddings and Events Association logo" class="award-logo-img award-logo-img--wide">
+                    <span class="award-label">SAWEA</span>
+                    <span class="award-sublabel">Member</span>
+                </a>
+                <a href="https://neflnace.weebly.com" target="_blank" rel="noopener" class="award-badge" aria-label="NACE Northeast Florida Chapter">
+                    <img src="images/FLE_nace.png" alt="NACE Northeast Florida Chapter logo" class="award-logo-img award-logo-img--wide">
+                    <span class="award-label">NACE</span>
+                    <span class="award-sublabel">Member</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <section class="cta-section">
         <div class="container">
             <div class="cta-content">

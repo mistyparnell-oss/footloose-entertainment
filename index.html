@@ -101,6 +101,76 @@
             margin: 0;
         }
     
+        /* ---- AWARDS & RECOGNITION ---- */
+        .awards-section { padding: 4rem 0; background: #fff; }
+        .awards-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem 2.5rem;
+            margin-top: 2.5rem;
+        }
+        .award-badge {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            color: inherit;
+            padding: 1.5rem 2rem;
+            background: #F5F5F5;
+            border-radius: 12px;
+            min-width: 130px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        a.award-badge:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.10);
+        }
+        .award-logo-img {
+            width: 38px;
+            height: 44px;
+            object-fit: contain;
+            image-rendering: -webkit-optimize-contrast;
+        }
+        .award-logo-img--wide {
+            width: auto;
+            max-width: 110px;
+            height: 44px;
+        }
+        .award-stars {
+            font-size: 1.4rem;
+            color: #F5A623;
+            letter-spacing: 1px;
+            line-height: 1;
+        }
+        .award-text-logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: 0.1em;
+            color: var(--color-primary);
+            line-height: 1;
+        }
+        .award-label {
+            font-family: 'Barlow', sans-serif;
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: #1A1A1A;
+            text-align: center;
+            letter-spacing: 0.02em;
+        }
+        .award-sublabel {
+            font-family: 'Barlow', sans-serif;
+            font-size: 0.75rem;
+            color: #777;
+            text-align: center;
+        }
+        @media (max-width: 680px) {
+            .awards-grid { gap: 1rem 1.5rem; }
+            .award-badge { padding: 1.2rem 1.5rem; min-width: 110px; }
+        }
+
         /* ---- MOBILE HEADER FIXES ---- */
         .mobile-only-nav-item { display: none; }
         @media (max-width: 680px) {
@@ -812,6 +882,43 @@
                         <p>Yes &mdash; we are one of Northeast Florida&rsquo;s most trusted school event entertainment companies. We serve Duval County, St. Johns County, Clay County, Nassau County, and surrounding school districts for proms, homecoming dances, and other school events. All staff are background-checked and experienced with student audiences.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards & Recognition -->
+    <section class="awards-section">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>Awards &amp; Recognition</h2>
+                <p>Top-rated on the platforms couples and planners trust most</p>
+            </div>
+            <div class="awards-grid">
+                <a href="https://www.weddingwire.com/biz/footloose-entertainment-saint-augustine/a10eb6cbce98694b.html" target="_blank" rel="noopener" class="award-badge" aria-label="WeddingWire profile">
+                    <img src="images/FLE_weddingwire.png" alt="WeddingWire logo" class="award-logo-img">
+                    <span class="award-label">WeddingWire</span>
+                    <span class="award-sublabel">Top Rated</span>
+                </a>
+                <a href="https://www.theknot.com/marketplace/footloose-entertainment-st-augustine-fl-751742" target="_blank" rel="noopener" class="award-badge" aria-label="The Knot profile">
+                    <img src="images/FLE_theknot.png" alt="The Knot logo" class="award-logo-img">
+                    <span class="award-label">The Knot</span>
+                    <span class="award-sublabel">Top Rated</span>
+                </a>
+                <a href="https://share.google/axM4effoEEh1UJBTB" target="_blank" rel="noopener" class="award-badge" aria-label="Google Reviews">
+                    <span class="award-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <span class="award-label">Google Reviews</span>
+                    <span class="award-sublabel">5.0 &middot; 127+ Reviews</span>
+                </a>
+                <a href="https://staugweddingassoc.com" target="_blank" rel="noopener" class="award-badge" aria-label="St. Augustine Weddings and Events Association">
+                    <img src="images/FLE_sawea.png" alt="SAWEA - St. Augustine Weddings and Events Association logo" class="award-logo-img award-logo-img--wide">
+                    <span class="award-label">SAWEA</span>
+                    <span class="award-sublabel">Member</span>
+                </a>
+                <a href="https://neflnace.weebly.com" target="_blank" rel="noopener" class="award-badge" aria-label="NACE Northeast Florida Chapter">
+                    <img src="images/FLE_nace.png" alt="NACE Northeast Florida Chapter logo" class="award-logo-img award-logo-img--wide">
+                    <span class="award-label">NACE</span>
+                    <span class="award-sublabel">Member</span>
+                </a>
             </div>
         </div>
     </section>
