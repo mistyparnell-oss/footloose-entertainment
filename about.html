@@ -309,6 +309,81 @@
             color: var(--color-primary);
         }
 
+        /* ---- TEAM PROFILES ---- */
+        .team-section { padding: 5rem 0; background: #fff; }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .team-card {
+            background: #F5F5F5;
+            border-radius: 16px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        .team-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 32px rgba(0,0,0,0.10);
+        }
+        .team-card__photo {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            object-position: top center;
+            background: #ddd;
+        }
+        .team-card__placeholder {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            background: #e8e8e8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .team-card__placeholder svg { color: #bbb; }
+        .team-card__body { padding: 1.5rem; flex: 1; }
+        .team-card__name {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: 0.05em;
+            color: #006D77;
+            margin-bottom: 0.2rem;
+        }
+        .team-card__title {
+            font-family: 'Barlow', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #D4A843;
+            margin-bottom: 0.9rem;
+        }
+        .team-card__bio {
+            font-family: 'Barlow', sans-serif;
+            font-size: 0.92rem;
+            color: #555;
+            line-height: 1.7;
+            margin: 0;
+        }
+        .team-card__since {
+            font-family: 'Barlow', sans-serif;
+            font-size: 0.78rem;
+            color: #999;
+            margin-top: 0.8rem;
+        }
+        @media (max-width: 680px) {
+            .team-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+            .team-card__body { padding: 1rem; }
+            .team-card__bio { font-size: 0.85rem; }
+        }
+        @media (max-width: 380px) {
+            .team-grid { grid-template-columns: 1fr; }
+        }
+
         /* FAQ */
         .faq-section {
             padding: 5rem 0;
@@ -515,6 +590,51 @@
           "position": 2,
           "name": "About Us",
           "item": "https://footlooseentertainment.com/about"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Person Schema — DJ Team -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "name": "DJ Kris",
+          "jobTitle": "Founder & Professional DJ & MC",
+          "description": "Founder of Footloose Entertainment since 1997. Nearly 30 years of wedding and special event DJ experience in Jacksonville and St. Augustine, FL.",
+          "worksFor": { "@type": "LocalBusiness", "name": "Footloose Entertainment", "url": "https://footlooseentertainment.com" },
+          "knowsAbout": ["Wedding DJ", "Corporate DJ", "Event Entertainment", "Jacksonville FL", "St. Augustine FL"],
+          "url": "https://footlooseentertainment.com/about#meet-the-team"
+        },
+        {
+          "@type": "Person",
+          "name": "Dennis",
+          "jobTitle": "Professional DJ & MC",
+          "description": "Professional DJ with over 20 years of experience serving Northeast Florida since 2010. Specializes in weddings, corporate events, and private parties in Jacksonville and surrounding areas.",
+          "worksFor": { "@type": "LocalBusiness", "name": "Footloose Entertainment", "url": "https://footlooseentertainment.com" },
+          "knowsAbout": ["Wedding DJ", "Corporate DJ", "Event Entertainment", "Jacksonville FL", "Northeast Florida"],
+          "url": "https://footlooseentertainment.com/about#meet-the-team"
+        },
+        {
+          "@type": "Person",
+          "name": "Rob",
+          "jobTitle": "Professional DJ & MC",
+          "description": "DJ with deep roots in Southern music culture spanning R&B, soul, pop, country, and more. Serves weddings and events across Jacksonville and Northeast Florida.",
+          "worksFor": { "@type": "LocalBusiness", "name": "Footloose Entertainment", "url": "https://footlooseentertainment.com" },
+          "knowsAbout": ["Wedding DJ", "Private Party DJ", "Event Entertainment", "Jacksonville FL"],
+          "url": "https://footlooseentertainment.com/about#meet-the-team"
+        },
+        {
+          "@type": "Person",
+          "name": "Jason",
+          "jobTitle": "Professional DJ & MC",
+          "description": "Radio personality at 17, nightclub DJ and MC by 20. Two decades of wedding and event DJ experience across Florida with expertise in both turntable skills and MC duties.",
+          "worksFor": { "@type": "LocalBusiness", "name": "Footloose Entertainment", "url": "https://footlooseentertainment.com" },
+          "knowsAbout": ["Wedding DJ", "MC", "Event Entertainment", "Florida", "St. Augustine FL"],
+          "url": "https://footlooseentertainment.com/about#meet-the-team"
         }
       ]
     }
@@ -773,6 +893,68 @@
                         <span>Founded in Jacksonville in 1997. We know every venue, every coordinator, and every challenge in this market.</span>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the Team -->
+    <section class="team-section" id="meet-the-team">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>Meet Your DJs</h2>
+                <p>Every Footloose event is led by an experienced professional &mdash; not a contractor. Our team brings decades of combined experience to Jacksonville and St. Augustine events.</p>
+            </div>
+            <div class="team-grid">
+
+                <!-- Kris -->
+                <div class="team-card" itemscope itemtype="https://schema.org/Person">
+                    <img src="images/FLE_kris_dj.jpg" alt="Kris, Founder and DJ at Footloose Entertainment Jacksonville FL" class="team-card__photo" loading="lazy" itemprop="image">
+                    <div class="team-card__body">
+                        <div class="team-card__name" itemprop="name">DJ Kris</div>
+                        <div class="team-card__title" itemprop="jobTitle">Founder &amp; Professional DJ &amp; MC</div>
+                        <p class="team-card__bio" itemprop="description">Founder of Footloose Entertainment since 1997, Kris was inspired by the DJ at his own wedding and never looked back. With nearly 30 years of experience, he&rsquo;s fine-tuned his craft to precision &mdash; bringing every client&rsquo;s entertainment vision to life.</p>
+                        <meta itemprop="worksFor" content="Footloose Entertainment">
+                        <meta itemprop="knowsAbout" content="Wedding DJ, Corporate DJ, Event Entertainment, Jacksonville FL, St. Augustine FL">
+                    </div>
+                </div>
+
+                <!-- Dennis -->
+                <div class="team-card" itemscope itemtype="https://schema.org/Person">
+                    <img src="images/FLE_dennis_dj.jpg" alt="DJ Dennis Wolf, professional DJ at Footloose Entertainment Jacksonville FL" class="team-card__photo" loading="lazy" itemprop="image">
+                    <div class="team-card__body">
+                        <div class="team-card__name" itemprop="name">DJ Dennis</div>
+                        <div class="team-card__title" itemprop="jobTitle">Professional DJ &amp; MC</div>
+                        <p class="team-card__bio" itemprop="description">With over 20 years as a professional DJ and serving Northeast Florida since 2010, Dennis meets with every client before their event to cover every detail in advance. His crowd-reading skills and deep experience make every event a success.</p>
+                        <meta itemprop="worksFor" content="Footloose Entertainment">
+                        <meta itemprop="knowsAbout" content="Wedding DJ, Corporate DJ, Event Entertainment, Jacksonville FL, Northeast Florida">
+                    </div>
+                </div>
+
+                <!-- Rob -->
+                <div class="team-card" itemscope itemtype="https://schema.org/Person">
+                    <img src="images/FLE_rob_dj.jpg" alt="DJ Rob, professional DJ at Footloose Entertainment Jacksonville FL" class="team-card__photo" loading="lazy" itemprop="image">
+                    <div class="team-card__body">
+                        <div class="team-card__name" itemprop="name">DJ Rob</div>
+                        <div class="team-card__title" itemprop="jobTitle">Professional DJ &amp; MC</div>
+                        <p class="team-card__bio" itemprop="description">Growing up in the South, Rob developed a passion for music across every genre &mdash; R&amp;B, soul, pop, country, and everything in between. &ldquo;The right song at the right time takes over people&rsquo;s emotions and they can&rsquo;t help but react.&rdquo; That instinct is what defines him.</p>
+                        <meta itemprop="worksFor" content="Footloose Entertainment">
+                        <meta itemprop="knowsAbout" content="Wedding DJ, Private Party DJ, Event Entertainment, Jacksonville FL">
+                    </div>
+                </div>
+
+                <!-- Jason -->
+                <div class="team-card" itemscope itemtype="https://schema.org/Person">
+                    <img src="images/FLE_jason_dj.jpg" alt="DJ Jason, professional DJ at Footloose Entertainment Jacksonville FL" class="team-card__photo" loading="lazy" itemprop="image">
+                    <div class="team-card__body">
+                        <div class="team-card__name" itemprop="name">DJ Jason</div>
+                        <div class="team-card__title" itemprop="jobTitle">Professional DJ &amp; MC</div>
+                        <p class="team-card__bio" itemprop="description">A radio personality at 17 and nightclub DJ and MC by 20, Jason quickly became one of Florida&rsquo;s top performers. Two decades of weddings and events have sharpened his blend of turntable skills and mic ability into something truly one of a kind.</p>
+                        <meta itemprop="worksFor" content="Footloose Entertainment">
+                        <meta itemprop="knowsAbout" content="Wedding DJ, MC, Event Entertainment, Florida">
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </section>
