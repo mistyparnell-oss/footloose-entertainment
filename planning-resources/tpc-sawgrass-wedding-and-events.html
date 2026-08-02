@@ -302,11 +302,11 @@
     (function(){
         var wrap = document.getElementById('venue-events-wrap');
         var grid = document.getElementById('venue-events-grid');
-        var venueName = (wrap.dataset.venue || '').toLowerCase();
+        var venueName = (wrap.dataset.venue || '').toLowerCase().replace(/\s+/g,' ');
         fetch('/events/events-data.json')
             .then(function(r){ return r.json(); })
             .then(function(events){
-                var matches = events.filter(function(ev){ return (ev.venue_name||'').toLowerCase().indexOf(venueName) !== -1; });
+                var matches = events.filter(function(ev){ return (ev.venue_name||'').toLowerCase().replace(/\s+/g,' ').indexOf(venueName) !== -1; });
                 if (!matches.length) return;
                 wrap.style.display = 'block';
                 var SB = 'https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos';
