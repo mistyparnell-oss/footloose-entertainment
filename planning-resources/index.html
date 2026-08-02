@@ -50,7 +50,10 @@
 
         /* Hero */
         .resources-hero {
-            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+            background-image: linear-gradient(180deg, rgba(0,40,45,0.55) 0%, rgba(0,30,34,0.78) 100%), url('../images/venues/planning-resources-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            background-color: var(--color-primary-dark);
             padding: 4.5rem 0 4rem;
             text-align: center;
         }
@@ -318,12 +321,12 @@
         </div>
     </section>
 
-    <!-- Venue Guides -->
+    <!-- Browse by Area -->
     <section class="resource-category bg-faint">
         <div class="container">
-            <span class="resource-category-label">Venue Guides</span>
-            <h2>Know Your Venue Before You Book Entertainment</h2>
-            <p class="resource-category-intro">Every venue has its own layout, acoustics, and logistics. These guides cover what to expect at some of Jacksonville and St. Augustine's most-booked wedding and event venues, including two dual-purpose guides for venues that host both weddings and corporate events well.</p>
+            <span class="resource-category-label">Browse by Area</span>
+            <h2>Not Sure Where to Start? Browse by Location</h2>
+            <p class="resource-category-intro">If you're still deciding on a venue, these area roundups cover the most popular options across each part of Northeast Florida — with capacity ranges, setting notes, and links to individual guides where we have them.</p>
             <div class="resources-grid">
                 <a href="/planning-resources/jacksonville-wedding-venues" class="resource-card">
                     <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/jacksonville-venues-hero.jpg');"></div>
@@ -331,48 +334,6 @@
                     <h3>Best Jacksonville Wedding Venues</h3>
                     <p>A curated roundup of fourteen venues spanning Southside, Ortega, Westside, Downtown, and Riverside, with a link to our separate Orange Park guide.</p>
                     <span class="resource-card-link">Read the roundup &rarr;</span>
-                </a>
-                <a href="/planning-resources/epping-forest-yacht-club-wedding" class="resource-card">
-                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/epping-forest-hero.jpg');"></div>
-                    <span class="resource-card-tag">Venue Guide</span>
-                    <h3>Epping Forest Yacht &amp; Country Club Wedding Guide</h3>
-                    <p>Room capacities, garden ceremony options, and what to know about entertainment logistics at this riverside Jacksonville venue.</p>
-                    <span class="resource-card-link">Read the guide &rarr;</span>
-                </a>
-                <a href="/planning-resources/club-continental-wedding" class="resource-card">
-                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/club-continental-hero.jpg');"></div>
-                    <span class="resource-card-tag">Venue Guide</span>
-                    <h3>Club Continental Wedding Guide</h3>
-                    <p>Room capacities, the riverside oak grove ceremony spot, and entertainment logistics at this historic Orange Park resort.</p>
-                    <span class="resource-card-link">Read the guide &rarr;</span>
-                </a>
-                <a href="/planning-resources/white-room-wedding" class="resource-card">
-                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/white-room-hero.jpg');"></div>
-                    <span class="resource-card-tag">Venue Guide</span>
-                    <h3>The White Room Wedding Guide</h3>
-                    <p>Venue spaces, rooftop ceremony options, and entertainment logistics at this historic St. Augustine waterfront venue.</p>
-                    <span class="resource-card-link">Read the guide &rarr;</span>
-                </a>
-                <a href="/planning-resources/treasury-on-the-plaza-wedding" class="resource-card">
-                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/treasury-on-the-plaza-hero.jpg');"></div>
-                    <span class="resource-card-tag">Venue Guide</span>
-                    <h3>Treasury on the Plaza Wedding Guide</h3>
-                    <p>The Vault, guest capacities, and package options at this converted 1920s bank building in downtown St. Augustine.</p>
-                    <span class="resource-card-link">Read the guide &rarr;</span>
-                </a>
-                <a href="/planning-resources/tpc-sawgrass-wedding-and-events" class="resource-card">
-                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/tpc-sawgrass-hero.jpg');"></div>
-                    <span class="resource-card-tag">Wedding &amp; Corporate Guide</span>
-                    <h3>TPC Sawgrass Wedding &amp; Events Guide</h3>
-                    <p>Clubhouse capacities and Event Lawn views at this Ponte Vedra Beach venue, for weddings and corporate events alike.</p>
-                    <span class="resource-card-link">Read the guide &rarr;</span>
-                </a>
-                <a href="/planning-resources/sawgrass-marriott-wedding-and-events" class="resource-card">
-                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/sawgrass-marriott-hero.jpg');"></div>
-                    <span class="resource-card-tag">Wedding &amp; Corporate Guide</span>
-                    <h3>Sawgrass Marriott Wedding &amp; Events Guide</h3>
-                    <p>Ballroom capacities, the Cascade Lawn, and oceanfront Cabana Beach Club options for weddings and corporate events.</p>
-                    <span class="resource-card-link">Read the guide &rarr;</span>
                 </a>
                 <a href="/planning-resources/st-augustine-wedding-venues" class="resource-card">
                     <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/st-augustine-venues-hero.jpg');"></div>
@@ -406,12 +367,170 @@
         </div>
     </section>
 
+    <!-- Individual Venue Guides -->
+    <section class="resource-category">
+        <div class="container">
+            <span class="resource-category-label">Venue Guides</span>
+            <h2>Deep-Dive Guides for Specific Venues</h2>
+            <p class="resource-category-intro">Already have a venue in mind? These guides go deep on individual properties — room capacities, entertainment logistics, load-in details, and what to expect on the day. Guides marked "Wedding &amp; Corporate" cover both event types side by side.</p>
+            <div class="resources-grid">
+                <a href="/planning-resources/epping-forest-yacht-club-wedding" class="resource-card">
+                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/epping-forest-hero.jpg');"></div>
+                    <span class="resource-card-tag">Venue Guide</span>
+                    <h3>Epping Forest Yacht &amp; Country Club Wedding Guide</h3>
+                    <p>Room capacities, garden ceremony options, and what to know about entertainment logistics at this riverside Jacksonville venue.</p>
+                    <span class="resource-card-link">Read the guide &rarr;</span>
+                </a>
+                <a href="/planning-resources/club-continental-wedding" class="resource-card">
+                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/club-continental-hero.jpg');"></div>
+                    <span class="resource-card-tag">Venue Guide</span>
+                    <h3>Club Continental Wedding Guide</h3>
+                    <p>Room capacities, the riverside oak grove ceremony spot, and entertainment logistics at this historic Orange Park resort.</p>
+                    <span class="resource-card-link">Read the guide &rarr;</span>
+                </a>
+                <a href="/planning-resources/white-room-wedding" class="resource-card">
+                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/white-room-hero.jpg');"></div>
+                    <span class="resource-card-tag">Venue Guide</span>
+                    <h3>The White Room Wedding Guide</h3>
+                    <p>Venue spaces, rooftop ceremony options, and entertainment logistics at this historic St. Augustine waterfront venue.</p>
+                    <span class="resource-card-link">Read the guide &rarr;</span>
+                </a>
+                <a href="/planning-resources/treasury-on-the-plaza-wedding" class="resource-card">
+                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/treasury-on-the-plaza-hero.jpg');"></div>
+                    <span class="resource-card-tag">Venue Guide</span>
+                    <h3>Treasury on the Plaza Wedding Guide</h3>
+                    <p>The Vault, guest capacities, and package options at this converted 1920s bank building in downtown St. Augustine.</p>
+                    <span class="resource-card-link">Read the guide &rarr;</span>
+                </a>
+                <a href="/planning-resources/lightner-museum-wedding" class="resource-card">
+                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/lightner-museum-hero.jpg');"></div>
+                    <span class="resource-card-tag">Venue Guide</span>
+                    <h3>Lightner Museum Wedding Guide</h3>
+                    <p>Gilded Age grandeur, the iconic Alcazar Court, and entertainment logistics for weddings at this St. Augustine museum venue.</p>
+                    <span class="resource-card-link">Read the guide &rarr;</span>
+                </a>
+                <a href="/planning-resources/casa-monica-wedding" class="resource-card">
+                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/casa-monica-hero.jpg');"></div>
+                    <span class="resource-card-tag">Venue Guide</span>
+                    <h3>Casa Monica Hotel Wedding Guide</h3>
+                    <p>Spanish Moorish architecture, rooftop terraces, and entertainment logistics at this iconic St. Augustine historic hotel.</p>
+                    <span class="resource-card-link">Read the guide &rarr;</span>
+                </a>
+                <a href="/planning-resources/walkers-landing-wedding" class="resource-card">
+                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/walkers-landing-hero.jpg');"></div>
+                    <span class="resource-card-tag">Venue Guide</span>
+                    <h3>Walker's Landing Wedding Guide</h3>
+                    <p>Waterfront views, outdoor ceremony lawns, and entertainment logistics at this Jacksonville waterfront venue.</p>
+                    <span class="resource-card-link">Read the guide &rarr;</span>
+                </a>
+                <a href="/planning-resources/cummer-museum-wedding" class="resource-card">
+                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/cummer-museum-hero.jpg');"></div>
+                    <span class="resource-card-tag">Venue Guide</span>
+                    <h3>Cummer Museum of Art &amp; Gardens Wedding Guide</h3>
+                    <p>Formal English gardens, St. Johns River views, and entertainment logistics at this Riverside Jacksonville museum estate.</p>
+                    <span class="resource-card-link">Read the guide &rarr;</span>
+                </a>
+                <a href="/planning-resources/bowing-oaks-wedding" class="resource-card">
+                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/bowing-oaks-hero.jpg');"></div>
+                    <span class="resource-card-tag">Venue Guide</span>
+                    <h3>Bowing Oaks Wedding Guide</h3>
+                    <p>Towering live oak canopy, private estate grounds, and entertainment logistics at this Jacksonville estate wedding venue.</p>
+                    <span class="resource-card-link">Read the guide &rarr;</span>
+                </a>
+                <a href="/planning-resources/timuquana-country-club-wedding" class="resource-card">
+                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/timuquana-country-club-hero.jpg');"></div>
+                    <span class="resource-card-tag">Venue Guide</span>
+                    <h3>Timuquana Country Club Wedding Guide</h3>
+                    <p>Historic clubhouse, St. Johns River views, and entertainment logistics at this prestigious Jacksonville private club.</p>
+                    <span class="resource-card-link">Read the guide &rarr;</span>
+                </a>
+                <a href="/planning-resources/casa-marina-jacksonville-beach-wedding" class="resource-card">
+                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/casa-marina-jacksonville-beach-hero.jpg');"></div>
+                    <span class="resource-card-tag">Venue Guide</span>
+                    <h3>Casa Marina Hotel Jacksonville Beach Wedding Guide</h3>
+                    <p>Historic 1925 beachfront hotel, Grand Ballroom, and entertainment logistics one block from the Atlantic Ocean.</p>
+                    <span class="resource-card-link">Read the guide &rarr;</span>
+                </a>
+                <a href="/planning-resources/tpc-sawgrass-wedding-and-events" class="resource-card">
+                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/tpc-sawgrass-hero.jpg');"></div>
+                    <span class="resource-card-tag">Wedding &amp; Corporate Guide</span>
+                    <h3>TPC Sawgrass Wedding &amp; Events Guide</h3>
+                    <p>Clubhouse capacities and Event Lawn views at this Ponte Vedra Beach venue, for weddings and corporate events alike.</p>
+                    <span class="resource-card-link">Read the guide &rarr;</span>
+                </a>
+                <a href="/planning-resources/sawgrass-marriott-wedding-and-events" class="resource-card">
+                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/sawgrass-marriott-hero.jpg');"></div>
+                    <span class="resource-card-tag">Wedding &amp; Corporate Guide</span>
+                    <h3>Sawgrass Marriott Wedding &amp; Events Guide</h3>
+                    <p>Ballroom capacities, the Cascade Lawn, and oceanfront Cabana Beach Club options for weddings and corporate events.</p>
+                    <span class="resource-card-link">Read the guide &rarr;</span>
+                </a>
+                <a href="/planning-resources/fountain-of-youth-wedding" class="resource-card">
+                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/fountain-of-youth-hero.jpg');"></div>
+                    <span class="resource-card-tag">Wedding &amp; Corporate Guide</span>
+                    <h3>Fountain of Youth Wedding &amp; Events Guide</h3>
+                    <p>Historic outdoor grounds, Matanzas Bay views, and entertainment logistics for weddings and corporate events at this one-of-a-kind St. Augustine venue.</p>
+                    <span class="resource-card-link">Read the guide &rarr;</span>
+                </a>
+                <a href="/planning-resources/embassy-suites-st-augustine-wedding" class="resource-card">
+                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/embassy-suites-st-augustine-hero.jpg');"></div>
+                    <span class="resource-card-tag">Wedding &amp; Corporate Guide</span>
+                    <h3>Embassy Suites St. Augustine Wedding &amp; Events Guide</h3>
+                    <p>Spacious ballroom, all-suite accommodations, and entertainment logistics for weddings and corporate events in St. Augustine.</p>
+                    <span class="resource-card-link">Read the guide &rarr;</span>
+                </a>
+                <a href="/planning-resources/ritz-carlton-amelia-island-wedding" class="resource-card">
+                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/ritz-carlton-amelia-island-hero.jpg');"></div>
+                    <span class="resource-card-tag">Wedding &amp; Corporate Guide</span>
+                    <h3>Ritz-Carlton Amelia Island Wedding &amp; Events Guide</h3>
+                    <p>Ocean-view ballrooms, oceanfront ceremony lawns, and entertainment logistics at this luxury Amelia Island resort.</p>
+                    <span class="resource-card-link">Read the guide &rarr;</span>
+                </a>
+                <a href="/planning-resources/omni-amelia-island-wedding" class="resource-card">
+                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/omni-amelia-island-hero.jpg');"></div>
+                    <span class="resource-card-tag">Wedding &amp; Corporate Guide</span>
+                    <h3>Omni Amelia Island Wedding &amp; Events Guide</h3>
+                    <p>Oceanfront resort, multiple ballrooms, 3.5 miles of beach, and entertainment logistics for weddings and corporate events on Amelia Island.</p>
+                    <span class="resource-card-link">Read the guide &rarr;</span>
+                </a>
+                <a href="/planning-resources/manor-at-12-oaks-wedding" class="resource-card">
+                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/manor-at-12-oaks-hero.jpg');"></div>
+                    <span class="resource-card-tag">Wedding Guide</span>
+                    <h3>Manor at 12 Oaks Wedding Guide</h3>
+                    <p>42 acres of private woodland, five ceremony and reception spaces, and entertainment logistics for weddings in Green Cove Springs, FL.</p>
+                    <span class="resource-card-link">Read the guide &rarr;</span>
+                </a>
+                <a href="/planning-resources/the-venue-hastings-wedding" class="resource-card">
+                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/the-venue-hastings-hero.jpg');"></div>
+                    <span class="resource-card-tag">Wedding Guide</span>
+                    <h3>The Venue Hastings Wedding Guide</h3>
+                    <p>Restored 1920s Stanton Ford landmark in downtown Hastings &mdash; historic character, industrial-chic interiors, and up to 350 guests.</p>
+                    <span class="resource-card-link">Read the guide &rarr;</span>
+                </a>
+                <a href="/planning-resources/old-spanish-quarter-wedding" class="resource-card">
+                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/old-spanish-quarter-hero.jpg');"></div>
+                    <span class="resource-card-tag">Wedding Guide</span>
+                    <h3>Old Spanish Quarter Wedding Guide</h3>
+                    <p>A preserved 1800s estate on Jacksonville's Westside &mdash; garden ceremonies, classic architecture, and a private atmosphere.</p>
+                    <span class="resource-card-link">Read the guide &rarr;</span>
+                </a>
+                <a href="/planning-resources/guy-harvey-resort-wedding" class="resource-card">
+                    <div class="resource-card-image" style="background-image: linear-gradient(180deg, rgba(0,60,66,0.12) 0%, rgba(0,40,45,0.28) 100%), url('../images/venues/guy-harvey-resort-hero.jpg');"></div>
+                    <span class="resource-card-tag">Wedding &amp; Corporate Guide</span>
+                    <h3>Guy Harvey Resort Wedding &amp; Events Guide</h3>
+                    <p>Oceanfront resort on A1A in St. Augustine Beach &mdash; beach ceremonies, Nautilus Ballroom, and pool deck for weddings and corporate events.</p>
+                    <span class="resource-card-link">Read the guide &rarr;</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- What Each Guide Covers -->
     <section class="intro-section">
         <div class="container">
             <h2>What Each Guide Covers</h2>
             <p>Every venue guide in this section follows the same structure, whether it's a deep-dive on a single property or a roundup of several. We start with the basics &mdash; address, room or space options, and guest capacity ranges &mdash; then move into why couples and event planners choose that venue over the alternatives nearby. From there, each guide gets specific about entertainment: what we'd confirm before your event, how load-in and sound coverage differ between indoor and outdoor spaces at that property, and what a wedding or corporate DJ starting price actually looks like once you factor in guest count and hours of coverage.</p>
-            <p>The two dual-purpose guides &mdash; TPC Sawgrass and Sawgrass Marriott &mdash; are built a little differently, since both venues host weddings and corporate events seriously rather than treating one as an afterthought. Those guides break out pricing and planning considerations for both audiences side by side, rather than assuming every reader is planning the same type of event.</p>
+            <p>The dual-purpose guides &mdash; TPC Sawgrass, Sawgrass Marriott, Fountain of Youth, Embassy Suites St. Augustine, Ritz-Carlton Amelia Island, and Omni Amelia Island &mdash; are built a little differently, since all six venues host weddings and corporate events seriously rather than treating one as an afterthought. Those guides break out planning considerations for both audiences side by side, rather than assuming every reader is planning the same type of event.</p>
             <p>If you don't see your venue listed yet, that doesn't mean we haven't worked there &mdash; it just means we haven't written the guide yet. <a href="/contact">Reach out</a> and ask; there's a good chance we can answer your specific venue questions directly, even before it has its own page here. We're continuing to add new venue guides and roundups over time, so it's worth checking back if the property you're considering isn't covered today.</p>
         </div>
     </section>
