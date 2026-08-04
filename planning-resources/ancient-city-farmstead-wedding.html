@@ -186,7 +186,6 @@
                             <li><a href="#why-it-works">Why Couples Choose Ancient City Farmstead</a></li>
                             <li><a href="#flow">How a Typical Wedding Day Flows Here</a></li>
                             <li><a href="#entertainment">Planning Your Entertainment</a></li>
-                            <li><a href="#events">Recent Footloose Events Here</a></li>
                             <li><a href="#faqs">Frequently Asked Questions</a></li>
                         </ol>
                     </nav>
@@ -239,10 +238,7 @@
                         <p>If you&rsquo;re adding a wedding photo booth, the Grand Cypress has the most room for a mirror booth or 360 video setup positioned so guests encounter it naturally during cocktail hour and between dinner and dancing. We plan placement during pre-event coordination so the booth gets used, not ignored.</p>
                         <p>Looking for a wedding DJ near St. Augustine or for an Ancient City Farmstead wedding? Footloose Entertainment&rsquo;s DJ &amp; MC packages start at $1,495, with final pricing shaped by guest count, hours of coverage, and add-ons. <a href="/wedding-dj">See what&rsquo;s included</a> or request a quote for your date.</p>
 
-                        <h2 id="events">Recent Footloose Events at Ancient City Farmstead</h2>
-                        <div id="events-container" data-venue="Ancient City Farmstead">
-                            <p style="color:#888;font-size:0.9rem;">Loading recent events&hellip;</p>
-                        </div>
+                        
 
                         <h2 id="faqs">Frequently Asked Questions</h2>
                         <div class="faq-section">
@@ -303,6 +299,48 @@
             </div>
         </div>
     </section>
+
+
+<section id="venue-events-wrap" data-venue="Ancient City Farmstead" style="display:none;padding:3.5rem 0;background:#f7f7f7">
+<div class="container">
+<div style="text-align:center;margin-bottom:2rem">
+<span style="font-family:'Barlow',sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#D4A843;display:block;margin-bottom:.5rem">Real Events</span>
+<h2 style="font-family:'Bebas Neue',sans-serif;font-size:2.2rem;letter-spacing:.04em;color:#1a1a1a;margin:0 0 .5rem">Events We&#39;ve Done Here</h2>
+<p style="color:#666;max-width:520px;margin:0 auto;font-size:.95rem;line-height:1.6">A look at some of the celebrations Footloose Entertainment has been part of at Ancient City Farmstead.</p>
+</div>
+<div id="venue-events-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem"></div>
+<div style="text-align:center;margin-top:2rem">
+<a href="/events" style="font-family:'Barlow',sans-serif;font-size:.85rem;font-weight:600;color:#006D77;text-decoration:none;border:1px solid #006D77;border-radius:20px;padding:.5rem 1.5rem;display:inline-block">See All Events &rarr;</a>
+</div></div></section>
+<script>(function(){
+var wrap=document.getElementById('venue-events-wrap');
+var grid=document.getElementById('venue-events-grid');
+var venueName=(wrap.dataset.venue||'').toLowerCase().replace(/\s+/g,' ');
+fetch('/events/events-data.json').then(function(r){return r.json();}).then(function(events){
+var matches=events.filter(function(ev){return(ev.venue_name||'').toLowerCase().replace(/\s+/g,' ').indexOf(venueName)!==-1;});
+if(!matches.length)return;
+wrap.style.display='block';
+var SB='https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos';
+var TL={wedding:'Wedding',corporate:'Corporate',school:'School Event',private:'Private Party'};
+var BB={wedding:'#f0ebf8',corporate:'#e8f4f8',school:'#fef3c7',private:'#fce7f3'};
+var BC={wedding:'#6b21a8',corporate:'#0e6b8a',school:'#92400e',private:'#9d174d'};
+grid.innerHTML=matches.map(function(ev){
+var label=TL[ev.event_type]||ev.event_type;
+var cover=ev.cover_img||(SB+'/'+ev.slug+'/cover.jpg');
+var svcs=(ev.service_list||[]).map(function(s){return'<span style="background:#f0f8f8;border:1px solid #c2e0e3;border-radius:12px;padding:.15rem .55rem;font-size:.72rem;font-family:Barlow,sans-serif;font-weight:600;color:#006D77">'+s+'</span>';}).join('');
+return'<a href="/events/'+ev.slug+'" style="background:#fff;border:1px solid #e5e5e5;border-radius:12px;overflow:hidden;text-decoration:none;color:inherit;display:block">'
++'<img src="'+cover+'" alt="'+label+' at '+ev.venue_name+'" style="width:100%;aspect-ratio:4/3;object-fit:cover;object-position:top;display:block;background:#e8e8e8" loading="lazy">'
++'<div style="padding:1.1rem 1.25rem 1.25rem">'
++'<span style="display:inline-block;font-family:Barlow,sans-serif;font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:.2rem .6rem;border-radius:4px;margin-bottom:.5rem;background:'+(BB[ev.event_type]||'#f5f5f5')+';color:'+(BC[ev.event_type]||'#333')+'">'+label+'</span>'
++'<h3 style="font-family:\'Bebas Neue\',sans-serif;font-size:1.15rem;letter-spacing:.03em;color:#1a1a2e;margin:0 0 .35rem;line-height:1.2">'+ev.page_title+'</h3>'
++'<div style="font-family:Barlow,sans-serif;font-size:.82rem;color:#777;margin-bottom:.65rem">'+ev.month_year+'</div>'
++'<div style="display:flex;flex-wrap:wrap;gap:.3rem">'+svcs+'</div>'
++'</div></a>';
+}).join('');
+if(window.innerWidth<640)grid.style.gridTemplateColumns='1fr';
+else if(window.innerWidth<960)grid.style.gridTemplateColumns='repeat(2,1fr)';
+}).catch(function(){});
+})();</script>
 
     <section class="related-guides">
         <div class="container">
@@ -370,31 +408,6 @@
 
     <script src="../script.js"></script>
     <script>
-    (function() {
-        var container = document.getElementById('events-container');
-        if (!container) return;
-        var venueName = (container.getAttribute('data-venue') || '').toLowerCase();
-        fetch('/events/events-data.json')
-            .then(function(r){ return r.json(); })
-            .then(function(data) {
-                var events = (data.events || data).filter(function(ev) {
-                    return ev.venue_name && (ev.venue_name).toLowerCase().indexOf(venueName) !== -1;
-                });
-                if (!events.length) { container.innerHTML = '<p style="color:#888;font-size:0.9rem;">No recent events on record yet &mdash; check back after our first event here.</p>'; return; }
-                events.sort(function(a,b){ return new Date(b.event_date) - new Date(a.event_date); });
-                var html = '<div style="display:grid;gap:1rem;">';
-                events.slice(0,5).forEach(function(ev) {
-                    var d = ev.event_date ? new Date(ev.event_date).toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'}) : '';
-                    html += '<div style="background:#f7f9f9;border:1px solid #e5e5e5;border-radius:8px;padding:1rem 1.25rem;">';
-                    html += '<p style="font-family:'Bebas Neue',sans-serif;font-size:1.15rem;color:#1a1a2e;margin:0 0 0.25rem;">'+ev.page_title+'</p>';
-                    if(d) html += '<p style="font-size:0.82rem;color:#888;margin:0;">'+d+'</p>';
-                    html += '</div>';
-                });
-                html += '</div>';
-                container.innerHTML = html;
-            })
-            .catch(function(){ container.innerHTML = '<p style="color:#888;font-size:0.9rem;">Event history unavailable.</p>'; });
-    })();
     document.querySelectorAll('.faq-question').forEach(function(btn){
         btn.addEventListener('click',function(){
             var ans=this.nextElementSibling;
