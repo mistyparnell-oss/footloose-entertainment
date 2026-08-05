@@ -424,8 +424,22 @@
       "Photo Booth",
       "2 Cold Sparks"
     ],
-    "cover_img": null,
-    "photo_files": []
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-manor-at-12-oaks-klea-travis-mar-21-2026/cover.jpg",
+    "photo_files": [
+      "cover.jpg",
+      "photo-1.jpg",
+      "photo-2.jpg",
+      "photo-3.jpg",
+      "photo-4.jpg",
+      "photo-5.jpg",
+      "photo-6.jpg",
+      "photo-7.jpg",
+      "photo-8.jpg",
+      "photo-9.jpg",
+      "photo-10.jpg",
+      "photo-11.jpg",
+      "photo-12.jpg"
+    ]
   },
   {
     "slug": "wedding-the-club-continental-zoe-ron-mar-07-2026",
