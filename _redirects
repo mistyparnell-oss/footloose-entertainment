@@ -25,8 +25,10 @@
 /photobooths/mirror-booth                       /mirror-booth.html                      301
 /photobooths/footers/open-air-footers/          /wedding-photobooth.html                301
 /photobooths/footers/open-air-footers           /wedding-photobooth.html                301
-/photobooths/social-ring/                       404
-/photobooths/social-ring                        404
+/photobooths/social-ring/                       /wedding-photobooth.html                301
+/photobooths/social-ring                        /wedding-photobooth.html                301
+/photobooths/backgrounds/                       /photobooth-backgrounds.html            301
+/photobooths/backgrounds                        /photobooth-backgrounds.html            301
 /photobooths/                                   /wedding-photobooth.html                301
 /photobooths                                    /wedding-photobooth.html                301
 
@@ -54,11 +56,11 @@
 /corporate-events/                              /corporate-events.html                  301
 /school-events/                                 /school-events.html                     301
 /private-parties/                               /private-parties.html                   301
-/wedding-planner-31/                            404
-/wedding-planner-31                             404
-# Old individual "wedding planner" WP pages — brand no longer positions as a planner
-/wedding-planner-*/                             404
-/wedding-planner-*                              404
+# Old "wedding planner" WP pages → weddings landing (brand no longer positions as planner)
+/wedding-planner-31/                            /weddings.html                          301
+/wedding-planner-31                             /weddings.html                          301
+/wedding-planner-*/                             /weddings.html                          301
+/wedding-planner-*                              /weddings.html                          301
 
 # --- Add-ons / extras old paths ---
 /4x6-party-enhancements/                        /special-effects.html                   301
@@ -73,22 +75,40 @@
 /4x6-*                                          /special-effects.html                   301
 /special-effects/                               /special-effects.html                   301
 /special-effects                                /special-effects.html                   301
-/extras/                                        404
-/extras                                         404
-/social-ring/                                   404
-/social-ring                                    404
+/extras/                                        /                                       301
+/extras                                         /                                       301
+/social-ring/                                   /wedding-photobooth.html                301
+/social-ring                                    /wedding-photobooth.html                301
 /audio-guestbook/                               /audio-guestbook.html                   301
 /audio-guestbook                                /audio-guestbook.html                   301
 /photo-booth-backgrounds/                       /photobooth-backgrounds.html            301
 /photo-booth-backgrounds                        /photobooth-backgrounds.html            301
 /backgrounds/                                   /photobooth-backgrounds.html            301
 /backgrounds                                    /photobooth-backgrounds.html            301
-/memory-book/                                   404
-/memory-book                                    404
-/booth-copy-3/                                  404
-/booth-copy-3                                   404
-/flower-walls/                                  404
-/flower-walls                                   404
+/memory-book/                                   /audio-guestbook.html                   301
+/memory-book                                    /audio-guestbook.html                   301
+/booth-copy-3/                                  /wedding-photobooth.html                301
+/booth-copy-3                                   /wedding-photobooth.html                301
+/flower-walls/                                  /wedding-photobooth.html                301
+/flower-walls                                   /wedding-photobooth.html                301
+
+# --- Special effects / lighting / add-on old single-page slugs ---
+/uplighting/                                    /special-effects.html                   301
+/uplighting                                     /special-effects.html                   301
+/dance-on-a-cloud/                              /special-effects.html                   301
+/dance-on-a-cloud                               /special-effects.html                   301
+/monogram-projection/                           /monograms.html                         301
+/monogram-projection                            /monograms.html                         301
+/gobo/                                          /special-effects.html                   301
+/gobo                                           /special-effects.html                   301
+/pinpointlighting/                              /special-effects.html                   301
+/pinpointlighting                               /special-effects.html                   301
+/pipe-and-drape/                                /special-effects.html                   301
+/pipe-and-drape                                 /special-effects.html                   301
+/signs/                                         /special-effects.html                   301
+/signs                                          /special-effects.html                   301
+/footloose-entertainments-360-booth/            /360-booth.html                         301
+/footloose-entertainments-360-booth             /360-booth.html                         301
 
 # --- About / Contact / Jobs old paths ---
 /about/                                         /about.html                             301
@@ -97,10 +117,12 @@
 /about-us                                       /about.html                             301
 /who-we-are/                                    /about.html                             301
 /who-we-are                                     /about.html                             301
-/who-we-are-2/                                  404
-/who-we-are-2                                   404
+/who-we-are-2/                                  /about.html                             301
+/who-we-are-2                                   /about.html                             301
 /contact-us/                                    /contact.html                           301
 /contact-us                                     /contact.html                           301
+/free-consultation/                             /contact.html                           301
+/free-consultation                              /contact.html                           301
 /jobs/                                          404
 /jobs                                           404
 /jobs/dj-assistant/                             404
@@ -108,10 +130,20 @@
 /jobs/*                                         404
 /careers/                                       404
 /careers                                        404
+/current-jobs/                                  404
+/current-jobs                                   404
 /embed/                                         404
 /embed                                          404
-/ytvideotm02/                                   404
-/ytvideotm02                                    404
+/ytvideotm02/                                   /                                       301
+/ytvideotm02                                    /                                       301
+/coming-soon/                                   /                                       301
+/coming-soon                                    /                                       301
+/bundle-and-save/                               /                                       301
+/bundle-and-save                                /                                       301
+/entertainment-2/                               /                                       301
+/entertainment-2                                /                                       301
+/fmemailverification/                           /                                       301
+/fmemailverification/*                          /                                       301
 /locations.kml                                  404
 
 # --- Current Clients old path ---
@@ -120,7 +152,7 @@
 /client-login/                                  /current-clients.html                   301
 /client-login                                   /current-clients.html                   301
 
-# --- WordPress attachment / media URLs → 404 ---
+# --- WordPress attachment / media URLs → homepage ---
 /?attachment_id=*                               /                                       301
 
 # --- WordPress feed URLs ---
@@ -129,9 +161,9 @@
 /:slug/feed/                                    404
 
 # --- WordPress image scaled variants ---
-/photobooths/overlays/img_9234-scaled-2/        404
-/photobooths/overlays/img_9234-scaled-2         404
-/photobooths/open-air-photobooth/img_0066-2-scaled/ 404
+/photobooths/overlays/img_9234-scaled-2/        /overlays.html                          301
+/photobooths/overlays/img_9234-scaled-2         /overlays.html                          301
+/photobooths/open-air-photobooth/img_0066-2-scaled/ /wedding-photobooth.html            301
 
 # --- WordPress core files ---
 /wp-content/*                                   404
@@ -145,3 +177,8 @@
 # --- Tag and category archive pages ---
 /tag/*                                          404
 /category/*                                     404
+
+# --- Catch-all: redirect all remaining unknown legacy WordPress slugs to homepage ---
+# (image attachment pages, old post slugs, media pages, etc.)
+# Must stay LAST — first matching rule wins; real .html files are served before this file.
+/*                                              /                                       301
