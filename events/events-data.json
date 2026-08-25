@@ -598,8 +598,16 @@
       "Pillow Cover Background",
       "Double 4x6 Prints with memory album"
     ],
-    "cover_img": null,
-    "photo_files": []
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-embassy-suites-hotel-germaine-lloyd-dec-27-2025/cover.jpg",
+    "photo_files": [
+      "cover.jpg",
+      "photo-1.jpg",
+      "photo-2.jpg",
+      "photo-3.jpg",
+      "photo-4.jpg",
+      "photo-5.jpg",
+      "photo-6.jpg"
+    ]
   },
   {
     "slug": "wedding-the-yards-hannah-hart-apr-05-2025",
