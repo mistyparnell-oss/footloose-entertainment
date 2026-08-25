@@ -580,5 +580,35 @@
       "photo-7.jpg",
       "photo-8.jpg"
     ]
+  },
+  {
+    "slug": "wedding-the-yards-hannah-hart-apr-05-2025",
+    "event_type": "wedding",
+    "event_date": "2025-04-05",
+    "page_title": "Hannah & Hart",
+    "venue_name": "The Yards",
+    "venue_city": "Ponte Vedra Beach",
+    "month_year": "April 2025",
+    "service_list": [
+      "DJ Kris",
+      "Uplights"
+    ],
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-yards-hannah-hart-apr-05-2025/cover.jpg",
+    "photo_files": [
+      "cover.jpg",
+      "photo-1.jpg",
+      "photo-2.jpg",
+      "photo-3.jpg",
+      "photo-4.jpg",
+      "photo-5.jpg",
+      "photo-6.jpg",
+      "photo-7.jpg",
+      "photo-8.jpg",
+      "photo-9.jpg",
+      "photo-10.jpg",
+      "photo-11.jpg",
+      "photo-12.jpg",
+      "photo-13.jpg"
+    ]
   }
 ]
