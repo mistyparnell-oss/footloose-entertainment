@@ -610,6 +610,40 @@
     ]
   },
   {
+    "slug": "wedding-the-white-room-elayne-jake-apr-27-2025",
+    "event_type": "wedding",
+    "event_date": "2025-04-27",
+    "page_title": "Elayne & Jake",
+    "venue_name": "The White Room",
+    "venue_city": "St. Augustine",
+    "month_year": "April 2025",
+    "service_list": [
+      "DJ Kris",
+      "Photo Booth",
+      "Dancing on the Cloud",
+      "Pillow Cover Background"
+    ],
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-white-room-elayne-jake-apr-27-2025/cover.jpg",
+    "photo_files": [
+      "cover.jpg",
+      "photo-1.jpg",
+      "photo-2.jpg",
+      "photo-3.jpg",
+      "photo-4.jpg",
+      "photo-5.jpg",
+      "photo-6.jpg",
+      "photo-7.jpg",
+      "photo-8.jpg",
+      "photo-9.jpg",
+      "photo-10.jpg",
+      "photo-11.jpg",
+      "photo-12.jpg",
+      "photo-13.jpg",
+      "photo-14.jpg",
+      "photo-15.jpg"
+    ]
+  },
+  {
     "slug": "wedding-the-yards-hannah-hart-apr-05-2025",
     "event_type": "wedding",
     "event_date": "2025-04-05",
