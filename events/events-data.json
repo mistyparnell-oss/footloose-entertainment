@@ -507,28 +507,6 @@
     ]
   },
   {
-    "slug": "wedding-the-club-continental-zoe-ron-mar-07-2026",
-    "event_type": "wedding",
-    "event_date": "2026-03-07",
-    "page_title": "Zoe & Jon",
-    "venue_name": "The Club Continental",
-    "venue_city": "Orange Park",
-    "month_year": "March 2026",
-    "service_list": [
-      "DJ Jason",
-      "Uplights"
-    ],
-    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-club-continental-zoe-ron-mar-07-2026/cover.jpg",
-    "photo_files": [
-      "cover.jpg",
-      "photo-1.jpg",
-      "photo-2.jpg",
-      "photo-3.jpg",
-      "photo-4.jpg",
-      "photo-5.jpg"
-    ]
-  },
-  {
     "slug": "wedding-ancient-city-farmstead-madelyn-jeremy-mar-07-2026",
     "event_type": "wedding",
     "event_date": "2026-03-07",
@@ -555,6 +533,28 @@
       "photo-9.jpg",
       "photo-10.jpg",
       "photo-11.jpg"
+    ]
+  },
+  {
+    "slug": "wedding-the-club-continental-zoe-ron-mar-07-2026",
+    "event_type": "wedding",
+    "event_date": "2026-03-07",
+    "page_title": "Zoe & Jon",
+    "venue_name": "The Club Continental",
+    "venue_city": "Orange Park",
+    "month_year": "March 2026",
+    "service_list": [
+      "DJ Jason",
+      "Uplights"
+    ],
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-club-continental-zoe-ron-mar-07-2026/cover.jpg",
+    "photo_files": [
+      "cover.jpg",
+      "photo-1.jpg",
+      "photo-2.jpg",
+      "photo-3.jpg",
+      "photo-4.jpg",
+      "photo-5.jpg"
     ]
   },
   {
@@ -703,6 +703,30 @@
       "photo-9.jpg",
       "photo-10.jpg",
       "photo-11.jpg"
+    ]
+  },
+  {
+    "slug": "wedding-the-daughters-barn-soffia-shelby-mar-08-2025",
+    "event_type": "wedding",
+    "event_date": "2025-03-08",
+    "page_title": "Soffia & Shelby",
+    "venue_name": "The Daughter's Barn",
+    "venue_city": "Folkston, Ga",
+    "month_year": "March 2025",
+    "service_list": [
+      "DJ Kris",
+      "Photo Booth",
+      "Flower Walls Hedgie"
+    ],
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-daughters-barn-soffia-shelby-mar-08-2025/cover.jpg",
+    "photo_files": [
+      "cover.jpg",
+      "photo-1.jpg",
+      "photo-2.jpg",
+      "photo-3.jpg",
+      "photo-4.jpg",
+      "photo-5.jpg",
+      "photo-6.jpg"
     ]
   }
 ]
