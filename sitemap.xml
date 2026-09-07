@@ -43,12 +43,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://footlooseentertainment.com/corporate-dj</loc>
-    <lastmod>2026-07-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://footlooseentertainment.com/school-dj</loc>
     <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
@@ -64,18 +58,6 @@
   <!-- Photobooth Service Pages -->
   <url>
     <loc>https://footlooseentertainment.com/wedding-photobooth</loc>
-    <lastmod>2026-07-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://footlooseentertainment.com/corporate-photobooth</loc>
-    <lastmod>2026-07-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://footlooseentertainment.com/school-photobooth</loc>
     <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -472,86 +454,6 @@
   <url>
     <loc>https://footlooseentertainment.com/events/wedding-the-manor-at-12-oaks-amanda-peter-feb-20-2026</loc>
     <lastmod>2026-02-20</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-
-  <url>
-    <loc>https://footlooseentertainment.com/events/wedding-the-manor-at-12-oaks-ariel-nicholas-apr-11-2026</loc>
-    <lastmod>2026-04-11</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-
-  <url>
-    <loc>https://footlooseentertainment.com/events/wedding-the-manor-at-12-oaks-klea-travis-mar-21-2026</loc>
-    <lastmod>2026-03-21</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-
-  <url>
-    <loc>https://footlooseentertainment.com/events/wedding-the-manor-at-12-oaks-ashton-noah-mar-28-2026</loc>
-    <lastmod>2026-03-28</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-
-  <url>
-    <loc>https://footlooseentertainment.com/events/corporate-embassy-suites-murder-mystery-dinner-may-04-2026</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-
-  <url>
-    <loc>https://footlooseentertainment.com/events/wedding-the-yards-hannah-hart-apr-05-2025</loc>
-    <lastmod>2025-04-05</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-
-  <url>
-    <loc>https://footlooseentertainment.com/events/wedding-embassy-suites-hotel-germaine-lloyd-dec-27-2025</loc>
-    <lastmod>2025-12-27</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-
-  <url>
-    <loc>https://footlooseentertainment.com/events/wedding-the-white-room-elayne-jake-apr-27-2025</loc>
-    <lastmod>2025-04-27</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-
-  <url>
-    <loc>https://footlooseentertainment.com/events/wedding-walkers-landing-cody-eugene-mar-22-2025</loc>
-    <lastmod>2025-03-22</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-
-  <url>
-    <loc>https://footlooseentertainment.com/events/wedding-the-daughters-barn-soffia-shelby-mar-08-2025</loc>
-    <lastmod>2025-03-08</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-
-  <url>
-    <loc>https://footlooseentertainment.com/events/wedding-hammock-dunes-club-kiersten-rex-jun-06-2026</loc>
-    <lastmod>2026-06-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
