@@ -54,10 +54,10 @@
         .event-body p{font-size:1rem;color:#444;line-height:1.85;margin:0 0 1.25rem}
         .event-body h2{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;letter-spacing:.03em;color:#1a1a2e;margin:2.5rem 0 1rem}
         .event-gallery{margin:2.5rem 0}
-        .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
-        .gallery-grid.three-col{grid-template-columns:repeat(3,1fr)}
-        @media(max-width:580px){.gallery-grid,.gallery-grid.three-col{grid-template-columns:1fr}}
-        .gallery-photo{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px;display:block}
+        .gallery-grid{columns:2;column-gap:1rem}
+        .gallery-grid.three-col{columns:3}
+        @media(max-width:580px){.gallery-grid,.gallery-grid.three-col{columns:1}}
+        .gallery-photo{width:100%;height:auto;display:block;border-radius:8px;margin-bottom:1rem;break-inside:avoid}
         .event-video{margin:2rem 0;position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;background:#000}
         .event-video iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
         .event-cta{background:linear-gradient(135deg,#004E57 0%,#006D77 100%);padding:3.5rem 0;text-align:center}
@@ -140,15 +140,15 @@
           <p>Congratulations, Jennifer & Wesley! Thank you for letting us celebrate with you. Cheers to a lifetime of happiness together. 🥂</p>
           <div class="event-gallery">
             <div class="gallery-grid three-col">
-              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-treasury-on-the-plaza-jennifer-wesley-jun-06-2026/photo-1.jpg" alt="Wedding at Treasury on the Plaza — June 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
-              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-treasury-on-the-plaza-jennifer-wesley-jun-06-2026/photo-2.jpg" alt="Wedding at Treasury on the Plaza — June 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
-              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-treasury-on-the-plaza-jennifer-wesley-jun-06-2026/photo-3.jpg" alt="Wedding at Treasury on the Plaza — June 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
-              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-treasury-on-the-plaza-jennifer-wesley-jun-06-2026/photo-4.jpg" alt="Wedding at Treasury on the Plaza — June 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
-              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-treasury-on-the-plaza-jennifer-wesley-jun-06-2026/photo-5.jpg" alt="Wedding at Treasury on the Plaza — June 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
-              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-treasury-on-the-plaza-jennifer-wesley-jun-06-2026/photo-6.jpg" alt="Wedding at Treasury on the Plaza — June 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
-              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-treasury-on-the-plaza-jennifer-wesley-jun-06-2026/photo-7.jpg" alt="Wedding at Treasury on the Plaza — June 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
-              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-treasury-on-the-plaza-jennifer-wesley-jun-06-2026/photo-8.jpg" alt="Wedding at Treasury on the Plaza — June 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
-              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-treasury-on-the-plaza-jennifer-wesley-jun-06-2026/photo-9.jpg" alt="Wedding at Treasury on the Plaza — June 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
+              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-treasury-on-the-plaza-jennifer-wesley-jun-06-2026/photo-1.jpg" alt="Wedding at Treasury on the Plaza — Photo 1 — June 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
+              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-treasury-on-the-plaza-jennifer-wesley-jun-06-2026/photo-2.jpg" alt="Wedding at Treasury on the Plaza — Photo 2 — June 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
+              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-treasury-on-the-plaza-jennifer-wesley-jun-06-2026/photo-3.jpg" alt="Wedding at Treasury on the Plaza — Photo 3 — June 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
+              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-treasury-on-the-plaza-jennifer-wesley-jun-06-2026/photo-4.jpg" alt="Wedding at Treasury on the Plaza — Photo 4 — June 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
+              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-treasury-on-the-plaza-jennifer-wesley-jun-06-2026/photo-5.jpg" alt="Wedding at Treasury on the Plaza — Photo 5 — June 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
+              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-treasury-on-the-plaza-jennifer-wesley-jun-06-2026/photo-6.jpg" alt="Wedding at Treasury on the Plaza — Photo 6 — June 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
+              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-treasury-on-the-plaza-jennifer-wesley-jun-06-2026/photo-7.jpg" alt="Wedding at Treasury on the Plaza — Photo 7 — June 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
+              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-treasury-on-the-plaza-jennifer-wesley-jun-06-2026/photo-8.jpg" alt="Wedding at Treasury on the Plaza — Photo 8 — June 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
+              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-treasury-on-the-plaza-jennifer-wesley-jun-06-2026/photo-9.jpg" alt="Wedding at Treasury on the Plaza — Photo 9 — June 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
             </div>
           </div>
                 </div>
@@ -181,7 +181,7 @@
                           <li><span class="vendor-category">Event Planner</span> <a href="https://coastalcelebrationsstaug.com/" class="vendor-link" target="_blank" rel="noopener">Coastal Celebrations</a> <a href="https://instagram.com/coastalcelebrationsstaug" class="vendor-link" target="_blank" rel="noopener" style="font-size:0.8rem;margin-left:0.35rem;opacity:0.75">@coastalcelebrationsstaug</a></li><li><span class="vendor-category">Photographer</span> <a href="https://angelitaesparar.com/" class="vendor-link" target="_blank" rel="noopener">Angelita Esparar</a> <a href="https://instagram.com/angelita_photo" class="vendor-link" target="_blank" rel="noopener" style="font-size:0.8rem;margin-left:0.35rem;opacity:0.75">@angelita_photo</a></li><li><span class="vendor-category">Hair + Makeup</span> <a href="https://www.sarinadurden.com/" class="vendor-link" target="_blank" rel="noopener">Sarinadurden Beauty</a> <a href="https://instagram.com/sarinadurden.beauty" class="vendor-link" target="_blank" rel="noopener" style="font-size:0.8rem;margin-left:0.35rem;opacity:0.75">@sarinadurden.beauty</a></li>
                         </ul>
                       </div>
-                        
+                        <div class="detail-row"><a href="https://footlooseentertainment.com/planning-resources/treasury-on-the-plaza-wedding" class="vendor-link">→ Treasury on the Plaza Venue Guide</a></div>
                         <a href="/contact" class="btn btn-primary">Plan Your Event</a>
                     </div>
                 </aside>
