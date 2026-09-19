@@ -54,10 +54,10 @@
         .event-body p{font-size:1rem;color:#444;line-height:1.85;margin:0 0 1.25rem}
         .event-body h2{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;letter-spacing:.03em;color:#1a1a2e;margin:2.5rem 0 1rem}
         .event-gallery{margin:2.5rem 0}
-        .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
-        .gallery-grid.three-col{grid-template-columns:repeat(3,1fr)}
-        @media(max-width:580px){.gallery-grid,.gallery-grid.three-col{grid-template-columns:1fr}}
-        .gallery-photo{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px;display:block}
+        .gallery-grid{columns:2;column-gap:1rem}
+        .gallery-grid.three-col{columns:3}
+        @media(max-width:580px){.gallery-grid,.gallery-grid.three-col{columns:1}}
+        .gallery-photo{width:100%;height:auto;display:block;border-radius:8px;margin-bottom:1rem;break-inside:avoid}
         .event-video{margin:2rem 0;position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;background:#000}
         .event-video iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
         .event-cta{background:linear-gradient(135deg,#004E57 0%,#006D77 100%);padding:3.5rem 0;text-align:center}
@@ -141,17 +141,17 @@
           <p>Congratulations again, Bryce & Ansley! Thank you for letting us celebrate alongside you and an incredible team of vendors. Wishing you both a lifetime of happiness. 🤍</p>
           <div class="event-gallery">
             <div class="gallery-grid three-col">
-              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-club-continental-ansley-bryce-may-30-2026/photo-1.jpg" alt="Wedding at The Club Continental — May 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
-              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-club-continental-ansley-bryce-may-30-2026/photo-2.jpg" alt="Wedding at The Club Continental — May 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
-              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-club-continental-ansley-bryce-may-30-2026/photo-3.jpg" alt="Wedding at The Club Continental — May 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
-              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-club-continental-ansley-bryce-may-30-2026/photo-4.jpg" alt="Wedding at The Club Continental — May 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
-              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-club-continental-ansley-bryce-may-30-2026/photo-5.jpg" alt="Wedding at The Club Continental — May 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
-              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-club-continental-ansley-bryce-may-30-2026/photo-6.jpg" alt="Wedding at The Club Continental — May 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
-              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-club-continental-ansley-bryce-may-30-2026/photo-7.jpg" alt="Wedding at The Club Continental — May 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
-              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-club-continental-ansley-bryce-may-30-2026/photo-8.jpg" alt="Wedding at The Club Continental — May 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
-              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-club-continental-ansley-bryce-may-30-2026/photo-9.jpg" alt="Wedding at The Club Continental — May 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
-              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-club-continental-ansley-bryce-may-30-2026/photo-10.jpg" alt="Wedding at The Club Continental — May 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
-              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-club-continental-ansley-bryce-may-30-2026/photo-11.jpg" alt="Wedding at The Club Continental — May 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
+              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-club-continental-ansley-bryce-may-30-2026/photo-1.jpg" alt="Wedding at The Club Continental — Photo 1 — May 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
+              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-club-continental-ansley-bryce-may-30-2026/photo-2.jpg" alt="Wedding at The Club Continental — Photo 2 — May 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
+              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-club-continental-ansley-bryce-may-30-2026/photo-3.jpg" alt="Wedding at The Club Continental — Photo 3 — May 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
+              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-club-continental-ansley-bryce-may-30-2026/photo-4.jpg" alt="Wedding at The Club Continental — Photo 4 — May 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
+              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-club-continental-ansley-bryce-may-30-2026/photo-5.jpg" alt="Wedding at The Club Continental — Photo 5 — May 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
+              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-club-continental-ansley-bryce-may-30-2026/photo-6.jpg" alt="Wedding at The Club Continental — Photo 6 — May 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
+              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-club-continental-ansley-bryce-may-30-2026/photo-7.jpg" alt="Wedding at The Club Continental — Photo 7 — May 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
+              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-club-continental-ansley-bryce-may-30-2026/photo-8.jpg" alt="Wedding at The Club Continental — Photo 8 — May 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
+              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-club-continental-ansley-bryce-may-30-2026/photo-9.jpg" alt="Wedding at The Club Continental — Photo 9 — May 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
+              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-club-continental-ansley-bryce-may-30-2026/photo-10.jpg" alt="Wedding at The Club Continental — Photo 10 — May 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
+              <img src="https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-club-continental-ansley-bryce-may-30-2026/photo-11.jpg" alt="Wedding at The Club Continental — Photo 11 — May 2026 — Footloose Entertainment Jacksonville" class="gallery-photo" loading="lazy">
             </div>
           </div>
                 </div>
@@ -184,7 +184,7 @@
                           <li><span class="vendor-category">Photography</span> <a href="https://www.ginnystephens.com/" class="vendor-link" target="_blank" rel="noopener">Ginny Stephens Photography</a> <a href="https://instagram.com/ginnystephensphotography" class="vendor-link" target="_blank" rel="noopener" style="font-size:0.8rem;margin-left:0.35rem;opacity:0.75">@ginnystephensphotography</a></li><li><span class="vendor-category">Videography</span> <a href="https://rflemingproductions.com/?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnGCQb8gVxmgy-qHt4dXHa4UI6R16lWmCNvDfxzst7nMrtr6nortwRSmXCFSI_aem_tDfi3Gj64Dth0L2yEhUuNA&utm_content=link_in_bio&utm_medium=social&utm_source=ig" class="vendor-link" target="_blank" rel="noopener">R Fleming Productions</a> <a href="https://instagram.com/rflemingproductions" class="vendor-link" target="_blank" rel="noopener" style="font-size:0.8rem;margin-left:0.35rem;opacity:0.75">@rflemingproductions</a></li><li><span class="vendor-category">Hair</span> <span class="vendor-name">The Key to Glam</span> <a href="https://instagram.com/thekeytoglam" class="vendor-link" target="_blank" rel="noopener" style="font-size:0.8rem;margin-left:0.35rem;opacity:0.75">@thekeytoglam</a></li><li><span class="vendor-category">Florals</span> <a href="https://jacksonvilleflowermarket.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnV4vSMhyhm3aM8z5B3w3d8tWtTb1r4ucKCLTe03EHaRBw_m97f--1tTYKnzg_aem_ATe8E543_1UCS2XPGI8SuQ" class="vendor-link" target="_blank" rel="noopener">Jacksonville Flower Market</a> <a href="https://instagram.com/jacksonvilleflflowermarket" class="vendor-link" target="_blank" rel="noopener" style="font-size:0.8rem;margin-left:0.35rem;opacity:0.75">@jacksonvilleflflowermarket</a></li>
                         </ul>
                       </div>
-                        
+                        <div class="detail-row"><a href="https://footlooseentertainment.com/planning-resources/club-continental-wedding" class="vendor-link">→ The Club Continental Venue Guide</a></div>
                         <a href="/contact" class="btn btn-primary">Plan Your Event</a>
                     </div>
                 </aside>
