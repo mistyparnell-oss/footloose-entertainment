@@ -34,10 +34,6 @@
 /photobooths                                    /wedding-photobooth.html                301
 
 # --- Cannibalization cleanup (2026-07-10) ---
-/corporate-dj                                   /corporate-events                       301
-/corporate-dj/                                  /corporate-events                       301
-/corporate-photobooth                           /corporate-events                       301
-/corporate-photobooth/                          /corporate-events                       301
 /school-photobooth                              /school-events                          301
 /school-photobooth/                             /school-events                          301
 
