@@ -1,5 +1,48 @@
 [
   {
+    "slug": "wedding-embassy-suites-abby-lane-sep-06-2026",
+    "event_type": "wedding",
+    "event_date": "2026-09-06",
+    "page_title": "Abby & Lane",
+    "venue_name": "Embassy Suites",
+    "venue_city": "St. Augustine",
+    "month_year": "September 2026",
+    "service_list": [
+      "DJ Kris",
+      "Photo Booth"
+    ],
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-embassy-suites-abby-lane-sep-06-2026/cover.jpg",
+    "photo_files": [
+      "cover.jpg",
+      "photo-1.jpg",
+      "photo-2.jpg",
+      "photo-3.jpg",
+      "photo-4.jpg",
+      "photo-5.jpg",
+      "photo-6.jpg",
+      "photo-7.jpg",
+      "photo-8.jpg",
+      "photo-9.jpg",
+      "photo-10.jpg",
+      "photo-11.jpg",
+      "photo-12.jpg",
+      "photo-13.jpg",
+      "photo-14.jpg",
+      "photo-15.jpg",
+      "photo-16.jpg",
+      "photo-17.jpg",
+      "photo-18.jpg",
+      "photo-19.jpg",
+      "photo-20.jpg",
+      "photo-21.jpg",
+      "photo-22.jpg",
+      "photo-23.jpg",
+      "photo-24.jpg",
+      "photo-25.jpg",
+      "photo-26.jpg"
+    ]
+  },
+  {
     "slug": "wedding-the-white-room-sarah-nathan-smith-jul-10-2026",
     "event_type": "wedding",
     "event_date": "2026-07-10",
@@ -75,6 +118,31 @@
     ]
   },
   {
+    "slug": "wedding-epping-forest-yacht-club-nick-megan-may-30-2026",
+    "event_type": "wedding",
+    "event_date": "2026-05-30",
+    "page_title": "Nick & Megan",
+    "venue_name": "Epping Forest Yacht Club",
+    "venue_city": "Jacksonville",
+    "month_year": "May 2026",
+    "service_list": [
+      "DJ Kris",
+      "Cold Sparkles"
+    ],
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-epping-forest-yacht-club-nick-megan-may-30-2026/cover.jpg",
+    "photo_files": [
+      "cover.jpg",
+      "photo-1.jpg",
+      "photo-2.jpg",
+      "photo-3.jpg",
+      "photo-4.jpg",
+      "photo-5.jpg",
+      "photo-6.jpg",
+      "photo-7.jpg",
+      "photo-8.jpg"
+    ]
+  },
+  {
     "slug": "wedding-the-club-continental-ansley-bryce-may-30-2026",
     "event_type": "wedding",
     "event_date": "2026-05-30",
@@ -100,31 +168,6 @@
       "photo-9.jpg",
       "photo-10.jpg",
       "photo-11.jpg"
-    ]
-  },
-  {
-    "slug": "wedding-epping-forest-yacht-club-nick-megan-may-30-2026",
-    "event_type": "wedding",
-    "event_date": "2026-05-30",
-    "page_title": "Nick & Megan",
-    "venue_name": "Epping Forest Yacht Club",
-    "venue_city": "Jacksonville",
-    "month_year": "May 2026",
-    "service_list": [
-      "DJ Kris",
-      "Cold Sparkles"
-    ],
-    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-epping-forest-yacht-club-nick-megan-may-30-2026/cover.jpg",
-    "photo_files": [
-      "cover.jpg",
-      "photo-1.jpg",
-      "photo-2.jpg",
-      "photo-3.jpg",
-      "photo-4.jpg",
-      "photo-5.jpg",
-      "photo-6.jpg",
-      "photo-7.jpg",
-      "photo-8.jpg"
     ]
   },
   {
@@ -182,33 +225,6 @@
     ]
   },
   {
-    "slug": "wedding-bowing-oaks-kylie-timothy-may-16-2026",
-    "event_type": "wedding",
-    "event_date": "2026-05-16",
-    "page_title": "Kylie & Timothy",
-    "venue_name": "Bowing Oaks",
-    "venue_city": "Jacksonville",
-    "month_year": "May 2026",
-    "service_list": [
-      "DJ Kris",
-      "Photo Booth"
-    ],
-    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-bowing-oaks-kylie-timothy-may-16-2026/cover.jpg",
-    "photo_files": [
-      "cover.jpg",
-      "photo-1.jpg",
-      "photo-2.jpg",
-      "photo-3.jpg",
-      "photo-4.jpg",
-      "photo-5.jpg",
-      "photo-6.jpg",
-      "photo-7.jpg",
-      "photo-8.jpg",
-      "photo-9.jpg",
-      "photo-10.jpg"
-    ]
-  },
-  {
     "slug": "wedding-palencia-club-abigail-and-philip-may-16-2026",
     "event_type": "wedding",
     "event_date": "2026-05-16",
@@ -235,6 +251,33 @@
       "photo-11.jpg",
       "photo-12.jpg",
       "photo-13.jpg"
+    ]
+  },
+  {
+    "slug": "wedding-bowing-oaks-kylie-timothy-may-16-2026",
+    "event_type": "wedding",
+    "event_date": "2026-05-16",
+    "page_title": "Kylie & Timothy",
+    "venue_name": "Bowing Oaks",
+    "venue_city": "Jacksonville",
+    "month_year": "May 2026",
+    "service_list": [
+      "DJ Kris",
+      "Photo Booth"
+    ],
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-bowing-oaks-kylie-timothy-may-16-2026/cover.jpg",
+    "photo_files": [
+      "cover.jpg",
+      "photo-1.jpg",
+      "photo-2.jpg",
+      "photo-3.jpg",
+      "photo-4.jpg",
+      "photo-5.jpg",
+      "photo-6.jpg",
+      "photo-7.jpg",
+      "photo-8.jpg",
+      "photo-9.jpg",
+      "photo-10.jpg"
     ]
   },
   {
