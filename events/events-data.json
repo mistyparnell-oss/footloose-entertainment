@@ -290,8 +290,9 @@
     "service_list": [
       "DJ Dennis"
     ],
-    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-palencia-club-abigail-and-philip-may-16-2026/photo-1.jpg",
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-palencia-club-abigail-and-philip-may-16-2026/photo-13.jpg",
     "photo_files": [
+      "photo-13.jpg",
       "photo-1.jpg",
       "cover.jpg",
       "photo-2.jpg",
@@ -304,8 +305,7 @@
       "photo-9.jpg",
       "photo-10.jpg",
       "photo-11.jpg",
-      "photo-12.jpg",
-      "photo-13.jpg"
+      "photo-12.jpg"
     ]
   },
   {
