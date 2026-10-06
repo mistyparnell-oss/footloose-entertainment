@@ -118,32 +118,6 @@
     ]
   },
   {
-    "slug": "wedding-treasury-on-the-plaza-jennifer-wesley-jun-06-2026",
-    "event_type": "wedding",
-    "event_date": "2026-06-06",
-    "page_title": "Jennifer & Wesley",
-    "venue_name": "Treasury on the Plaza",
-    "venue_city": "St. Augustine",
-    "month_year": "June 2026",
-    "service_list": [
-      "DJ Dennis",
-      "Photo Booth"
-    ],
-    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-treasury-on-the-plaza-jennifer-wesley-jun-06-2026/cover.jpg",
-    "photo_files": [
-      "cover.jpg",
-      "photo-1.jpg",
-      "photo-2.jpg",
-      "photo-3.jpg",
-      "photo-4.jpg",
-      "photo-5.jpg",
-      "photo-6.jpg",
-      "photo-7.jpg",
-      "photo-8.jpg",
-      "photo-9.jpg"
-    ]
-  },
-  {
     "slug": "wedding-hammock-dunes-club-kiersten-rex-jun-06-2026",
     "event_type": "wedding",
     "event_date": "2026-06-06",
@@ -173,18 +147,18 @@
     ]
   },
   {
-    "slug": "wedding-the-club-continental-ansley-bryce-may-30-2026",
+    "slug": "wedding-treasury-on-the-plaza-jennifer-wesley-jun-06-2026",
     "event_type": "wedding",
-    "event_date": "2026-05-30",
-    "page_title": "Ansley & Bryce",
-    "venue_name": "The Club Continental",
-    "venue_city": "Orange Park",
-    "month_year": "May 2026",
+    "event_date": "2026-06-06",
+    "page_title": "Jennifer & Wesley",
+    "venue_name": "Treasury on the Plaza",
+    "venue_city": "St. Augustine",
+    "month_year": "June 2026",
     "service_list": [
       "DJ Dennis",
       "Photo Booth"
     ],
-    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-club-continental-ansley-bryce-may-30-2026/cover.jpg",
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-treasury-on-the-plaza-jennifer-wesley-jun-06-2026/cover.jpg",
     "photo_files": [
       "cover.jpg",
       "photo-1.jpg",
@@ -195,9 +169,7 @@
       "photo-6.jpg",
       "photo-7.jpg",
       "photo-8.jpg",
-      "photo-9.jpg",
-      "photo-10.jpg",
-      "photo-11.jpg"
+      "photo-9.jpg"
     ]
   },
   {
@@ -223,6 +195,34 @@
       "photo-6.jpg",
       "photo-7.jpg",
       "photo-8.jpg"
+    ]
+  },
+  {
+    "slug": "wedding-the-club-continental-ansley-bryce-may-30-2026",
+    "event_type": "wedding",
+    "event_date": "2026-05-30",
+    "page_title": "Ansley & Bryce",
+    "venue_name": "The Club Continental",
+    "venue_city": "Orange Park",
+    "month_year": "May 2026",
+    "service_list": [
+      "DJ Dennis",
+      "Photo Booth"
+    ],
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-club-continental-ansley-bryce-may-30-2026/cover.jpg",
+    "photo_files": [
+      "cover.jpg",
+      "photo-1.jpg",
+      "photo-2.jpg",
+      "photo-3.jpg",
+      "photo-4.jpg",
+      "photo-5.jpg",
+      "photo-6.jpg",
+      "photo-7.jpg",
+      "photo-8.jpg",
+      "photo-9.jpg",
+      "photo-10.jpg",
+      "photo-11.jpg"
     ]
   },
   {
@@ -280,6 +280,33 @@
     ]
   },
   {
+    "slug": "wedding-bowing-oaks-kylie-timothy-may-16-2026",
+    "event_type": "wedding",
+    "event_date": "2026-05-16",
+    "page_title": "Kylie & Timothy",
+    "venue_name": "Bowing Oaks",
+    "venue_city": "Jacksonville",
+    "month_year": "May 2026",
+    "service_list": [
+      "DJ Kris",
+      "Photo Booth"
+    ],
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-bowing-oaks-kylie-timothy-may-16-2026/cover.jpg",
+    "photo_files": [
+      "cover.jpg",
+      "photo-1.jpg",
+      "photo-2.jpg",
+      "photo-3.jpg",
+      "photo-4.jpg",
+      "photo-5.jpg",
+      "photo-6.jpg",
+      "photo-7.jpg",
+      "photo-8.jpg",
+      "photo-9.jpg",
+      "photo-10.jpg"
+    ]
+  },
+  {
     "slug": "wedding-palencia-club-abigail-and-philip-may-16-2026",
     "event_type": "wedding",
     "event_date": "2026-05-16",
@@ -306,33 +333,6 @@
       "photo-11.jpg",
       "photo-12.jpg",
       "photo-13.jpg"
-    ]
-  },
-  {
-    "slug": "wedding-bowing-oaks-kylie-timothy-may-16-2026",
-    "event_type": "wedding",
-    "event_date": "2026-05-16",
-    "page_title": "Kylie & Timothy",
-    "venue_name": "Bowing Oaks",
-    "venue_city": "Jacksonville",
-    "month_year": "May 2026",
-    "service_list": [
-      "DJ Kris",
-      "Photo Booth"
-    ],
-    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-bowing-oaks-kylie-timothy-may-16-2026/cover.jpg",
-    "photo_files": [
-      "cover.jpg",
-      "photo-1.jpg",
-      "photo-2.jpg",
-      "photo-3.jpg",
-      "photo-4.jpg",
-      "photo-5.jpg",
-      "photo-6.jpg",
-      "photo-7.jpg",
-      "photo-8.jpg",
-      "photo-9.jpg",
-      "photo-10.jpg"
     ]
   },
   {
@@ -634,35 +634,6 @@
     ]
   },
   {
-    "slug": "wedding-ancient-city-farmstead-madelyn-jeremy-mar-07-2026",
-    "event_type": "wedding",
-    "event_date": "2026-03-07",
-    "page_title": "Madelyn & Jeremy",
-    "venue_name": "Ancient City Farmstead",
-    "venue_city": "St. Augustine",
-    "month_year": "March 2026",
-    "service_list": [
-      "DJ Kris",
-      "Photo Booth",
-      "Flower Walls - Gisele"
-    ],
-    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-ancient-city-farmstead-madelyn-jeremy-mar-07-2026/cover.jpg",
-    "photo_files": [
-      "cover.jpg",
-      "photo-1.jpg",
-      "photo-2.jpg",
-      "photo-3.jpg",
-      "photo-4.jpg",
-      "photo-5.jpg",
-      "photo-6.jpg",
-      "photo-7.jpg",
-      "photo-8.jpg",
-      "photo-9.jpg",
-      "photo-10.jpg",
-      "photo-11.jpg"
-    ]
-  },
-  {
     "slug": "wedding-the-club-continental-zoe-ron-mar-07-2026",
     "event_type": "wedding",
     "event_date": "2026-03-07",
@@ -682,6 +653,35 @@
       "photo-2.jpg",
       "photo-4.jpg",
       "photo-5.jpg"
+    ]
+  },
+  {
+    "slug": "wedding-ancient-city-farmstead-madelyn-jeremy-mar-07-2026",
+    "event_type": "wedding",
+    "event_date": "2026-03-07",
+    "page_title": "Madelyn & Jeremy",
+    "venue_name": "Ancient City Farmstead",
+    "venue_city": "St. Augustine",
+    "month_year": "March 2026",
+    "service_list": [
+      "DJ Kris",
+      "Photo Booth",
+      "Flower Walls - Gisele"
+    ],
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-ancient-city-farmstead-madelyn-jeremy-mar-07-2026/photo-7.jpg",
+    "photo_files": [
+      "photo-7.jpg",
+      "cover.jpg",
+      "photo-1.jpg",
+      "photo-2.jpg",
+      "photo-3.jpg",
+      "photo-4.jpg",
+      "photo-5.jpg",
+      "photo-6.jpg",
+      "photo-8.jpg",
+      "photo-9.jpg",
+      "photo-10.jpg",
+      "photo-11.jpg"
     ]
   },
   {
