@@ -920,11 +920,11 @@
       "Photo Booth",
       "Flower  Wall - Hedgie"
     ],
-    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-casa-marina-rebeccah-ben-jul-25-2025/photo-7.jpg",
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-casa-marina-rebeccah-ben-jul-25-2025/cover.jpg",
     "photo_files": [
+      "cover.jpg",
       "photo-7.jpg",
       "photo-9.jpg",
-      "cover.jpg",
       "photo-1.jpg",
       "photo-2.jpg",
       "photo-3.jpg",
