@@ -320,8 +320,9 @@
       "DJ Kris",
       "Photo Booth"
     ],
-    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-bowing-oaks-kylie-timothy-may-16-2026/cover.jpg",
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-bowing-oaks-kylie-timothy-may-16-2026/photo-9.jpg",
     "photo_files": [
+      "photo-9.jpg",
       "cover.jpg",
       "photo-1.jpg",
       "photo-2.jpg",
@@ -331,7 +332,6 @@
       "photo-6.jpg",
       "photo-7.jpg",
       "photo-8.jpg",
-      "photo-9.jpg",
       "photo-10.jpg"
     ]
   },
