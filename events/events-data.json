@@ -173,31 +173,6 @@
     ]
   },
   {
-    "slug": "wedding-epping-forest-yacht-club-nick-megan-may-30-2026",
-    "event_type": "wedding",
-    "event_date": "2026-05-30",
-    "page_title": "Nick & Megan",
-    "venue_name": "Epping Forest Yacht Club",
-    "venue_city": "Jacksonville",
-    "month_year": "May 2026",
-    "service_list": [
-      "DJ Kris",
-      "Cold Sparkles"
-    ],
-    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-epping-forest-yacht-club-nick-megan-may-30-2026/cover.jpg",
-    "photo_files": [
-      "cover.jpg",
-      "photo-1.jpg",
-      "photo-2.jpg",
-      "photo-3.jpg",
-      "photo-4.jpg",
-      "photo-5.jpg",
-      "photo-6.jpg",
-      "photo-7.jpg",
-      "photo-8.jpg"
-    ]
-  },
-  {
     "slug": "wedding-the-club-continental-ansley-bryce-may-30-2026",
     "event_type": "wedding",
     "event_date": "2026-05-30",
@@ -223,6 +198,31 @@
       "photo-9.jpg",
       "photo-10.jpg",
       "photo-11.jpg"
+    ]
+  },
+  {
+    "slug": "wedding-epping-forest-yacht-club-nick-megan-may-30-2026",
+    "event_type": "wedding",
+    "event_date": "2026-05-30",
+    "page_title": "Nick & Megan",
+    "venue_name": "Epping Forest Yacht Club",
+    "venue_city": "Jacksonville",
+    "month_year": "May 2026",
+    "service_list": [
+      "DJ Kris",
+      "Cold Sparkles"
+    ],
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-epping-forest-yacht-club-nick-megan-may-30-2026/cover.jpg",
+    "photo_files": [
+      "cover.jpg",
+      "photo-1.jpg",
+      "photo-2.jpg",
+      "photo-3.jpg",
+      "photo-4.jpg",
+      "photo-5.jpg",
+      "photo-6.jpg",
+      "photo-7.jpg",
+      "photo-8.jpg"
     ]
   },
   {
@@ -515,8 +515,9 @@
       "Uplights",
       "Photo Booth"
     ],
-    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/corporate-the-venue-lindsay-ohlin-mar-31-2026/cover.jpg",
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/corporate-the-venue-lindsay-ohlin-mar-31-2026/photo-12.jpg",
     "photo_files": [
+      "photo-12.jpg",
       "cover.jpg",
       "photo-1.jpg",
       "photo-2.jpg",
@@ -528,8 +529,7 @@
       "photo-8.jpg",
       "photo-9.jpg",
       "photo-10.jpg",
-      "photo-11.jpg",
-      "photo-12.jpg"
+      "photo-11.jpg"
     ]
   },
   {
