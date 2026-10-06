@@ -634,28 +634,6 @@
     ]
   },
   {
-    "slug": "wedding-the-club-continental-zoe-ron-mar-07-2026",
-    "event_type": "wedding",
-    "event_date": "2026-03-07",
-    "page_title": "Zoe & Jon",
-    "venue_name": "The Club Continental",
-    "venue_city": "Orange Park",
-    "month_year": "March 2026",
-    "service_list": [
-      "DJ Jason",
-      "Uplights"
-    ],
-    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-club-continental-zoe-ron-mar-07-2026/cover.jpg",
-    "photo_files": [
-      "cover.jpg",
-      "photo-1.jpg",
-      "photo-2.jpg",
-      "photo-3.jpg",
-      "photo-4.jpg",
-      "photo-5.jpg"
-    ]
-  },
-  {
     "slug": "wedding-ancient-city-farmstead-madelyn-jeremy-mar-07-2026",
     "event_type": "wedding",
     "event_date": "2026-03-07",
@@ -682,6 +660,28 @@
       "photo-9.jpg",
       "photo-10.jpg",
       "photo-11.jpg"
+    ]
+  },
+  {
+    "slug": "wedding-the-club-continental-zoe-ron-mar-07-2026",
+    "event_type": "wedding",
+    "event_date": "2026-03-07",
+    "page_title": "Zoe & Jon",
+    "venue_name": "The Club Continental",
+    "venue_city": "Orange Park",
+    "month_year": "March 2026",
+    "service_list": [
+      "DJ Jason",
+      "Uplights"
+    ],
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-club-continental-zoe-ron-mar-07-2026/cover.jpg",
+    "photo_files": [
+      "cover.jpg",
+      "photo-1.jpg",
+      "photo-2.jpg",
+      "photo-3.jpg",
+      "photo-4.jpg",
+      "photo-5.jpg"
     ]
   },
   {
@@ -1021,10 +1021,10 @@
       "Dancing on the Cloud",
       "Mystic Bubble Machine"
     ],
-    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-walkers-landing-cody-eugene-mar-22-2025/photo-6.jpg",
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-walkers-landing-cody-eugene-mar-22-2025/photo-7.jpg",
     "photo_files": [
-      "photo-6.jpg",
       "photo-7.jpg",
+      "photo-6.jpg",
       "cover.jpg",
       "photo-1.jpg",
       "photo-2.jpg",
