@@ -55,8 +55,9 @@
       "Photo Booth",
       "Pillow Cover Background - Rose Gold Glitter Drip"
     ],
-    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-white-room-gina-jon-sep-05-2026/cover.jpg",
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-white-room-gina-jon-sep-05-2026/photo-36.jpg",
     "photo_files": [
+      "photo-36.jpg",
       "cover.jpg",
       "photo-1.jpg",
       "photo-2.jpg",
@@ -93,7 +94,6 @@
       "photo-33.jpg",
       "photo-34.jpg",
       "photo-35.jpg",
-      "photo-36.jpg",
       "photo-37.jpg"
     ]
   },
