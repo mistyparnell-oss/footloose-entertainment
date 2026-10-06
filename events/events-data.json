@@ -581,8 +581,9 @@
       "DJ Chris Y",
       "Photo Booth"
     ],
-    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-manor-at-12-oaks-ashton-noah-mar-28-2026/cover.jpg",
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-manor-at-12-oaks-ashton-noah-mar-28-2026/photo-16.jpg",
     "photo_files": [
+      "photo-16.jpg",
       "cover.jpg",
       "photo-1.jpg",
       "photo-2.jpg",
@@ -599,7 +600,6 @@
       "photo-13.jpg",
       "photo-14.jpg",
       "photo-15.jpg",
-      "photo-16.jpg",
       "photo-17.jpg"
     ]
   },
