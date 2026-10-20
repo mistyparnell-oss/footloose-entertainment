@@ -118,32 +118,6 @@
     ]
   },
   {
-    "slug": "wedding-treasury-on-the-plaza-jennifer-wesley-jun-06-2026",
-    "event_type": "wedding",
-    "event_date": "2026-06-06",
-    "page_title": "Jennifer & Wesley",
-    "venue_name": "Treasury on the Plaza",
-    "venue_city": "St. Augustine",
-    "month_year": "June 2026",
-    "service_list": [
-      "DJ Dennis",
-      "Photo Booth"
-    ],
-    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-treasury-on-the-plaza-jennifer-wesley-jun-06-2026/cover.jpg",
-    "photo_files": [
-      "cover.jpg",
-      "photo-1.jpg",
-      "photo-2.jpg",
-      "photo-3.jpg",
-      "photo-4.jpg",
-      "photo-5.jpg",
-      "photo-6.jpg",
-      "photo-7.jpg",
-      "photo-8.jpg",
-      "photo-9.jpg"
-    ]
-  },
-  {
     "slug": "wedding-hammock-dunes-club-kiersten-rex-jun-06-2026",
     "event_type": "wedding",
     "event_date": "2026-06-06",
@@ -170,6 +144,32 @@
       "photo-8.jpg",
       "photo-10.jpg",
       "photo-11.jpg"
+    ]
+  },
+  {
+    "slug": "wedding-treasury-on-the-plaza-jennifer-wesley-jun-06-2026",
+    "event_type": "wedding",
+    "event_date": "2026-06-06",
+    "page_title": "Jennifer & Wesley",
+    "venue_name": "Treasury on the Plaza",
+    "venue_city": "St. Augustine",
+    "month_year": "June 2026",
+    "service_list": [
+      "DJ Dennis",
+      "Photo Booth"
+    ],
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-treasury-on-the-plaza-jennifer-wesley-jun-06-2026/cover.jpg",
+    "photo_files": [
+      "cover.jpg",
+      "photo-1.jpg",
+      "photo-2.jpg",
+      "photo-3.jpg",
+      "photo-4.jpg",
+      "photo-5.jpg",
+      "photo-6.jpg",
+      "photo-7.jpg",
+      "photo-8.jpg",
+      "photo-9.jpg"
     ]
   },
   {
@@ -501,6 +501,32 @@
       "photo-6.jpg",
       "photo-7.jpg",
       "photo-8.jpg"
+    ]
+  },
+  {
+    "slug": "wedding-the-white-room-rose-ann-bill-apr-03-2026",
+    "event_type": "wedding",
+    "event_date": "2026-04-03",
+    "page_title": "Rose Ann & Bill",
+    "venue_name": "The White Room",
+    "venue_city": "St. Augustine",
+    "month_year": "April 2026",
+    "service_list": [
+      "DJ Dennis"
+    ],
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-the-white-room-rose-ann-bill-apr-03-2026/cover.jpg",
+    "photo_files": [
+      "cover.jpg",
+      "photo-1.jpg",
+      "photo-2.jpg",
+      "photo-3.jpg",
+      "photo-4.jpg",
+      "photo-5.jpg",
+      "photo-6.jpg",
+      "photo-7.jpg",
+      "photo-8.jpg",
+      "photo-9.jpg",
+      "photo-10.jpg"
     ]
   },
   {
