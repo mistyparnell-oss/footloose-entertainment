@@ -417,36 +417,6 @@
     ]
   },
   {
-    "slug": "wedding-bowing-oaks-giselle-and-duncan-may-3-2026",
-    "event_type": "wedding",
-    "event_date": "2026-05-03",
-    "page_title": "Giselle & Duncan",
-    "venue_name": "Bowing Oaks",
-    "venue_city": "St Augsutine",
-    "month_year": "May 2026",
-    "service_list": [
-      "DJ Kris",
-      "Photo Booth",
-      "Monogram",
-      "Dancing on the cloud",
-      "Flower wall",
-      "Cold Sparks",
-      "CO2 Blasts"
-    ],
-    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-bowing-oaks-giselle-and-duncan-may-3-2026/photo-4.jpg",
-    "photo_files": [
-      "photo-4.jpg",
-      "cover.jpg",
-      "photo-6.jpg",
-      "photo-7.jpg",
-      "photo-1.jpg",
-      "photo-3.jpg",
-      "photo-5.jpg",
-      "photo-8.jpg",
-      "photo-9.jpg"
-    ]
-  },
-  {
     "slug": "wedding-st-johns-golf-and-country-cl-kaelani-clayton-may-03-2026",
     "event_type": "wedding",
     "event_date": "2026-05-03",
@@ -457,8 +427,9 @@
     "service_list": [
       "DJ Dennis"
     ],
-    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-st-johns-golf-and-country-cl-kaelani-clayton-may-03-2026/cover.jpg",
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-st-johns-golf-and-country-cl-kaelani-clayton-may-03-2026/photo-32.jpg",
     "photo_files": [
+      "photo-32.jpg",
       "cover.jpg",
       "photo-1.jpg",
       "photo-2.jpg",
@@ -490,8 +461,37 @@
       "photo-28.jpg",
       "photo-29.jpg",
       "photo-30.jpg",
-      "photo-31.jpg",
-      "photo-32.jpg"
+      "photo-31.jpg"
+    ]
+  },
+  {
+    "slug": "wedding-bowing-oaks-giselle-and-duncan-may-3-2026",
+    "event_type": "wedding",
+    "event_date": "2026-05-03",
+    "page_title": "Giselle & Duncan",
+    "venue_name": "Bowing Oaks",
+    "venue_city": "St Augsutine",
+    "month_year": "May 2026",
+    "service_list": [
+      "DJ Kris",
+      "Photo Booth",
+      "Monogram",
+      "Dancing on the cloud",
+      "Flower wall",
+      "Cold Sparks",
+      "CO2 Blasts"
+    ],
+    "cover_img": "https://talmmdezbxavqvfzrdzy.supabase.co/storage/v1/object/public/event-photos/wedding-bowing-oaks-giselle-and-duncan-may-3-2026/photo-4.jpg",
+    "photo_files": [
+      "photo-4.jpg",
+      "cover.jpg",
+      "photo-6.jpg",
+      "photo-7.jpg",
+      "photo-1.jpg",
+      "photo-3.jpg",
+      "photo-5.jpg",
+      "photo-8.jpg",
+      "photo-9.jpg"
     ]
   },
   {
